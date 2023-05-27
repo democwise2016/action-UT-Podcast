@@ -16,7 +16,7 @@ let main = async () => {
     }
     return true
   }, {
-    maxItems: 3
+    // maxItems: 3
   })
 }
 

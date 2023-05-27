@@ -6,6 +6,7 @@ const cheerio = require('cheerio')
 const NodeCacheSqlite = require('./NodeCacheSqlite.js')
 
 let browser
+let browserCloseTimer
 
 async function GetHTML (url, options = {}) {
 
@@ -22,8 +23,12 @@ async function GetHTML (url, options = {}) {
     puppeteerWaitUntil = `networkidle2`,
     puppeteerWaitForSelector,
     puppeteerWaitForSelectorTimeout = 30000,
+    retry = 0,
   } = options
 
+  if (retry > 10) {
+    throw Error ('GetHTML failed: ' + url)
+  }
 
   if (crawler === 'xml') {
     let fetchOptions = {...options}
@@ -52,37 +57,47 @@ async function GetHTML (url, options = {}) {
       }
     }
     else {
-      if (!browser) {
-        browser = await puppeteer.launch({
-          //headless: false,
-          args: puppeteerArgs,
-          ignoreHTTPSErrors: true,
-      
-        });
-      }
+      try {
+        if (!browser) {
+          browser = await puppeteer.launch({
+            //headless: false,
+            args: puppeteerArgs,
+            ignoreHTTPSErrors: true,
         
-      const page = await browser.newPage();
-      
-      if (puppeteerAgent) {
-        await page.setUserAgent(puppeteerAgent);
-      }
+          });
+        }
+          
+        const page = await browser.newPage();
         
-      await page.goto(url, {waitUntil: puppeteerWaitUntil});
+        if (puppeteerAgent) {
+          await page.setUserAgent(puppeteerAgent);
+        }
+          
+        await page.goto(url, {waitUntil: puppeteerWaitUntil});
 
-      if (puppeteerWaitForSelector) {
-        await page.waitForSelector(puppeteerWaitForSelector, {
-          timeout: puppeteerWaitForSelectorTimeout
-        })
-      }
+        if (puppeteerWaitForSelector) {
+          await page.waitForSelector(puppeteerWaitForSelector, {
+            timeout: puppeteerWaitForSelectorTimeout
+          })
+        }
 
-      let output = await page.content()
-    
-      setTimeout(async () => {
-        await browser.close();
-        browser = null
-      }, 10 * 1000)
+        let output = await page.content()
       
-      return output
+        clearTimeout(browserCloseTimer)
+        browserCloseTimer = setTimeout(async () => {
+          await browser.close();
+          browser = null
+        }, 10 * 1000)
+        
+        return output
+      }
+      catch (e) {
+        console.error(e)
+
+        options.retry++
+
+        return await GetHTML(url, options)
+      } 
     }
   }, parseInt(cacheDay * 1000 * 60 * 60 * 24, 10))
 }
