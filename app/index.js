@@ -1,11 +1,9 @@
+const ShellSpawn = require('./lib/ShellSpawn.js')
 const FeedSimple = require('./blog.pulipuli.info/FeedSimple.js')
-const FeedTiny = require('./blog.pulipuli.info/FeedTiny.js')
-const FeedPinterest = require('./blog.pulipuli.info/FeedPinterest.js')
 
 let main = async () => {
+  // await ShellSpawn(`youtube-dl -x --audio-format mp3 https://www.youtube.com/watch?v=7E-cwdnsiow -o /output/ok.mp3`)
   await FeedSimple()
-  // await FeedTiny()
-  await FeedPinterest()
 }
 main()
 

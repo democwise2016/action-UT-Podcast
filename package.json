@@ -10,17 +10,11 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://pulipuli.chen@gmail.com@github.com/pulipulichen/API-Crawler-Example.git"
+    "url": "git+https://github.com/democwise2016/action-UT-Podcast.git"
   },
   "keywords": [
     "GitHub Action"
   ],
-  "author": "Pulipuli Chen",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/pulipulichen/API-Crawler-Example/issues"
-  },
-  "homepage": "https://github.com/pulipulichen/API-Crawler-Example#readme",
   "dependencies": {
   }
 }
