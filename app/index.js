@@ -1,9 +1,19 @@
-const ShellSpawn = require('./lib/ShellSpawn.js')
-const FeedSimple = require('./blog.pulipuli.info/FeedSimple.js')
+const UBDownloader = require('./ub/UBDownloader.js')
 
 let main = async () => {
-  // await ShellSpawn(`youtube-dl -x --audio-format mp3 https://www.youtube.com/watch?v=7E-cwdnsiow -o /output/ok.mp3`)
-  await FeedSimple()
-}
-main()
+  // let options = await parser.parseURL('https://www.youtube.com/feeds/videos.xml?channel_id=UCmMnzrvnsSnv-0u9M1Rxiqw')
+  // console.log(options)
+  // let podcastFeed = await PodcastFeedBuilder(options)
+  // console.log(podcastFeed)
+  // let info = await UBInfo.load(`https://youtu.be/I2D9M2QmdrA`)
+  // console.log(info)
 
+  // https://www.youtube.com/@LINETODAYWORLD
+  await UBDownloader('https://www.youtube.com/feeds/videos.xml?channel_id=UCmMnzrvnsSnv-0u9M1Rxiqw', (info) => {
+    console.log(info)
+
+    return true
+  })
+}
+
+main()

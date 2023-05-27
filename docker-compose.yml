@@ -9,3 +9,4 @@ services:
       - ./app:/app/
       - ./output:/output/
       - ./cache:/cache/
+      - ./config.js:/config.js

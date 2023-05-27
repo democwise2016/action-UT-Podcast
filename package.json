@@ -6,7 +6,8 @@
   "scripts": {
     "start": "docker-compose up --build",
     "up": "docker-compose up",
-    "build-up": "docker-compose up --build"
+    "build-up": "docker-compose up --build",
+    "bash": "docker-compose run app bash"
   },
   "repository": {
     "type": "git",
