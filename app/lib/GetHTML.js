@@ -87,7 +87,7 @@ async function GetHTML (url, options = {}) {
         browserCloseTimer = setTimeout(async () => {
           await browser.close();
           browser = null
-        }, 10 * 1000)
+        }, 100 * 1000)
         
         return output
       }
@@ -95,7 +95,7 @@ async function GetHTML (url, options = {}) {
         console.error(e)
 
         options.retry++
-
+        console.log('Retry', options.retry, url)
         return await GetHTML(url, options)
       } 
     }

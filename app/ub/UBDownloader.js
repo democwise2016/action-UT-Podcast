@@ -3,6 +3,7 @@ const GetUBFeedJSON = require('./GetUBFeedJSON.js')
 const UBInfo = require('./UBInfo.js')
 const PodcastFeedBuilder = require('./../podcast/PodcastFeedBuilder.js')
 const UBDownloaderItems = require('./items/UBDownloaderItems.js')
+const getFileListByCreationDate = require('./items/getFileListByCreationDate.js')
 
 const fs = require('fs');
 
@@ -11,6 +12,8 @@ module.exports = async function (feedURL, itemFilter, options = {}) {
   // ---------
   // 取得ID
   let feedID = ParseUBID(feedURL)
+  console.log(getFileListByCreationDate(`/output/${feedID}`))
+
   // console.log(id)
 
   // ---------
