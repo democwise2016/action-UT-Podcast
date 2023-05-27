@@ -7,6 +7,7 @@ let isLoading = false
 let cache = {}
 
 const NodeCacheSqlite = require('./../lib/NodeCacheSqlite.js')
+const UBVideoIdParser = require('./items/UBVideoIdParser.js')
 
 let cacheLimit = Number(3 * 60 * 60)
 //cacheLimit = 0
@@ -218,6 +219,16 @@ class UBInfo {
       info.description = info.description.trim().split('\\n').join('\n').trim()
     }
     
+    info.id = UBVideoIdParser(url)
+    info.thumbnail = `https://img.youtube.com/vi/${info.id}/maxresdefault.jpg`
+    info.thumbnails = [
+      `https://img.youtube.com/vi/${info.id}/maxresdefault.jpg`,
+      `https://img.youtube.com/vi/${info.id}/0.jpg`,
+      `https://img.youtube.com/vi/${info.id}/1.jpg`,
+      `https://img.youtube.com/vi/${info.id}/2.jpg`,
+      `https://img.youtube.com/vi/${info.id}/3.jpg`
+    ]
+
     info.ownerChannelName = this.sliceBetween(body, `","ownerChannelName":"`, `"`)
     info.channelId = $('meta[itemprop="channelId"]').eq(0).attr('content')
     info.channelLink = 'https://www.y' + 'out' + 'ube.com/channel/' + info.channelId

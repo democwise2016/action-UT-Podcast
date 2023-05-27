@@ -1,34 +1,8 @@
-const ShellSpawn = require('./lib/ShellSpawn.js')
-const FeedSimple = require('./blog.pulipuli.info/FeedSimple.js')
+const UBMp3Downloader = require('./UBMp3Downloader.js')
 
-const UBMp3Downloader = require('./lib/ub-mp3-downloader/lib/UBMp3Downloader.js')
-// const TorHTMLLoader = require('./lib/tor-html-loader/tor-html-loader.js')
+async function getOptions (outputPath) {
 
-let main = async () => {
-  // await ShellSpawn(`youtube-dl -x --audio-format mp3 https://www.youtube.com/watch?v=7E-cwdnsiow`)
-  // await FeedSimple()
-
-  console.log('before options')  
-
-  let options = await getOptions()
-  let YD = new UBMp3Downloader(options)
-
-  YD.on("finished", function(err, data) {
-    console.log('ok')
-  })
-
-  YD.on("error", async function(error) {
-    console.error(error)
-  })
-
-  console.log('before download')
-
-  YD.download('29t3pJd75XU', '29t3pJd75XU.mp3');
-}
-
-async function getOptions () {
-
-  let outputPath = '/output/'
+  // let outputPath = '/output/'
 
   //Configure Yo utu beMp 3Down l oad er with your settings
   let options = {
@@ -66,15 +40,21 @@ async function getOptions () {
   return options
 }
 
-// async function getAgent () {
-//   let agent
-  
-//   agent = await TorHTMLLoader.getAgent()
+module.exports = async function (videoID, output) {
+  let pos = output.lastIndexOf('/') + 1
+  let dir = output.slice(0, pos)
+  let filename = output.slice(pos)
 
-//   return agent
-// }
+  let options = await getOptions(dir)
+  let YD = new UBMp3Downloader(options)
 
-main()
+  YD.on("finished", function(err, data) {
+    console.log('Downloaded: ' + videoID)
+  })
 
+  YD.on("error", async function(error) {
+    console.error(error)
+  })
 
-
+  YD.download(videoID, filename);
+}

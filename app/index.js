@@ -10,9 +10,13 @@ let main = async () => {
 
   // https://www.youtube.com/@LINETODAYWORLD
   await UBDownloader('https://www.youtube.com/feeds/videos.xml?channel_id=UCmMnzrvnsSnv-0u9M1Rxiqw', (info) => {
-    console.log(info)
-
+    // console.log(info)
+    if (info.duration > (30 * 60)) {
+      return false
+    }
     return true
+  }, {
+    maxItems: 3
   })
 }
 

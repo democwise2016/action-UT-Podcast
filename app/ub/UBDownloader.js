@@ -1,20 +1,38 @@
-const PodcastFeedBuilder = require('./../podcast/PodcastFeedBuilder.js')
-
+const ParseUBID = require('./ParseUBID.js')
+const GetUBFeedJSON = require('./GetUBFeedJSON.js')
 const UBInfo = require('./UBInfo.js')
-
-let Parser = require('rss-parser');
-let parser = new Parser();
+const PodcastFeedBuilder = require('./../podcast/PodcastFeedBuilder.js')
+const UBDownloaderItems = require('./items/UBDownloaderItems.js')
 
 const fs = require('fs');
 
-module.exports = async function (feedURL, filter) {
-  // 先取得
-  if (fs.existsSync('/output/d.txt')) {
-    console.log('[prev]', fs.readFileSync('/output/d.txt', 'utf8'))
-  }
-  
+module.exports = async function (feedURL, itemFilter, options = {}) {
 
-  let next = (new Date()).toUTCString()
-  console.log('[next]', next)
-  fs.writeFileSync('/output/d.txt', next, 'utf8')
+  // ---------
+  // 取得ID
+  let feedID = ParseUBID(feedURL)
+  // console.log(id)
+
+  // ---------
+  // 取得Feed的資訊
+  let feedJSON = await GetUBFeedJSON(feedURL)
+  fs.writeFileSync('/output/feed.json', JSON.stringify(feedJSON, null, 2), 'utf8')
+  
+  // ---------
+  // 取得頻道的網址
+  let channelURL = feedJSON.link
+  let channelInfo = await UBInfo.load(channelURL)
+  // console.log(channelInfo)
+  feedJSON.channelAvatar = channelInfo.channelAvatar
+  feedJSON.thumbnail = channelInfo.thumbnail
+
+  // ---------
+  // 逐一下載？
+  feedJSON.items = await UBDownloaderItems(feedID, feedJSON.items, itemFilter, options)
+  
+  // ---------
+  // 建立Feed
+  let outputFeedString = await PodcastFeedBuilder(feedJSON)
+  // console.log(outputFeedString)
+  fs.writeFileSync(`/output/${feedID}.rss`, outputFeedString, 'utf8') 
 }
