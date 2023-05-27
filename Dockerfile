@@ -53,7 +53,7 @@ RUN npm link rss-parser@3.13.0
 RUN npm link feed@4.2.2
 RUN npm link @extractus/feed-extractor@6.2.2
 
-# RUN npm link typescript
+# RUN npm link typescript 
 # RUN npm link husky@7
 # RUN npm link axios@1.4.0
 # RUN apt-get install -y husky
