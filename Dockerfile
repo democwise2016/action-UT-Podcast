@@ -57,7 +57,7 @@ RUN npm link @extractus/feed-extractor@6.2.2
 # RUN npm link husky@7
 # RUN npm link axios@1.4.0
 # RUN apt-get install -y husky
-RUN npm i husky --save-dev -g
+# RUN npm i husky --save-dev -g
 RUN npm link cheerio@1.0.0-rc.12
 
 RUN npm link htmlentities@1.0.0
