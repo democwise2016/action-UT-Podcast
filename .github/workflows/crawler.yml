@@ -43,7 +43,7 @@ jobs:
           cache-name: cacheOutput
         with:
           path: output
-          key: ${{ runner.os }}-build-${{ env.cache-name }}-${{ hashFiles('cache/trigger.txt') }}
+          key: ${{ runner.os }}-build-${{ env.cache-name }}-${{ hashFiles('output/trigger.txt') }}
           restore-keys: |
             ${{ runner.os }}-build-${{ env.cache-name }}-
             ${{ runner.os }}-build-
@@ -55,6 +55,7 @@ jobs:
         run: |
           mkdir -p cache
           echo `date` > cache/trigger.txt
+          echo `date` > output/trigger.txt
 
       - name: main
         run: |
