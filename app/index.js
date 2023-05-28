@@ -50,6 +50,7 @@ let main = async () => {
       if (fs.existsSync('/output/' + feedItem.feedFilename + '.rss') === false) {
         UBDownloader(feedList[i])
         newArrialCount++
+        console.log('new arrial', newArrialCount, feedList[i].title, feedList[i].feedFilename)
         if (newArrialCount >= CONFIG.newArrialMax) {
           // console.log('Exit new arrial mode')
           break
