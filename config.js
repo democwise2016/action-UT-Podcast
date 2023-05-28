@@ -4,7 +4,7 @@ const ConfigCheck = require('./app/config/ConfigCheck.js')
 let CONFIG = {
   /**
    * 結尾要有/
-   * 20230529-0112 aaa a a
+   * 20230529-0112 aaa a a ad
    */
   publicURL: `https://democwise2016.github.io/action-UT-Podcast/`,
   publicURLShorten: `https://ppt.cc/fMYRpx`,
