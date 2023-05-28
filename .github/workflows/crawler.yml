@@ -23,9 +23,9 @@ jobs:
 
       # ----------------------------------------------------------------
 
-      - name: Cache
-        id: cache
-        uses: actions/cache@v3
+      - name: Cache Restore
+        id: cache-restore
+        uses: actions/cache/restore@v3
         env:
           cache-name: cache
         with:
@@ -58,6 +58,21 @@ jobs:
       - name: Main
         run: |
           docker-compose up
+
+      - name: Cache Save
+        id: cache-save
+        uses: actions/cache/save@v3
+        env:
+          cache-name: cache
+        with:
+          path: |
+            cache
+            output
+          key: ${{ runner.os }}-build-${{ env.cache-name }}-${{ hashFiles('cache/trigger.txt') }}-${{ hashFiles('output/trigger.txt') }}
+          restore-keys: |
+            ${{ runner.os }}-build-${{ env.cache-name }}-
+            ${{ runner.os }}-build-
+            ${{ runner.os }}-
 
       # ----------------------------------------------------------------
 
