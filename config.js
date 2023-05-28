@@ -8,7 +8,7 @@ let CONFIG = {
   publicURL: `https://democwise2016.github.io/action-UT-Podcast/`,
   publicURLShorten: `https://ppt.cc/fMYRpx`,
   thumbnailBorderColor: '2980b9',
-  maxDownloadItem: 3,
+  maxDownloadItem: 2,
   feedList: [
     {
       title: 'TODAY 看世界',
