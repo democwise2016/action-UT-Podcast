@@ -9,7 +9,7 @@ let CONFIG = {
   publicURLShorten: `https://ppt.cc/fMYRpx`,
   thumbnailBorderColor: '2980b9',
   maxDownloadItem: 1,
-  newArrialMax: 20,
+  newArrialMax: 2,
   feedList: [
     {
       title: 'TODAY 看世界',

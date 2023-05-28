@@ -11,5 +11,9 @@ module.exports = async function (item) {
     item[key] = info[key]
   })
 
+  if (item.id.indexOf(':') > -1) {
+    item.id = item.id.split(':').slice(-1)[0]
+  }
+
   return item
 }

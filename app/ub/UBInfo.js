@@ -222,6 +222,10 @@ class UBInfo {
     }
     
     info.id = UBVideoIdParser(url)
+    if (info.id.indexOf(':') > -1) {
+      info.id = info.id.split(':').slice(-1)[0]
+    }
+
     info.thumbnail = `https://img.youtube.com/vi/${info.id}/maxresdefault.jpg`
     info.thumbnails = [
       `https://img.youtube.com/vi/${info.id}/maxresdefault.jpg`,
