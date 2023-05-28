@@ -270,6 +270,10 @@ class UBInfo {
     // 2020-12-27T11:51:47.000Z
     
     info.date = $('meta[itemprop="datePublished"]').eq(0).attr('content')
+    if (!info.date) {
+      info.date = $('meta[itemprop="uploadDate"]').eq(0).attr('content')
+    }
+    // uploadDate
     // 2020-12-31
     if (info.date) {
       info.date = info.date + 'T00:00:00.000Z'
