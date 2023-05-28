@@ -15,8 +15,8 @@ let main = async () => {
 
   // https://www.youtube.com/@LINETODAYWORLD
   for (let i = 0; i < feedList.length; i++) {
-    let {url, itemFilter, options} = feedList[i]
-    await UBDownloader(url, itemFilter, options)
+    // let {url, itemFilter, options} = feedList[i]
+    await UBDownloader(feedList[i])
   }
   
   FeedIndexBuilder(feedList)

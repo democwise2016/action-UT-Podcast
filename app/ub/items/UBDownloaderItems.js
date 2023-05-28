@@ -2,11 +2,15 @@ const AppendUBInfo = require('./AppendUBInfo.js')
 const ItemDownload = require('./ItemDownload.js')
 const CleanOldItems = require('./CleanOldItems.js')
 
-module.exports = async function (feedID, items, itemFilter, options = {}) {
+module.exports = async function (feedID, items, itemFilters = [], options = {}) {
 
   let {
     maxItems = 30,
   } = options
+
+  if (typeof(itemFilters) === 'function' && Array.isArray(itemFilters) === false) {
+    itemFilters = [itemFilters]
+  }
 
   // -------------
 
@@ -21,7 +25,14 @@ module.exports = async function (feedID, items, itemFilter, options = {}) {
 
     item = await AppendUBInfo(item)
 
-    if (await itemFilter(item) === false) {
+    let passed = true
+    for (let j = 0; j < itemFilters.length; j++) {
+      if (await itemFilters[j](item) === false) {
+        passed = false
+        break
+      }
+    }
+    if (passed === false) {
       continue
     }
 

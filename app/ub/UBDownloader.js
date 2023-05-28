@@ -7,12 +7,21 @@ const getFileListByCreationDate = require('./items/getFileListByCreationDate.js'
 
 const fs = require('fs');
 
-module.exports = async function (feedURL, itemFilter, options = {}) {
+module.exports = async function (feedItem = {}) {
+
+  let {
+    feedURL, 
+    feedID,
+    itemFilters, 
+    options = {}
+  } = feedItem
 
   // ---------
   // 取得ID
-  let feedID = ParseUBID(feedURL)
-  console.log(getFileListByCreationDate(`/output/${feedID}`))
+  if (!feedID) {
+    feedID = ParseUBID(feedURL)
+  }
+  // console.log(getFileListByCreationDate(`/output/${feedID}`))
 
   // console.log(id)
 
@@ -31,7 +40,7 @@ module.exports = async function (feedURL, itemFilter, options = {}) {
 
   // ---------
   // 逐一下載？
-  feedJSON.items = await UBDownloaderItems(feedID, feedJSON.items, itemFilter, options)
+  feedJSON.items = await UBDownloaderItems(feedID, feedJSON.items, itemFilters, options)
   
   // ---------
   // 建立Feed
