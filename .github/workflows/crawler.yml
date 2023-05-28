@@ -23,18 +23,33 @@ jobs:
 
       # ----------------------------------------------------------------
 
-      - name: Cache Restore
-        id: cache-restore
-        uses: actions/cache/restore@v3
+      # - name: Cache Restore
+      #   id: cache-restore
+      #   uses: actions/cache/restore@v3
+      #   env:
+      #     cache-name: cache
+      #   with:
+      #     path: |
+      #       cache
+      #       output
+      #     key: ${{ runner.os }}-build-${{ env.cache-name }}
+      #     restore-keys: |
+      #       ${{ runner.os }}-build-${{ env.cache-name }}
+      #       ${{ runner.os }}-build-
+      #       ${{ runner.os }}-
+
+      - name: Cache
+        id: cache
+        uses: actions/cache@v3
         env:
           cache-name: cache
         with:
           path: |
             cache
             output
-          key: ${{ runner.os }}-build-${{ env.cache-name }}
+          key: ${{ runner.os }}-build-${{ env.cache-name }}-${{ github.run_id }}
           restore-keys: |
-            ${{ runner.os }}-build-${{ env.cache-name }}
+            ${{ runner.os }}-build-${{ env.cache-name }}-
             ${{ runner.os }}-build-
             ${{ runner.os }}-
 
@@ -59,16 +74,16 @@ jobs:
         run: |
           docker-compose up
 
-      - name: Cache Save
-        id: cache-save
-        uses: actions/cache/save@v3
-        env:
-          cache-name: cache
-        with:
-          path: |
-            cache
-            output
-          key: ${{ runner.os }}-build-${{ env.cache-name }}
+      # - name: Cache Save
+      #   id: cache-save
+      #   uses: actions/cache/save@v3
+      #   env:
+      #     cache-name: cache
+      #   with:
+      #     path: |
+      #       cache
+      #       output
+      #     key: ${{ runner.os }}-build-${{ env.cache-name }}
 
       # ----------------------------------------------------------------
 
