@@ -31,7 +31,7 @@ module.exports = function () {
     let outputFeedURL = publicURL + filename + '.rss'
     body.push(`<li>
       <a href="${outputFeedURL}" target="_blank">${title}</a>
-      (<a href="${homepageURL}" target="_blank">source</a>))
+      (<a href="${homepageURL}" target="_blank">source</a>)
     </li>`)
   })
 
