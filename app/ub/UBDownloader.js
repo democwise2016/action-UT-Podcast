@@ -7,15 +7,16 @@ const getFileListByCreationDate = require('./items/getFileListByCreationDate.js'
 
 const fs = require('fs');
 
-const OutputFeedFilenameBuilder = require('./../podcast/OutputFeedFilenameBuilder.js')
+// const OutputFeedFilenameBuilder = require('./../podcast/OutputFeedFilenameBuilder.js')
 
 module.exports = async function (feedItem = {}) {
 
   let {
     feedURL, 
     feedID,
-    itemFilters, 
-    options = {}
+    feedFilename,
+    // itemFilters, 
+    // options = {}
   } = feedItem
 
   // ---------
@@ -47,13 +48,13 @@ module.exports = async function (feedItem = {}) {
 
   // ---------
   // 逐一下載？
-  let filename = OutputFeedFilenameBuilder(feedItem)
-  feedJSON.items = await UBDownloaderItems(filename, feedJSON.items, itemFilters, options)
+  // let filename = OutputFeedFilenameBuilder(feedItem)
+  feedJSON.items = await UBDownloaderItems(feedJSON.items, feedItem)
   
   // ---------
   // 建立Feed
   let outputFeedString = await PodcastFeedBuilder(feedJSON)
 
   // console.log(outputFeedString)
-  fs.writeFileSync(`/output/${filename}.rss`, outputFeedString, 'utf8') 
+  fs.writeFileSync(`/output/${feedFilename}.rss`, outputFeedString, 'utf8') 
 }

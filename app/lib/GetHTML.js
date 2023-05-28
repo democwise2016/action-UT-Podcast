@@ -8,6 +8,10 @@ const NodeCacheSqlite = require('./NodeCacheSqlite.js')
 let browser
 let browserCloseTimer
 
+let sleep = function (ms = 500) {
+  return new Promise(resolve => setTimeout(resolve, ms));
+}
+
 async function GetHTML (url, options = {}) {
 
   if ((url.endsWith('.txt') || url.endsWith('.csv')) && !options.crawler) {
@@ -94,10 +98,16 @@ async function GetHTML (url, options = {}) {
         }, 100 * 1000)
         
 
+        await sleep(1000)
+
         return output
       }
       catch (e) {
         console.error(e)
+
+        await browser.close();
+        browser = null
+        await sleep(3000)
 
         retry++
         options.retry = retry

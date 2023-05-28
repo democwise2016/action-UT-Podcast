@@ -8,6 +8,7 @@ let CONFIG = {
   publicURL: `https://democwise2016.github.io/action-UT-Podcast/`,
   publicURLShorten: `https://ppt.cc/fMYRpx`,
   thumbnailBorderColor: '2980b9',
+  maxDownloadItem: 3,
   feedList: [
     {
       title: 'TODAY 看世界',
@@ -96,18 +97,12 @@ let CONFIG = {
       homepageURL: 'https://www.youtube.com/playlist?list=PLjjrV9IhkIpcIqZiUfkkxgKtoiD517Kdf',
       itemFilters: ItemFiltersPreset.between10minTo60Min,
     },
-    {
-      title: '鐵道事務所',
-      feedID: 'Railway-Office',
-      homepageURL: 'https://www.youtube.com/channel/UCdinDPM5zd2nk2LdtOcEDPQ',
-      itemFilters: ItemFiltersPreset.between3minTo30Min,
-    },
-    {
-      title: '黑皮談市政',
-      feedID: 'jin_an0528',
-      homepageURL: 'https://www.youtube.com/channel/UC3JgKXxcCd02y3xIpgJKnWA',
-      itemFilters: ItemFiltersPreset.between3minTo30Min,
-    },
+    // {
+    //   title: '鐵道事務所',
+    //   feedID: 'Railway-Office',
+    //   homepageURL: 'https://www.youtube.com/channel/UCdinDPM5zd2nk2LdtOcEDPQ',
+    //   itemFilters: ItemFiltersPreset.between3minTo30Min,
+    // },
     {
       title: '黑皮談市政',
       feedID: 'jin_an0528',
@@ -120,12 +115,12 @@ let CONFIG = {
       homepageURL: 'https://www.youtube.com/channel/UCUn77_F5A65HViL9OEvIpLw',
       itemFilters: ItemFiltersPreset.between3minTo30Min,
     },
-    {
-      title: '敖厂长',
-      feedID: 'hawkaoaoful',
-      homepageURL: 'https://www.youtube.com/channel/UCCkMW93Am1pLfk2nZFKAmbQ',
-      itemFilters: ItemFiltersPreset.between3minTo30Min,
-    },
+    // {
+    //   title: '敖厂长',
+    //   feedID: 'hawkaoaoful',
+    //   homepageURL: 'https://www.youtube.com/channel/UCCkMW93Am1pLfk2nZFKAmbQ',
+    //   itemFilters: ItemFiltersPreset.between3minTo30Min,
+    // },
     {
       title: '萊斯 新Game報',
       feedID: 'LiceMoo-GameNews',

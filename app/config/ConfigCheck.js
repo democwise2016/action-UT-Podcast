@@ -1,4 +1,5 @@
 const StringToRGBColorCode = require('./StringToRGBColorCode.js')
+const OutputFeedFilenameBuilder = require('./../podcast/OutputFeedFilenameBuilder.js')
 
 module.exports = function (CONFIG) {
   for (let i = 0; i < CONFIG.feedList.length; i++) {
@@ -24,6 +25,8 @@ module.exports = function (CONFIG) {
     else {
       feedItem.thumbnailBorderColor = CONFIG.thumbnailBorderColor
     }
+
+    feedItem.feedFilename = OutputFeedFilenameBuilder(feedItem)
   
     CONFIG.feedList[i] = feedItem
   }

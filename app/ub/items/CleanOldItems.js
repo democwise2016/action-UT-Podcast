@@ -1,14 +1,19 @@
 const fs = require('fs')
 const getFileListByCreationDate = require('./getFileListByCreationDate.js')
 
-module.exports = async function (feedID, options = {}) {
+module.exports = async function (feedItem = {}) {
+  let {
+    feedFilename,
+    options = {}
+  } = feedItem
+
   let {
     maxItems = 30,
   } = options
 
   // --------------------
   // 列出目前檔案，按照建立日期排序
-  let folder = `/output/${feedID}/`
+  let folder = `/output/${feedFilename}/`
   let fileList = getFileListByCreationDate(folder)
   // console.log(fileList)
 

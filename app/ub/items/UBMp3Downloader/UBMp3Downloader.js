@@ -190,9 +190,12 @@ class UBMp3Downloader extends EventEmitter {
                 length: parseInt(httpResponse.headers['content-length']),
                 time: self.progressTimeout
             });
+            console.log(parseInt(httpResponse.headers['content-length']))
+            // console.log(self.progressTimeout)
 
             //Add progress event listener
             str.on('progress', function(progress) {
+                // console.log(progress)
                 if (progress.percentage === 100) {
                     resultObj.stats= {
                         transferredBytes: progress.transferred,
@@ -202,22 +205,24 @@ class UBMp3Downloader extends EventEmitter {
                 }
                 self.emit('progress', {videoId: task.videoId, progress: progress})
             });
+
             let outputOptions = [
                 '-id3v2_version', '4',
                 '-metadata', 'title=' + title,
                 '-metadata', 'artist=' + artist,
-                //'-pix_fmt', 'yuv360p',
-                //'-ac', '1', 
-                //'-ar', '48000',
-                //'-acodec', 'pcm_s16le'
+                // '-pix_fmt', 'yuv360p',
+                // '-ac', '1', 
+                // '-ar', '48000',
+                // '-acodec', 'pcm_s16le'
+                // '-c:a', 'copy',
+                // '-c:v', 'libx264'
             ];
-            //console.log(outputOptions)
+            // console.log(outputOptions)
             if (self.outputOptions) {
                 outputOptions = outputOptions.concat(self.outputOptions);
             }
             
-            const audioBitrate =
-                info.formats.find(format => !!format.audioBitrate).audioBitrate
+            const audioBitrate = info.formats.find(format => !!format.audioBitrate).audioBitrate
 
             //Start encoding
             const proc = new ffmpeg({
@@ -227,6 +232,9 @@ class UBMp3Downloader extends EventEmitter {
             .withAudioCodec('libmp3lame')
             .toFormat('mp3')
             .outputOptions(...outputOptions)
+            // .on('progress', function(progress) {
+            //     console.log(progress)
+            // })
             .on('error', function(err) {
                 callback(err, null);
             })

@@ -1,8 +1,16 @@
 const AppendUBInfo = require('./AppendUBInfo.js')
 const ItemDownload = require('./ItemDownload.js')
 const CleanOldItems = require('./CleanOldItems.js')
+const CONFIG = require('./../../../config.js')
 
-module.exports = async function (feedID, items, itemFilters = [], options = {}) {
+module.exports = async function (items, feedItem = {}) {
+
+  let {
+    feedID,
+    feedFilename,
+    itemFilters = [], 
+    options = {}
+  } = feedItem
 
   let {
     maxItems = 30,
@@ -20,6 +28,7 @@ module.exports = async function (feedID, items, itemFilters = [], options = {}) 
     count = maxItems
   }
 
+  let notCachedCount = 0
   for (let i = 0; i < count; i++) {
     let item = items[i]
 
@@ -36,12 +45,26 @@ module.exports = async function (feedID, items, itemFilters = [], options = {}) 
       continue
     }
 
-    item = await ItemDownload(feedID, item, options)
-    filteredItems.push(item)
+    let result = await ItemDownload(item, feedItem)
+    if (!result) {
+      continue
+    }
+    filteredItems.push(result.item)
+
+    let {cached} = result
+    if (!cached) {
+      notCachedCount++
+
+      if (notCachedCount >= CONFIG.maxDownloadItem) {
+        console.log(`Reach max download ${CONFIG.maxDownloadItem}. Go to next channel.`)
+        break
+      }
+    }
+    
     // break
   }
 
-  await CleanOldItems(feedID, options)
+  await CleanOldItems(feedItem)
 
   return filteredItems
 }

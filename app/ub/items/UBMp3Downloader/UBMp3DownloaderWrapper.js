@@ -12,7 +12,7 @@ async function getOptions (options = {}) {
     // "outputPath": outputPath,    // Output file location (default: the home directory)
     "queueParallelism": 1,                  // Download parallelism (default: 1)
     "progressTimeout": 200000000,                // Interval in ms for the progress reports (default: 1000)
-    "allowWebm": false,                      // Enable download from WebM sources (default: false)
+    "allowWebm": true,                      // Enable download from WebM sources (default: false)
     'maxRetries': 10,
 //     'requestOptions': {
 //       // agent: await getAgent(), 
@@ -51,15 +51,18 @@ module.exports = async function (videoID, output, options = {}) {
     options = await getOptions(options)
     let YD = new UBMp3Downloader(options)
 
-    console.log('Start Download: ' + videoID)
+    console.log('[Start Download] \t' + videoID + '\t' + output + '\t' + (new Date()).toISOString())
 
     YD.on("finished", function(err, data) {
-      console.log('End Downloaded: ' + videoID)
+      // console.log('End Downloaded: ' + videoID)
+      console.log('[End Download] \t' + videoID + '\t' + output + '\t' + (new Date()).toISOString())
       resolve(filename)
     })
 
     YD.on("error", async function(error) {
       console.error(error)
+
+      console.log(`Please check video: https://www.yo` + `ut` + `ube.com/watch?v=${videoID}\n`)
       reject(error)
     })
 

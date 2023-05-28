@@ -3,9 +3,9 @@ const fs = require('fs')
 const ShellSpawn = require('./../../lib/ShellSpawn.js')
 const CONFIG = require('../../../config.js')
 
-module.exports = async function (feedID, itemID, mmddDate) {
-  if (fs.existsSync(`/output/${feedID}`) === false) {
-    await ShellSpawn(`mkdir -p /output/${feedID}`)
+module.exports = async function (feedFilename, itemID, mmddDate) {
+  if (fs.existsSync(`/output/${feedFilename}`) === false) {
+    await ShellSpawn(`mkdir -p /output/${feedFilename}`)
   }
 
   let filename = `${itemID}.mp3`
@@ -14,7 +14,7 @@ module.exports = async function (feedID, itemID, mmddDate) {
   }
 
   return {
-    localPath: `/output/${feedID}/${filename}`,
-    publicPath: CONFIG.publicURL + `${feedID}/${filename}`,
+    localPath: `/output/${feedFilename}${filename}`,
+    publicPath: CONFIG.publicURL + `${feedFilename}${filename}`,
   }
 }
