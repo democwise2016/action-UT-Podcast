@@ -42,21 +42,28 @@ async function getOptions (options = {}) {
 }
 
 module.exports = async function (videoID, output, options = {}) {
-  let pos = output.lastIndexOf('/') + 1
-  let dir = output.slice(0, pos)
-  let filename = output.slice(pos)
+  return new Promise(async function (resolve, reject) {
+    let pos = output.lastIndexOf('/') + 1
+    let dir = output.slice(0, pos)
+    let filename = output.slice(pos)
 
-  options.outputPath = dir
-  options = await getOptions(options)
-  let YD = new UBMp3Downloader(options)
+    options.outputPath = dir
+    options = await getOptions(options)
+    let YD = new UBMp3Downloader(options)
 
-  YD.on("finished", function(err, data) {
-    console.log('Downloaded: ' + videoID)
+    console.log('Start Download: ' + videoID)
+
+    YD.on("finished", function(err, data) {
+      console.log('End Downloaded: ' + videoID)
+      resolve(filename)
+    })
+
+    YD.on("error", async function(error) {
+      console.error(error)
+      reject(error)
+    })
+
+    YD.download(videoID, filename);
   })
-
-  YD.on("error", async function(error) {
-    console.error(error)
-  })
-
-  YD.download(videoID, filename);
+    
 }

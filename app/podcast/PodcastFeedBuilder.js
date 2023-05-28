@@ -2,6 +2,7 @@ const getRedirectedURL = require('./getRedirectedURL.js')
 const linkifyUrls = require('linkify-urls');
 
 const moment = require('moment')
+const CONFIG = require('./../../config.js')
 
 module.exports = async function (options) {
   let output = []
@@ -17,6 +18,16 @@ module.exports = async function (options) {
   if (!options.thumbnail) {
     // https://unsplash.it/800/800?random
     options.thumbnail = await getRedirectedURL('https://unsplash.it/800/800?random')
+  }
+  if (options.thumbnail && options.thumbnail.startsWith('https://yt3.ggpht.com/ytc/') && options.thumbnailBorderColor) {
+    
+    if (options.thumbnailBorderColor === CONFIG.thumbnailBorderColor) {
+      options.thumbnail = options.thumbnail.split('=s1024-c-k-').join('=s1024-b10-c-k-')
+    }
+    else {
+      options.thumbnail = options.thumbnail.split('=s1024-c-k-').join('=s1024-b100-c-k-')
+    }
+    options.thumbnail = options.thumbnail.split('c0x00ffffff-no-rj').join(`c0x00${options.thumbnailBorderColor}-no-rj`)
   }
   
   if (!options.link && options.feedLink) {

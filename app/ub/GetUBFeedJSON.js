@@ -8,8 +8,6 @@ module.exports = async function (feedURL, options = {}) {
     cacheDay = 0.5, 
   } = options
 
-  // 00000000000000000000000000000
-
   return await NodeCacheSqlite.get('GetUBFeedJSON', feedURL, async function () {
     console.log('get feed', feedURL)
 
@@ -17,6 +15,19 @@ module.exports = async function (feedURL, options = {}) {
       parser = new Parser()
     }
 
-    return await parser.parseURL(feedURL)
+    let output = await parser.parseURL(feedURL)
+
+
+    if (output.link === feedURL) {
+      let id = feedURL.split('=').slice(-1)[0]
+      output.link = 'https://www.youtube.com/playlist?list=' + id
+      // channelURL = 
+    }
+    if (!output.feedLink) {
+      output.feedLink = feedURL
+      // channelURL = 
+    }
+
+    return output
   }, parseInt(cacheDay * 1000 * 60 * 60 * 24, 10))
 }

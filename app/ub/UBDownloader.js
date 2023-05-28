@@ -30,24 +30,29 @@ module.exports = async function (feedItem = {}) {
   // ---------
   // 取得Feed的資訊
   let feedJSON = await GetUBFeedJSON(feedURL)
-  fs.writeFileSync('/output/feed.json', JSON.stringify(feedJSON, null, 2), 'utf8')
+  // fs.writeFileSync('/output/feed.json', JSON.stringify(feedJSON, null, 2), 'utf8')
   
   // ---------
   // 取得頻道的網址
   let channelURL = feedJSON.link
   let channelInfo = await UBInfo.load(channelURL)
   // console.log(channelInfo)
-  feedJSON.channelAvatar = channelInfo.channelAvatar
-  feedJSON.thumbnail = channelInfo.thumbnail
+  // feedJSON.channelAvatar = channelInfo.channelAvatar
+  // feedJSON.thumbnail = channelInfo.thumbnail
+  feedJSON = {
+    ...channelInfo,
+    ...feedJSON,
+    ...feedItem
+  }
 
   // ---------
   // 逐一下載？
-  feedJSON.items = await UBDownloaderItems(feedID, feedJSON.items, itemFilters, options)
+  let filename = OutputFeedFilenameBuilder(feedItem)
+  feedJSON.items = await UBDownloaderItems(filename, feedJSON.items, itemFilters, options)
   
   // ---------
   // 建立Feed
   let outputFeedString = await PodcastFeedBuilder(feedJSON)
-  let filename = OutputFeedFilenameBuilder(feedItem)
 
   // console.log(outputFeedString)
   fs.writeFileSync(`/output/${filename}.rss`, outputFeedString, 'utf8') 

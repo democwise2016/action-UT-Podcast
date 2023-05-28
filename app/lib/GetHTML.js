@@ -30,6 +30,10 @@ async function GetHTML (url, options = {}) {
     throw Error ('GetHTML failed: ' + url)
   }
 
+  // if (crawler === 'puppeteer') {
+  //   console.trace('GetHTML: ' + url)
+  // }
+
   if (crawler === 'xml') {
     let fetchOptions = {...options}
     fetchOptions.crawler = 'fetch'
@@ -89,7 +93,7 @@ async function GetHTML (url, options = {}) {
           browser = null
         }, 100 * 1000)
         
-        
+
         return output
       }
       catch (e) {

@@ -16,8 +16,8 @@ module.exports = async function (feedID, items, itemFilters = [], options = {}) 
 
   let filteredItems = []
   let count = items.length
-  if (count > maxItems + 1) {
-    count = maxItems + 1
+  if (count > maxItems) {
+    count = maxItems
   }
 
   for (let i = 0; i < count; i++) {
