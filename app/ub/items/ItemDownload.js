@@ -18,7 +18,7 @@ module.exports = async function (item, feedItem = {}) {
   let cached = true
   let {localPath, publicPath} = await ItemDownloadPathBuilder(feedFilename, id, item.mmddDate)
 
-  // console.log(localPath)
+  console.log(localPath, fs.existsSync(localPath))
   if (fs.existsSync(localPath) === false) {
     try {
       await UBMp3DownloaderWrapper(id, localPath, options)
