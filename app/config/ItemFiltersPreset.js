@@ -14,6 +14,9 @@ let ItemFiltersPreset = {
   },
   between10minTo60Min (info) {
     return ItemFiltersPreset.betweenTimeMinMax(info, 10, 60)
+  },
+  between30minTo180Min (info) {
+    return ItemFiltersPreset.betweenTimeMinMax(info, 30, 180)
   }
 }
 
