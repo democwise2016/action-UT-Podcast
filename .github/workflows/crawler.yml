@@ -29,26 +29,15 @@ jobs:
         env:
           cache-name: cache
         with:
-          path: cache
+          path: |
+            cache
+            output
           key: ${{ runner.os }}-build-${{ env.cache-name }}-${{ hashFiles('cache/cache-trigger.txt') }}
           restore-keys: |
             ${{ runner.os }}-build-${{ env.cache-name }}-
             ${{ runner.os }}-build-
             ${{ runner.os }}-
 
-      - name: CacheOutput
-        id: cacheOutput
-        uses: actions/cache@v3
-        env:
-          cache-name: cacheOutput
-        with:
-          path: output
-          key: ${{ runner.os }}-build-${{ env.cache-name }}-${{ hashFiles('output/cache-trigger.txt') }}
-          restore-keys: |
-            ${{ runner.os }}-build-${{ env.cache-name }}-
-            ${{ runner.os }}-build-
-            ${{ runner.os }}-
- 
       # ----------------------------------------------------------------
 
       # - name: Clean Cache
@@ -63,8 +52,6 @@ jobs:
         run: |
           mkdir -p cache
           echo `date` > cache/cache-trigger.txt
-          mkdir -p output
-          echo `date` > output/cache-trigger.txt
 
       - name: main
         run: |
