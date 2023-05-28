@@ -63,6 +63,7 @@ jobs:
         run: |
           mkdir -p cache
           echo `date` > cache/trigger.txt
+          mkdir -p output
           echo `date` > output/trigger.txt
 
       - name: main
