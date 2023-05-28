@@ -28,6 +28,10 @@ module.exports = async function (feedURL, options = {}) {
       // channelURL = 
     }
 
+    // output
+
+    // console.log(output)
+
     return output
   }, parseInt(cacheDay * 1000 * 60 * 60 * 24, 10))
 }

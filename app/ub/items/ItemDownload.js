@@ -10,13 +10,18 @@ module.exports = async function (item, feedItem = {}) {
   } = feedItem
   // console.log(item)
 
+  let id = item.id
+  if (id.indexOf(':') > -1) {
+    id = id.split(':').slice(-1)[0]
+  }
+
   let cached = true
-  let {localPath, publicPath} = await ItemDownloadPathBuilder(feedFilename, item.id, item.mmddDate)
+  let {localPath, publicPath} = await ItemDownloadPathBuilder(feedFilename, id, item.mmddDate)
 
   // console.log(localPath)
   if (fs.existsSync(localPath) === false) {
     try {
-      await UBMp3DownloaderWrapper(item.id, localPath, options)
+      await UBMp3DownloaderWrapper(id, localPath, options)
     }
     catch (e) {
       console.error(e)
