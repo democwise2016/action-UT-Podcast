@@ -9,7 +9,8 @@ let CONFIG = {
   publicURL: `https://democwise2016.github.io/action-UT-Podcast/`,
   publicURLShorten: `https://ppt.cc/fMYRpx`,
   thumbnailBorderColor: '2980b9',
-  maxDownloadItem: 3, 
+  maxDownloadItem: 2,
+  maxDownloadFeed: 30,
   newArrialMax: 60,
   feedList: [
     {
@@ -201,12 +202,12 @@ let CONFIG = {
       homepageURL: 'https://www.youtube.com/channel/UCBOBS5RdHd2Owytoj4PqPqA',
       itemFilters: ItemFiltersPreset.between3minTo30Min,
     },
-    {
-      title: 'Buchi聊時事',
-      feedID: 'LinBuchi',
-      homepageURL: 'https://www.youtube.com/channel/UCgHUl1pwUVfrX8QotB-t2gQ',
-      itemFilters: ItemFiltersPreset.between3minTo30Min,
-    },
+    // {
+    //   title: 'Buchi聊時事',
+    //   feedID: 'LinBuchi',
+    //   homepageURL: 'https://www.youtube.com/channel/UCgHUl1pwUVfrX8QotB-t2gQ',
+    //   itemFilters: ItemFiltersPreset.between3minTo30Min,
+    // },
     {
       title: '四處觀察',
       feedID: 'sichuguancha',

@@ -3,10 +3,6 @@ const FeedIndexBuilder = require('./podcast/FeedIndexBuilder.js')
 const CONFIG = require('./../config.js')
 const fs = require('fs')
 
-function randomResortArray(arr) {
-  return arr.sort(() => Math.random() - 0.5);
-}
-
 let main = async () => {
 
   let {feedList} = CONFIG
@@ -32,7 +28,7 @@ let main = async () => {
 
   feedList.sort(() => Math.random() - 0.5)
 
-  let newArrialCount = 0
+  let runnerCount = 0
 
   // https://www.youtube.com/@LINETODAYWORLD
   for (let i = 0; i < feedList.length; i++) {
@@ -45,13 +41,18 @@ let main = async () => {
     console.log(`[${i}/${feedList.length}]`, 'Checking ', feedList[i].title, feedList[i].feedFilename, new Date().toISOString())
     try {
       if (newArrial === false) {
-        await UBDownloader(feedList[i])
+        UBDownloader(feedList[i])
+        runnerCount++
+        if (runnerCount >= CONFIG.maxDownloadFeed) {
+          // console.log('Exit new arrial mode')
+          break
+        }
       }
       if (fs.existsSync('/output/' + feedItem.feedFilename + '.rss') === false) {
         UBDownloader(feedList[i])
-        newArrialCount++
-        console.log('new arrial', newArrialCount, feedList[i].title, feedList[i].feedFilename)
-        if (newArrialCount >= CONFIG.newArrialMax) {
+        runnerCount++
+        console.log('new arrial', runnerCount, feedList[i].title, feedList[i].feedFilename)
+        if (runnerCount >= CONFIG.newArrialMax) {
           // console.log('Exit new arrial mode')
           break
         }
