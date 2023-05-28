@@ -4,11 +4,12 @@ const ConfigCheck = require('./app/config/ConfigCheck.js')
 let CONFIG = {
   /**
    * 結尾要有/
+   * ok
    */
   publicURL: `https://democwise2016.github.io/action-UT-Podcast/`,
   publicURLShorten: `https://ppt.cc/fMYRpx`,
   thumbnailBorderColor: '2980b9',
-  maxDownloadItem: 1,
+  maxDownloadItem: 1, 
   newArrialMax: 2,
   feedList: [
     {
