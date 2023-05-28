@@ -4,7 +4,7 @@ const ConfigCheck = require('./app/config/ConfigCheck.js')
 let CONFIG = {
   /**
    * 結尾要有/
-   * ok 20230529-0057 
+   * 20230529-0112 
    */
   publicURL: `https://democwise2016.github.io/action-UT-Podcast/`,
   publicURLShorten: `https://ppt.cc/fMYRpx`,
@@ -337,12 +337,13 @@ let CONFIG = {
       homepageURL: 'https://www.youtube.com/channel/UCIF_gt4BfsWyM_2GOcKXyEQ',
       itemFilters: ItemFiltersPreset.between3minTo30Min,
     },
-    {
-      title: 'cheap講歷史',
-      feedID: 'cheapaoe',
-      homepageURL: 'https://www.youtube.com/channel/UCGGrblndNzi86WY5lJkQJiA',
-      itemFilters: ItemFiltersPreset.between3minTo30Min,
-    },
+    // 20230529-0100 似乎是有問題，還是先移除吧
+    // {
+    //   title: 'cheap講歷史',
+    //   feedID: 'cheapaoe',
+    //   homepageURL: 'https://www.youtube.com/channel/UCGGrblndNzi86WY5lJkQJiA',
+    //   itemFilters: ItemFiltersPreset.between3minTo30Min,
+    // },
     {
       title: '窮奢極欲',
       feedID: 'withmoney',

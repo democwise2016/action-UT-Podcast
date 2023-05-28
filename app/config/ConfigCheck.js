@@ -2,6 +2,10 @@ const StringToRGBColorCode = require('./StringToRGBColorCode.js')
 const OutputFeedFilenameBuilder = require('./../podcast/OutputFeedFilenameBuilder.js')
 
 module.exports = function (CONFIG) {
+  if (CONFIG.publicURL.endsWith('/') === false) {
+    CONFIG.publicURL = CONFIG.publicURL + '/'
+  }
+
   for (let i = 0; i < CONFIG.feedList.length; i++) {
     let feedItem = CONFIG.feedList[i]
   
