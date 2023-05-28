@@ -4,7 +4,7 @@
   "description": "An example to build a crawler by GitHub Action.",
   "main": "index.js",
   "scripts": {
-    "start": "docker-compose up --build",
+    "start": "docker-compose up",
     "up": "docker-compose up",
     "build-up": "docker-compose up --build",
     "bash": "docker-compose run app bash"

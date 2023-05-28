@@ -67,7 +67,7 @@ async function GetHTML (url, options = {}) {
             //headless: false,
             args: puppeteerArgs,
             ignoreHTTPSErrors: true,
-        
+            headless: "new"
           });
         }
           
@@ -99,7 +99,8 @@ async function GetHTML (url, options = {}) {
       catch (e) {
         console.error(e)
 
-        options.retry++
+        retry++
+        options.retry = retry
         console.log('Retry', options.retry, url)
         return await GetHTML(url, options)
       } 
