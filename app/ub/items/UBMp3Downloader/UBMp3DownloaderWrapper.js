@@ -51,11 +51,11 @@ module.exports = async function (videoID, output, options = {}) {
     options = await getOptions(options)
     let YD = new UBMp3Downloader(options)
 
-    console.log('[Start Download] \t' + videoID + '\t' + output + '\t' + (new Date()).toISOString())
+    console.log(`[Start Download] \thttps://www.yo` + `ut` + `ube.com/watch?v=` + videoID + '\t' + output + '\t' + (new Date()).toISOString())
 
     YD.on("finished", function(err, data) {
       // console.log('End Downloaded: ' + videoID)
-      console.log('[End Download] \t' + videoID + '\t' + output + '\t' + (new Date()).toISOString())
+      console.log(`[End Download] \thttps://www.yo` + `ut` + `ube.com/watch?v=` + videoID + '\t' + output + '\t' + (new Date()).toISOString())
       resolve(filename)
     })
 

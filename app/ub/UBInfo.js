@@ -121,7 +121,9 @@ class UBInfo {
     return new Promise(async (resolve, reject) => {
       try {
         // let body = await TorHTMLLoader.loadHTML(url, cacheExpire)
-        let body = await GetHTML(url)
+        let body = await GetHTML(url, {
+          cacheDay: 365
+        })
         // console.log(url, body)
         isLoading = false
         resolve(body)

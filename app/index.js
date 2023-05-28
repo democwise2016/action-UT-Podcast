@@ -22,7 +22,12 @@ let main = async () => {
 
     // let {url, itemFilter, options} = feedList[i]
     console.log(`[${i}/${feedList.length}]`, 'Checking ', feedList[i].title, feedList[i].feedFilename, new Date().toISOString())
-    await UBDownloader(feedList[i])
+    try {
+      await UBDownloader(feedList[i])
+    }
+    catch (e) {
+      console.error(e)
+    }
   }
   
   FeedIndexBuilder()
