@@ -14,7 +14,7 @@ module.exports = async function (feedFilename, itemID, mmddDate) {
   }
 
   return {
-    localPath: `/output/${feedFilename}${filename}`,
-    publicPath: CONFIG.publicURL + `${feedFilename}${filename}`,
+    localPath: `/output/${feedFilename}/${filename}`,
+    publicPath: CONFIG.publicURL + `${feedFilename}/${filename}`,
   }
 }

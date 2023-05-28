@@ -83,7 +83,7 @@ let CONFIG = {
       title: '動畫小坑谷',
       feedID: 'valleylife351',
       homepageURL: 'https://www.youtube.com/channel/UCbCb-ZUoKwQ8vcRbrH2nE0Q',
-      itemFilters: ItemFiltersPreset.between3minTo30Min,
+      itemFilters: ItemFiltersPreset.between1minTo10Min,
     },
     {
       title: '井川一聊動畫',
