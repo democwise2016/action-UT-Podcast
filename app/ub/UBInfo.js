@@ -47,6 +47,7 @@ class UBInfo {
     
     if (!html) {
       await NodeCacheSqlite.clear('ubinfo', url)
+      await NodeCacheSqlite.clear('GetHTML', url)
       //console.error('body html is empty: ' + url)
       //throw new Error('body html is empty: ' + url)
       await this.sleep()
@@ -69,7 +70,7 @@ class UBInfo {
     
     if (info.isOffline) {
       await NodeCacheSqlite.clear('ubinfo', url)
-      await NodeCacheSqlite.clear('tor-html-loader', url)
+      // await NodeCacheSqlite.clear('tor-html-loader', url)
     }
     
     cache[url] = info
@@ -281,6 +282,8 @@ class UBInfo {
     else {
       //throw Error('info.date not found: ' + url + '\n\n' + body)
       
+      console.log('info.date not found: ', $('meta[itemprop="uploadDate"]').length, $('meta[itemprop="datePublished"]').length)
+
       console.error('info.date not found: ' + url)
       return {
         isOffline: true
