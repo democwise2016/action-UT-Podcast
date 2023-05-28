@@ -9,6 +9,7 @@ let CONFIG = {
   publicURLShorten: `https://ppt.cc/fMYRpx`,
   thumbnailBorderColor: '2980b9',
   maxDownloadItem: 2,
+  newArrialMax: 3,
   feedList: [
     {
       title: 'TODAY 看世界',
@@ -267,13 +268,13 @@ let CONFIG = {
     },
     {
       title: '我的學習筆記',
-      name: 'mynotebooks',
+      feedID: 'mynotebooks',
       homepageURL: 'https://www.youtube.com/channel/UCAS8QqEyGGH71xYgFzNSbuw',
       itemFilters: ItemFiltersPreset.between3minTo30Min,
     },
     {
       title: '孫沁岳 漫遊快譯通',
-      name: 'yorke',
+      feedID: 'yorke',
       homepageURL: 'https://www.youtube.com/channel/UCD114v8IMP5HWSUXrIJlJuQ',
       itemFilters: [
         ItemFiltersPreset.between6minTo60Min,
@@ -282,13 +283,13 @@ let CONFIG = {
     },
     {
       title: '卡提諾狂新聞',
-      name: 'CrazyNews9487',
+      feedID: 'CrazyNews9487',
       homepageURL: 'https://www.youtube.com/playlist?list=PLH2b4YnNI7j13eD1KdpEV3t7VEWtRQlYY',
       itemFilters: ItemFiltersPreset.between3minTo30Min,
     },
     {
       title: 'Gamker攻壳官方频道',
-      name: 'Gamker-YT',
+      feedID: 'Gamker-YT',
       homepageURL: 'https://www.youtube.com/channel/UCLgGLSFMZQB8c0WGcwE49Gw',
       itemFilters: [
         ItemFiltersPreset.between6minTo60Min,
@@ -297,13 +298,13 @@ let CONFIG = {
     },
     {
       title: '公視P#新聞實驗室',
-      name: 'Ppsharp_newslab',
+      feedID: 'Ppsharp_newslab',
       homepageURL: 'https://www.youtube.com/channel/UCMDcOT4z7GS1SRGG2g7z43g',
       itemFilters: ItemFiltersPreset.between3minTo30Min,
     },
     {
       title: '漫天大坑-Kay',
-      name: 'kayshi_0521',
+      feedID: 'kayshi_0521',
       homepageURL: 'https://www.youtube.com/channel/UC29L37o2cslmXRhOLn04bCA',
       itemFilters: [
         ItemFiltersPreset.between3minTo30Min,
@@ -312,7 +313,7 @@ let CONFIG = {
     },
     {
       title: '玩家機密',
-      name: 'GamerSecret',
+      feedID: 'GamerSecret',
       homepageURL: 'https://www.youtube.com/channel/UCmtmIF-u0ojej0y9i9STuIw',
       itemFilters: [
         ItemFiltersPreset.between3minTo30Min,
@@ -321,7 +322,7 @@ let CONFIG = {
     },
     {
       title: '玩家機密 每週新聞',
-      name: 'GamerSecret-News',
+      feedID: 'GamerSecret-News',
       homepageURL: 'https://www.youtube.com/channel/UCmtmIF-u0ojej0y9i9STuIw',
       thumbnailBorderColor: true,
       itemFilters: [
@@ -331,37 +332,37 @@ let CONFIG = {
     },
     {
       title: '啾啾鞋',
-      name: 'chuchushoeTW',
+      feedID: 'chuchushoeTW',
       homepageURL: 'https://www.youtube.com/channel/UCIF_gt4BfsWyM_2GOcKXyEQ',
       itemFilters: ItemFiltersPreset.between3minTo30Min,
     },
     {
       title: 'cheap講歷史',
-      name: 'cheapaoe',
+      feedID: 'cheapaoe',
       homepageURL: 'https://www.youtube.com/channel/UCGGrblndNzi86WY5lJkQJiA',
       itemFilters: ItemFiltersPreset.between3minTo30Min,
     },
     {
       title: '窮奢極欲',
-      name: 'withmoney',
+      feedID: 'withmoney',
       homepageURL: 'https://www.youtube.com/channel/UCA0o60mhG0v2Eha8wSL3_Jw',
       itemFilters: ItemFiltersPreset.between3minTo30Min,
     },
     {
       title: 'Leonard',
-      name: 'leonard2834',
+      feedID: 'leonard2834',
       homepageURL: 'https://www.youtube.com/channel/UC1mx_wcSHtfpLk5N_zY0TRg',
       itemFilters: ItemFiltersPreset.between3minTo30Min,
     },
     {
       title: 'cheap講歷史',
-      name: 'cheapaoe',
+      feedID: 'cheapaoe',
       homepageURL: 'https://www.youtube.com/channel/UCGGrblndNzi86WY5lJkQJiA',
       itemFilters: ItemFiltersPreset.between3minTo30Min,
     },
     {
       title: '黃國昌直播',
-      name: 'KC-Huang-streams',
+      feedID: 'KC-Huang-streams',
       homepageURL: 'https://www.youtube.com/channel/UCNWAsexY9eiS1N6JDns-0kw',
       itemFilters: [
         ItemFiltersPreset.between30minTo180Min,
