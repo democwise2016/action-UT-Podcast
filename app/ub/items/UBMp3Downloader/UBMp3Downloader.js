@@ -190,7 +190,7 @@ class UBMp3Downloader extends EventEmitter {
                 length: parseInt(httpResponse.headers['content-length']),
                 time: self.progressTimeout
             });
-            console.log(parseInt(httpResponse.headers['content-length']))
+            // console.log(parseInt(httpResponse.headers['content-length']))
             // console.log(self.progressTimeout)
 
             //Add progress event listener
