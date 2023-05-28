@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Loop 50 times
-for ((i=1; i<=9; i++))
+for ((i=1; i<=33; i++))
 do
   # Click the left mouse button
   xdotool click 1
