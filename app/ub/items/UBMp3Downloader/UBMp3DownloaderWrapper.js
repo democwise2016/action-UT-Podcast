@@ -1,14 +1,15 @@
 const UBMp3Downloader = require('./UBMp3Downloader.js')
 
-async function getOptions (outputPath) {
+async function getOptions (options = {}) {
 
   // let outputPath = '/output/'
 
   //Configure Yo utu beMp 3Down l oad er with your settings
-  let options = {
+  options = {
+    ...options,
     //"ffmpegPath": path.resolve(__dirname, "./ffmpeg.exe"),        // FFmpeg binary location
     "ffmpegPath": 'ffmpeg',        // FFmpeg binary location
-    "outputPath": outputPath,    // Output file location (default: the home directory)
+    // "outputPath": outputPath,    // Output file location (default: the home directory)
     "queueParallelism": 1,                  // Download parallelism (default: 1)
     "progressTimeout": 200000000,                // Interval in ms for the progress reports (default: 1000)
     "allowWebm": false,                      // Enable download from WebM sources (default: false)
@@ -40,12 +41,13 @@ async function getOptions (outputPath) {
   return options
 }
 
-module.exports = async function (videoID, output) {
+module.exports = async function (videoID, output, options = {}) {
   let pos = output.lastIndexOf('/') + 1
   let dir = output.slice(0, pos)
   let filename = output.slice(pos)
 
-  let options = await getOptions(dir)
+  options.outputPath = dir
+  options = await getOptions(options)
   let YD = new UBMp3Downloader(options)
 
   YD.on("finished", function(err, data) {

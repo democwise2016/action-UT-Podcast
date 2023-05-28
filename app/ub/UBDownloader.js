@@ -7,6 +7,8 @@ const getFileListByCreationDate = require('./items/getFileListByCreationDate.js'
 
 const fs = require('fs');
 
+const OutputFeedFilenameBuilder = require('./../podcast/OutputFeedFilenameBuilder.js')
+
 module.exports = async function (feedItem = {}) {
 
   let {
@@ -45,6 +47,8 @@ module.exports = async function (feedItem = {}) {
   // ---------
   // 建立Feed
   let outputFeedString = await PodcastFeedBuilder(feedJSON)
+  let filename = OutputFeedFilenameBuilder(feedItem)
+
   // console.log(outputFeedString)
-  fs.writeFileSync(`/output/${feedID}.rss`, outputFeedString, 'utf8') 
+  fs.writeFileSync(`/output/${filename}.rss`, outputFeedString, 'utf8') 
 }

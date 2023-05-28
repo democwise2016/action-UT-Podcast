@@ -281,6 +281,7 @@ class UBInfo {
     
     info.pubDate = info.date
     info.isoDate = info.date
+    info.mmddDate =  moment(info.date).format('MMDD')
     
     // window["ytInitialPlayerResponse"] = 
     

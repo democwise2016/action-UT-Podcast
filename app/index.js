@@ -19,7 +19,7 @@ let main = async () => {
     await UBDownloader(feedList[i])
   }
   
-  FeedIndexBuilder(feedList)
+  FeedIndexBuilder()
 }
 
 main()

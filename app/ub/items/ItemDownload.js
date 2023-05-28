@@ -3,7 +3,9 @@ const fs = require('fs')
 const UBMp3DownloaderWrapper = require('./UBMp3Downloader/UBMp3DownloaderWrapper.js')
 
 module.exports = async function (feedID, item, options = {}) {
-  let {localPath, publicPath} = await ItemDownloadPathBuilder(feedID, item.id)
+  // console.log(item)
+
+  let {localPath, publicPath} = await ItemDownloadPathBuilder(feedID, item.id, item.mmddDate)
 
   // console.log(localPath)
   if (fs.existsSync(localPath) === false) {

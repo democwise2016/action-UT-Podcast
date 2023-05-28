@@ -1,6 +1,7 @@
 const fs = require('fs')
 const ParseUBID = require('./../ub/ParseUBID.js')
 const CONFIG = require('../../config.js')
+const OutputFeedFilenameBuilder = require('./OutputFeedFilenameBuilder.js')
 
 module.exports = function () {
   let {publicURL, feedList} = CONFIG
@@ -19,10 +20,19 @@ module.exports = function () {
 </html>`
 
   let body = []
-  feedList.forEach(({title, url}) => {
-    let feedID = ParseUBID(url)
-    let feedURL = publicURL + feedID + '.rss'
-    body.push(`<li><a href="${feedURL}" target="_blank">${title}</a></li>`)
+  feedList.forEach((feedItem) => {
+    let {title, feedID, feedURL, homepageURL} = feedItem
+    if (!feedID) {
+      feedID = ParseUBID(feedURL)
+    }
+
+    let filename = OutputFeedFilenameBuilder(feedItem)
+      
+    let outputFeedURL = publicURL + filename + '.rss'
+    body.push(`<li>
+      <a href="${outputFeedURL}" target="_blank">${title}</a>
+      (<a href="${homepageURL}" target="_blank">source</a>))
+    </li>`)
   })
 
   let html = head + body.join('\n') + foot

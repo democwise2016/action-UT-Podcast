@@ -1,22 +1,7 @@
-const { http, https } = require('follow-redirects')
+const getRedirectedURL = require('./getRedirectedURL.js')
 const linkifyUrls = require('linkify-urls');
 
 const moment = require('moment')
-
-const getRedirectedURL = function (url) {
-  return new Promise((resolve, reject) => {
-    let protocal = http
-    if (url.startsWith('https://')) {
-      protocal = https
-    }
-    
-    protocal.get(url, response => {
-      resolve(response.responseUrl)
-    }).on('error', err => {
-      reject(err);
-    });
-  })
-}
 
 module.exports = async function (options) {
   let output = []
@@ -42,8 +27,7 @@ module.exports = async function (options) {
   }
   
   if (options.description) {
-    if (options.description.startsWith('http') 
-            && options.description.indexOf('\n') === -1) {
+    if (options.description.startsWith('http') && options.description.indexOf('\n') === -1) {
       options.description = `<a href="${options.description}" target="_blank">${options.description}</a>`
     }
     
