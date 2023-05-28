@@ -70,6 +70,7 @@ class UBInfo {
     
     if (info.isOffline) {
       await NodeCacheSqlite.clear('ubinfo', url)
+      await NodeCacheSqlite.clear('GetHTML', url)
       // await NodeCacheSqlite.clear('tor-html-loader', url)
     }
     
@@ -100,6 +101,7 @@ class UBInfo {
     
     if (html === null || typeof html !== 'string') {
       await NodeCacheSqlite.clear('ubinfo', url)
+      await NodeCacheSqlite.clear('GetHTML', url)
       return false
     }
     
