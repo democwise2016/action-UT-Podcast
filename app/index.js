@@ -51,7 +51,7 @@ let main = async () => {
         UBDownloader(feedList[i])
         newArrialCount++
         if (newArrialCount >= CONFIG.newArrialMax) {
-          console.log('Exit new arrial mode')
+          // console.log('Exit new arrial mode')
           break
         }
       }
