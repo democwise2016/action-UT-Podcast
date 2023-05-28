@@ -68,6 +68,7 @@ jobs:
 
       - name: main
         run: |
+          rm -rf /output/valleylife351-ch_UCcHVKeT_5Ta-gTa-sgooQxQ*
           docker-compose up
 
       # ----------------------------------------------------------------

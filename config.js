@@ -87,7 +87,7 @@ let CONFIG = {
     },
     {
       title: '井川一聊動畫',
-      feedID: 'valleylife351',
+      feedID: 'InokawaHajime',
       homepageURL: 'https://www.youtube.com/channel/UCcHVKeT_5Ta-gTa-sgooQxQ',
       itemFilters: ItemFiltersPreset.between3minTo30Min,
     },
