@@ -48,22 +48,22 @@ jobs:
             ${{ runner.os }}-build-${{ env.cache-name }}-
             ${{ runner.os }}-build-
             ${{ runner.os }}-
-
+ 
       # ----------------------------------------------------------------
+
+      # - name: Clean Cache
+      #   run: |
+      #     rm -rf /output/*
+      #     rm -rf /cache/*
+      #     docker rmi -f $(docker images -aq)
+      #     docker network prune -f
+      #     docker volume prune -f
 
       - name: Prepare Cache
         run: |
           mkdir -p cache
           echo `date` > cache/trigger.txt
           echo `date` > output/trigger.txt
-
-      - name: Clean Cache
-        run: |
-          rm -rf /output/*
-          rm -rf /cache/*
-          docker rmi -f $(docker images -aq)
-          docker network prune -f
-          docker volume prune -f
 
       - name: main
         run: |
