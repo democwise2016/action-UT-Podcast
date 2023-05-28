@@ -32,7 +32,7 @@ jobs:
           path: |
             cache
             output
-          key: ${{ runner.os }}-build-${{ env.cache-name }}-${{ hashFiles('cache/cache-trigger.txt') }}-${{ hashFiles('output/cache-trigger.txt') }}
+          key: ${{ runner.os }}-build-${{ env.cache-name }}-${{ hashFiles('cache/**') }}-${{ hashFiles('output/**') }}
           restore-keys: |
             ${{ runner.os }}-build-${{ env.cache-name }}-
             ${{ runner.os }}-build-
@@ -48,14 +48,14 @@ jobs:
       #     docker network prune -f
       #     docker volume prune -f
 
-      - name: Prepare Cache
-        run: |
-          mkdir -p cache
-          echo `date` > cache/cache-trigger.txt
-          mkdir -p output
-          echo `date` > output/cache-trigger.txt
+      # - name: Prepare Cache
+      #   run: |
+      #     mkdir -p cache
+      #     echo `date` > cache/cache-trigger.txt
+      #     mkdir -p output
+      #     echo `date` > output/cache-trigger.txt
 
-      - name: main
+      - name: Main
         run: |
           docker-compose up
 
