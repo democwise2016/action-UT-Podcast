@@ -69,10 +69,6 @@ jobs:
             cache
             output
           key: ${{ runner.os }}-build-${{ env.cache-name }}-${{ hashFiles('cache/trigger.txt') }}-${{ hashFiles('output/trigger.txt') }}
-          restore-keys: |
-            ${{ runner.os }}-build-${{ env.cache-name }}-
-            ${{ runner.os }}-build-
-            ${{ runner.os }}-
 
       # ----------------------------------------------------------------
 
