@@ -19,10 +19,12 @@ module.exports = async function (options) {
     // https://unsplash.it/800/800?random
     options.thumbnail = await getRedirectedURL('https://unsplash.it/800/800?random')
   }
-  if (options.thumbnail && options.thumbnail.startsWith('https://yt3.ggpht.com/ytc/') && options.thumbnailBorderColor) {
-    
+
+  console.log(options.thumbnail, options.thumbnailBorderColor, CONFIG.thumbnailBorderColor)
+  if (options.thumbnail && options.thumbnail.startsWith('https://yt3.') && options.thumbnailBorderColor) {
+    console.log(options.thumbnailBorderColor, CONFIG.thumbnailBorderColor)
     if (options.thumbnailBorderColor === CONFIG.thumbnailBorderColor) {
-      options.thumbnail = options.thumbnail.split('=s1024-c-k-').join('=s1024-b10-c-k-')
+      options.thumbnail = options.thumbnail.split('=s1024-c-k-').join('=s1024-b50-c-k-')
     }
     else {
       options.thumbnail = options.thumbnail.split('=s1024-c-k-').join('=s1024-b100-c-k-')

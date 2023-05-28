@@ -25,6 +25,7 @@ module.exports = function (CONFIG) {
     else {
       feedItem.thumbnailBorderColor = CONFIG.thumbnailBorderColor
     }
+    // console.log(feedItem.thumbnailBorderColor)
 
     feedItem.feedFilename = OutputFeedFilenameBuilder(feedItem)
   
