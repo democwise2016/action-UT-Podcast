@@ -6,6 +6,11 @@ const OutputFeedFilenameBuilder = require('./OutputFeedFilenameBuilder.js')
 module.exports = function () {
   let {publicURL, feedList} = CONFIG
 
+  // feedList 按照title排序
+  feedList.sort(function(a, b) {
+    return a.title.localeCompare(b.title, "zh-Hant-TW");
+  })
+
   let head = `<!DOCTYPE html>
 <html>
 <head>
@@ -13,9 +18,9 @@ module.exports = function () {
   <title>ACTION-UT-PODCAST</title>
 </head>
 <body>
-<ul>
+<ol>
 `
-  let foot = `</ul>
+  let foot = `</ol>
 </body>
 </html>`
 

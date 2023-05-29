@@ -2,10 +2,6 @@ const ItemFiltersPreset = require('./app/config/ItemFiltersPreset.js')
 const ConfigCheck = require('./app/config/ConfigCheck.js')
 
 let CONFIG = {
-  /**
-   * 結尾要有/
-   * 20230530-0407 
-   */
   publicURL: `https://democwise2016.github.io/action-UT-Podcast/`,
   publicURLShorten: `https://ppt.cc/fMYRpx`,
   thumbnailBorderColor: '2980b9',
@@ -106,12 +102,12 @@ let CONFIG = {
         maxItems: 1
       }
     },
-    // {
-    //   title: '鐵道事務所',
-    //   feedID: 'Railway-Office',
-    //   homepageURL: 'https://www.youtube.com/channel/UCdinDPM5zd2nk2LdtOcEDPQ',
-    //   itemFilters: ItemFiltersPreset.between3minTo30Min,
-    // },
+    {
+      title: '鐵道事務所',
+      feedID: 'Railway-Office',
+      homepageURL: 'https://www.youtube.com/channel/UCdinDPM5zd2nk2LdtOcEDPQ',
+      itemFilters: ItemFiltersPreset.between3minTo30Min,
+    },
     {
       title: '黑皮談市政',
       feedID: 'jin_an0528',
@@ -124,12 +120,12 @@ let CONFIG = {
       homepageURL: 'https://www.youtube.com/channel/UCUn77_F5A65HViL9OEvIpLw',
       itemFilters: ItemFiltersPreset.between3minTo30Min,
     },
-    // {
-    //   title: '敖厂长',
-    //   feedID: 'hawkaoaoful',
-    //   homepageURL: 'https://www.youtube.com/channel/UCCkMW93Am1pLfk2nZFKAmbQ',
-    //   itemFilters: ItemFiltersPreset.between3minTo30Min,
-    // },
+    {
+      title: '敖厂长',
+      feedID: 'hawkaoaoful',
+      homepageURL: 'https://www.youtube.com/channel/UCCkMW93Am1pLfk2nZFKAmbQ',
+      itemFilters: ItemFiltersPreset.between3minTo30Min,
+    },
     {
       title: '萊斯 新Game報',
       feedID: 'LiceMoo-GameNews',
@@ -214,12 +210,12 @@ let CONFIG = {
       homepageURL: 'https://www.youtube.com/channel/UCBOBS5RdHd2Owytoj4PqPqA',
       itemFilters: ItemFiltersPreset.between3minTo30Min,
     },
-    // {
-    //   title: 'Buchi聊時事',
-    //   feedID: 'LinBuchi',
-    //   homepageURL: 'https://www.youtube.com/channel/UCgHUl1pwUVfrX8QotB-t2gQ',
-    //   itemFilters: ItemFiltersPreset.between3minTo30Min,
-    // },
+    {
+      title: 'Buchi聊時事',
+      feedID: 'LinBuchi',
+      homepageURL: 'https://www.youtube.com/channel/UCgHUl1pwUVfrX8QotB-t2gQ',
+      itemFilters: ItemFiltersPreset.between3minTo30Min,
+    },
     {
       title: '四處觀察',
       feedID: 'sichuguancha',
@@ -350,13 +346,12 @@ let CONFIG = {
       homepageURL: 'https://www.youtube.com/channel/UCIF_gt4BfsWyM_2GOcKXyEQ',
       itemFilters: ItemFiltersPreset.between3minTo30Min,
     },
-    // 20230529-0100 似乎是有問題，還是先移除吧
-    // {
-    //   title: 'cheap講歷史',
-    //   feedID: 'cheapaoe',
-    //   homepageURL: 'https://www.youtube.com/channel/UCGGrblndNzi86WY5lJkQJiA',
-    //   itemFilters: ItemFiltersPreset.between3minTo30Min,
-    // },
+    {
+      title: 'cheap講歷史',
+      feedID: 'cheapaoe',
+      homepageURL: 'https://www.youtube.com/channel/UCGGrblndNzi86WY5lJkQJiA',
+      itemFilters: ItemFiltersPreset.between3minTo30Min,
+    },
     {
       title: '窮奢極欲',
       feedID: 'withmoney',
