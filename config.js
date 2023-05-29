@@ -17,9 +17,9 @@ let CONFIG = {
       itemFilters: [
         ItemFiltersPreset.between3minTo30Min
       ],
-      options: {
-        maxItems: 3
-      }
+      // options: {
+      //   maxItems: 3
+      // }
     },
     {
       title: '阿哲[哲週來尬電]',
@@ -134,7 +134,10 @@ let CONFIG = {
       itemFilters: [
         ItemFiltersPreset.between3minTo30Min,
         (item) => { return (item.title.indexOf('《新Game報') > -1) }
-      ]
+      ],
+      options: {
+        maxItems: 3
+      }
     },
     {
       title: '大閒者 偷閒加油站',
@@ -274,7 +277,10 @@ let CONFIG = {
       itemFilters: [
         ItemFiltersPreset.between6minTo60Min,
         (item) => { return ((item.title.indexOf('【走漏消息') > -1)) }
-      ]
+      ],
+      options: {
+        maxItems: 3
+      }
     },
     {
       title: '我的學習筆記',
@@ -338,7 +344,10 @@ let CONFIG = {
       itemFilters: [
         ItemFiltersPreset.between3minTo30Min,
         (item) => { return ((item.title.indexOf('【每週新聞】') >-1)) }
-      ]
+      ],
+      options: {
+        maxItems: 3
+      }
     },
     {
       title: '啾啾鞋',
@@ -362,12 +371,6 @@ let CONFIG = {
       title: 'Leonard',
       feedID: 'leonard2834',
       homepageURL: 'https://www.youtube.com/channel/UC1mx_wcSHtfpLk5N_zY0TRg',
-      itemFilters: ItemFiltersPreset.between3minTo30Min,
-    },
-    {
-      title: 'cheap講歷史',
-      feedID: 'cheapaoe',
-      homepageURL: 'https://www.youtube.com/channel/UCGGrblndNzi86WY5lJkQJiA',
       itemFilters: ItemFiltersPreset.between3minTo30Min,
     },
     {

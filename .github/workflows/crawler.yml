@@ -71,9 +71,12 @@ jobs:
       #     mkdir -p output
       #     echo `date` > output/trigger.txt
 
+      # - name: Clean download failed cache
+      #   run: |
+      #     rm -rf cache/node-cache_UBMp3DownloadFailed.sqlite
+
       - name: Main
         run: |
-          rm -rf cache/node-cache_UBMp3DownloadFailed.sqlite
           docker-compose up
 
       # - name: Cache Save
