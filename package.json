@@ -1,7 +1,7 @@
 {
-  "name": "API-Crawler-Example",
+  "name": "action-UT-Podcast",
   "version": "1.0.0",
-  "description": "An example to build a crawler by GitHub Action.",
+  "description": "action-UT-Podcast",
   "main": "index.js",
   "scripts": {
     "start": "docker-compose up",

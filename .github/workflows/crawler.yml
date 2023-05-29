@@ -73,6 +73,7 @@ jobs:
 
       - name: Main
         run: |
+          rm -rf cache/node-cache_UBMp3DownloadFailed.sqlite
           docker-compose up
 
       # - name: Cache Save

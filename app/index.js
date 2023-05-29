@@ -3,7 +3,13 @@ const FeedIndexBuilder = require('./podcast/FeedIndexBuilder.js')
 const CONFIG = require('./../config.js')
 const fs = require('fs')
 
+const UBMp3DownloaderWrapper = require('./ub/items/UBMp3Downloader/UBMp3DownloaderWrapper.js')
+
 let main = async () => {
+
+  // https://www.youtube.com/watch?v=DRTT505hUeE
+  // await UBMp3DownloaderWrapper('DRTT505hUeE', '/output/_test/test.mp3')
+  // return false
 
   let {feedList} = CONFIG
 

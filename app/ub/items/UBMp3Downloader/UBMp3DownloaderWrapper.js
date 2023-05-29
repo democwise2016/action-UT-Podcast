@@ -1,4 +1,5 @@
 const UBMp3Downloader = require('./UBMp3Downloader.js')
+const ShellSpawn = require('./../../../lib/ShellSpawn.js')
 
 async function getOptions (options = {}) {
 
@@ -51,19 +52,33 @@ module.exports = async function (videoID, output, options = {}) {
     options = await getOptions(options)
     let YD = new UBMp3Downloader(options)
 
-    console.log(`[Start Download] \thttps://www.yo` + `ut` + `ube.com/watch?v=` + videoID + '\t' + output + '\t' + (new Date()).toISOString())
+    let url = `https://www.yo` + `ut` + `ube.com/watch?v=` + videoID
+
+    console.log(`[Start Download] \t${url}` + '\t' + output + '\t' + (new Date()).toISOString())
+
+
+    let showDownloadEndMessage = function () {
+      console.log(`[End Download] \t${url}` + '\t' + output + '\t' + (new Date()).toISOString())
+      resolve(filename)
+    }
+
 
     YD.on("finished", function(err, data) {
       // console.log('End Downloaded: ' + videoID)
-      console.log(`[End Download] \thttps://www.yo` + `ut` + `ube.com/watch?v=` + videoID + '\t' + output + '\t' + (new Date()).toISOString())
-      resolve(filename)
+      showDownloadEndMessage()
     })
 
     YD.on("error", async function(error) {
       console.error(error)
 
-      console.log(`Please check video: https://www.yo` + `ut` + `ube.com/watch?v=${videoID}\n`)
-      reject(error)
+      try {
+        await ShellSpawn(["python3", "/app/python/ub.py", url, output])
+        showDownloadEndMessage()
+      }
+      catch (e) {
+        console.log(`Please check video: https://www.yo` + `ut` + `ube.com/watch?v=${videoID}\n`)
+        reject(error)
+      }
     })
 
     YD.download(videoID, filename);

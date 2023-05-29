@@ -107,3 +107,5 @@ RUN npm install ytdl-core@4.11.4
 # RUN npm -g cheerio@1.0.0-rc.12
 
 # RUN npm -g htmlentities@1.0.0
+
+RUN pip install pytube
