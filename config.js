@@ -22,7 +22,7 @@ let CONFIG = {
         ItemFiltersPreset.between3minTo30Min
       ],
       options: {
-        // maxItems: 3
+        maxItems: 3
       }
     },
     {
@@ -35,6 +35,9 @@ let CONFIG = {
         ItemFiltersPreset.between3minTo30Min,
         (item) => { return (item.title.indexOf('[哲週來尬電') > -1) }
       ],
+      options: {
+        maxItems: 3
+      }
     },
     {
       title: '斐姨所思【阿姨想知道】',
@@ -99,6 +102,9 @@ let CONFIG = {
       feedID: 'PNNPTS-noon-news',
       homepageURL: 'https://www.youtube.com/playlist?list=PLjjrV9IhkIpcIqZiUfkkxgKtoiD517Kdf',
       itemFilters: ItemFiltersPreset.between10minTo60Min,
+      options: {
+        maxItems: 1
+      }
     },
     // {
     //   title: '鐵道事務所',
@@ -142,7 +148,10 @@ let CONFIG = {
       itemFilters: [
         ItemFiltersPreset.between3minTo30Min,
         (item) => { return (item.title.indexOf('偷閒加油站') > -1) }
-      ]
+      ],
+      options: {
+        maxItems: 3
+      }
     },
     {
       title: 'IC实验室聊商業',
@@ -180,6 +189,9 @@ let CONFIG = {
       homepageURL: 'https://www.youtube.com/channel/UCK-qc_POQZwWrMg-Pr-oYtg',
       itemFilters: ItemFiltersPreset.between3minTo30Min,
       //maxItems: 2, // default 10
+      options: {
+        maxItems: 3
+      }
     },
     {
       title: '人妻聊日本企業',
@@ -370,7 +382,10 @@ let CONFIG = {
       itemFilters: [
         ItemFiltersPreset.between30minTo180Min,
         (item) => { return ((item.title.startsWith('【國昌直播】'))) }
-      ]
+      ],
+      options: {
+        maxItems: 3
+      }
     },
   ]
 }
