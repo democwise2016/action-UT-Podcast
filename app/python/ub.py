@@ -1,7 +1,7 @@
 import argparse
 from pytube import YouTube
 import os
-
+ 
 def download_mp3(url, output_path):
     try:
         # Create a YouTube object
@@ -17,7 +17,7 @@ def download_mp3(url, output_path):
         print("Download completed successfully!")
         
     except Exception as e:
-        print("Error: ", str(e))
+        raise Exception("Error: ", str(e))
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="YouTube MP3 Downloader")

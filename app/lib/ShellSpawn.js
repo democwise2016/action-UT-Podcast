@@ -6,9 +6,11 @@ module.exports = function (cmdArray, stderrHandler, errorHandler) {
   }
 
   if (typeof(stderrHandler) !== 'function') {
-    stderrHandler = function (stderr) {
+    stderrHandler = function (stderr, reject) {
       //console.log(`[STDERR] ${stderr}`);
-	  console.log(`${stderr}`);
+	    console.log(`${stderr}`);
+      reject(stderr)
+      return
     }
   }
 
@@ -24,20 +26,25 @@ module.exports = function (cmdArray, stderrHandler, errorHandler) {
     
     let job = spawn(cmdArray[0], cmdArray.slice(1), { shell: true })
 
+
     job.stdout.on("data", data => {
-        console.log(`${data}`);
+      console.log(`${data}`);
+      // return reject()
     });
     
     job.stderr.on("data", data => {
       stderrHandler(`${data}`, reject);
+      return reject()
     });
     
     job.on('error', (error) => {
       stderrHandler(`error: ${error.message}`, reject);
+      return reject()
     });
     
     job.on("close", code => {
       // console.log(`child process exited with code ${code}`);
+      // console.log(code)
       if (code !== 0) {
         return reject(code)
       }
