@@ -10,8 +10,8 @@ let main = async () => {
   // https://www.youtube.com/watch?v=DRTT505hUeE
   // await UBMp3DownloaderWrapper('I2D9M2QmdrA', '/output/_test/test.mp3')
   // await UBMp3DownloaderWrapper('KK0rwW_r0zs', '/output/_test/test.mp3')
-  await UBMp3DownloaderWrapper('Na1b71JhJLA', '/output/_test/test.mp3')
-  return false
+  // await UBMp3DownloaderWrapper('Na1b71JhJLA', '/output/_test/test.mp3')
+  // return false
 
   let {feedList} = CONFIG
 
