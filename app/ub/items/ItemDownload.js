@@ -1,6 +1,7 @@
 const ItemDownloadPathBuilder = require('./ItemDownloadPathBuilder.js')
 const fs = require('fs')
 const UBMp3DownloaderWrapper = require('./UBMp3Downloader/UBMp3DownloaderWrapper.js')
+const NodeCacheSqlite = require('./../../lib/NodeCacheSqlite.js')
 
 module.exports = async function (item, feedItem = {}) {
 
@@ -15,6 +16,10 @@ module.exports = async function (item, feedItem = {}) {
     id = id.split(':').slice(-1)[0]
   }
 
+  if (await NodeCacheSqlite.isExists('UBMp3DownloadFailed', id)) {
+    return false
+  }
+
   let cached = true
   let {localPath, publicPath} = await ItemDownloadPathBuilder(feedFilename, id, item.mmddDate)
 
@@ -25,6 +30,7 @@ module.exports = async function (item, feedItem = {}) {
     }
     catch (e) {
       console.error(e)
+      await NodeCacheSqlite.set('UBMp3DownloadFailed', id, true)
       return false
     }
     // await CleanOldItems(feedID, options)
