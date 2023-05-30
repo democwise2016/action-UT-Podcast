@@ -35,6 +35,20 @@ let CONFIG = {
         maxItems: 3
       }
     },
+
+    {
+      title: '老鵝特搜',
+      feedID: 'omgoosetw-news',
+      thumbnailBorderColor: true,
+      homepageURL: 'https://www.youtube.com/channel/UC_iwP8I13JnL54BypRCzldw',
+      itemFilters: [
+        ItemFiltersPreset.between3minTo30Min,
+        (item) => { return (item.title.indexOf('｜老鵝特搜') > -1) }
+      ],
+      options: {
+        maxItems: 3
+      }
+    },
     {
       title: '斐姨所思【阿姨想知道】',
       feedID: 'fanamericantime-interview',
