@@ -399,6 +399,18 @@ let CONFIG = {
         maxItems: 3
       }
     },
+    {
+      title: '黃國昌 POP大國民',
+      feedID: 'KC-Huang-917POPRadio',
+      homepageURL: 'https://www.youtube.com/channel/UCJ5rBA0z4WFGtUTS83sAb_A',
+      itemFilters: [
+        ItemFiltersPreset.between30minTo180Min,
+        (item) => { return ((item.title.indexOf('POP大國民') > -1) && ((item.title.indexOf('黃國昌') > -1))) }
+      ],
+      options: {
+        maxItems: 3
+      }
+    },
   ]
 }
 
