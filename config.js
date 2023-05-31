@@ -5,9 +5,10 @@ let CONFIG = {
   publicURL: `https://democwise2016.github.io/action-UT-Podcast/`,
   publicURLShorten: `https://ppt.cc/fMYRpx`,
   thumbnailBorderColor: '2980b9',
-  maxDownloadItem: 3,
+  maxDownloadItemPerFeed: 3,
   maxDownloadFeed: 60,
   newArrialMax: 60,
+  maxDownloadItems: 60,
   feedList: [
     {
       title: 'TODAY 看世界',

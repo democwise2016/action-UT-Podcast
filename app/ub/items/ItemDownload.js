@@ -3,6 +3,10 @@ const fs = require('fs')
 const UBMp3DownloaderWrapper = require('./UBMp3Downloader/UBMp3DownloaderWrapper.js')
 const NodeCacheSqlite = require('./../../lib/NodeCacheSqlite.js')
 
+const CONFIG = require('./../../../config.js')
+
+let downloadCount = 0
+
 module.exports = async function (item, feedItem = {}) {
 
   let {
@@ -20,12 +24,17 @@ module.exports = async function (item, feedItem = {}) {
     return false
   }
 
+  if (downloadCount > CONFIG.maxDownloadItems) {
+    return false
+  }
+
   let cached = true
   let {localPath, publicPath} = await ItemDownloadPathBuilder(feedFilename, id, item.mmddDate)
 
   if (fs.existsSync(localPath) === false) {
     try {
       await UBMp3DownloaderWrapper(id, localPath, options)
+      downloadCount++
     }
     catch (e) {
       console.error(e)

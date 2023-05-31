@@ -55,8 +55,8 @@ module.exports = async function (items, feedItem = {}) {
     if (!cached) {
       notCachedCount++
 
-      if (notCachedCount >= CONFIG.maxDownloadItem) {
-        console.log(`Reach max download ${CONFIG.maxDownloadItem}. Go to next channel.`)
+      if (notCachedCount >= CONFIG.maxDownloadItemPerFeed) {
+        console.log(`Reach max download ${CONFIG.maxDownloadItemPerFeed}. Go to next channel.`)
         break
       }
     }
