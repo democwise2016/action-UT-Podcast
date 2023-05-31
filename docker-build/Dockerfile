@@ -28,7 +28,8 @@ RUN pip3 install youtube-dl
 
 # ==============================================
 
-CMD ["node", "/app/index.js"]
+# CMD ["node", "/app/index.js"]
+CMD ["bash", "/startup.sh"]
 
 # RUN mkdir -p /node
 # WORKDIR /node
