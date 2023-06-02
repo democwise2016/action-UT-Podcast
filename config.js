@@ -291,10 +291,10 @@ let CONFIG = {
       homepageURL: 'https://www.youtube.com/channel/UCiCOKR_WkqZuYN9fpjWqnzg',
       itemFilters: [
         ItemFiltersPreset.between6minTo60Min,
-        (item) => { return ((item.title.indexOf('【走漏消息') > -1)) }
+        (item) => { return ((item.title.indexOf('【走漏消息') > -1) || (item.title.indexOf('【迷大Jo報】') > -1)) }
       ],
       options: {
-        maxItems: 3
+        maxItems: 5
       }
     },
     {
