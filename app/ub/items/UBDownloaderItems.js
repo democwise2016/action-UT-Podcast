@@ -29,6 +29,7 @@ module.exports = async function (items, feedItem = {}) {
   // }
 
   let notCachedCount = 0
+  let downloadedCount = 0
   for (let i = 0; i < count; i++) {
     let item = items[i]
 
@@ -50,6 +51,12 @@ module.exports = async function (items, feedItem = {}) {
       continue
     }
     filteredItems.push(result.item)
+
+    downloadedCount++
+    if (downloadedCount >= maxDownload) {
+      console.log(`Reach maxItems ${maxItems}. Go to next channel.`)
+      break
+    }
 
     let {cached} = result
     if (!cached) {
