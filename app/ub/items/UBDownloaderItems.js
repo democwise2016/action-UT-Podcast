@@ -24,9 +24,9 @@ module.exports = async function (items, feedItem = {}) {
 
   let filteredItems = []
   let count = items.length
-  if (count > maxItems) {
-    count = maxItems
-  }
+  // if (count > maxItems) {
+  //   count = maxItems
+  // }
 
   let notCachedCount = 0
   for (let i = 0; i < count; i++) {
