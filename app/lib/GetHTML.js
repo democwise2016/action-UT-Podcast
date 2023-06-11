@@ -8,9 +8,20 @@ const NodeCacheSqlite = require('./NodeCacheSqlite.js')
 let browser
 let browserCloseTimer
 
+let maxThreads = 10
+let currentThreads = 0
+
 let sleep = function (ms = 500) {
   return new Promise(resolve => setTimeout(resolve, ms));
 }
+
+let reduceCurrentThreads = function () {
+  currentThreads--
+  if (currentThreads < 0) {
+    currentThreads = 0
+  }
+}
+
 
 async function GetHTML (url, options = {}) {
 
@@ -51,16 +62,24 @@ async function GetHTML (url, options = {}) {
   }
 
   return await NodeCacheSqlite.get('GetHTML', url + '|' + JSON.stringify(options), async function () {
+    while (currentThreads > maxThreads) {
+      console.log('GetHTML wait', url, crawler, (new Date().toISOString()))
+      await sleep(30000)
+    }
+    currentThreads++
+
     console.log('GetHTML', url, crawler, (new Date().toISOString()))
 
     if (crawler === 'fetch') {
       const response = await fetch(url);
 
       if (!encoding) {
+        reduceCurrentThreads()
         return await response.text()
       }
       else {
         const buffer = await response.arrayBuffer()
+        reduceCurrentThreads()
         return iconv.decode(Buffer.from(buffer), encoding)
       }
     }
@@ -99,7 +118,7 @@ async function GetHTML (url, options = {}) {
         
 
         await sleep(1000)
-
+        reduceCurrentThreads()
         return output
       }
       catch (e) {
@@ -112,6 +131,7 @@ async function GetHTML (url, options = {}) {
         retry++
         options.retry = retry
         console.log('Retry', options.retry, url)
+        reduceCurrentThreads()
         return await GetHTML(url, options)
       } 
     }
