@@ -53,7 +53,7 @@ module.exports = async function (items, feedItem = {}) {
     filteredItems.push(result.item)
 
     downloadedCount++
-    if (downloadedCount >= maxDownload) {
+    if (downloadedCount >= maxItems) {
       console.log(`Reach maxItems ${maxItems}. Go to next channel.`)
       break
     }
