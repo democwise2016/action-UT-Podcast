@@ -3,7 +3,14 @@ const ItemDownload = require('./ItemDownload.js')
 const CleanOldItems = require('./CleanOldItems.js')
 const CONFIG = require('./../../../config.js')
 
+let startTimer = false
+let maxExcutionMS = CONFIG.maxExcutionMinutes * 60 * 1000
+
 module.exports = async function (items, feedItem = {}) {
+
+  if (!startTimer) {
+    startTimer = (new Date()).getTime()
+  }
 
   let {
     // feedID,
@@ -31,6 +38,10 @@ module.exports = async function (items, feedItem = {}) {
   let notCachedCount = 0
   let downloadedCount = 0
   for (let i = 0; i < count; i++) {
+    if ((new Date()).getTime() - startTimer > maxExcutionMS) {
+      break
+    }
+
     let item = items[i]
 
     item = await AppendUBInfo(item)
