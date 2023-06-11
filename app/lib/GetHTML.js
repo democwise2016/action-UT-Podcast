@@ -51,7 +51,7 @@ async function GetHTML (url, options = {}) {
   }
 
   return await NodeCacheSqlite.get('GetHTML', url + '|' + JSON.stringify(options), async function () {
-    console.log('GetHTML', url, crawler)
+    console.log('GetHTML', url, crawler, (new Date().toISOString()))
 
     if (crawler === 'fetch') {
       const response = await fetch(url);

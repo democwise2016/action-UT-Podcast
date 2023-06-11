@@ -9,7 +9,7 @@ module.exports = async function (feedURL, options = {}) {
   } = options
 
   return await NodeCacheSqlite.get('GetUBFeedJSON', feedURL, async function () {
-    console.log('get feed', feedURL)
+    console.log('get feed', feedURL, (new Date()).toISOString())
 
     if (!parser) {
       parser = new Parser()

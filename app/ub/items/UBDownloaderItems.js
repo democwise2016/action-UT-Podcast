@@ -6,8 +6,8 @@ const CONFIG = require('./../../../config.js')
 module.exports = async function (items, feedItem = {}) {
 
   let {
-    feedID,
-    feedFilename,
+    // feedID,
+    // feedFilename,
     itemFilters = [], 
     options = {}
   } = feedItem
