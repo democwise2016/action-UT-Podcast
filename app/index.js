@@ -7,7 +7,9 @@ const fs = require('fs')
 
 let main = async () => {
 
-  console.log(JSON.stringify(CONFIG, null, 2))
+  let cloneConfig = JSON.parse(JSON.stringify(CONFIG))
+  delete cloneConfig.feedList
+  console.log(JSON.stringify(cloneConfig, null, 2))
 
   // https://www.youtube.com/watch?v=DRTT505hUeE
   // await UBMp3DownloaderWrapper('I2D9M2QmdrA', '/output/_test/test.mp3')
