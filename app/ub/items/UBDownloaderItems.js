@@ -6,6 +6,9 @@ const CONFIG = require('./../../../config.js')
 let startTimer = false
 let maxExcutionMS = CONFIG.maxExcutionMinutes * 60 * 1000
 
+const isNewerThenLatestFile = require('./isNewerThenLatestFile.js')
+const getFileListByCreationDate = require('./getFileListByCreationDate.js')
+
 module.exports = async function (items, feedItem = {}) {
 
   if (!startTimer) {
@@ -16,7 +19,8 @@ module.exports = async function (items, feedItem = {}) {
     // feedID,
     // feedFilename,
     itemFilters = [], 
-    options = {}
+    options = {},
+    feedFilename = ''
   } = feedItem
 
   let {
@@ -29,6 +33,7 @@ module.exports = async function (items, feedItem = {}) {
 
   // -------------
 
+  let folder = `/output/${feedFilename}/`
   let filteredItems = []
   let count = items.length
   // if (count > maxItems) {
@@ -56,6 +61,17 @@ module.exports = async function (items, feedItem = {}) {
     if (passed === false) {
       continue
     }
+
+    // ======================
+    // 檢查是不是已經有超過數量了？
+    if (isNewerThenLatestFile(item, feedFilename) === false) {
+      if (getFileListByCreationDate(folder).length >= maxItems) {
+        break
+      }
+    }
+    
+
+    // ======================
 
     let result = await ItemDownload(item, feedItem)
     if (!result) {

@@ -1,6 +1,10 @@
 const fs = require('fs')
 
 let getFileListByCreationDate = function (folderPath) {
+  if (fs.existsSync(folderPath) === false) {
+    return []
+  }
+
   try {
     const files = fs.readdirSync(folderPath);
     const fileStats = files.map(file => {
@@ -13,7 +17,8 @@ let getFileListByCreationDate = function (folderPath) {
     });
 
     // Sort the file list by creation date in ascending order
-    const sortedFiles = fileStats.sort((a, b) => a.createdAt - b.createdAt);
+    // const sortedFiles = fileStats.sort((a, b) => a.createdAt - b.createdAt);
+    const sortedFiles = fileStats.sort((a, b) => b.name.localeCompare(a.name));
 
     // Extract only the file names
     const fileList = sortedFiles.map(file => file.name);

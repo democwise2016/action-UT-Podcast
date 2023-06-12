@@ -29,7 +29,7 @@ module.exports = async function (item, feedItem = {}) {
   }
 
   let cached = true
-  let {localPath, publicPath} = await ItemDownloadPathBuilder(feedFilename, id, item.mmddDate)
+  let {localPath, publicPath} = await ItemDownloadPathBuilder(feedFilename, id, item.yyyymmddDate)
 
   if (fs.existsSync(localPath) === false) {
     try {
