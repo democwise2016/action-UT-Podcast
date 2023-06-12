@@ -6,9 +6,9 @@ let CONFIG = {
   publicURLShorten: `https://ppt.cc/fMYRpx`,
   thumbnailBorderColor: '2980b9',
   maxDownloadItemPerFeed: 3,
-  maxDownloadFeed: 30,
+  maxDownloadFeed: 20,
   newArrialMax: 10,
-  maxDownloadItems: 30,
+  maxDownloadItems: 20,
   maxExcutionMinutes: 15,
   feedList: [
     {

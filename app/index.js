@@ -7,6 +7,8 @@ const fs = require('fs')
 
 let main = async () => {
 
+  console.log(JSON.stringify(CONFIG, null, 2))
+
   // https://www.youtube.com/watch?v=DRTT505hUeE
   // await UBMp3DownloaderWrapper('I2D9M2QmdrA', '/output/_test/test.mp3')
   // await UBMp3DownloaderWrapper('KK0rwW_r0zs', '/output/_test/test.mp3')
