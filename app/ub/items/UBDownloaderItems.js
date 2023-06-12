@@ -66,6 +66,7 @@ module.exports = async function (items, feedItem = {}) {
     // 檢查是不是已經有超過數量了？
     if (isNewerThenLatestFile(item, feedFilename) === false) {
       if (getFileListByCreationDate(folder).length >= maxItems) {
+        console.log(`Downloaded files over maxItems ${maxItems}. Go to next channel.`, feedFilename)
         break
       }
     }
@@ -81,7 +82,7 @@ module.exports = async function (items, feedItem = {}) {
 
     downloadedCount++
     if (downloadedCount >= maxItems) {
-      console.log(`Reach maxItems ${maxItems}. Go to next channel.`)
+      console.log(`Reach maxItems ${maxItems}. Go to next channel.`, feedFilename)
       break
     }
 
@@ -90,7 +91,7 @@ module.exports = async function (items, feedItem = {}) {
       notCachedCount++
 
       if (notCachedCount >= CONFIG.maxDownloadItemPerFeed) {
-        console.log(`Reach max download ${CONFIG.maxDownloadItemPerFeed}. Go to next channel.`)
+        console.log(`Reach max download ${CONFIG.maxDownloadItemPerFeed}. Go to next channel.`, feedFilename)
         break
       }
     }
