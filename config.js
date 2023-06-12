@@ -7,9 +7,9 @@ let CONFIG = {
   thumbnailBorderColor: '2980b9',
   maxDownloadItemPerFeed: 3,
   maxDownloadFeed: 60,
-  newArrialMax: 20,
+  newArrialMax: 15,
   maxDownloadItems: 60,
-  maxExcutionMinutes: 30,
+  maxExcutionMinutes: 20,
   feedList: [
     {
       title: 'TODAY 看世界',
