@@ -10,6 +10,7 @@ let browserCloseTimer
 
 let maxThreads = 10
 let currentThreads = 0
+// let maxExcutionMS = 60000
 
 let sleep = function (ms = 500) {
   return new Promise(resolve => setTimeout(resolve, ms));

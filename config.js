@@ -6,10 +6,10 @@ let CONFIG = {
   publicURLShorten: `https://ppt.cc/fMYRpx`,
   thumbnailBorderColor: '2980b9',
   maxDownloadItemPerFeed: 3,
-  maxDownloadFeed: 60,
-  newArrialMax: 15,
-  maxDownloadItems: 60,
-  maxExcutionMinutes: 20,
+  maxDownloadFeed: 30,
+  newArrialMax: 10,
+  maxDownloadItems: 30,
+  maxExcutionMinutes: 15,
   feedList: [
     {
       title: 'TODAY 看世界',
