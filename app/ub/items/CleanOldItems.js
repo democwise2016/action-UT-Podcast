@@ -14,6 +14,10 @@ module.exports = async function (feedItem = {}) {
   // --------------------
   // 列出目前檔案，按照建立日期排序
   let folder = `/output/${feedFilename}/`
+  if (fs.existsSync(folder) === false) {
+    return false
+  }
+
   let fileList = getFileListByCreationDate(folder)
   // console.log(fileList)
 
