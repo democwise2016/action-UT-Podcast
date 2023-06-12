@@ -8,7 +8,7 @@ module.exports = function(item, feedFilename) {
     return true
   }
   
-  let latestFile = fileList[0]
+  let latestFile = fileList[(fileList.length - 1)]
   let latestDate = Number(latestFile.split('-')[0])
   if (latestDate < 10000) {
     return true
