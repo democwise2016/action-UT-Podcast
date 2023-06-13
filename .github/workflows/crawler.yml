@@ -75,10 +75,10 @@ jobs:
       #   run: |
       #     rm -rf cache/node-cache_UBMp3DownloadFailed.sqlite
 
-      - name: Clean old downloaded
-        run: |
-          rm -rf output/*/0*
-          rm -rf output/*/1*
+      # - name: Clean old downloaded
+      #   run: |
+      #     rm -rf output/*/0*
+      #     rm -rf output/*/1*
 
       - name: Main
         run: |
