@@ -113,7 +113,9 @@ async function GetHTML (url, options = {}) {
       
         clearTimeout(browserCloseTimer)
         browserCloseTimer = setTimeout(async () => {
-          await browser.close();
+          if (browser) {
+            await browser.close();
+          }
           browser = null
         }, 100 * 1000)
         
