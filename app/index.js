@@ -50,7 +50,7 @@ let main = async () => {
   console.log('Run counter: ' + runCounter)
 
   // feedList.sort(() => Math.random() - 0.5)
-  let startIndex = feedList.length % CONFIG.maxDownloadFeed * runCounter
+  let startIndex = feedList.length % (CONFIG.maxDownloadFeed * runCounter)
 
   // -------------------------
 
