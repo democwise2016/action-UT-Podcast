@@ -38,12 +38,27 @@ let main = async () => {
     }
   }
 
-  feedList.sort(() => Math.random() - 0.5)
+  // 建立run-counter.txt
+  let runCounter = 0
+  if (fs.existsSync('/cache/run-count.txt')) {
+    runCounter = Number(fs.readFileSync('/cache/run-count.txt', 'utf8'))
+  }
+  runCounter++
+  fs.writeFileSync('/cache/run-count.txt', runCounter + '', 'utf8')
+
+
+  console.log('Run counter: ' + runCounter)
+
+  // feedList.sort(() => Math.random() - 0.5)
+  let startIndex = feedList.length % CONFIG.maxDownloadFeed * runCounter
+
+  // -------------------------
 
   let runnerCount = 0
 
   // https://www.youtube.com/@LINETODAYWORLD
-  for (let i = 0; i < feedList.length; i++) {
+  for (let currentIndex = startIndex; currentIndex < startIndex + CONFIG.maxDownloadFeed; currentIndex++) {
+    let i = feedList.length % currentIndex
     let feedItem = feedList[i]
     // if (feedItem.title !== '敖厂长') {
     //   continue
