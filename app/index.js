@@ -50,7 +50,7 @@ let main = async () => {
   console.log('Run counter: ' + runCounter)
 
   // feedList.sort(() => Math.random() - 0.5)
-  let startIndex = feedList.length % (CONFIG.maxDownloadFeed * runCounter)
+  let startIndex = (CONFIG.maxDownloadFeed * runCounter) % feedList.length
 
   // -------------------------
 
@@ -58,8 +58,11 @@ let main = async () => {
 
   // https://www.youtube.com/@LINETODAYWORLD
   for (let currentIndex = startIndex; currentIndex < startIndex + CONFIG.maxDownloadFeed; currentIndex++) {
-    let i = feedList.length % currentIndex
+    let i = currentIndex % feedList.length
     let feedItem = feedList[i]
+    if (!feedItem) {
+      continue
+    }
     // if (feedItem.title !== '敖厂长') {
     //   continue
     // }
