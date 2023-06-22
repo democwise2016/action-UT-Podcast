@@ -8,7 +8,7 @@ module.exports = async function (feedItem = {}) {
   } = feedItem
 
   let {
-    maxItems = 30,
+    maxItems = 10,
   } = options
 
   // --------------------

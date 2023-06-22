@@ -24,7 +24,7 @@ module.exports = async function (items, feedItem = {}) {
   } = feedItem
 
   let {
-    maxItems = 30,
+    maxItems = 10,
   } = options
 
   if (typeof(itemFilters) === 'function' && Array.isArray(itemFilters) === false) {
