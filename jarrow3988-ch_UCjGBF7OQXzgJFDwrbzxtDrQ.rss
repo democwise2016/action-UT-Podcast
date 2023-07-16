@@ -29,42 +29,5 @@
       <itunes:name><![CDATA[蒟蒻講幹話]]></itunes:name>
     </itunes:owner>
     <itunes:image href="https://yt3.googleusercontent.com/ytc/AGIKgqN2GzZfnoUqLPw8fUEYJu5t4dltLzwE3sDbzhevPA=s1024-b50-c-k-c0x002980b9-no-rj"/>
-<item>
-      <title><![CDATA[7.15]不知道怎麼下標題(舊影片上傳)]]></title>
-      <itunes:title><![CDATA[7.15]不知道怎麼下標題(舊影片上傳)]]></itunes:title>
-      <itunes:author><![CDATA[蒟蒻講幹話]]></itunes:author>
-      <itunes:summary>
-        <![CDATA[https://www.youtube.com/watch?v=ha7VPf8Afy0
-成為這個頻道的會員並獲得獎勵：
-https://www.youtube.com/channel/UCjGBF7OQXzgJFDwrbzxtDrQ/join
-<a href="https://www.youtube.com/watch?v=ha7VPf8Afy0"><img src="https://img.youtube.com/vi/ha7VPf8Afy0/maxresdefault.jpg" />
-<img src="https://img.youtube.com/vi/ha7VPf8Afy0/0.jpg" />
-<img src="https://img.youtube.com/vi/ha7VPf8Afy0/1.jpg" />
-<img src="https://img.youtube.com/vi/ha7VPf8Afy0/2.jpg" />
-<img src="https://img.youtube.com/vi/ha7VPf8Afy0/3.jpg" /></a>]]>
-      </itunes:summary>
-      <description>
-        <![CDATA[https://www.youtube.com/watch?v=ha7VPf8Afy0
-成為這個頻道的會員並獲得獎勵：
-https://www.youtube.com/channel/UCjGBF7OQXzgJFDwrbzxtDrQ/join
-<a href="https://www.youtube.com/watch?v=ha7VPf8Afy0"><img src="https://img.youtube.com/vi/ha7VPf8Afy0/maxresdefault.jpg" />
-<img src="https://img.youtube.com/vi/ha7VPf8Afy0/0.jpg" />
-<img src="https://img.youtube.com/vi/ha7VPf8Afy0/1.jpg" />
-<img src="https://img.youtube.com/vi/ha7VPf8Afy0/2.jpg" />
-<img src="https://img.youtube.com/vi/ha7VPf8Afy0/3.jpg" /></a>]]>
-      </description>
-      <content:encoded><![CDATA[<pre>https://www.youtube.com/watch?v=ha7VPf8Afy0
-成為這個頻道的會員並獲得獎勵：
-https://www.youtube.com/channel/UCjGBF7OQXzgJFDwrbzxtDrQ/join<br />
-<a href="https://www.youtube.com/watch?v=ha7VPf8Afy0"><img src="https://img.youtube.com/vi/ha7VPf8Afy0/maxresdefault.jpg" />
-<img src="https://img.youtube.com/vi/ha7VPf8Afy0/0.jpg" />
-<img src="https://img.youtube.com/vi/ha7VPf8Afy0/1.jpg" />
-<img src="https://img.youtube.com/vi/ha7VPf8Afy0/2.jpg" />
-<img src="https://img.youtube.com/vi/ha7VPf8Afy0/3.jpg" /></a></pre>]]></content:encoded>
-      <itunes:image href="https://img.youtube.com/vi/ha7VPf8Afy0/maxresdefault.jpg"/>
-      <enclosure url="https://democwise2016.github.io/action-UT-Podcast/jarrow3988-ch_UCjGBF7OQXzgJFDwrbzxtDrQ/20230715-ha7VPf8Afy0.mp3" type="audio/mpeg" length="367" />
-      <itunes:duration>367</itunes:duration>
-      <guid isPermaLink="false">https://democwise2016.github.io/action-UT-Podcast/jarrow3988-ch_UCjGBF7OQXzgJFDwrbzxtDrQ/20230715-ha7VPf8Afy0.mp3</guid>
-      <pubDate>2023-07-15T00:00:00.000Z</pubDate>
-    </item></channel>
+</channel>
 </rss>
