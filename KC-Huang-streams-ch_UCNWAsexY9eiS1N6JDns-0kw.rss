@@ -29,45 +29,5 @@
       <itunes:name><![CDATA[黃國昌直播]]></itunes:name>
     </itunes:owner>
     <itunes:image href="https://yt3.googleusercontent.com/ytc/AGIKgqOQaysBj7ByA3n9L6iyPuz6-ragweJB6YSM8mY4Ow=s1024-b50-c-k-c0x002980b9-no-rj"/>
-<item>
-      <title><![CDATA[7.16]【國昌直播】感謝今天參與遊行的朋友們]]></title>
-      <itunes:title><![CDATA[7.16]【國昌直播】感謝今天參與遊行的朋友們]]></itunes:title>
-      <itunes:author><![CDATA[黃國昌]]></itunes:author>
-      <itunes:summary>
-        <![CDATA[【國昌直播】感謝今天參與遊行的朋友們
-
-https://www.youtube.com/channel/UCNWAsexY9eiS1N6JDns-0kw
-黃國昌直播
-<a href="https://www.youtube.com/watch?v=BF4-gyaw-x4"><img src="https://img.youtube.com/vi/BF4-gyaw-x4/maxresdefault.jpg" />
-<img src="https://img.youtube.com/vi/BF4-gyaw-x4/0.jpg" />
-<img src="https://img.youtube.com/vi/BF4-gyaw-x4/1.jpg" />
-<img src="https://img.youtube.com/vi/BF4-gyaw-x4/2.jpg" />
-<img src="https://img.youtube.com/vi/BF4-gyaw-x4/3.jpg" /></a>]]>
-      </itunes:summary>
-      <description>
-        <![CDATA[【國昌直播】感謝今天參與遊行的朋友們
-
-https://www.youtube.com/channel/UCNWAsexY9eiS1N6JDns-0kw
-黃國昌直播
-<a href="https://www.youtube.com/watch?v=BF4-gyaw-x4"><img src="https://img.youtube.com/vi/BF4-gyaw-x4/maxresdefault.jpg" />
-<img src="https://img.youtube.com/vi/BF4-gyaw-x4/0.jpg" />
-<img src="https://img.youtube.com/vi/BF4-gyaw-x4/1.jpg" />
-<img src="https://img.youtube.com/vi/BF4-gyaw-x4/2.jpg" />
-<img src="https://img.youtube.com/vi/BF4-gyaw-x4/3.jpg" /></a>]]>
-      </description>
-      <content:encoded><![CDATA[<pre>【國昌直播】感謝今天參與遊行的朋友們
-
-https://www.youtube.com/channel/UCNWAsexY9eiS1N6JDns-0kw
-黃國昌直播<br />
-<a href="https://www.youtube.com/watch?v=BF4-gyaw-x4"><img src="https://img.youtube.com/vi/BF4-gyaw-x4/maxresdefault.jpg" />
-<img src="https://img.youtube.com/vi/BF4-gyaw-x4/0.jpg" />
-<img src="https://img.youtube.com/vi/BF4-gyaw-x4/1.jpg" />
-<img src="https://img.youtube.com/vi/BF4-gyaw-x4/2.jpg" />
-<img src="https://img.youtube.com/vi/BF4-gyaw-x4/3.jpg" /></a></pre>]]></content:encoded>
-      <itunes:image href="https://img.youtube.com/vi/BF4-gyaw-x4/maxresdefault.jpg"/>
-      <enclosure url="https://democwise2016.github.io/action-UT-Podcast/KC-Huang-streams-ch_UCNWAsexY9eiS1N6JDns-0kw/20230716-BF4-gyaw-x4.mp3" type="audio/mpeg" length="2395" />
-      <itunes:duration>2395</itunes:duration>
-      <guid isPermaLink="false">https://democwise2016.github.io/action-UT-Podcast/KC-Huang-streams-ch_UCNWAsexY9eiS1N6JDns-0kw/20230716-BF4-gyaw-x4.mp3</guid>
-      <pubDate>2023-07-16T00:00:00.000Z</pubDate>
-    </item></channel>
+</channel>
 </rss>
