@@ -74,7 +74,7 @@ module.exports = async function (items, feedItem = {}) {
     //   }
     // }
     if (isNewerThenLatestFile(item, feedFilename) === false) {
-      let {localPath} = await ItemDownloadPathBuilder(feedFilename, id, item.yyyymmddDate)
+      let {localPath} = await ItemDownloadPathBuilder(feedFilename, item.id, item.yyyymmddDate)
       if (await NodeCacheSqlite.isExists('CleanOldItems', localPath)) {
         console.log(`File has been removed: $localPath`)
         continue
