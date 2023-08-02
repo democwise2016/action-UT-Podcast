@@ -88,25 +88,10 @@ jobs:
       #     docker network prune -f
       #     docker volume prune -f
 
-      - name: Clean Old Output
+      - name: Remove unsubscribe channels
         run: |
-          
-          base_dir="./output/"
-
-          remove_files() {
-            folder="$1"
-            find "$folder" -maxdepth 1 -type f ! -name "20*" -exec rm -if {} \;
-          }
-
-          main() {
-            for folder in "$base_dir"/*/; do
-              if [ -d "$folder" ]; then
-                remove_files "$folder"
-              fi
-            done
-          }
-
-          main
+          rm -rf ./output/meisouniv-news-ch_UCiCOKR_WkqZuYN9fpjWqnzg*
+          rm -rf ./output/KC-Huang-917POPRadio-ch_UCJ5rBA0z4WFGtUTS83sAb_A*
 
       # ----------------------------------------------------------------
 

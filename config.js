@@ -289,18 +289,18 @@ let CONFIG = {
         (item) => { return ((item.title.indexOf('｜國際大風吹') > -1) || (item.title.indexOf('｜國際值日生') > -1)) }
       ]
     },
-    {
-      title: '迷走大學 時事評論',
-      feedID: 'meisouniv-news',
-      homepageURL: 'https://www.youtube.com/channel/UCiCOKR_WkqZuYN9fpjWqnzg',
-      itemFilters: [
-        ItemFiltersPreset.between6minTo60Min,
-        (item) => { return ((item.title.indexOf('【走漏消息') > -1) || (item.title.indexOf('【迷大Jo報】') > -1) || (item.title.indexOf('【這個不能講') > -1)) }
-      ],
-      options: {
-        maxItems: 5
-      }
-    },
+    // {
+    //   title: '迷走大學 時事評論',
+    //   feedID: 'meisouniv-news',
+    //   homepageURL: 'https://www.youtube.com/channel/UCiCOKR_WkqZuYN9fpjWqnzg',
+    //   itemFilters: [
+    //     ItemFiltersPreset.between6minTo60Min,
+    //     (item) => { return ((item.title.indexOf('【走漏消息') > -1) || (item.title.indexOf('【迷大Jo報】') > -1) || (item.title.indexOf('【這個不能講') > -1)) }
+    //   ],
+    //   options: {
+    //     maxItems: 5
+    //   }
+    // },
     {
       title: '我的學習筆記',
       feedID: 'mynotebooks',
