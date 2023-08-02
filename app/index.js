@@ -3,9 +3,30 @@ const FeedIndexBuilder = require('./podcast/FeedIndexBuilder.js')
 const CONFIG = require('./../config.js')
 const fs = require('fs')
 
+// const sqliteStore = require('cache-manager-sqlite')
+// const cacheManager = require('cache-manager')
+// const NodeCacheSqlite = require('./lib/NodeCacheSqlite.js')
+
 // const UBMp3DownloaderWrapper = require('./ub/items/UBMp3Downloader/UBMp3DownloaderWrapper.js')
 
 let main = async () => {
+
+  // On disk cache on employees table
+  // const cache = cacheManager.caching({
+  //   store: sqliteStore,
+  //   name: 'cache',
+  //   path: '/cache/cache.sqlite'
+  // })
+
+
+  // // TTL in seconds
+  // await cache.set('foo2', 'boo22', {ttl: 100000000})
+  // const value = await cache.get('foo2')
+  // console.log(value)
+  // return false
+
+  // console.log(await NodeCacheSqlite.get('a', 'bb22', () => {return '11c2222'}))
+  // return false
 
   let cloneConfig = JSON.parse(JSON.stringify(CONFIG))
   delete cloneConfig.feedList

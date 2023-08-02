@@ -25,10 +25,7 @@ const NodeCacheSqlite = {
     this.databases[databaseName] = cacheManager.caching({
       store: sqliteStore,
       name: 'cache',
-      path: path.join(cachePath, 'node-cache-sqlite_' + databaseName + '.sqlite'),
-      options: {
-        serializer: 'cbor'
-      }
+      path: path.join(cachePath, 'node-cache-sqlite_' + databaseName + '.sqlite')
     })
 
     // console.log(path.join(cachePath, databaseName + '.sqlite'), fs.existsSync(path.join(cachePath, databaseName + '.sqlite')))
@@ -54,14 +51,17 @@ const NodeCacheSqlite = {
     if (typeof(value) === 'function') {
       if (isAsyncFunction(value)) {
         result = await value()
-        await database.set(key, value, expire)
+        
       }
       else {
-        result = await database.wrap(key, value, expire)
+        result = value()
       }
+      // console.log(key, result)
+      await database.set(key, result, { ttl: expire})
     }
     else {
-      await database.set(key, value, expire)
+      // console.log(key, result)
+      await database.set(key, result, {ttl: expire})
     }
     return result
   },
