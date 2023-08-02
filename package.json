@@ -7,7 +7,8 @@
     "start": "docker-compose up",
     "up": "docker-compose up",
     "build-up": "docker-compose up --build",
-    "bash": "docker-compose run app bash"
+    "bash": "docker-compose run app bash",
+    "build": "docker-compose build"
   },
   "repository": {
     "type": "git",

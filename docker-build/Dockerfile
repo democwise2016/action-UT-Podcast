@@ -85,6 +85,9 @@ RUN npm install get-mp3-duration@1.0.0
 RUN apt-get install -y chromium
 #RUN apt-get install -y apt install libgconf-2-4 libatk1.0-0 libatk-bridge2.0-0 libgdk-pixbuf2.0-0 libgtk-3-0 libgbm-dev libnss3-dev libxss-dev
 
+RUN npm install cache-manager@5.2.3
+RUN npm install cache-manager-better-sqlite3@1.1.2
+
 # 這個會很常壞，所以要放到最後安裝
 RUN npm install ytdl-core@4.11.4
 

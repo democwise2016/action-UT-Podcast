@@ -41,12 +41,10 @@ class UBInfo {
       return cache[url]
     }
     
-    let html = await NodeCacheSqlite.getExists('ubinfo', url, async () => {
-      return await this.loadHTML(url)
-    })
+    let html = await this.loadHTML(url)
     
     if (!html) {
-      await NodeCacheSqlite.clear('ubinfo', url)
+      // await NodeCacheSqlite.clear('ubinfo', url)
       await NodeCacheSqlite.clear('GetHTML', url)
       //console.error('body html is empty: ' + url)
       //throw new Error('body html is empty: ' + url)
@@ -63,13 +61,11 @@ class UBInfo {
       return cache[url]
     }
     
-    let html = await NodeCacheSqlite.getExists('ubinfo', url, async () => {
-      return await this.loadHTML(url)
-    })
+    let html = await this.loadHTML(url)
     let info = this.parseVideoHTML(html, url)
     
     if (info.isOffline) {
-      await NodeCacheSqlite.clear('ubinfo', url)
+      // await NodeCacheSqlite.clear('ubinfo', url)
       await NodeCacheSqlite.clear('GetHTML', url)
       // await NodeCacheSqlite.clear('tor-html-loader', url)
     }
@@ -88,7 +84,7 @@ class UBInfo {
       return cache[url]
     }
     
-    let html = await NodeCacheSqlite.getExists('ubinfo', url, async () => {
+    let html = await (async () => {
       let output = await this.loadHTML(url, cacheLimit * 60 * 1000)
       if (output.indexOf(`{"videoOwner":{"videoOwnerRenderer":{"thumbnail":{"thumbnails":[{"url":"`) === -1) {
         throw Error('Playlist html is error: ' + url)
@@ -97,10 +93,10 @@ class UBInfo {
       else {
         return output
       }
-    }, cacheLimit * 60 * 1000)
+    })
     
     if (html === null || typeof html !== 'string') {
-      await NodeCacheSqlite.clear('ubinfo', url)
+      // await NodeCacheSqlite.clear('ubinfo', url)
       await NodeCacheSqlite.clear('GetHTML', url)
       return false
     }
