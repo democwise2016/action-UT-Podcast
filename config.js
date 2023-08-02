@@ -8,7 +8,7 @@ let CONFIG = {
   maxDownloadItemPerFeed: 3,
   maxDownloadFeed: 20,
   newArrialMax: 5,
-  maxDownloadItems: 10,
+  maxDownloadItems: 5,
   maxExcutionMinutes: 15,
   feedList: [
     {
@@ -59,8 +59,11 @@ let CONFIG = {
       feedURL: 'https://www.youtube.com/feeds/videos.xml?channel_id=UC2VKL-DkRvXtWkfjMzkYvmw',
       itemFilters: [
         ItemFiltersPreset.between10minTo60Min,
-        (item) => { return (item.title.indexOf('斐姨所思【阿姨想知道】') > -1) }
+        (item) => { return (item.title.indexOf('斐姨所思【阿姨想知道】') > -1) },
       ],
+      options: {
+        maxItems: 3
+      }
     },
     {
       title: '斐姨所思《行動代號2027》',
