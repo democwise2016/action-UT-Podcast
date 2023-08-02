@@ -56,9 +56,16 @@ let main = async () => {
 
   let runnerCount = 0
 
+  let ranI = []
+
   // https://www.youtube.com/@LINETODAYWORLD
   for (let currentIndex = startIndex; currentIndex < startIndex + CONFIG.maxDownloadFeed; currentIndex++) {
     let i = currentIndex % feedList.length
+    if (ranI.indexOf(i) > -1) {
+      continue
+    }
+    ranI.push(i)
+    
     let feedItem = feedList[i]
     if (!feedItem) {
       continue
