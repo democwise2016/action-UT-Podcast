@@ -42,18 +42,26 @@ const NodeCacheSqlite = {
     let result = await database.get(key)
 
     if (result === undefined && value !== undefined) {
-      if (typeof(value) === 'function') {
-        if (isAsyncFunction(value)) {
-          result = await value()
-          await database.set(key, value, expire)
-        }
-        else {
-          result = await database.wrap(key, value, expire)
-        }
-      }
-      else {
+      result = await this.set(databaseName, key, value, expire)
+    }
+    return result
+  },
+  set: async function (databaseName, key, value, expire) {
+    // console.log(databaseName)
+    let database = await this.getDatabase(databaseName)
+
+    let result = value
+    if (typeof(value) === 'function') {
+      if (isAsyncFunction(value)) {
+        result = await value()
         await database.set(key, value, expire)
       }
+      else {
+        result = await database.wrap(key, value, expire)
+      }
+    }
+    else {
+      await database.set(key, value, expire)
     }
     return result
   },

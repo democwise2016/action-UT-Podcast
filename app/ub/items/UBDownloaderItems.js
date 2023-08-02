@@ -8,6 +8,9 @@ let maxExcutionMS = CONFIG.maxExcutionMinutes * 60 * 1000
 
 const isNewerThenLatestFile = require('./isNewerThenLatestFile.js')
 const getFileListByCreationDate = require('./getFileListByCreationDate.js')
+const NodeCacheSqlite = require('./../../lib/NodeCacheSqlite.js')
+
+const ItemDownloadPathBuilder = require('./ItemDownloadPathBuilder.js')
 
 module.exports = async function (items, feedItem = {}) {
 
@@ -64,13 +67,19 @@ module.exports = async function (items, feedItem = {}) {
 
     // ======================
     // 檢查是不是已經有超過數量了？
+    // if (isNewerThenLatestFile(item, feedFilename) === false) {
+    //   if (getFileListByCreationDate(folder).length >= maxItems) {
+    //     console.log(`Downloaded files over maxItems ${maxItems}. Go to next channel.`, feedFilename)
+    //     break
+    //   }
+    // }
     if (isNewerThenLatestFile(item, feedFilename) === false) {
-      if (getFileListByCreationDate(folder).length >= maxItems) {
-        console.log(`Downloaded files over maxItems ${maxItems}. Go to next channel.`, feedFilename)
-        break
+      let {localPath} = await ItemDownloadPathBuilder(feedFilename, id, item.yyyymmddDate)
+      if (await NodeCacheSqlite.isExists('CleanOldItems', localPath)) {
+        console.log(`File has been removed: $localPath`)
+        continue
       }
     }
-    
 
     // ======================
 
