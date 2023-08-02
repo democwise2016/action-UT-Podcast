@@ -1,7 +1,7 @@
 const fs = require('fs')
 const getFileListByCreationDate = require('./getFileListByCreationDate.js')
 
-const CONFIG. = require('./../../../config.js')
+const CONFIG = require('./../../../config.js')
 
 module.exports = async function (feedItem = {}) {
   let {
