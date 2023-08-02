@@ -77,9 +77,9 @@ jobs:
       #     docker network prune -f
       #     docker volume prune -f
 
-      # - name: Clean Cache node-cache_ubinfo.sqlite
-      #   run: |
-      #     rm -rf /cache/node-cache_ubinfo.sqlite
+      - name: Clean Cache node-cache.sqlite
+        run: |
+          rm -rf /cache/node-cache_*.sqlite
 
       # - name: Clean Cache
       #   run: |
@@ -95,8 +95,7 @@ jobs:
 
           remove_files() {
             folder="$1"
-            echo "Removing files in $folder not starting with '20':"
-            find "$folder" -maxdepth 1 -type f ! -name "20*" -exec rm -i {} \;
+            find "$folder" -maxdepth 1 -type f ! -name "20*" -exec rm -if {} \;
           }
 
           main() {
