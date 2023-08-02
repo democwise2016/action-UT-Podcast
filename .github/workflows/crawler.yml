@@ -88,7 +88,7 @@ jobs:
           docker network prune -f
           docker volume prune -f
           
-          for folder in "./output/"/*/; do
+          for folder in ./output/*/; do
             if [ -d "$folder" ]; then
               du -sh "$folder"
             fi
