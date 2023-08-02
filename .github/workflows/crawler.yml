@@ -88,10 +88,10 @@ jobs:
       #     docker network prune -f
       #     docker volume prune -f
 
-      - name: Remove unsubscribe channels
-        run: |
-          rm -rf ./output/meisouniv-news-ch_UCiCOKR_WkqZuYN9fpjWqnzg*
-          rm -rf ./output/KC-Huang-917POPRadio-ch_UCJ5rBA0z4WFGtUTS83sAb_A*
+      # - name: Remove unsubscribe channels
+      #   run: |
+      #     rm -rf ./output/meisouniv-news-ch_UCiCOKR_WkqZuYN9fpjWqnzg*
+      #     rm -rf ./output/KC-Huang-917POPRadio-ch_UCJ5rBA0z4WFGtUTS83sAb_A*
 
       # ----------------------------------------------------------------
 
