@@ -87,8 +87,7 @@ jobs:
           docker rmi -f $(docker images -aq)
           docker network prune -f
           docker volume prune -f
-          ls -l ./cache/*
-
+          
           for folder in "./output/"/*/; do
             if [ -d "$folder" ]; then
               du -sh "$folder"
