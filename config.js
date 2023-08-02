@@ -221,7 +221,7 @@ let CONFIG = {
       itemFilters: [
         ItemFiltersPreset.between3minTo30Min,
         (item) => { return (item.title.endsWith('｜志祺七七')) }
-      ]
+      ] // 霸道總裁攀岩開會、網紅天天搞小團體...《絕世網紅》劇情超浮誇？《 志祺今天不讀稿 》EP010｜志祺七七
     },
     {
       title: '肥宅MS',
@@ -401,19 +401,19 @@ let CONFIG = {
         maxItems: 3
       }
     },
-    {
-      title: '黃國昌 POP大國民',
-      feedID: 'KC-Huang-917POPRadio',
-      homepageURL: 'https://www.youtube.com/channel/UCJ5rBA0z4WFGtUTS83sAb_A',
-      // feedURL: 'https://www.youtube.com/feeds/videos.xml?channel_id=UCJ5rBA0z4WFGtUTS83sAb_A',
-      itemFilters: [
-        ItemFiltersPreset.between30minTo180Min,
-        (item) => { return ((item.title.indexOf('POP大國民') > -1) && (item.title.indexOf('黃國昌') > -1)) }
-      ],
-      options: {
-        maxItems: 3
-      }
-    },
+    // {
+    //   title: '黃國昌 POP大國民',
+    //   feedID: 'KC-Huang-917POPRadio',
+    //   homepageURL: 'https://www.youtube.com/channel/UCJ5rBA0z4WFGtUTS83sAb_A',
+    //   // feedURL: 'https://www.youtube.com/feeds/videos.xml?channel_id=UCJ5rBA0z4WFGtUTS83sAb_A',
+    //   itemFilters: [
+    //     ItemFiltersPreset.between30minTo180Min,
+    //     (item) => { return ((item.title.indexOf('POP大國民') > -1) && (item.title.indexOf('黃國昌') > -1)) }
+    //   ],
+    //   options: {
+    //     maxItems: 3
+    //   }
+    // },
   ]
 }
 
