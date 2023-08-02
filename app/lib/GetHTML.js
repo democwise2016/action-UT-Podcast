@@ -23,8 +23,20 @@ let reduceCurrentThreads = function () {
   }
 }
 
+const CONFIG = require('./../../config.js')
+
+let startTimer = false
+let maxExcutionMS = CONFIG.maxExcutionMinutes * 60 * 1000
 
 async function GetHTML (url, options = {}) {
+  if (!startTimer) {
+    startTimer = (new Date()).getTime()
+  }
+
+  if ((new Date()).getTime() - startTimer > maxExcutionMS) {
+    throw Error ('GetHTML timeout: ' + url)
+  }
+
 
   if ((url.endsWith('.txt') || url.endsWith('.csv')) && !options.crawler) {
     options.crawler = 'fetch'
