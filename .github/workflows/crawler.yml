@@ -81,9 +81,12 @@ jobs:
       #   run: |
       #     rm -rf /cache/node-cache_ubinfo.sqlite
 
-      - name: Clean Cache Node Cache SQLite
+      - name: Clean Cache
         run: |
-          rm -rf /cache/node-cache_*.sqlite
+          rm -rf /cache/*
+          docker rmi -f $(docker images -aq)
+          docker network prune -f
+          docker volume prune -f
 
       # - name: Prepare Cache
       #   run: |
