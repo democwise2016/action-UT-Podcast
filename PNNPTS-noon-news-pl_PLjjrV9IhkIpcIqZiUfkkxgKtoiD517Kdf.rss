@@ -3,7 +3,7 @@
     <title><![CDATA[公視中晝新聞]]></title>
     <link>http://www.youtube.com/feeds/videos.xml?playlist_id=PLjjrV9IhkIpcIqZiUfkkxgKtoiD517Kdf</link>
     <image>
-      <url>https://yt3.ggpht.com/ytc/AGIKgqP7CDR5Ak4D9qqjADxdJKIrqCkBZOZFfctaLxNQ=s1024-b50-c-k-c0x002980b9-no-rj</url>
+      <url>https://fastly.picsum.photos/id/306/800/800.jpg?hmac=o3YYNuiUwBCcoMPAXB3JUKLVPrTnSBWzdNfo6Iq0Qhw</url>
       <title>公視中晝新聞</title>
       <link>http://www.youtube.com/feeds/videos.xml?playlist_id=PLjjrV9IhkIpcIqZiUfkkxgKtoiD517Kdf</link>
     </image>
@@ -28,6 +28,6 @@
     <itunes:owner>
       <itunes:name><![CDATA[公視中晝新聞]]></itunes:name>
     </itunes:owner>
-    <itunes:image href="https://yt3.ggpht.com/ytc/AGIKgqP7CDR5Ak4D9qqjADxdJKIrqCkBZOZFfctaLxNQ=s1024-b50-c-k-c0x002980b9-no-rj"/>
+    <itunes:image href="https://fastly.picsum.photos/id/306/800/800.jpg?hmac=o3YYNuiUwBCcoMPAXB3JUKLVPrTnSBWzdNfo6Iq0Qhw"/>
 </channel>
 </rss>
