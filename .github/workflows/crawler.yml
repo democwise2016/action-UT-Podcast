@@ -83,7 +83,7 @@ jobs:
 
       - name: Clean Cache Node Cache SQLite
         run: |
-          rm -rf /cache/node-cache-*.sqlite
+          rm -rf /cache/node-cache_*.sqlite
 
       # - name: Prepare Cache
       #   run: |
