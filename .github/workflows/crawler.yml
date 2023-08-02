@@ -83,10 +83,17 @@ jobs:
 
       - name: Clean Cache
         run: |
-          rm -rf /cache/*
+          rm -rf ./cache/*
           docker rmi -f $(docker images -aq)
           docker network prune -f
           docker volume prune -f
+          ls -l ./cache/*
+
+          for folder in "./output/"/*/; do
+            if [ -d "$folder" ]; then
+              du -sh "$folder"
+            fi
+          done
 
       # - name: Prepare Cache
       #   run: |
