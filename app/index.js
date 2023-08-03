@@ -11,6 +11,12 @@ const fs = require('fs')
 
 let main = async () => {
 
+  const fifteenMinutes = CONFIG.maxExcutionMinutes * 60 * 1000;
+  const timeout = setTimeout(() => {
+    console.log(`Process has been terminated after ${CONFIG.maxExcutionMinutes} minutes.`);
+    process.exit(1); // You can provide an exit code (non-zero) if needed.
+  }, fifteenMinutes);
+
   // On disk cache on employees table
   // const cache = cacheManager.caching({
   //   store: sqliteStore,
