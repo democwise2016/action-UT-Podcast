@@ -5,7 +5,7 @@ const cheerio = require('cheerio')
 
 const NodeCacheSqlite = require('./NodeCacheSqlite.js')
 
-let browser
+
 let browserCloseTimer
 
 let maxThreads = 3
@@ -29,6 +29,7 @@ let startTimer = false
 let maxExcutionMS = CONFIG.maxExcutionMinutes * 60 * 1000
 
 async function GetHTML (url, options = {}) {
+  let browser
   if (!startTimer) {
     startTimer = (new Date()).getTime()
   }
