@@ -80,10 +80,10 @@ async function GetHTML (url, options = {}) {
   try {
     return await NodeCacheSqlite.get('GetHTML', url + '|' + JSON.stringify(options), async function () {
       let isTimeouted = false
-      setTimeout(() => {
-        isTimeouted = true
-        throw Error(['GetHTML timeout', url, crawler, (new Date().toISOString())].join(' '))
-      }, timeout)
+      // setTimeout(() => {
+      //   isTimeouted = true
+      //   throw Error(['GetHTML timeout', url, crawler, (new Date().toISOString())].join(' '))
+      // }, timeout)
 
       while (currentThreads > maxThreads) {
         console.log('GetHTML wait', url, crawler, (new Date().toISOString()))
@@ -120,6 +120,12 @@ async function GetHTML (url, options = {}) {
             });
           }
             
+          setTimeout(() => {
+            console.error(['GetHTML timeout, force close browser', url, crawler, (new Date().toISOString())].join(' '))
+            browser.close();
+            browser = false
+          }, timeout)
+
           const page = await browser.newPage();
           
           if (puppeteerAgent) {
