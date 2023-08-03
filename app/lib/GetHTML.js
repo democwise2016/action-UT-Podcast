@@ -148,7 +148,7 @@ async function GetHTML (url, options = {}) {
           clearTimeout(browserCloseTimer)
           browserCloseTimer = setTimeout(async () => {
             console.error(['GetHTML timeout 2, force close browser', url, crawler, (new Date().toISOString())].join(' '))
-            isTimeouted = true
+            // isTimeouted = true
             if (browser && typeof(browser.close) === 'function') {
               await browser.close();
             }
