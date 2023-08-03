@@ -36,7 +36,7 @@ async function GetHTML (url, options = {}) {
   if ((new Date()).getTime() - startTimer > maxExcutionMS) {
     // throw Error ('GetHTML timeout: ' + url)
     console.error('GetHTML timeout: ' + url)
-    return false
+    return undefined
   }
 
 
@@ -54,6 +54,7 @@ async function GetHTML (url, options = {}) {
     puppeteerWaitForSelector,
     puppeteerWaitForSelectorTimeout = 30000,
     retry = 0,
+    timeout = 3 * 60 * 1000
   } = options
 
   if (retry > 10) {
@@ -76,7 +77,14 @@ async function GetHTML (url, options = {}) {
     return $xml
   }
 
+
   return await NodeCacheSqlite.get('GetHTML', url + '|' + JSON.stringify(options), async function () {
+    let isTimeouted = false
+    setTimeout(() => {
+      isTimeouted = true
+      throw Error('GetHTML timeout', url, crawler, (new Date().toISOString()))
+    }, timeout)
+
     while (currentThreads > maxThreads) {
       console.log('GetHTML wait', url, crawler, (new Date().toISOString()))
       await sleep(30000)
@@ -87,6 +95,9 @@ async function GetHTML (url, options = {}) {
 
     if (crawler === 'fetch') {
       const response = await fetch(url);
+      if (isTimeouted) {
+        return undefined
+      }
 
       if (!encoding) {
         reduceCurrentThreads()
@@ -136,6 +147,10 @@ async function GetHTML (url, options = {}) {
 
         await sleep(1000)
         reduceCurrentThreads()
+
+        if (isTimeouted) {
+          return undefined
+        }
         return output
       }
       catch (e) {
@@ -149,6 +164,10 @@ async function GetHTML (url, options = {}) {
         options.retry = retry
         console.log('Retry', options.retry, url)
         reduceCurrentThreads()
+
+        if (isTimeouted) {
+          return undefined
+        }
         return await GetHTML(url, options)
       } 
     }
