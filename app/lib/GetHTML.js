@@ -4,7 +4,7 @@ const iconv = require('iconv-lite')
 const cheerio = require('cheerio')
 
 const NodeCacheSqlite = require('./NodeCacheSqlite.js')
-
+const ShellSpawn = require('./ShellSpawn.js')
 
 let browserCloseTimer
 
@@ -56,7 +56,7 @@ async function GetHTML (url, options = {}) {
     puppeteerWaitForSelector,
     puppeteerWaitForSelectorTimeout = 30000,
     retry = 0,
-    timeout = 5 * 60 * 1000
+    timeout = 2 * 60 * 1000
   } = options
 
   // if (timeout < 3 * 60 * 1000) {
@@ -84,7 +84,7 @@ async function GetHTML (url, options = {}) {
   }
 
   try {
-    console.log('GetHTML before start', url, currentThreads, crawler, (new Date().toISOString()))
+    // console.log('GetHTML before start', url, currentThreads, crawler, (new Date().toISOString()))
     while (currentThreads > maxThreads) {
       console.log('GetHTML wait', url, currentThreads, crawler, (new Date().toISOString()))
       await sleep(30000)
@@ -134,6 +134,7 @@ async function GetHTML (url, options = {}) {
             if (browser && typeof(browser.close) === 'function') {
               await browser.close();
             }
+            await ShellSpawn(['service', 'tor', 'restart'])
             reduceCurrentThreads()
             browser = false
           }, timeout)
