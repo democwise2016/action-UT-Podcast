@@ -57,6 +57,10 @@ async function GetHTML (url, options = {}) {
     timeout = 3 * 60 * 1000
   } = options
 
+  if (timeout < 3 * 60 * 1000) {
+    timeout = 3 * 60 * 1000
+  }
+
   if (retry > 10) {
     throw Error ('GetHTML failed: ' + url)
   }
@@ -169,16 +173,17 @@ async function GetHTML (url, options = {}) {
 
           await browser.close();
           browser = null
-          await sleep(3000)
+          await sleep(30000)
 
           retry++
           options.retry = retry
-          console.log('Retry', options.retry, url)
           reduceCurrentThreads()
 
           if (isTimeouted) {
             return undefined
           }
+
+          console.log('Retry', options.retry, url)
           return await GetHTML(url, options)
         } 
       }
