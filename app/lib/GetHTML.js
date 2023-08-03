@@ -87,7 +87,7 @@ async function GetHTML (url, options = {}) {
     console.log('GetHTML before start', url, currentThreads, crawler, (new Date().toISOString()))
     while (currentThreads > maxThreads) {
       console.log('GetHTML wait', url, currentThreads, crawler, (new Date().toISOString()))
-      await sleep(3000)
+      await sleep(30000)
     }
     currentThreads++
     console.log('GetHTML start', url, currentThreads, crawler, (new Date().toISOString()))
