@@ -54,7 +54,7 @@ async function GetHTML (url, options = {}) {
     puppeteerWaitForSelector,
     puppeteerWaitForSelectorTimeout = 30000,
     retry = 0,
-    timeout = 3 * 60 * 1000
+    timeout = 5 * 60 * 1000
   } = options
 
   if (timeout < 3 * 60 * 1000) {
