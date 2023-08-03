@@ -134,6 +134,7 @@ async function GetHTML (url, options = {}) {
             if (browser && typeof(browser.close) === 'function') {
               await browser.close();
             }
+            reduceCurrentThreads()
             browser = false
           }, timeout)
 
@@ -160,6 +161,7 @@ async function GetHTML (url, options = {}) {
             if (browser && typeof(browser.close) === 'function') {
               await browser.close();
             }
+            reduceCurrentThreads()
             browser = null
           }, 100 * 1000)
           
