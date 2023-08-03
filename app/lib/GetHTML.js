@@ -34,7 +34,9 @@ async function GetHTML (url, options = {}) {
   }
 
   if ((new Date()).getTime() - startTimer > maxExcutionMS) {
-    throw Error ('GetHTML timeout: ' + url)
+    // throw Error ('GetHTML timeout: ' + url)
+    console.error('GetHTML timeout: ' + url)
+    return false
   }
 
 
