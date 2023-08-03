@@ -51,16 +51,17 @@ async function GetHTML (url, options = {}) {
     crawler = 'puppeteer', // fetch or puppeteer or xml
     puppeteerArgs = ['--no-sandbox', '--disable-setuid-sandbox', '--window-size=800,600'],
     puppeteerAgent,
-    puppeteerWaitUntil = `networkidle2`,
+    // puppeteerWaitUntil = `networkidle2`,
+    puppeteerWaitUntil = `networkidle0`,
     puppeteerWaitForSelector,
     puppeteerWaitForSelectorTimeout = 30000,
     retry = 0,
     timeout = 5 * 60 * 1000
   } = options
 
-  if (timeout < 3 * 60 * 1000) {
-    timeout = 3 * 60 * 1000
-  }
+  // if (timeout < 3 * 60 * 1000) {
+  //   timeout = 3 * 60 * 1000
+  // }
 
   if (retry > 10) {
     throw Error ('GetHTML failed: ' + url)
@@ -83,6 +84,12 @@ async function GetHTML (url, options = {}) {
   }
 
   try {
+    while (currentThreads > maxThreads) {
+      console.log('GetHTML wait', url, currentThreads, crawler, (new Date().toISOString()))
+      await sleep(3000)
+    }
+    currentThreads++
+
     return await NodeCacheSqlite.get('GetHTML', url + '|' + JSON.stringify(options), async function () {
       let isTimeouted = false
       // setTimeout(() => {
@@ -90,13 +97,7 @@ async function GetHTML (url, options = {}) {
       //   throw Error(['GetHTML timeout', url, crawler, (new Date().toISOString())].join(' '))
       // }, timeout)
 
-      while (currentThreads > maxThreads) {
-        console.log('GetHTML wait', url, crawler, (new Date().toISOString()))
-        await sleep(30000)
-      }
-      currentThreads++
-
-      console.log('GetHTML', url, crawler, (new Date().toISOString()))
+      console.log('GetHTML start', url, currentThreads, crawler, (new Date().toISOString()))
 
       if (crawler === 'fetch') {
         const response = await fetch(url);
@@ -167,6 +168,8 @@ async function GetHTML (url, options = {}) {
           if (isTimeouted) {
             return undefined
           }
+
+          console.log('GetHTML end', url, currentThreads, crawler, (new Date().toISOString()))
           return output
         }
         catch (e) {
