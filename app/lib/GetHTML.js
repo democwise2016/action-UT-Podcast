@@ -120,9 +120,12 @@ async function GetHTML (url, options = {}) {
             });
           }
             
-          setTimeout(() => {
+          setTimeout(async () => {
             console.error(['GetHTML timeout, force close browser', url, crawler, (new Date().toISOString())].join(' '))
-            browser.close();
+            isTimeouted = true
+            if (browser && typeof(browser.close) === 'function') {
+              await browser.close();
+            }
             browser = false
           }, timeout)
 
@@ -144,7 +147,9 @@ async function GetHTML (url, options = {}) {
         
           clearTimeout(browserCloseTimer)
           browserCloseTimer = setTimeout(async () => {
-            if (browser) {
+            console.error(['GetHTML timeout 2, force close browser', url, crawler, (new Date().toISOString())].join(' '))
+            isTimeouted = true
+            if (browser && typeof(browser.close) === 'function') {
               await browser.close();
             }
             browser = null
