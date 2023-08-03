@@ -191,10 +191,12 @@ async function GetHTML (url, options = {}) {
           }
 
           if (isTimeouted) {
+            clearTimeout(browserCloseTimer)
             return undefined
           }
           retry = 0
           console.log('GetHTML end', url, currentThreads, crawler, (new Date().toISOString()))
+          clearTimeout(browserCloseTimer)
           return output
         }
         catch (e) {
