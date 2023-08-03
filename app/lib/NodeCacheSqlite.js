@@ -49,12 +49,17 @@ const NodeCacheSqlite = {
 
     let result = value
     if (typeof(value) === 'function') {
-      if (isAsyncFunction(value)) {
-        result = await value()
-        
+      try {
+        if (isAsyncFunction(value)) {
+          result = await value()
+          
+        }
+        else {
+          result = value()
+        }
       }
-      else {
-        result = value()
+      catch (e) {
+        return undefined
       }
       // console.log(key, result)
       await database.set(key, result, { ttl: expire})
