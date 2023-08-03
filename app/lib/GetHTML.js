@@ -8,7 +8,7 @@ const NodeCacheSqlite = require('./NodeCacheSqlite.js')
 let browser
 let browserCloseTimer
 
-let maxThreads = 10
+let maxThreads = 3
 let currentThreads = 0
 // let maxExcutionMS = 60000
 
