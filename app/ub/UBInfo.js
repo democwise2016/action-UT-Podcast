@@ -41,7 +41,7 @@ class UBInfo {
       return cache[url]
     }
     
-    let html = await this.loadHTML(url)
+    let html = await this.loadHTML(url, 5184000000)
     
     if (!html) {
       // await NodeCacheSqlite.clear('ubinfo', url)
@@ -62,7 +62,7 @@ class UBInfo {
       return cache[url]
     }
     
-    let html = await this.loadHTML(url)
+    let html = await this.loadHTML(url, 2 * 24 * 60 * 60 * 1000)
     let info = this.parseVideoHTML(html, url)
     
     if (info.isOffline) {
@@ -107,7 +107,7 @@ class UBInfo {
     return info
   }
   
-  async loadHTML(url, cacheExpire) {
+  async loadHTML(url, cacheExpire = 43200000) {
     while (isLoading === true) {
       await this.sleep()
       
@@ -116,13 +116,15 @@ class UBInfo {
       }
     }
     
+    let cacheDay = cacheExpire / 24 / 60 / 60 / 1000
+
     isLoading = true
     
     return new Promise(async (resolve, reject) => {
       try {
         // let body = await TorHTMLLoader.loadHTML(url, cacheExpire)
         let body = await GetHTML(url, {
-          cacheDay: 365
+          cacheDay
         })
         // console.log(url, body)
         isLoading = false
