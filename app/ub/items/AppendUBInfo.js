@@ -5,6 +5,10 @@ module.exports = async function (item) {
   let link = item.link
 
   let info = await UBInfo.load(link)
+
+  if (!info) {
+    return false
+  }
   // console.log(info)
 
   Object.keys(info).forEach(key => {

@@ -37,6 +37,11 @@ module.exports = async function (feedItem = {}) {
   // 取得頻道的網址
   let channelURL = feedJSON.link
   let channelInfo = await UBInfo.load(channelURL)
+
+  if (!channelInfo) {
+    return false
+  }
+
   // console.log(channelInfo)
   // feedJSON.channelAvatar = channelInfo.channelAvatar
   // feedJSON.thumbnail = channelInfo.thumbnail

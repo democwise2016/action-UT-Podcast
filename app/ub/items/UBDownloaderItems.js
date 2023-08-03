@@ -53,6 +53,9 @@ module.exports = async function (items, feedItem = {}) {
     let item = items[i]
 
     item = await AppendUBInfo(item)
+    if (!item) {
+      continue
+    }
 
     let passed = true
     for (let j = 0; j < itemFilters.length; j++) {

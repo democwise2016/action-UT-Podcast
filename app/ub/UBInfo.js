@@ -48,8 +48,9 @@ class UBInfo {
       await NodeCacheSqlite.clear('GetHTML', url)
       //console.error('body html is empty: ' + url)
       //throw new Error('body html is empty: ' + url)
-      await this.sleep()
-      return await this.loadChannel(url)
+      await this.sleep(30 * 1000)
+      // return await this.loadChannel(url)
+      return undefined
     }
     let info = this.parseChannelHTML(html, url)
     cache[url] = info
