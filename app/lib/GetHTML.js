@@ -134,7 +134,9 @@ async function GetHTML (url, options = {}) {
             if (browser && typeof(browser.close) === 'function') {
               await browser.close();
             }
-            await ShellSpawn(['torctl', 'stop'])
+            // let pid = await ShellSpawn(['pidof', 'tor'])
+            await ShellSpawn(['/app/restart-tor.sh'])
+            // await ShellSpawn(['torctl', 'stop'])
             await sleep()
             await ShellSpawn(['service', 'tor', 'start'])
             reduceCurrentThreads()

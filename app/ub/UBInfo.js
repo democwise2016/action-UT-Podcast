@@ -326,6 +326,7 @@ class UBInfo {
       info.channelAvatar = this.sliceBetween(body, `"}},"avatar":{"thumbnails":[{"url":"`, `"`)
       //console.log('channelAvatar', body)
       if (!info.channelAvatar) {
+        NodeCacheSqlite.clear('GetHTML', url)
         throw new Error('channelAvatar is not found', url)
       }
       info.channelAvatar = info.channelAvatar.split('=s100-c-k').join('=s1024-c-k')
