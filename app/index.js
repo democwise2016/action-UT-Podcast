@@ -59,7 +59,7 @@ let main = async () => {
     let feedItem = feedList[i]
 
     if (fs.existsSync('/output/' + feedItem.feedFilename + '.rss') === false) {
-      newArrial = true
+      // newArrial = true
       console.log('Start new arrial mode')
       break
     }
@@ -109,7 +109,9 @@ let main = async () => {
         runnerCount++
         if (runnerCount >= CONFIG.maxDownloadFeed) {
           // console.log('Exit new arrial mode')
-          break
+          // break
+          console.log('not new arrial')
+          continue
         }
       }
       if (fs.existsSync('/output/' + feedItem.feedFilename + '.rss') === false) {

@@ -49,7 +49,7 @@ async function GetHTML (url, options = {}) {
     cacheDay = 0.5, 
     encoding = null,
     crawler = 'puppeteer', // fetch or puppeteer or xml
-    puppeteerArgs = ['--no-sandbox', '--disable-setuid-sandbox', '--window-size=800,600'],
+    puppeteerArgs = ['--no-sandbox', '--disable-setuid-sandbox', '--window-size=800,600', '--proxy-server=socks5://127.0.0.1:9050'],
     puppeteerAgent,
     // puppeteerWaitUntil = `networkidle2`,
     puppeteerWaitUntil = `networkidle0`,
@@ -84,11 +84,13 @@ async function GetHTML (url, options = {}) {
   }
 
   try {
+    console.log('GetHTML before start', url, currentThreads, crawler, (new Date().toISOString()))
     while (currentThreads > maxThreads) {
       console.log('GetHTML wait', url, currentThreads, crawler, (new Date().toISOString()))
       await sleep(3000)
     }
     currentThreads++
+    console.log('GetHTML start', url, currentThreads, crawler, (new Date().toISOString()))
 
     return await NodeCacheSqlite.get('GetHTML', url + '|' + JSON.stringify(options), async function () {
       let isTimeouted = false
@@ -97,7 +99,7 @@ async function GetHTML (url, options = {}) {
       //   throw Error(['GetHTML timeout', url, crawler, (new Date().toISOString())].join(' '))
       // }, timeout)
 
-      console.log('GetHTML start', url, currentThreads, crawler, (new Date().toISOString()))
+      
 
       if (crawler === 'fetch') {
         const response = await fetch(url);

@@ -113,3 +113,8 @@ RUN npm link ytdl-core@4.11.4
 # RUN npm -g htmlentities@1.0.0
 
 RUN pip install pytube
+
+# ========================
+
+RUN apt-get install -y tor
+RUN tor --version
