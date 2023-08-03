@@ -9,11 +9,14 @@ let cache = {}
 const NodeCacheSqlite = require('./../lib/NodeCacheSqlite.js')
 const UBVideoIdParser = require('./items/UBVideoIdParser.js')
 
+const fs = require('fs')
+
 let cacheLimit = Number(3 * 60 * 60)
 //cacheLimit = 0
 
 // const TorHTMLLoader = use('App/Helpers/tor-html-loader/tor-html-loader.js')
 const GetHTML = require('./../lib/GetHTML.js')
+const TorController = require('../lib/TorController.js')
 
 class UBInfo {
   
@@ -41,20 +44,33 @@ class UBInfo {
       return cache[url]
     }
     
-    let html = await this.loadHTML(url, 5184000000)
-    
-    if (!html) {
+    // let html = await this.loadHTML(url, 5184000000)
+    let html = await this.loadHTML(url, 2 * 24 * 60 * 60 * 1000)
+    // console.log(html)
+    if (!html || html === '') {
       // await NodeCacheSqlite.clear('ubinfo', url)
       await NodeCacheSqlite.clear('GetHTML', url)
       //console.error('body html is empty: ' + url)
       //throw new Error('body html is empty: ' + url)
       await this.sleep(30 * 1000)
       // return await this.loadChannel(url)
-      return undefined
+      return this.loadChannel(url)
     }
-    let info = this.parseChannelHTML(html, url)
-    cache[url] = info
-    return info
+
+    return await NodeCacheSqlite.get('loadChannel', url, async () => {
+      let info = this.parseChannelHTML(html, url)
+      if (!info) {
+        await NodeCacheSqlite.clear('GetHTML', url)
+        // await this.sleep(30 * 1000)
+        await TorController.restart()
+        // return await this.loadChannel(url)
+        return this.loadChannel(url)
+      }
+
+      cache[url] = info
+      return info
+    }, 180 * 24 * 60 * 60 * 1000)
+      
   }
   
   async loadVideo (url) {
@@ -63,16 +79,34 @@ class UBInfo {
     }
     
     let html = await this.loadHTML(url, 2 * 24 * 60 * 60 * 1000)
-    let info = this.parseVideoHTML(html, url)
-    
-    if (info.isOffline) {
+    if (!html || html === '') {
       // await NodeCacheSqlite.clear('ubinfo', url)
       await NodeCacheSqlite.clear('GetHTML', url)
-      // await NodeCacheSqlite.clear('tor-html-loader', url)
+      //console.error('body html is empty: ' + url)
+      //throw new Error('body html is empty: ' + url)
+      await this.sleep(30 * 1000)
+      // return await this.loadChannel(url)
+      return this.loadVideo(url)
     }
-    
-    cache[url] = info
-    return info
+
+    return await NodeCacheSqlite.get('loadVideo', url, async () => {
+      let info = this.parseVideoHTML(html, url)
+      if (!info) {
+        await NodeCacheSqlite.clear('GetHTML', url)
+        await this.sleep(30000)
+        return await this.loadVideo(url)
+      }
+      
+      if (info.isOffline) {
+        // await NodeCacheSqlite.clear('ubinfo', url)
+        await NodeCacheSqlite.clear('GetHTML', url)
+        info = undefined
+        // await NodeCacheSqlite.clear('tor-html-loader', url)
+      }
+      
+      cache[url] = info
+      return info
+    }, 60 * 24 * 60 * 60 * 1000)
   }
   
   async loadDuration(url) {
@@ -256,6 +290,7 @@ class UBInfo {
       }
       catch (e) {
         console.error('cannot found channelAvatar: ' + url, e)
+        return false
       }
     }
     
@@ -282,7 +317,10 @@ class UBInfo {
     }
     else {
       //throw Error('info.date not found: ' + url + '\n\n' + body)
-      
+      // console.log('=----------------------------=')
+      // console.log(body.length)
+      // fs.writeFileSync('/cache/video.html', body)
+      // console.log('=----------------------------=')
       console.log('info.date not found: ', $('meta[itemprop="uploadDate"]').length, $('meta[itemprop="datePublished"]').length)
 
       console.error('info.date not found: ' + url)
@@ -314,6 +352,11 @@ class UBInfo {
         throw new Error('body is empty: ' + url)
       }
       
+      // console.log('================')
+      // console.log(body.length)
+      // fs.writeFileSync('/cache/channel.html', body, 'utf-8')
+      // console.log('================')
+
       var $ = cheerio.load(body);
 
 
@@ -326,7 +369,7 @@ class UBInfo {
       info.channelAvatar = this.sliceBetween(body, `"}},"avatar":{"thumbnails":[{"url":"`, `"`)
       //console.log('channelAvatar', body)
       if (!info.channelAvatar) {
-        NodeCacheSqlite.clear('GetHTML', url)
+        // NodeCacheSqlite.clear('GetHTML', url)
         throw new Error('channelAvatar is not found', url)
       }
       info.channelAvatar = info.channelAvatar.split('=s100-c-k').join('=s1024-c-k')
@@ -334,8 +377,10 @@ class UBInfo {
       info.thumbnail = info.channelAvatar
     }
     catch (e) {
+      console.error(e)
       console.error('parseChannelHTML error! ', url)
-      throw new Error(e)
+      // throw new Error(e)
+      return false
     }
     
     return info

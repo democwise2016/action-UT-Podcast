@@ -12,6 +12,8 @@ let maxThreads = 3
 let currentThreads = 0
 // let maxExcutionMS = 60000
 
+const TorController = require('./TorController.js')
+
 let sleep = function (ms = 500) {
   return new Promise(resolve => setTimeout(resolve, ms));
 }
@@ -51,8 +53,9 @@ async function GetHTML (url, options = {}) {
     crawler = 'puppeteer', // fetch or puppeteer or xml
     puppeteerArgs = ['--no-sandbox', '--disable-setuid-sandbox', '--window-size=800,600', '--proxy-server=socks5://127.0.0.1:9050'],
     puppeteerAgent,
-    // puppeteerWaitUntil = `networkidle2`,
-    puppeteerWaitUntil = `networkidle0`,
+    puppeteerWaitUntil = `networkidle2`,
+    // puppeteerWaitUntil = `networkidle0`,
+    // puppeteerWaitUntil = `domcontentloaded`,
     puppeteerWaitForSelector,
     puppeteerWaitForSelectorTimeout = 30000,
     retry = 0,
@@ -64,6 +67,7 @@ async function GetHTML (url, options = {}) {
   // }
 
   if (retry > 10) {
+    await TorController.restart({force: true})
     throw Error ('GetHTML failed: ' + url)
   }
 
@@ -84,22 +88,25 @@ async function GetHTML (url, options = {}) {
   }
 
   try {
-    // console.log('GetHTML before start', url, currentThreads, crawler, (new Date().toISOString()))
-    while (currentThreads > maxThreads) {
-      console.log('GetHTML wait', url, currentThreads, crawler, (new Date().toISOString()))
-      await sleep(30000)
-    }
-    currentThreads++
-    console.log('GetHTML start', url, currentThreads, crawler, (new Date().toISOString()))
 
-    return await NodeCacheSqlite.get('GetHTML', url + '|' + JSON.stringify(options), async function () {
+    // console.log('GetHTML', 0, crawler)
+    // return await NodeCacheSqlite.get('GetHTML', url + '|' + JSON.stringify(options), async function () {
+    return await NodeCacheSqlite.get('GetHTML', url, async function () {
+
       let isTimeouted = false
       // setTimeout(() => {
       //   isTimeouted = true
       //   throw Error(['GetHTML timeout', url, crawler, (new Date().toISOString())].join(' '))
       // }, timeout)
 
-      
+          // console.log('GetHTML before start', url, currentThreads, crawler, (new Date().toISOString()))
+      while (currentThreads > maxThreads) {
+        console.log('GetHTML wait', url, currentThreads, crawler, (new Date().toISOString()))
+        await sleep(30000)
+      }
+      currentThreads++
+      console.log('GetHTML start', url, currentThreads, crawler, (new Date().toISOString()))
+
 
       if (crawler === 'fetch') {
         const response = await fetch(url);
@@ -119,7 +126,9 @@ async function GetHTML (url, options = {}) {
       }
       else {
         try {
+          // console.log('GetHTML', 1)
           if (!browser) {
+            await TorController.start()
             browser = await puppeteer.launch({
               //headless: false,
               args: puppeteerArgs,
@@ -128,23 +137,22 @@ async function GetHTML (url, options = {}) {
             });
           }
             
-          setTimeout(async () => {
-            console.error(['GetHTML timeout, force close browser', url, crawler, (new Date().toISOString())].join(' '))
-            isTimeouted = true
-            if (browser && typeof(browser.close) === 'function') {
-              await browser.close();
-            }
-            // let pid = await ShellSpawn(['pidof', 'tor'])
-            await ShellSpawn(['/app/restart-tor.sh'])
-            // await ShellSpawn(['torctl', 'stop'])
-            await sleep()
-            await ShellSpawn(['service', 'tor', 'start'])
-            reduceCurrentThreads()
-            browser = false
-          }, timeout)
+          // console.log('GetHTML', 2)
+          // setTimeout(async () => {
+          //   console.error(['GetHTML timeout, force close browser', url, crawler, (new Date().toISOString())].join(' '))
+          //   isTimeouted = true
+          //   if (browser && typeof(browser.close) === 'function') {
+          //     await browser.close();
+          //   }
+          //   // let pid = await ShellSpawn(['pidof', 'tor'])
+          //   await TorController.restart()
+          //   reduceCurrentThreads()
+          //   browser = false
+          // }, timeout)
 
+          // console.log('GetHTML', 3)
           const page = await browser.newPage();
-          
+          // console.log('GetHTML', 4)
           if (puppeteerAgent) {
             await page.setUserAgent(puppeteerAgent);
           }
@@ -156,12 +164,12 @@ async function GetHTML (url, options = {}) {
               timeout: puppeteerWaitForSelectorTimeout
             })
           }
-
+          // console.log('GetHTML', 5)
           let output = await page.content()
-        
+
           clearTimeout(browserCloseTimer)
           browserCloseTimer = setTimeout(async () => {
-            console.error(['GetHTML timeout 2, force close browser', url, crawler, (new Date().toISOString())].join(' '))
+            console.error(['GetHTML timeout, force close browser', url, crawler, (new Date().toISOString())].join(' '))
             // isTimeouted = true
             if (browser && typeof(browser.close) === 'function') {
               await browser.close();
@@ -174,10 +182,18 @@ async function GetHTML (url, options = {}) {
           await sleep(1000)
           reduceCurrentThreads()
 
+          if (output.indexOf(`This page appears when Google automatically detects requests coming from your computer network which appear to be in violation of the`) > -1) {
+            console.log('[GET] deny from Google')
+            await TorController.restart({force: true})
+            retry++
+            options.retry = retry
+            return await GetHTML(url, options)
+          }
+
           if (isTimeouted) {
             return undefined
           }
-
+          retry = 0
           console.log('GetHTML end', url, currentThreads, crawler, (new Date().toISOString()))
           return output
         }
@@ -192,9 +208,9 @@ async function GetHTML (url, options = {}) {
           options.retry = retry
           reduceCurrentThreads()
 
-          if (isTimeouted) {
-            return undefined
-          }
+          // if (isTimeouted) {
+          //   return undefined
+          // }
 
           console.log('Retry', options.retry, url)
           return await GetHTML(url, options)

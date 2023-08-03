@@ -41,6 +41,9 @@ const NodeCacheSqlite = {
     if (result === undefined && value !== undefined) {
       result = await this.set(databaseName, key, value, expire)
     }
+    else {
+      console.log('[CACHE] hitted', databaseName, key)
+    }
     return result
   },
   set: async function (databaseName, key, value, expire) {
@@ -79,7 +82,9 @@ const NodeCacheSqlite = {
   clear: async function (databaseName, key) {
     let database = await this.getDatabase(databaseName)
 
-    await database.del(key)
+    // await database.del(key)
+    await database.set(key, undefined, {ttl: 0})
+    console.log(`[CACHE] clear`, databaseName, key)
     return true
   }
 }

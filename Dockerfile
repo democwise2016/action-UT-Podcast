@@ -117,4 +117,7 @@ RUN pip install pytube
 # ========================
 
 RUN apt-get install -y tor
-RUN tor --version
+# RUN tor --version
+
+# RUN apt-get install -y lsof
+# RUN echo "ControlPort 127.0.0.1:9051" > /etc/tor/torrc
