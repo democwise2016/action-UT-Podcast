@@ -77,101 +77,106 @@ async function GetHTML (url, options = {}) {
     return $xml
   }
 
+  try {
+    return await NodeCacheSqlite.get('GetHTML', url + '|' + JSON.stringify(options), async function () {
+      let isTimeouted = false
+      setTimeout(() => {
+        isTimeouted = true
+        throw Error(['GetHTML timeout', url, crawler, (new Date().toISOString())].join(' '))
+      }, timeout)
 
-  return await NodeCacheSqlite.get('GetHTML', url + '|' + JSON.stringify(options), async function () {
-    let isTimeouted = false
-    setTimeout(() => {
-      isTimeouted = true
-      throw Error('GetHTML timeout', url, crawler, (new Date().toISOString()))
-    }, timeout)
-
-    while (currentThreads > maxThreads) {
-      console.log('GetHTML wait', url, crawler, (new Date().toISOString()))
-      await sleep(30000)
-    }
-    currentThreads++
-
-    console.log('GetHTML', url, crawler, (new Date().toISOString()))
-
-    if (crawler === 'fetch') {
-      const response = await fetch(url);
-      if (isTimeouted) {
-        return undefined
+      while (currentThreads > maxThreads) {
+        console.log('GetHTML wait', url, crawler, (new Date().toISOString()))
+        await sleep(30000)
       }
+      currentThreads++
 
-      if (!encoding) {
-        reduceCurrentThreads()
-        return await response.text()
+      console.log('GetHTML', url, crawler, (new Date().toISOString()))
+
+      if (crawler === 'fetch') {
+        const response = await fetch(url);
+        if (isTimeouted) {
+          return undefined
+        }
+
+        if (!encoding) {
+          reduceCurrentThreads()
+          return await response.text()
+        }
+        else {
+          const buffer = await response.arrayBuffer()
+          reduceCurrentThreads()
+          return iconv.decode(Buffer.from(buffer), encoding)
+        }
       }
       else {
-        const buffer = await response.arrayBuffer()
-        reduceCurrentThreads()
-        return iconv.decode(Buffer.from(buffer), encoding)
-      }
-    }
-    else {
-      try {
-        if (!browser) {
-          browser = await puppeteer.launch({
-            //headless: false,
-            args: puppeteerArgs,
-            ignoreHTTPSErrors: true,
-            headless: "new"
-          });
-        }
-          
-        const page = await browser.newPage();
-        
-        if (puppeteerAgent) {
-          await page.setUserAgent(puppeteerAgent);
-        }
-          
-        await page.goto(url, {waitUntil: puppeteerWaitUntil});
-
-        if (puppeteerWaitForSelector) {
-          await page.waitForSelector(puppeteerWaitForSelector, {
-            timeout: puppeteerWaitForSelectorTimeout
-          })
-        }
-
-        let output = await page.content()
-      
-        clearTimeout(browserCloseTimer)
-        browserCloseTimer = setTimeout(async () => {
-          if (browser) {
-            await browser.close();
+        try {
+          if (!browser) {
+            browser = await puppeteer.launch({
+              //headless: false,
+              args: puppeteerArgs,
+              ignoreHTTPSErrors: true,
+              headless: "new"
+            });
           }
-          browser = null
-        }, 100 * 1000)
+            
+          const page = await browser.newPage();
+          
+          if (puppeteerAgent) {
+            await page.setUserAgent(puppeteerAgent);
+          }
+            
+          await page.goto(url, {waitUntil: puppeteerWaitUntil});
+
+          if (puppeteerWaitForSelector) {
+            await page.waitForSelector(puppeteerWaitForSelector, {
+              timeout: puppeteerWaitForSelectorTimeout
+            })
+          }
+
+          let output = await page.content()
         
+          clearTimeout(browserCloseTimer)
+          browserCloseTimer = setTimeout(async () => {
+            if (browser) {
+              await browser.close();
+            }
+            browser = null
+          }, 100 * 1000)
+          
 
-        await sleep(1000)
-        reduceCurrentThreads()
+          await sleep(1000)
+          reduceCurrentThreads()
 
-        if (isTimeouted) {
-          return undefined
+          if (isTimeouted) {
+            return undefined
+          }
+          return output
         }
-        return output
+        catch (e) {
+          console.error(e)
+
+          await browser.close();
+          browser = null
+          await sleep(3000)
+
+          retry++
+          options.retry = retry
+          console.log('Retry', options.retry, url)
+          reduceCurrentThreads()
+
+          if (isTimeouted) {
+            return undefined
+          }
+          return await GetHTML(url, options)
+        } 
       }
-      catch (e) {
-        console.error(e)
-
-        await browser.close();
-        browser = null
-        await sleep(3000)
-
-        retry++
-        options.retry = retry
-        console.log('Retry', options.retry, url)
-        reduceCurrentThreads()
-
-        if (isTimeouted) {
-          return undefined
-        }
-        return await GetHTML(url, options)
-      } 
-    }
-  }, parseInt(cacheDay * 1000 * 60 * 60 * 24, 10))
+    }, parseInt(cacheDay * 1000 * 60 * 60 * 24, 10))
+  }
+  catch (e) {
+    console.error(e)
+    return undefined
+  }
 }
 
 module.exports = GetHTML
