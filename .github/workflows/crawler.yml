@@ -99,7 +99,7 @@ jobs:
 
       # ----------------------------------------------------------------
 
-      - name: Output Calculate
+      - name: Output Calculate Before
         run: |
           for folder in ./output/*/; do
             if [ -d "$folder" ]; then
@@ -127,9 +127,19 @@ jobs:
         run: |
           docker-compose up
 
+      # ----------------------------------------------------------------
+
       - name: Check Cache Size
         run: |
           ls -lh ./cache/*.sqlite
+
+      - name: Output Calculate After
+        run: |
+          for folder in ./output/*/; do
+            if [ -d "$folder" ]; then
+              du -sh "$folder"
+            fi
+          done
 
       # - name: Cache Save
       #   id: cache-save
