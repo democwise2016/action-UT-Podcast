@@ -10,7 +10,7 @@ let lastRestartTime
 
 let inited = false
 let restartCount = 0
-let maxRestart = 20
+let maxRestart = 100
 
 const TorController = {
   // inited: false,
@@ -40,6 +40,14 @@ const TorController = {
     })
   },
   restart: async function (options = {}) {
+    if (inited === 'wait') {
+      while (inited === 'wait') {
+        await sleep()
+      }
+      await sleep(10000)
+      return true
+    }
+      
     if (options.force !== true && lastRestartTime && 
         ((new Date()).getTime() - lastRestartTime) < restartInterval) {
       return false
@@ -59,9 +67,11 @@ const TorController = {
         return resolve(false)
       }
 
-      console.trace(['[TOR] Restart ', restartCount, (new Date().toISOString())].join('\t'))
+      console.log(['[TOR] Restart ', restartCount, (new Date().toISOString())].join('\t'))
       try {
+        inited = 'wait'
         await ShellSpawn(['bash', '/app/tor/tor-restart.sh'])
+        inited = true
       }
       catch (e) {
         console.error(e)

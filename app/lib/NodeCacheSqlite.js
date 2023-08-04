@@ -42,7 +42,7 @@ const NodeCacheSqlite = {
       result = await this.set(databaseName, key, value, expire)
     }
     else {
-      console.log('[CACHE] hitted', databaseName, key)
+      console.log(['[CACHE] hitted', databaseName, key, (new Date().toISOString())].join('\t'))
     }
     return result
   },
@@ -90,7 +90,7 @@ const NodeCacheSqlite = {
 
     // await database.del(key)
     await database.set(key, undefined, {ttl: 0})
-    console.log(`[CACHE] clear`, databaseName, key)
+    console.log([`[CACHE] clear`, databaseName, key, (new Date().toISOString())].join('\t'))
     return true
   }
 }
