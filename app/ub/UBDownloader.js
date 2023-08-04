@@ -8,6 +8,7 @@ const getFileListByCreationDate = require('./items/getFileListByCreationDate.js'
 const fs = require('fs');
 
 // const OutputFeedFilenameBuilder = require('./../podcast/OutputFeedFilenameBuilder.js')
+let RSSBuildCounter = 0
 
 module.exports = async function (feedItem = {}) {
 
@@ -62,5 +63,6 @@ module.exports = async function (feedItem = {}) {
 
   // console.log(outputFeedString)
   fs.writeFileSync(`/output/${feedFilename}.rss`, outputFeedString, 'utf8') 
-  console.log([`[UBDownloader] RSS build`, feedFilename, (new Date().toISOString())].join('\t'))
+  RSSBuildCounter++
+  console.log([`[UBDownloader] RSS build`, feedFilename, RSSBuildCounter, (new Date().toISOString())].join('\t'))
 }
