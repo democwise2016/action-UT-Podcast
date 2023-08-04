@@ -5,7 +5,7 @@ let sleep = function (ms = 500) {
 }
 
 // let restartInterval = 3 * 60 * 1000
-let restartInterval = 3 * 1000
+let restartInterval = 30 * 1000
 let lastRestartTime
 
 let inited = false
@@ -71,7 +71,9 @@ const TorController = {
       try {
         inited = 'wait'
         await ShellSpawn(['bash', '/app/tor/tor-restart.sh'])
-        inited = true
+        setTimeout(() => {
+          inited = true
+        }, 10000)
       }
       catch (e) {
         console.error(e)

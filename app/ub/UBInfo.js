@@ -384,7 +384,8 @@ class UBInfo {
       if (!info.channelAvatar) {
         // NodeCacheSqlite.clear('GetHTML', url)
         // throw new Error('channelAvatar is not found', url)
-        throw new Error(['[UBInfo] parseChannelHTML, channelAvatar is not found', url, (new Date().toISOString())].join('\t'))
+        console.error(['[UBInfo] parseChannelHTML, channelAvatar is not found', url, (new Date().toISOString())].join('\t'))
+        return undefined
       }
       info.channelAvatar = info.channelAvatar.split('=s100-c-k').join('=s1024-c-k')
       info.channelAvatar = info.channelAvatar.split('=s48-c-k').join('=s1024-c-k')
@@ -392,9 +393,9 @@ class UBInfo {
     }
     catch (e) {
       console.error(e)
-      console.error('parseChannelHTML error! ', url)
+      // console.error('parseChannelHTML error! ', url)
       // throw new Error(e)
-      return false
+      return undefined
     }
     
     return info
