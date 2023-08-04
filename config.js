@@ -8,7 +8,7 @@ let CONFIG = {
   maxDownloadItemPerFeed: 5,
   maxDownloadFeed: 20,
   newArrialMax: 5,
-  maxDownloadItems: 5,
+  maxDownloadItems: 100,
   maxExcutionMinutes: 25,
   feedList: [
     {
