@@ -127,6 +127,10 @@ jobs:
         run: |
           docker-compose up
 
+      - name: Check Cache Size
+        run: |
+          ls -lh ./cache/*.sqlite
+
       # - name: Cache Save
       #   id: cache-save
       #   uses: actions/cache/save@v3
