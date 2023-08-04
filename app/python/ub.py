@@ -14,7 +14,7 @@ def download_mp3(url, output_path):
         directory = os.path.dirname(output_path)
         audio_stream.download(output_path=directory, filename=output_path)
         
-        print("Download completed successfully!")
+        # print("Download completed successfully!")
         
     except Exception as e:
         raise Exception("Error: ", str(e))
