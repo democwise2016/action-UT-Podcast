@@ -103,7 +103,7 @@ module.exports = async function (items, feedItem = {}) {
         downloadedCount++
         if (downloadedCount >= maxItems) {
           nextChannelCount++
-          console.log([`[DOWNLOAD] Reach maxItems ${maxItems}. Go to next channel.`, feedFilename, nextChannelCount].join('\t'))
+          console.log([`[DOWNLOAD] Reach maxItems ${maxItems}. Go to next channel.`, feedFilename, nextChannelCount, (new Date().toISOString())].join('\t'))
           break
         }
 
@@ -113,7 +113,7 @@ module.exports = async function (items, feedItem = {}) {
 
           if (notCachedCount >= CONFIG.maxDownloadItemPerFeed) {
             nextChannelCount++
-            console.log([`[DOWNLOAD] Reach max download ${CONFIG.maxDownloadItemPerFeed}. Go to next channel.`, feedFilename, nextChannelCount].join('\t'))
+            console.log([`[DOWNLOAD] Reach max download ${CONFIG.maxDownloadItemPerFeed}. Go to next channel.`, feedFilename, nextChannelCount, (new Date().toISOString())].join('\t'))
             break
           }
         }

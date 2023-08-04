@@ -18,7 +18,7 @@ let main = async () => {
 
   const maxExcutionMS = CONFIG.maxExcutionMinutes * 60 * 1000;
   const timeout = setTimeout(() => {
-    console.log(`Process has been terminated after ${CONFIG.maxExcutionMinutes} minutes.`);
+    console.log(`Process has been terminated after ${CONFIG.maxExcutionMinutes} minutes. ${(new Date().toISOString())}`);
     process.exit(0); // You can provide an exit code (non-zero) if needed.
   }, maxExcutionMS);
 

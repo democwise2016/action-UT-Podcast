@@ -71,6 +71,7 @@ class UBInfo {
       }
 
       cache[url] = info
+      console.error(['[UBInfo] loadChannel is finished', url, (new Date().toISOString())].join('\t'))
       return info
     }, 180 * 24 * 60 * 60 * 1000)
       
@@ -114,6 +115,7 @@ class UBInfo {
       }
       
       cache[url] = info
+      console.error(['[UBInfo] loadVideo is finished', url, (new Date().toISOString())].join('\t'))
       return info
     }, 60 * 24 * 60 * 60 * 1000)
   }

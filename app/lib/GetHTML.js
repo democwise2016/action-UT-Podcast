@@ -32,8 +32,11 @@ let maxExcutionMS = CONFIG.maxExcutionMinutes * 60 * 1000
 
 const MAX_RETRY = 10
 
+const fs = require('fs')
 
 async function GetHTML (url, options = {}) {
+  fs.writeFileSync(`/tmp/GetHTML.txt`, (new Date()).getTime(), 'utf8') 
+
   let browserCloseTimer
   let browser
 
@@ -128,11 +131,13 @@ async function GetHTML (url, options = {}) {
 
         if (!encoding) {
           reduceCurrentThreads()
+          console.log(['[GetHTML] End', url, (new Date().toISOString())].join('\t'))
           return await response.text()
         }
         else {
           const buffer = await response.arrayBuffer()
           reduceCurrentThreads()
+          console.log(['[GetHTML] End',url, (new Date().toISOString())].join('\t'))
           return iconv.decode(Buffer.from(buffer), encoding)
         }
       }

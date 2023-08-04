@@ -62,4 +62,5 @@ module.exports = async function (feedItem = {}) {
 
   // console.log(outputFeedString)
   fs.writeFileSync(`/output/${feedFilename}.rss`, outputFeedString, 'utf8') 
+  console.log([`[UBDownloader] RSS build`, feedFilename, (new Date().toISOString())].join('\t'))
 }
