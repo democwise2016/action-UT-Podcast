@@ -64,7 +64,7 @@ module.exports = async function (items, feedItem = {}) {
 
         item = await AppendUBInfo(item)
         if (!item) {
-          console.log([`[UBDownloader] Item is invalid`, `https://youtu.be/${item.id}`, (new Date().toISOString())].join('\t'))
+          console.log([`[UBDownloader] Item is invalid`, items[i].link, (new Date().toISOString())].join('\t'))
           continue
         }
 
