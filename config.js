@@ -404,6 +404,16 @@ let CONFIG = {
         maxItems: 3
       }
     },
+    {
+      title: '波特王好帥 粉紅特報',
+      feedID: 'Realpotterking-Pinker',
+      homepageURL: 'https://www.youtube.com/channel/UCsBP1dmKYfcorJ17kfOUTvg',
+      thumbnailBorderColor: true,
+      itemFilters: [
+        ItemFiltersPreset.between3minTo30Min,
+        (item) => { return ((item.title.indexOf('粉紅特報') >-1)) }
+      ],
+    },
   ]
 }
 
