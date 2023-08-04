@@ -28,7 +28,7 @@ module.exports = async function (items, feedItem = {}) {
   } = feedItem
 
   let {
-    maxItems = CONFIG.maxDownloadItems,
+    maxItems = CONFIG.maxDownloadItemPerFeed,
   } = options
 
   if (typeof(itemFilters) === 'function' && Array.isArray(itemFilters) === false) {

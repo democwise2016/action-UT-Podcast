@@ -110,7 +110,9 @@ class UBInfo {
         // await NodeCacheSqlite.clear('ubinfo', url)
         console.error(['[UBInfo] video isOffline', url, (new Date().toISOString())].join('\t'))
         await NodeCacheSqlite.clear('GetHTML', url)
-        info = undefined
+        // await NodeCacheSqlite.clear('loadVideo', url)
+        // info = undefined
+        return undefined
         // await NodeCacheSqlite.clear('tor-html-loader', url)
       }
       

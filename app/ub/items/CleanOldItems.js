@@ -13,7 +13,7 @@ module.exports = async function (feedItem = {}) {
   } = feedItem
 
   let {
-    maxItems = CONFIG.maxDownloadItems,
+    maxItems = CONFIG.maxDownloadItemPerFeed,
   } = options
 
   // --------------------
