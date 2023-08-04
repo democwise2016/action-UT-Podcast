@@ -7,6 +7,8 @@ const getFileListByCreationDate = require('./items/getFileListByCreationDate.js'
 
 const fs = require('fs');
 
+const ShellSpawn = require('./../lib/ShellSpawn.js')
+
 // const OutputFeedFilenameBuilder = require('./../podcast/OutputFeedFilenameBuilder.js')
 let RSSBuildCounter = 0
 
@@ -65,4 +67,7 @@ module.exports = async function (feedItem = {}) {
   fs.writeFileSync(`/output/${feedFilename}.rss`, outputFeedString, 'utf8') 
   RSSBuildCounter++
   console.log([`[UBDownloader] RSS build`, feedFilename, RSSBuildCounter, (new Date().toISOString())].join('\t'))
+
+  await ShellSpawn([`chmod`, `-R`, `777`, `/output/${feedFilename}/*`])
+  console.log([`[UBDownloader] Chmod finish`, feedFilename, RSSBuildCounter, (new Date().toISOString())].join('\t'))
 }
