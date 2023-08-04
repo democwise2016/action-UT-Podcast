@@ -175,6 +175,7 @@ async function GetHTML (url, options = {}) {
               await browser.close();
             }
             reduceCurrentThreads()
+            await TorController.restart()
             browser = null
           }, 100 * 1000)
           
@@ -191,7 +192,7 @@ async function GetHTML (url, options = {}) {
           }
 
           if (isTimeouted) {
-            clearTimeout(browserCloseTimer)
+            clearTimeout(browserCloseTimers)
             return undefined
           }
           retry = 0
@@ -209,7 +210,7 @@ async function GetHTML (url, options = {}) {
           retry++
           options.retry = retry
           reduceCurrentThreads()
-
+          await TorController.restart()
           // if (isTimeouted) {
           //   return undefined
           // }
