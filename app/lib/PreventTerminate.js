@@ -4,7 +4,10 @@ const CONFIG = require('./../../config.js')
 const fs = require('fs')
 
 function getUpdateTime () {
-  return fs.readFileSync(`/tmp/GetHTML.txt`, `utf8`)
+  if (fs.existsSync(`/tmp/GetHTML.txt`)) {
+    return fs.readFileSync(`/tmp/GetHTML.txt`, `utf8`)
+  }
+  return 0
 }
 
 module.exports = function () {
@@ -15,6 +18,7 @@ module.exports = function () {
   setInterval(() => {
     if (lastUpdateTime !== getUpdateTime()) {
       lastUpdateTime = getUpdateTime()
+      sameTimeCounter = 0
     }
     else {
       sameTimeCounter++
@@ -26,6 +30,6 @@ module.exports = function () {
     }
 
     let interval = Math.floor(((new Date()).getTime() - start) / 60 / 1000)
-    console.log([`[WAKE] `, `${interval}/${CONFIG.maxExcutionMinutes}`, (new Date().toISOString())].join('\t'))
+    console.log([`[WAKE] `, `${interval}/${CONFIG.maxExcutionMinutes}`, sameTimeCounter, (new Date().toISOString())].join('\t'))
   }, 30 * 1000)
 }

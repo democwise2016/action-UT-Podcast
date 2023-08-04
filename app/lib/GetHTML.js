@@ -35,7 +35,7 @@ const MAX_RETRY = 10
 const fs = require('fs')
 
 async function GetHTML (url, options = {}) {
-  fs.writeFileSync(`/tmp/GetHTML.txt`, (new Date()).getTime(), 'utf8') 
+  fs.writeFileSync(`/tmp/GetHTML.txt`, (new Date()).getTime() + '', 'utf8') 
 
   let browserCloseTimer
   let browser
