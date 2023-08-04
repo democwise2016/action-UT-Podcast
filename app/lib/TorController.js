@@ -9,7 +9,9 @@ let restartInterval = 3 * 1000
 let lastRestartTime
 
 let inited = false
-let lastIP
+let restartCount = 0
+let maxRestart = 10
+
 const TorController = {
   // inited: false,
   start: function (options = {}) {
@@ -23,7 +25,7 @@ const TorController = {
       }
       inited = 'wait'
       console.log('[TOR] Start tor...', (new Date().toISOString()))
-      await ShellSpawn(['bash', '/app/tor-start.sh'])
+      await ShellSpawn(['bash', '/app/tor/tor-start.sh'])
       inited = true
       resolve()
       // require('dns').lookup(require('os').hostname(), async (err, add, fam) => {
@@ -51,7 +53,14 @@ const TorController = {
     // await this.start({force: true})
     return new Promise(async (resolve) => {
       // await ShellSpawn([`service`, 'tor', `restart`])
-      await ShellSpawn(['bash', '/app/tor-restart.sh'])
+      restartCount++
+      if (restartCount >= maxRestart) {
+        console.error('[TOR] Reach max restart ' + maxRestart + ' ' + (new Date().toISOString()))
+        return resolve(false)
+      }
+
+      console.log('[TOR] Restart ' + restartCount + ' ' + (new Date().toISOString()))
+      await ShellSpawn(['bash', '/app/tor/tor-restart.sh'])
       // require('dns').lookup(require('os').hostname(), async (err, add, fam) => {
       //   console.log('[TOR] IP addr: ' + add);
       //   if (add === lastIP) {
@@ -61,7 +70,7 @@ const TorController = {
       //   lastIP = add
       //   resolve(add)
       // })
-      resolve()
+      resolve(true)
     })
       
   }

@@ -30,6 +30,8 @@ const CONFIG = require('./../../config.js')
 let startTimer = false
 let maxExcutionMS = CONFIG.maxExcutionMinutes * 60 * 1000
 
+
+
 async function GetHTML (url, options = {}) {
   let browser
   if (!startTimer) {
@@ -68,7 +70,9 @@ async function GetHTML (url, options = {}) {
 
   if (retry > 10) {
     await TorController.restart({force: true})
-    throw Error ('GetHTML failed: ' + url)
+    // throw Error ('GetHTML failed: ' + url)
+    console.error('GetHTML failed: ' + url)
+    return undefined
   }
 
   // if (crawler === 'puppeteer') {
@@ -175,7 +179,7 @@ async function GetHTML (url, options = {}) {
               await browser.close();
             }
             reduceCurrentThreads()
-            await TorController.restart()
+            // await TorController.restart()
             browser = null
           }, 100 * 1000)
           
@@ -210,7 +214,9 @@ async function GetHTML (url, options = {}) {
           retry++
           options.retry = retry
           reduceCurrentThreads()
-          await TorController.restart()
+          if ((await TorController.restart()) === false) {
+            return undefined
+          }
           // if (isTimeouted) {
           //   return undefined
           // }
