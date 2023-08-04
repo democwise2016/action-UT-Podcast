@@ -9,7 +9,7 @@ let CONFIG = {
   maxDownloadFeed: 10,
   newArrialMax: 5,
   maxDownloadItems: 5,
-  maxExcutionMinutes: 15,
+  maxExcutionMinutes: 13,
   feedList: [
     {
       title: 'TODAY 看世界',
