@@ -55,16 +55,22 @@ async function GetHTML (url, options = {}) {
     cacheDay = 0.5, 
     encoding = null,
     crawler = 'puppeteer', // fetch or puppeteer or xml
-    puppeteerArgs = ['--no-sandbox', '--disable-setuid-sandbox', '--window-size=800,600', '--proxy-server=socks5://127.0.0.1:9050'],
+    puppeteerArgs = ['--no-sandbox', '--disable-setuid-sandbox', '--window-size=800,600'],
     puppeteerAgent,
-    puppeteerWaitUntil = `networkidle2`,
-    // puppeteerWaitUntil = `networkidle0`,
+    // puppeteerWaitUntil = `networkidle2`,
+    puppeteerWaitUntil = `networkidle0`,
     // puppeteerWaitUntil = `domcontentloaded`,
     puppeteerWaitForSelector,
     puppeteerWaitForSelectorTimeout = 30000,
     retry = 0,
     timeout = 2 * 60 * 1000
   } = options
+
+  crawler = 'fetch'
+
+  if (TorController.isStarted()) {
+    puppeteerArgs.push('--proxy-server=socks5://127.0.0.1:9050')
+  }
 
   // if (timeout < 3 * 60 * 1000) {
   //   timeout = 3 * 60 * 1000
@@ -134,7 +140,7 @@ async function GetHTML (url, options = {}) {
         try {
           // console.log('GetHTML', 1)
           if (!browser) {
-            await TorController.start()
+            // await TorController.start()
             browser = await puppeteer.launch({
               //headless: false,
               args: puppeteerArgs,

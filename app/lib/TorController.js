@@ -14,6 +14,9 @@ let maxRestart = 100
 
 const TorController = {
   // inited: false,
+  isStarted () {
+    return (inited === true)
+  },
   start: function (options = {}) {
     return new Promise(async (resolve) => {
       while (inited === 'wait') {
@@ -40,6 +43,10 @@ const TorController = {
     })
   },
   restart: async function (options = {}) {
+    if (inited === false) {
+      return await this.start()
+    }
+
     if (inited === 'wait') {
       while (inited === 'wait') {
         await sleep()

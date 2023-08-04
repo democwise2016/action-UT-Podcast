@@ -89,7 +89,9 @@ const NodeCacheSqlite = {
     let database = await this.getDatabase(databaseName)
 
     // await database.del(key)
-    await database.set(key, undefined, {ttl: 0})
+    if (await this.isExists(database, key)) {
+      await database.set(key, undefined, {ttl: 0})
+    }
     console.log([`[CACHE] clear`, databaseName, key, (new Date().toISOString())].join('\t'))
     return true
   }
