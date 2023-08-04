@@ -4,8 +4,8 @@ const CONFIG = require('./../../config.js')
 const fs = require('fs')
 
 function getUpdateTime () {
-  if (fs.existsSync(`/tmp/GetHTML.txt`)) {
-    return fs.readFileSync(`/tmp/GetHTML.txt`, `utf8`)
+  if (fs.existsSync(`/app/tmp/GetHTML.txt`)) {
+    return fs.readFileSync(`/app/tmp/GetHTML.txt`, `utf8`)
   }
   return 0
 }

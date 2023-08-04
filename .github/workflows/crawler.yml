@@ -105,11 +105,7 @@ jobs:
 
       - name: Output Calculate Before
         run: |
-          for folder in ./output/*/; do
-            if [ -d "$folder" ]; then
-              du -sh "$folder"
-            fi
-          done
+          ./app/stat/folder_stats.sh ./output
       
       # ----------------------------------------------------------------
 
@@ -141,11 +137,7 @@ jobs:
 
       - name: Output Calculate After
         run: |
-          for folder in ./output/*/; do
-            if [ -d "$folder" ]; then
-              du -sh "$folder"
-            fi
-          done
+          ./app/stat/folder_stats.sh ./output
 
       # - name: Cache Save
       #   id: cache-save
