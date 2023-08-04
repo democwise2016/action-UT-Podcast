@@ -200,8 +200,8 @@ async function GetHTML (url, options = {}) {
           await sleep(1000)
           reduceCurrentThreads()
 
-          if (output.indexOf(`This page appears when Google automatically detects requests coming from your computer network which appear to be in violation of the`) > -1) {
-            console.log(['[GetHTML] deny from Google', url, (new Date().toISOString())].join('\t'))
+          if (output.indexOf(`This page appears when Go` + `o` + `gle automatically detects requests coming from your computer network which appear to be in violation of the`) > -1) {
+            console.log(['[GetHTML] deny from Go' + 'o' + 'gle', url, (new Date().toISOString())].join('\t'))
             await TorController.restart({force: true})
             retry++
             options.retry = retry

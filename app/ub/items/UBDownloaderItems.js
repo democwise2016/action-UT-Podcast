@@ -49,12 +49,14 @@ module.exports = async function (items, feedItem = {}) {
 
   return new Promise(async (resolve) => {
     let timer = setTimeout(() => {
+      console.log([`[UBDownloader] 超過執行時間`, (CONFIG.maxExcutionMinutes - 1), `https://youtu.be/${item.id}`, (new Date().toISOString())].join('\t'))
       resolve(filteredItems)
     }, (CONFIG.maxExcutionMinutes - 1) * 60 * 1000)
 
     try {
       for (let i = 0; i < count; i++) {
         if ((new Date()).getTime() - startTimer > maxExcutionMS) {
+          console.log([`[UBDownloader] 超過執行時間`, CONFIG.maxExcutionMinutes, `https://youtu.be/${item.id}`, (new Date().toISOString())].join('\t'))
           break
         }
 
@@ -62,6 +64,7 @@ module.exports = async function (items, feedItem = {}) {
 
         item = await AppendUBInfo(item)
         if (!item) {
+          console.log([`[UBDownloader] Item is invalid`, `https://youtu.be/${item.id}`, (new Date().toISOString())].join('\t'))
           continue
         }
 
@@ -73,6 +76,7 @@ module.exports = async function (items, feedItem = {}) {
           }
         }
         if (passed === false) {
+          console.log([`[UBDownloader] Not paass`, `https://youtu.be/${item.id}`, (new Date().toISOString())].join('\t'))
           continue
         }
 
@@ -87,7 +91,7 @@ module.exports = async function (items, feedItem = {}) {
         if (isNewerThenLatestFile(item, feedFilename) === false) {
           let {localPath} = await ItemDownloadPathBuilder(feedFilename, item.id, item.yyyymmddDate)
           if (await NodeCacheSqlite.isExists('CleanOldItems', localPath)) {
-            console.log(`File has been removed: $localPath`)
+            console.log([`[UBDownloader] File has been removed: $localPath`, (new Date().toISOString())].join('\t'))
             continue
           }
         }
@@ -96,6 +100,7 @@ module.exports = async function (items, feedItem = {}) {
 
         let result = await ItemDownload(item, feedItem)
         if (!result) {
+          console.log([`[UBDownloader] Download failed`, `https://youtu.be/${item.id}`, (new Date().toISOString())].join('\t'))
           continue
         }
         filteredItems.push(result.item)
