@@ -18,6 +18,7 @@ const TorController = {
     return (inited === true)
   },
   start: function (options = {}) {
+    return false // 20230804-2351 暫時不使用
     return new Promise(async (resolve) => {
       while (inited === 'wait') {
         await sleep(3000)
@@ -43,6 +44,8 @@ const TorController = {
     })
   },
   restart: async function (options = {}) {
+    return false // 20230804-2351 暫時不使用
+    
     if (inited === false) {
       return await this.start()
     }

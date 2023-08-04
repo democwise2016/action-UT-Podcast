@@ -119,13 +119,15 @@ let main = async () => {
           continue
         }
       }
-      if (fs.existsSync('/output/' + feedItem.feedFilename + '.rss') === false) {
-        UBDownloader(feedList[i])
-        runnerCount++
-        console.log('new arrial', runnerCount, feedList[i].title, feedList[i].feedFilename)
-        if (runnerCount >= CONFIG.newArrialMax) {
-          // console.log('Exit new arrial mode')
-          break
+      else {
+        if (fs.existsSync('/output/' + feedItem.feedFilename + '.rss') === false) {
+          UBDownloader(feedList[i])
+          runnerCount++
+          console.log('new arrial', runnerCount, feedList[i].title, feedList[i].feedFilename)
+          if (runnerCount >= CONFIG.newArrialMax) {
+            // console.log('Exit new arrial mode')
+            break
+          }
         }
       }
     }
