@@ -408,10 +408,19 @@ let CONFIG = {
       title: '波特王好帥 粉紅特報',
       feedID: 'Realpotterking-Pinker',
       homepageURL: 'https://www.youtube.com/channel/UCsBP1dmKYfcorJ17kfOUTvg',
-      thumbnailBorderColor: true,
+      // thumbnailBorderColor: true,
       itemFilters: [
         ItemFiltersPreset.between3minTo30Min,
         (item) => { return ((item.title.indexOf('粉紅特報') >-1)) }
+      ],
+    },
+    {
+      title: '小鄭在日本',
+      feedID: 'realxiaozheng',
+      homepageURL: 'https://www.youtube.com/channel/UCn2WdaugAANMkiXfUcCNdtA',
+      // thumbnailBorderColor: true,
+      itemFilters: [
+        ItemFiltersPreset.between3minTo30Min
       ],
     },
   ]
