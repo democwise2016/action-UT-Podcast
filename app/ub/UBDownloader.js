@@ -68,6 +68,6 @@ module.exports = async function (feedItem = {}) {
   RSSBuildCounter++
   console.log([`[UBDownloader] RSS build`, feedFilename, RSSBuildCounter, (new Date().toISOString())].join('\t'))
 
-  await ShellSpawn([`chmod`, `-R`, `777`, `/output/*`])
+  // await ShellSpawn([`chmod`, `-R`, `777`, `/output/*`])
   // console.log([`[UBDownloader] Chmod finish`, feedFilename, RSSBuildCounter, (new Date().toISOString())].join('\t'))
 }

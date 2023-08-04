@@ -1,6 +1,6 @@
 #!/bin/bash
 
-chmod -R 777 /output/*
+# chmod -R 777 /output/*
 
 ls -lh /cache/*.sqlite
 
