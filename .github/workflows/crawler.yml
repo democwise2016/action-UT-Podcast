@@ -99,6 +99,10 @@ jobs:
 
       # ----------------------------------------------------------------
 
+      - name: Check Cache Size Before
+        run: |
+          ls -lh ./cache/*.sqlite
+
       - name: Output Calculate Before
         run: |
           for folder in ./output/*/; do
@@ -106,6 +110,8 @@ jobs:
               du -sh "$folder"
             fi
           done
+      
+      # ----------------------------------------------------------------
 
       # - name: Prepare Cache
       #   run: |
@@ -129,7 +135,7 @@ jobs:
 
       # ----------------------------------------------------------------
 
-      - name: Check Cache Size
+      - name: Check Cache Size After
         run: |
           ls -lh ./cache/*.sqlite
 
