@@ -54,11 +54,11 @@ module.exports = async function (videoID, output, options = {}) {
 
     let url = `https://www.yo` + `ut` + `ube.com/watch?v=` + videoID
 
-    console.log(`[Start Download] \t${url}` + '\t' + output + '\t' + (new Date()).toISOString())
+    console.log(`[DOWNLOAD] Start \t${url}` + '\t' + output + '\t' + (new Date()).toISOString())
 
 
     let showDownloadEndMessage = function () {
-      console.log(`[End Download] \t${url}` + '\t' + output + '\t' + (new Date()).toISOString())
+      console.log(`[DOWNLOAD] End \t${url}` + '\t' + output + '\t' + (new Date()).toISOString())
       resolve(filename)
     }
 
@@ -69,14 +69,14 @@ module.exports = async function (videoID, output, options = {}) {
     })
 
     YD.on("error", async function(error) {
-      console.error(error)
+      // console.error(error)
 
       try {
         await ShellSpawn(["python3", "/app/python/ub.py", url, output])
         showDownloadEndMessage()
       }
       catch (e) {
-        console.log(`Please check video: https://www.yo` + `ut` + `ube.com/watch?v=${videoID}\n`)
+        console.log([`[DOWNLOAD] Please check video: https://www.yo` + `ut` + `ube.com/watch?v=${videoID}` + (new Date()).toISOString()].join('\t'))
         reject(error)
       }
     })

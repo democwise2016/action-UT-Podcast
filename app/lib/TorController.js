@@ -24,7 +24,7 @@ const TorController = {
         return false
       }
       inited = 'wait'
-      console.log('[TOR] Start tor...', (new Date().toISOString()))
+      console.log(['[TOR] Start tor', (new Date().toISOString())].join('\t'))
       await ShellSpawn(['bash', '/app/tor/tor-start.sh'])
       inited = true
       resolve()
@@ -55,12 +55,17 @@ const TorController = {
       // await ShellSpawn([`service`, 'tor', `restart`])
       restartCount++
       if (restartCount >= maxRestart) {
-        console.error('[TOR] Reach max restart ' + maxRestart + ' ' + (new Date().toISOString()))
+        console.error(['[TOR] Reach max restart ', maxRestart, (new Date().toISOString()), join('\t')])
         return resolve(false)
       }
 
-      console.log('[TOR] Restart ' + restartCount + ' ' + (new Date().toISOString()))
-      await ShellSpawn(['bash', '/app/tor/tor-restart.sh'])
+      console.trace(['[TOR] Restart ', restartCount, (new Date().toISOString())].join('\t'))
+      try {
+        await ShellSpawn(['bash', '/app/tor/tor-restart.sh'])
+      }
+      catch (e) {
+        console.error(e)
+      }
       // require('dns').lookup(require('os').hostname(), async (err, add, fam) => {
       //   console.log('[TOR] IP addr: ' + add);
       //   if (add === lastIP) {

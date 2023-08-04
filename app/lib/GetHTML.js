@@ -30,6 +30,7 @@ const CONFIG = require('./../../config.js')
 let startTimer = false
 let maxExcutionMS = CONFIG.maxExcutionMinutes * 60 * 1000
 
+const MAX_RETRY = 10
 
 
 async function GetHTML (url, options = {}) {
@@ -42,7 +43,7 @@ async function GetHTML (url, options = {}) {
 
   if ((new Date()).getTime() - startTimer > maxExcutionMS) {
     // throw Error ('GetHTML timeout: ' + url)
-    console.error('GetHTML timeout: ' + url)
+    console.error(['GetHTML timeout: ', url].join('\t'))
     return undefined
   }
 
@@ -69,10 +70,10 @@ async function GetHTML (url, options = {}) {
   //   timeout = 3 * 60 * 1000
   // }
 
-  if (retry > 10) {
+  if (retry > MAX_RETRY) {
     await TorController.restart({force: true})
     // throw Error ('GetHTML failed: ' + url)
-    console.error('GetHTML failed: ' + url)
+    console.error([`[GetHTML] Retry reach max ${MAX_RETRY}, failed`, url, (new Date().toISOString())].join('\t'))
     return undefined
   }
 
@@ -106,11 +107,11 @@ async function GetHTML (url, options = {}) {
 
           // console.log('GetHTML before start', url, currentThreads, crawler, (new Date().toISOString()))
       while (currentThreads > maxThreads) {
-        console.log('GetHTML wait', url, currentThreads, crawler, (new Date().toISOString()))
+        console.log(['[GetHTML] wait', url, currentThreads, crawler, (new Date().toISOString())].join('\t'))
         await sleep(30000)
       }
       currentThreads++
-      console.log('GetHTML start', url, currentThreads, crawler, (new Date().toISOString()))
+      console.log(['[GetHTML] start', url, currentThreads, crawler, (new Date().toISOString())].join('\t'))
 
 
       if (crawler === 'fetch') {
@@ -144,7 +145,7 @@ async function GetHTML (url, options = {}) {
             
           clearTimeout(browserCloseTimer)
           browserCloseTimer = setTimeout(async () => {
-            console.error(['GetHTML timeout, force close browser', url, crawler, (new Date().toISOString())].join(' '))
+            console.error(['[GetHTML] timeout, force close browser', url, crawler, (new Date().toISOString())].join('\t'))
             // isTimeouted = true
             if (browser && typeof(browser.close) === 'function') {
               await browser.close();
@@ -189,7 +190,7 @@ async function GetHTML (url, options = {}) {
           reduceCurrentThreads()
 
           if (output.indexOf(`This page appears when Google automatically detects requests coming from your computer network which appear to be in violation of the`) > -1) {
-            console.log('[GET] deny from Google')
+            console.log(['[GetHTML] deny from Google', url, (new Date().toISOString())].join('\t'))
             await TorController.restart({force: true})
             retry++
             options.retry = retry
@@ -200,7 +201,7 @@ async function GetHTML (url, options = {}) {
             return undefined
           }
           retry = 0
-          console.log('GetHTML end', url, currentThreads, crawler, (new Date().toISOString()))
+          console.log(['[GetHTML] end', url, currentThreads, crawler, (new Date().toISOString())].join('\t'))
           
           return output
         }
@@ -223,7 +224,7 @@ async function GetHTML (url, options = {}) {
           //   return undefined
           // }
 
-          console.log('Retry', options.retry, url)
+          console.log(['[GetHTML] Retry', options.retry, url, (new Date().toISOString())].join('\t'))
           return await GetHTML(url, options)
         } 
       }

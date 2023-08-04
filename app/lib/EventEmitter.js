@@ -1,10 +1,10 @@
-const EventEmitter = require('events');
+// const EventEmitter = require('events');
 
 
 
 module.exports = function () {
-  const emitter = new EventEmitter();
-  
+  // const emitter = new EventEmitter();
+
   // Set a higher limit for this specific EventEmitter instance (e.g., 20 listeners)
-  emitter.setMaxListeners(50);
+  process.setMaxListeners(0);
 }
