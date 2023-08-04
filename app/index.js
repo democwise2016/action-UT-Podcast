@@ -4,6 +4,7 @@ const CONFIG = require('./../config.js')
 const fs = require('fs')
 
 const EventEmitter = require('./lib/EventEmitter.js')
+const PreventTerminate = require('./lib/PreventTerminate.js')
 
 // const sqliteStore = require('cache-manager-sqlite')
 // const cacheManager = require('cache-manager')
@@ -13,6 +14,7 @@ const EventEmitter = require('./lib/EventEmitter.js')
 
 let main = async () => {
   EventEmitter()
+  PreventTerminate()
 
   const maxExcutionMS = CONFIG.maxExcutionMinutes * 60 * 1000;
   const timeout = setTimeout(() => {

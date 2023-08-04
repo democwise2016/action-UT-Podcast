@@ -1,7 +1,7 @@
 #!/bin/bash
 
 kill -9 `pidof tor`
-sleep 3
+# sleep 3
 service tor start
 
 # curl --socks5-hostname 127.0.0.1:9050 -s https://ipinfo.io/ip

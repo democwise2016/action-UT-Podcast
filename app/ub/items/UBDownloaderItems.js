@@ -11,6 +11,7 @@ const getFileListByCreationDate = require('./getFileListByCreationDate.js')
 const NodeCacheSqlite = require('./../../lib/NodeCacheSqlite.js')
 
 const ItemDownloadPathBuilder = require('./ItemDownloadPathBuilder.js')
+let nextChannelCount = 0
 
 module.exports = async function (items, feedItem = {}) {
 
@@ -94,7 +95,8 @@ module.exports = async function (items, feedItem = {}) {
 
     downloadedCount++
     if (downloadedCount >= maxItems) {
-      console.log(`Reach maxItems ${maxItems}. Go to next channel.`, feedFilename)
+      nextChannelCount++
+      console.log([`[DOWNLOAD] Reach maxItems ${maxItems}. Go to next channel.`, feedFilename, nextChannelCount].join('\t'))
       break
     }
 
@@ -103,7 +105,8 @@ module.exports = async function (items, feedItem = {}) {
       notCachedCount++
 
       if (notCachedCount >= CONFIG.maxDownloadItemPerFeed) {
-        console.log(`Reach max download ${CONFIG.maxDownloadItemPerFeed}. Go to next channel.`, feedFilename)
+        nextChannelCount++
+        console.log([`[DOWNLOAD] Reach max download ${CONFIG.maxDownloadItemPerFeed}. Go to next channel.`, feedFilename, nextChannelCount].join('\t'))
         break
       }
     }

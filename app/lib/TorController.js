@@ -55,7 +55,7 @@ const TorController = {
       // await ShellSpawn([`service`, 'tor', `restart`])
       restartCount++
       if (restartCount >= maxRestart) {
-        console.error(['[TOR] Reach max restart ', maxRestart, (new Date().toISOString()), join('\t')])
+        console.error(['[TOR] Reach max restart ', maxRestart, (new Date().toISOString())].join('\t'))
         return resolve(false)
       }
 
