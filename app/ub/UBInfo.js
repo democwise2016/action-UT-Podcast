@@ -52,7 +52,8 @@ class UBInfo {
       await NodeCacheSqlite.clear('GetHTML', url)
       //console.error('body html is empty: ' + url)
       //throw new Error('body html is empty: ' + url)
-      await this.sleep(30 * 1000)
+      await TorController.restart()
+      await this.sleep(3 * 1000)
       // return await this.loadChannel(url)
       return this.loadChannel(url)
     }
@@ -84,7 +85,8 @@ class UBInfo {
       await NodeCacheSqlite.clear('GetHTML', url)
       //console.error('body html is empty: ' + url)
       //throw new Error('body html is empty: ' + url)
-      await this.sleep(30 * 1000)
+      await TorController.restart()
+      await this.sleep(3 * 1000)
       // return await this.loadChannel(url)
       return this.loadVideo(url)
     }
@@ -93,7 +95,8 @@ class UBInfo {
       let info = this.parseVideoHTML(html, url)
       if (!info) {
         await NodeCacheSqlite.clear('GetHTML', url)
-        await this.sleep(30000)
+        await TorController.restart()
+        await this.sleep(3000)
         return await this.loadVideo(url)
       }
       

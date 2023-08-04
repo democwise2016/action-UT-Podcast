@@ -6,7 +6,7 @@ const cheerio = require('cheerio')
 const NodeCacheSqlite = require('./NodeCacheSqlite.js')
 const ShellSpawn = require('./ShellSpawn.js')
 
-let browserCloseTimer
+
 
 let maxThreads = 3
 let currentThreads = 0
@@ -33,7 +33,9 @@ let maxExcutionMS = CONFIG.maxExcutionMinutes * 60 * 1000
 
 
 async function GetHTML (url, options = {}) {
+  let browserCloseTimer
   let browser
+
   if (!startTimer) {
     startTimer = (new Date()).getTime()
   }
@@ -43,7 +45,6 @@ async function GetHTML (url, options = {}) {
     console.error('GetHTML timeout: ' + url)
     return undefined
   }
-
 
   if ((url.endsWith('.txt') || url.endsWith('.csv')) && !options.crawler) {
     options.crawler = 'fetch'
@@ -141,6 +142,18 @@ async function GetHTML (url, options = {}) {
             });
           }
             
+          clearTimeout(browserCloseTimer)
+          browserCloseTimer = setTimeout(async () => {
+            console.error(['GetHTML timeout, force close browser', url, crawler, (new Date().toISOString())].join(' '))
+            // isTimeouted = true
+            if (browser && typeof(browser.close) === 'function') {
+              await browser.close();
+            }
+            reduceCurrentThreads()
+            // await TorController.restart()
+            browser = null
+          }, 100 * 1000)
+          
           // console.log('GetHTML', 2)
           // setTimeout(async () => {
           //   console.error(['GetHTML timeout, force close browser', url, crawler, (new Date().toISOString())].join(' '))
@@ -172,18 +185,6 @@ async function GetHTML (url, options = {}) {
           let output = await page.content()
 
           clearTimeout(browserCloseTimer)
-          browserCloseTimer = setTimeout(async () => {
-            console.error(['GetHTML timeout, force close browser', url, crawler, (new Date().toISOString())].join(' '))
-            // isTimeouted = true
-            if (browser && typeof(browser.close) === 'function') {
-              await browser.close();
-            }
-            reduceCurrentThreads()
-            // await TorController.restart()
-            browser = null
-          }, 100 * 1000)
-          
-
           await sleep(1000)
           reduceCurrentThreads()
 
@@ -196,20 +197,21 @@ async function GetHTML (url, options = {}) {
           }
 
           if (isTimeouted) {
-            clearTimeout(browserCloseTimers)
             return undefined
           }
           retry = 0
           console.log('GetHTML end', url, currentThreads, crawler, (new Date().toISOString()))
-          clearTimeout(browserCloseTimer)
+          
           return output
         }
         catch (e) {
           console.error(e)
+          clearTimeout(browserCloseTimer)
 
           await browser.close();
           browser = null
-          await sleep(30000)
+          
+          await sleep(3000)
 
           retry++
           options.retry = retry

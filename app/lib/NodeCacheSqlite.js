@@ -77,7 +77,13 @@ const NodeCacheSqlite = {
     return result
   },
   isExists: async function (databaseName, key) {
-    return ((await this.get(databaseName, key)) !== undefined)
+    // return ((await this.get(databaseName, key)) !== undefined)
+    let database = await this.getDatabase(databaseName)
+    let result = await database.get(key)
+
+    console.log('[CACHE]', 'isExists', key, result, (result !== undefined && result !== null))
+
+    return (result !== undefined && result !== null)
   },
   clear: async function (databaseName, key) {
     let database = await this.getDatabase(databaseName)

@@ -3,6 +3,8 @@ const FeedIndexBuilder = require('./podcast/FeedIndexBuilder.js')
 const CONFIG = require('./../config.js')
 const fs = require('fs')
 
+const EventEmitter = require('./lib/EventEmitter.js')
+
 // const sqliteStore = require('cache-manager-sqlite')
 // const cacheManager = require('cache-manager')
 // const NodeCacheSqlite = require('./lib/NodeCacheSqlite.js')
@@ -10,11 +12,12 @@ const fs = require('fs')
 // const UBMp3DownloaderWrapper = require('./ub/items/UBMp3Downloader/UBMp3DownloaderWrapper.js')
 
 let main = async () => {
+  EventEmitter()
 
   const maxExcutionMS = CONFIG.maxExcutionMinutes * 60 * 1000;
   const timeout = setTimeout(() => {
     console.log(`Process has been terminated after ${CONFIG.maxExcutionMinutes} minutes.`);
-    process.exit(1); // You can provide an exit code (non-zero) if needed.
+    process.exit(0); // You can provide an exit code (non-zero) if needed.
   }, maxExcutionMS);
 
   // On disk cache on employees table

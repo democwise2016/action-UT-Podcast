@@ -10,7 +10,7 @@ let lastRestartTime
 
 let inited = false
 let restartCount = 0
-let maxRestart = 10
+let maxRestart = 20
 
 const TorController = {
   // inited: false,
