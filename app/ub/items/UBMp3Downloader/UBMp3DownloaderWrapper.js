@@ -76,7 +76,7 @@ module.exports = async function (videoID, output, options = {}) {
         showDownloadEndMessage()
       }
       catch (e) {
-        console.log([`[DOWNLOAD] Please check video: https://www.yo` + `ut` + `ube.com/watch?v=${videoID}` + (new Date()).toISOString()].join('\t'))
+        console.log([`[DOWNLOAD] Please check video: https://www.yo` + `ut` + `ube.com/watch?v=${videoID}`, (new Date()).toISOString()].join('\t'))
         reject(error)
       }
     })
