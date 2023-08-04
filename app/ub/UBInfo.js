@@ -49,8 +49,9 @@ class UBInfo {
     // console.log(html)
     if (!html || html === '') {
       // await NodeCacheSqlite.clear('ubinfo', url)
+      console.error(['[UBInfo] loadChannel, body html is empty: ', url, (new Date().toISOString())].join('\t'))
       await NodeCacheSqlite.clear('GetHTML', url)
-      //console.error('body html is empty: ' + url)
+      
       //throw new Error('body html is empty: ' + url)
       await TorController.restart()
       await this.sleep(3 * 1000)
@@ -61,6 +62,7 @@ class UBInfo {
     return await NodeCacheSqlite.get('loadChannel', url, async () => {
       let info = this.parseChannelHTML(html, url)
       if (!info) {
+        console.error(['[UBInfo] loadChannel, info is empty: ', url, (new Date().toISOString())].join('\t'))
         await NodeCacheSqlite.clear('GetHTML', url)
         // await this.sleep(30 * 1000)
         await TorController.restart()
@@ -82,7 +84,9 @@ class UBInfo {
     let html = await this.loadHTML(url, 2 * 24 * 60 * 60 * 1000)
     if (!html || html === '') {
       // await NodeCacheSqlite.clear('ubinfo', url)
+      console.error(['[UBInfo] loadVideo, body html is empty: ', url, (new Date().toISOString())].join('\t'))
       await NodeCacheSqlite.clear('GetHTML', url)
+      
       //console.error('body html is empty: ' + url)
       //throw new Error('body html is empty: ' + url)
       await TorController.restart()
@@ -94,6 +98,7 @@ class UBInfo {
     return await NodeCacheSqlite.get('loadVideo', url, async () => {
       let info = this.parseVideoHTML(html, url)
       if (!info) {
+        console.error(['[UBInfo] loadVideo, info is empty: ', url, (new Date().toISOString())].join('\t'))
         await NodeCacheSqlite.clear('GetHTML', url)
         await TorController.restart()
         await this.sleep(3000)
@@ -102,6 +107,7 @@ class UBInfo {
       
       if (info.isOffline) {
         // await NodeCacheSqlite.clear('ubinfo', url)
+        console.error(['[UBInfo] video isOffline', url, (new Date().toISOString())].join('\t'))
         await NodeCacheSqlite.clear('GetHTML', url)
         info = undefined
         // await NodeCacheSqlite.clear('tor-html-loader', url)
@@ -125,7 +131,8 @@ class UBInfo {
     let html = await (async () => {
       let output = await this.loadHTML(url, cacheLimit * 60 * 1000)
       if (output.indexOf(`{"videoOwner":{"videoOwnerRenderer":{"thumbnail":{"thumbnails":[{"url":"`) === -1) {
-        throw Error('Playlist html is error: ' + url)
+        // throw Error('Playlist html is error: ' + url)
+        console.error(['[UBInfo] Playlist html is error: ', url, (new Date().toISOString())].join('\t'))
         return undefined
       }
       else {
@@ -135,6 +142,8 @@ class UBInfo {
     
     if (html === null || typeof html !== 'string') {
       // await NodeCacheSqlite.clear('ubinfo', url)
+
+      console.error(['[UBInfo] Playlist html is null: ', url, (new Date().toISOString())].join('\t'))
       await NodeCacheSqlite.clear('GetHTML', url)
       return false
     }
@@ -208,7 +217,7 @@ class UBInfo {
     }
     
     if (!body) {
-      console.error('body is empty: ' + url)
+      console.error(['[UBInfo] parseVideoHTML, body is empty: ', url, (new Date().toISOString())].join('\t'))
       return {
         isOffline: true,
         bodyIsEmpty: true
@@ -232,7 +241,8 @@ class UBInfo {
       }
       catch (e2) {
         //throw new Error('URL loading error: ' + url)
-        console.error('URL loading error: ' + url)
+        // console.error('URL loading error: ' + url)
+        console.error(['[UBInfo] parseVideoHTML, URL loading error: ', url, (new Date().toISOString())].join('\t'))
         return {
           isOffline: true
         }
@@ -292,7 +302,7 @@ class UBInfo {
         info.channelAvatar = info.channelAvatar.split('=s48-c-k').join('=s1024-c-k')
       }
       catch (e) {
-        console.error('cannot found channelAvatar: ' + url, e)
+        console.error(['[UBInfo] parseVideoHTML, cannot found channelAvatar: ' + url, (new Date().toISOString())].join('\t'))
         return false
       }
     }
@@ -324,9 +334,9 @@ class UBInfo {
       // console.log(body.length)
       // fs.writeFileSync('/cache/video.html', body)
       // console.log('=----------------------------=')
-      console.log('info.date not found: ', $('meta[itemprop="uploadDate"]').length, $('meta[itemprop="datePublished"]').length)
+      console.log(['[UBInfo] info.date not found: ' + url, $('meta[itemprop="uploadDate"]').length, $('meta[itemprop="datePublished"]').length, (new Date().toISOString())].join('\t'))
 
-      console.error('info.date not found: ' + url)
+      // console.error('info.date not found: ' + url)
       return {
         isOffline: true
       }
@@ -373,7 +383,8 @@ class UBInfo {
       //console.log('channelAvatar', body)
       if (!info.channelAvatar) {
         // NodeCacheSqlite.clear('GetHTML', url)
-        throw new Error('channelAvatar is not found', url)
+        // throw new Error('channelAvatar is not found', url)
+        throw new Error(['[UBInfo] parseChannelHTML, channelAvatar is not found', url, (new Date().toISOString())].join('\t'))
       }
       info.channelAvatar = info.channelAvatar.split('=s100-c-k').join('=s1024-c-k')
       info.channelAvatar = info.channelAvatar.split('=s48-c-k').join('=s1024-c-k')
