@@ -5,7 +5,7 @@ let NodeCacheSqlite = require('./../lib/NodeCacheSqlite.js');
 
 module.exports = async function (feedURL, options = {}) {
   let {
-    cacheDay = 0.5, 
+    cacheDay = 0.3, 
   } = options
 
   return await NodeCacheSqlite.get('GetUBFeedJSON', feedURL, async function () {
