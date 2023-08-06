@@ -71,7 +71,7 @@ class UBInfo {
       }
 
       cache[url] = info
-      console.error(['[UBInfo] loadChannel is finished', url, (new Date().toISOString())].join('\t'))
+      console.log(['[UBInfo] loadChannel is finished', url, (new Date().toISOString())].join('\t'))
       return info
     }, 180 * 24 * 60 * 60 * 1000)
       
@@ -117,7 +117,7 @@ class UBInfo {
       }
       
       cache[url] = info
-      console.error(['[UBInfo] loadVideo is finished', url, (new Date().toISOString())].join('\t'))
+      console.log(['[UBInfo] loadVideo is finished', url, (new Date().toISOString())].join('\t'))
       return info
     }, 60 * 24 * 60 * 60 * 1000)
   }
@@ -132,17 +132,18 @@ class UBInfo {
       return cache[url]
     }
     
-    let html = await (async () => {
-      let output = await this.loadHTML(url, cacheLimit * 60 * 1000)
-      if (output.indexOf(`{"videoOwner":{"videoOwnerRenderer":{"thumbnail":{"thumbnails":[{"url":"`) === -1) {
-        // throw Error('Playlist html is error: ' + url)
-        console.error(['[UBInfo] Playlist html is error: ', url, (new Date().toISOString())].join('\t'))
-        return undefined
-      }
-      else {
-        return output
-      }
-    })
+    let html = await this.loadHTML(url, 0.5 * 24 * 60 * 60 * 1000)
+    if (html.indexOf(`{"videoOwner":{"videoOwnerRenderer":{"thumbnail":{"thumbnails":[{"url":"`) === -1) {
+      // throw Error('Playlist html is error: ' + url)
+      console.error(['[UBInfo] Playlist html is error: ', url, (new Date().toISOString())].join('\t'))
+      // return undefined
+      await NodeCacheSqlite.clear('GetHTML', url)
+
+      await TorController.restart()
+      await this.sleep(3 * 1000)
+      // return await this.loadChannel(url)
+      return this.loadVideo(url)
+    }
     
     if (html === null || typeof html !== 'string') {
       // await NodeCacheSqlite.clear('ubinfo', url)
@@ -152,9 +153,16 @@ class UBInfo {
       return false
     }
     
-    let info = this.parsePlaylistHTML(html, url)
-    cache[url] = info
-    return info
+    return await NodeCacheSqlite.get('loadPlaylist', url, async () => {
+      let info = this.parsePlaylistHTML(html, url)
+      if (!info) {
+        console.error(['[UBInfo] loadPlaylist is undefined', url, (new Date().toISOString())].join('\t'))
+        return undefined
+      }
+      console.log(['[UBInfo] loadPlaylist is finished', url, (new Date().toISOString())].join('\t'))
+      cache[url] = info
+      return info
+    })
   }
   
   async loadHTML(url, cacheExpire = 43200000) {

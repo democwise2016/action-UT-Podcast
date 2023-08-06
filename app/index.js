@@ -8,11 +8,13 @@ const PreventTerminate = require('./lib/PreventTerminate.js')
 
 // const sqliteStore = require('cache-manager-sqlite')
 // const cacheManager = require('cache-manager')
-// const NodeCacheSqlite = require('./lib/NodeCacheSqlite.js')
+const NodeCacheSqlite = require('./lib/NodeCacheSqlite.js')
 
 // const UBMp3DownloaderWrapper = require('./ub/items/UBMp3Downloader/UBMp3DownloaderWrapper.js')
 
 let main = async () => {
+  // return await NodeCacheSqlite.set('test', 'a', 1, 1000 * 1000)
+
   EventEmitter()
   PreventTerminate()
 
