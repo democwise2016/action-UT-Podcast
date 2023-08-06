@@ -44,22 +44,24 @@ class UBInfo {
       return cache[url]
     }
     
-    // let html = await this.loadHTML(url, 5184000000)
-    let html = await this.loadHTML(url, 2 * 24 * 60 * 60 * 1000)
-    // console.log(html)
-    if (!html || html === '') {
-      // await NodeCacheSqlite.clear('ubinfo', url)
-      console.error(['[UBInfo] loadChannel, body html is empty: ', url, (new Date().toISOString())].join('\t'))
-      await NodeCacheSqlite.clear('GetHTML', url)
-      
-      //throw new Error('body html is empty: ' + url)
-      await TorController.restart()
-      await this.sleep(3 * 1000)
-      // return await this.loadChannel(url)
-      return this.loadChannel(url)
-    }
 
     return await NodeCacheSqlite.get('loadChannel', url, async () => {
+
+      // let html = await this.loadHTML(url, 5184000000)
+      let html = await this.loadHTML(url, 2 * 24 * 60 * 60 * 1000)
+      // console.log(html)
+      if (!html || html === '') {
+        // await NodeCacheSqlite.clear('ubinfo', url)
+        console.error(['[UBInfo] loadChannel, body html is empty: ', url, (new Date().toISOString())].join('\t'))
+        await NodeCacheSqlite.clear('GetHTML', url)
+        
+        //throw new Error('body html is empty: ' + url)
+        await TorController.restart()
+        await this.sleep(3 * 1000)
+        // return await this.loadChannel(url)
+        return this.loadChannel(url)
+      }
+
       let info = this.parseChannelHTML(html, url)
       if (!info) {
         console.error(['[UBInfo] loadChannel, info is empty: ', url, (new Date().toISOString())].join('\t'))
@@ -82,21 +84,21 @@ class UBInfo {
       return cache[url]
     }
     
-    let html = await this.loadHTML(url, 2 * 24 * 60 * 60 * 1000)
-    if (!html || html === '') {
-      // await NodeCacheSqlite.clear('ubinfo', url)
-      console.error(['[UBInfo] loadVideo, body html is empty: ', url, (new Date().toISOString())].join('\t'))
-      await NodeCacheSqlite.clear('GetHTML', url)
-      
-      //console.error('body html is empty: ' + url)
-      //throw new Error('body html is empty: ' + url)
-      await TorController.restart()
-      await this.sleep(3 * 1000)
-      // return await this.loadChannel(url)
-      return this.loadVideo(url)
-    }
-
     return await NodeCacheSqlite.get('loadVideo', url, async () => {
+      let html = await this.loadHTML(url, 2 * 24 * 60 * 60 * 1000)
+      if (!html || html === '') {
+        // await NodeCacheSqlite.clear('ubinfo', url)
+        console.error(['[UBInfo] loadVideo, body html is empty: ', url, (new Date().toISOString())].join('\t'))
+        await NodeCacheSqlite.clear('GetHTML', url)
+        
+        //console.error('body html is empty: ' + url)
+        //throw new Error('body html is empty: ' + url)
+        await TorController.restart()
+        await this.sleep(3 * 1000)
+        // return await this.loadChannel(url)
+        return this.loadVideo(url)
+      }
+      
       let info = this.parseVideoHTML(html, url)
       if (!info) {
         console.error(['[UBInfo] loadVideo, info is empty: ', url, (new Date().toISOString())].join('\t'))
@@ -132,28 +134,28 @@ class UBInfo {
       return cache[url]
     }
     
-    let html = await this.loadHTML(url, 0.5 * 24 * 60 * 60 * 1000)
-    if (html.indexOf(`{"videoOwner":{"videoOwnerRenderer":{"thumbnail":{"thumbnails":[{"url":"`) === -1) {
-      // throw Error('Playlist html is error: ' + url)
-      console.error(['[UBInfo] Playlist html is error: ', url, (new Date().toISOString())].join('\t'))
-      // return undefined
-      await NodeCacheSqlite.clear('GetHTML', url)
-
-      await TorController.restart()
-      await this.sleep(3 * 1000)
-      // return await this.loadChannel(url)
-      return this.loadVideo(url)
-    }
-    
-    if (html === null || typeof html !== 'string') {
-      // await NodeCacheSqlite.clear('ubinfo', url)
-
-      console.error(['[UBInfo] Playlist html is null: ', url, (new Date().toISOString())].join('\t'))
-      await NodeCacheSqlite.clear('GetHTML', url)
-      return false
-    }
-    
     return await NodeCacheSqlite.get('loadPlaylist', url, async () => {
+      let html = await this.loadHTML(url, 0.5 * 24 * 60 * 60 * 1000)
+      if (html.indexOf(`{"videoOwner":{"videoOwnerRenderer":{"thumbnail":{"thumbnails":[{"url":"`) === -1) {
+        // throw Error('Playlist html is error: ' + url)
+        console.error(['[UBInfo] Playlist html is error: ', url, (new Date().toISOString())].join('\t'))
+        // return undefined
+        await NodeCacheSqlite.clear('GetHTML', url)
+
+        await TorController.restart()
+        await this.sleep(3 * 1000)
+        // return await this.loadChannel(url)
+        return this.loadVideo(url)
+      }
+      
+      if (html === null || typeof html !== 'string') {
+        // await NodeCacheSqlite.clear('ubinfo', url)
+
+        console.error(['[UBInfo] Playlist html is null: ', url, (new Date().toISOString())].join('\t'))
+        await NodeCacheSqlite.clear('GetHTML', url)
+        return undefined
+      }
+
       let info = this.parsePlaylistHTML(html, url)
       if (!info) {
         console.error(['[UBInfo] loadPlaylist is undefined', url, (new Date().toISOString())].join('\t'))
