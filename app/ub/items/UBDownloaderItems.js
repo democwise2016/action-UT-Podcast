@@ -49,14 +49,14 @@ module.exports = async function (items, feedItem = {}) {
 
   return new Promise(async (resolve) => {
     let timer = setTimeout(() => {
-      console.log([`[UBDownloader] 超過執行時間`, (CONFIG.maxExcutionMinutes - 1), `https://youtu.be/${item.id}`, (new Date().toISOString())].join('\t'))
+      console.log([`[UBDownloader] 超過執行時間`, (CONFIG.maxExcutionMinutes - 1), item.url, feedFilename, (new Date().toISOString())].join('\t'))
       resolve(filteredItems)
     }, (CONFIG.maxExcutionMinutes - 1) * 60 * 1000)
 
     try {
       for (let i = 0; i < count; i++) {
         if ((new Date()).getTime() - startTimer > maxExcutionMS) {
-          console.log([`[UBDownloader] 超過執行時間`, CONFIG.maxExcutionMinutes, `https://youtu.be/${item.id}`, (new Date().toISOString())].join('\t'))
+          console.log([`[UBDownloader] 超過執行時間`, CONFIG.maxExcutionMinutes, item.url, feedFilename, (new Date().toISOString())].join('\t'))
           break
         }
 
@@ -64,7 +64,7 @@ module.exports = async function (items, feedItem = {}) {
 
         item = await AppendUBInfo(item)
         if (!item) {
-          console.log([`[UBDownloader] Item is invalid`, items[i].link, (new Date().toISOString())].join('\t'))
+          console.log([`[UBDownloader] Item is invalid`, items[i].link, feedFilename, (new Date().toISOString())].join('\t'))
           continue
         }
 
@@ -76,7 +76,7 @@ module.exports = async function (items, feedItem = {}) {
           }
         }
         if (passed === false) {
-          console.log([`[UBDownloader] Not paassed`, `https://www.youtube.com/watch?v=${item.id}`, (new Date().toISOString())].join('\t'))
+          console.log([`[UBDownloader] Not paassed`, `https://www.youtube.com/watch?v=${item.id}`, feedFilename, (new Date().toISOString())].join('\t'))
           continue
         }
 
@@ -100,12 +100,14 @@ module.exports = async function (items, feedItem = {}) {
 
         let result = await ItemDownload(item, feedItem)
         if (!result) {
-          console.log([`[UBDownloader] Download failed`, `https://youtu.be/${item.id}`, (new Date().toISOString())].join('\t'))
+          console.error([`[UBDownloader] Download failed`, item.url, feedFilename, (new Date().toISOString())].join('\t'))
           continue
         }
         filteredItems.push(result.item)
-
         downloadedCount++
+
+        console.log([`[UBDownloader] Download pushed`, item.url, feedFilename, downloadedCount, (new Date().toISOString())].join('\t'))
+        
         if (downloadedCount >= maxItems) {
           nextChannelCount++
           console.log([`[DOWNLOAD] Reach maxItems ${maxItems}. Go to next channel.`, feedFilename, nextChannelCount, (new Date().toISOString())].join('\t'))

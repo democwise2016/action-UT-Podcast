@@ -81,9 +81,9 @@ jobs:
       #   run: |
       #     rm -rf ./cache/node-cache-sqlite*
 
-      - name: Clean Cache node-cache.sqlite
-        run: |
-          rm -f ./cache/node-cache-sqlite_*object*.sqlite
+      # - name: Clean Object Cache node-cache.sqlite
+      #   run: |
+      #     rm -f ./cache/node-cache-sqlite_*object*.sqlite
 
       # - name: Clean Cache
       #   run: |
