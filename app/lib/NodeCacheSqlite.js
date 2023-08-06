@@ -18,6 +18,10 @@ const NodeCacheSqlite = {
   databases: {},
   getDatabase: async function (databaseName) {
 
+    if (typeof(databaseName) !== 'string') {
+      console.trace(['databaseName is invalid: ', JSON.stringify(databaseName), (new Date().toISOString())].join('\t'))
+    }
+
     if (this.databases[databaseName]) {
       return this.databases[databaseName]
     }
