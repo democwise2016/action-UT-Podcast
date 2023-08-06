@@ -8,7 +8,7 @@ module.exports = async function (feedURL, options = {}) {
     cacheDay = 0.3, 
   } = options
 
-  return await NodeCacheSqlite.get('GetUBFeedJSON', feedURL, async function () {
+  // return await NodeCacheSqlite.get('GetUBFeedJSON', feedURL, async function () {
     console.log('get feed', feedURL, (new Date()).toISOString())
 
     if (!parser) {
@@ -33,5 +33,5 @@ module.exports = async function (feedURL, options = {}) {
     // console.log(output)
 
     return output
-  }, parseInt(cacheDay * 1000 * 60 * 60 * 24, 10))
+  // }, parseInt(cacheDay * 1000 * 60 * 60 * 24, 10))
 }
