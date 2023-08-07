@@ -423,6 +423,15 @@ let CONFIG = {
         ItemFiltersPreset.between3minTo30Min
       ],
     },
+    {
+      title: '阿先說故事',
+      feedID: 'AhFirst666',
+      homepageURL: 'https://www.youtube.com/channel/UCz0V_SLhfJYhRQbVtyjNAOw',
+      // thumbnailBorderColor: true,
+      itemFilters: [
+        ItemFiltersPreset.between3minTo30Min
+      ],
+    },
   ]
 }
 
