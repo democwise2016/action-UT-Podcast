@@ -1,3 +1,4 @@
 /[[]trash/
-# /output
+/output/*.rss
+/output/*.html
 # /cache

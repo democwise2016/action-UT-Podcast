@@ -85,6 +85,10 @@ jobs:
       #   run: |
       #     rm -f ./cache/node-cache-sqlite_*object*.sqlite
 
+      - name: Clean output gitignore
+        run: |
+          rm -f ./output/.gitignore
+
       # - name: Clean Cache
       #   run: |
       #     rm -rf ./cache/*
