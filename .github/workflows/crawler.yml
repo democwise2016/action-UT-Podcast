@@ -101,11 +101,11 @@ jobs:
 
       - name: Check Cache Size Before
         run: |
-          ls -lh ./cache/*.sqlite
+          ls -lh ./cache/*.sqlite || true
 
       - name: Output Calculate Before
         run: |
-          ./app/stat/folder_stats.sh ./output
+          ./app/stat/folder_stats.sh ./output || true
       
       # ----------------------------------------------------------------
 
@@ -133,11 +133,11 @@ jobs:
 
       - name: Check Cache Size After
         run: |
-          ls -lh ./cache/*.sqlite
+          ls -lh ./cache/*.sqlite || true
 
       - name: Output Calculate After
         run: |
-          ./app/stat/folder_stats.sh ./output
+          ./app/stat/folder_stats.sh ./output || true
 
       # - name: Cache Save
       #   id: cache-save
