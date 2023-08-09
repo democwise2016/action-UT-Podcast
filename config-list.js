@@ -531,6 +531,12 @@ let feedList = [
     homepageURL: 'https://www.youtube.com/channel/UCCc2xNwMwwGs5T5UPaKh0Tw',
     itemFilters: ItemFiltersPreset.between3minTo30Min,
   },
+  {
+    title: 'KAZBOM',
+    feedID: 'kazbom',
+    homepageURL: 'https://www.youtube.com/channel/UCOBVyJhiDg39fjjXPWbyOqg',
+    itemFilters: ItemFiltersPreset.between3minTo30Min,
+  },
 ]
 
 module.exports = feedList
