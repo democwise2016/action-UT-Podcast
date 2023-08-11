@@ -537,6 +537,12 @@ let feedList = [
     homepageURL: 'https://www.youtube.com/channel/UCOBVyJhiDg39fjjXPWbyOqg',
     itemFilters: ItemFiltersPreset.between3minTo30Min,
   },
+  {
+    title: '公子沈 Mr. Shen',
+    feedID: 'gongzishen',
+    homepageURL: 'https://www.youtube.com/channel/UCrGSFNEBmCN0rqhATZels2Q',
+    itemFilters: ItemFiltersPreset.between3minTo30Min,
+  },
 ]
 
 module.exports = feedList
