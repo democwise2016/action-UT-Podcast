@@ -110,6 +110,7 @@ jobs:
       - name: Output Calculate Before
         run: |
           ./app/stat/folder_stats.sh ./output || true
+          ls -lh ./output/*.rss
       
       # ----------------------------------------------------------------
 
@@ -142,6 +143,7 @@ jobs:
       - name: Output Calculate After
         run: |
           ./app/stat/folder_stats.sh ./output || true
+          ls -lh ./output/*.rss
 
       # - name: Cache Save
       #   id: cache-save
