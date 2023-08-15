@@ -1,5 +1,8 @@
 #!/bin/bash
 
+mkdir -p /cache/
+mkdir -p /output/
+
 # chmod -R 777 /output/*
 
 ls -lh /cache/*.sqlite

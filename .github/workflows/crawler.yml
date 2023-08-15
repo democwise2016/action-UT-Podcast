@@ -85,9 +85,9 @@ jobs:
       #   run: |
       #     rm -f ./cache/node-cache-sqlite_*object*.sqlite
 
-      - name: Clean output gitignore
-        run: |
-          rm -f ./output/.gitignore
+      # - name: Clean output gitignore
+      #   run: |
+      #     rm -f ./output/.gitignore
 
       # - name: Clean Cache
       #   run: |
@@ -100,7 +100,7 @@ jobs:
       #   run: |
       #     rm -rf ./output/meisouniv-news-ch_UCiCOKR_WkqZuYN9fpjWqnzg*
       #     rm -rf ./output/KC-Huang-917POPRadio-ch_UCJ5rBA0z4WFGtUTS83sAb_A*
-
+      
       # ----------------------------------------------------------------
 
       - name: Check Cache Size Before
