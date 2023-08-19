@@ -471,7 +471,7 @@ let feedList = [
     itemFilters: ItemFiltersPreset.between3minTo30Min,
   },
   {
-    title: '關我什麼事',
+    title: '關我什麼事 財經政論',
     feedID: 'GUNaSHOW',
     homepageURL: 'https://www.youtube.com/channel/UCMpuxj_U02VaHfaPD5Jjx_Q',
     itemFilters: ItemFiltersPreset.between30minTo180Min,
@@ -496,7 +496,7 @@ let feedList = [
     itemFilters: ItemFiltersPreset.between3minTo30Min,
   },
   {
-    title: '嚼豆',
+    title: '嚼豆 聊遊戲王',
     feedID: 'DOW2233',
     homepageURL: 'https://www.youtube.com/channel/UCerJk0-d22M7MFy8opOuyjA',
     itemFilters: ItemFiltersPreset.between3minTo30Min,
@@ -514,13 +514,13 @@ let feedList = [
     itemFilters: ItemFiltersPreset.between3minTo30Min,
   },
   {
-    title: '卡欸蝶',
+    title: '卡欸蝶 聊動畫',
     feedID: 'animekaede_',
     homepageURL: 'https://www.youtube.com/channel/UCTY5Ac6bOFjWJj_0EKzJoyA',
     itemFilters: ItemFiltersPreset.between3minTo30Min,
   },
   {
-    title: 'Hung-yi Lee',
+    title: 'Hung-yi Lee 上課囉',
     feedID: 'HungyiLeeNTU',
     homepageURL: 'https://www.youtube.com/channel/UC2ggjtuuWvxrHHHiaDH1dlQ',
     itemFilters: ItemFiltersPreset.between3minTo30Min,
@@ -532,13 +532,13 @@ let feedList = [
     itemFilters: ItemFiltersPreset.between3minTo30Min,
   },
   {
-    title: 'KAZBOM',
+    title: 'KAZBOM 聊音樂',
     feedID: 'kazbom',
     homepageURL: 'https://www.youtube.com/channel/UCOBVyJhiDg39fjjXPWbyOqg',
     itemFilters: ItemFiltersPreset.between3minTo30Min,
   },
   {
-    title: '公子沈 Mr. Shen',
+    title: '公子沈 評中國',
     feedID: 'gongzishen',
     homepageURL: 'https://www.youtube.com/channel/UCrGSFNEBmCN0rqhATZels2Q',
     itemFilters: ItemFiltersPreset.between3minTo30Min,
