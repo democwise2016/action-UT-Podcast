@@ -388,7 +388,7 @@ let feedList = [
     homepageURL: 'https://www.youtube.com/channel/UCNWAsexY9eiS1N6JDns-0kw',
     itemFilters: [
       ItemFiltersPreset.between30minTo180Min,
-      (item) => { return ((item.title.startsWith('【國昌直播】'))) }
+      (item) => { return ((item.title.startsWith('【國昌直播'))) }
     ],
     options: {
       maxItems: 3
