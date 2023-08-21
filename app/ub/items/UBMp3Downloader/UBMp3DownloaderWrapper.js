@@ -1,5 +1,6 @@
 const UBMp3Downloader = require('./UBMp3Downloader.js')
 const ShellSpawn = require('./../../../lib/ShellSpawn.js')
+const fs = require('fs')
 
 async function getOptions (options = {}) {
 
@@ -42,6 +43,17 @@ async function getOptions (options = {}) {
   return options
 }
 
+const LOCK_PATH = '/tmp/download.lock'
+function downloadLockStart () {
+  fs.writeFileSync(LOCK_PATH, (new Date()).toISOString(), 'utf-8')
+}
+
+function downloadLockEnd () {
+  if (fs.existsSync(LOCK_PATH)) {
+    fs.unlinkSync(LOCK_PATH)
+  }
+}
+
 module.exports = async function (videoID, output, options = {}) {
   return new Promise(async function (resolve, reject) {
     let pos = output.lastIndexOf('/') + 1
@@ -55,10 +67,11 @@ module.exports = async function (videoID, output, options = {}) {
     let url = `https://www.yo` + `ut` + `ube.com/watch?v=` + videoID
 
     console.log(`[DOWNLOAD] Start \t${url}` + '\t' + output + '\t' + (new Date()).toISOString())
-
+    downloadLockStart()
 
     let showDownloadEndMessage = function () {
       console.log(`[DOWNLOAD] End \t${url}` + '\t' + output + '\t' + (new Date()).toISOString())
+      downloadLockEnd()
       resolve(filename)
     }
 
@@ -77,6 +90,7 @@ module.exports = async function (videoID, output, options = {}) {
       }
       catch (e) {
         console.log([`[DOWNLOAD] Please check video: https://www.yo` + `ut` + `ube.com/watch?v=${videoID}`, (new Date()).toISOString()].join('\t'))
+        downloadLockEnd()
         reject(error)
       }
     })

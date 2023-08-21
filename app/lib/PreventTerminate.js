@@ -10,13 +10,20 @@ function getUpdateTime () {
   return 0
 }
 
+const DOWNLOAD_LOCK_PATH = '/tmp/download.lock'
+
 module.exports = function () {
   let start = (new Date()).getTime()
   let lastUpdateTime
   let sameTimeCounter = 0
   let maxSameTime = 4
   setInterval(() => {
-    if (lastUpdateTime !== getUpdateTime()) {
+    if (fs.existsSync(DOWNLOAD_LOCK_PATH)) {
+      let interval = Math.floor(((new Date()).getTime() - start) / 60 / 1000)
+      console.log([`[WAKE] DOWNLOADING`, `${interval}/${CONFIG.maxExcutionMinutes}`, sameTimeCounter, (new Date().toISOString())].join('\t'))
+      return false
+    }
+    else if (lastUpdateTime !== getUpdateTime()) {
       lastUpdateTime = getUpdateTime()
       sameTimeCounter = 0
     }

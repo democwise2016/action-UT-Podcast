@@ -60,7 +60,7 @@ module.exports = async function (items, feedItem = {}) {
           break
         }
 
-        let item = items[i]
+        var item = items[i]
 
         item = await AppendUBInfo(item)
         if (!item) {
