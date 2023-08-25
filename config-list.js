@@ -543,6 +543,16 @@ let feedList = [
     homepageURL: 'https://www.youtube.com/channel/UCrGSFNEBmCN0rqhATZels2Q',
     itemFilters: ItemFiltersPreset.between3minTo30Min,
   },
+  {
+    title: '杰克艾米立 AI大小事',
+    feedID: 'JackEllie-AInews',
+    homepageURL: 'https://www.youtube.com/channel/UCine3_lVU-rFDRRI8xeImHA',
+    // thumbnailBorderColor: true,
+    itemFilters: [
+      ItemFiltersPreset.between1minTo30Min,
+      (item) => { return ((item.title.indexOf('AI大小事') >-1)) }
+    ],
+  },
 ]
 
 // 測試用
