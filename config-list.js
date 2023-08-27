@@ -553,6 +553,12 @@ let feedList = [
       (item) => { return ((item.title.indexOf('AI大小事') >-1)) }
     ],
   },
+  {
+    title: '閱部客',
+    feedID: 'yuubuke',
+    homepageURL: 'https://www.youtube.com/channel/UCBvQ4hOEoDdYeIBu0tE-7Sg',
+    itemFilters: ItemFiltersPreset.between3minTo30Min,
+  },
 ]
 
 // 測試用
