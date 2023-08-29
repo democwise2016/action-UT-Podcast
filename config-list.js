@@ -559,6 +559,12 @@ let feedList = [
     homepageURL: 'https://www.youtube.com/channel/UCBvQ4hOEoDdYeIBu0tE-7Sg',
     itemFilters: ItemFiltersPreset.between3minTo30Min,
   },
+  {
+    title: 'Kay_漫天大坑',
+    feedID: 'Kay2',
+    homepageURL: 'https://www.youtube.com/channel/UCwtcobm6l5gv0LcKVwzQgPw',
+    itemFilters: ItemFiltersPreset.between1minTo30Min,
+  },
 ]
 
 // 測試用
