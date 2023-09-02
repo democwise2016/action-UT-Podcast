@@ -42,11 +42,11 @@ const NodeCacheSqlite = {
 
     let result = await database.get(key)
 
-    if (result === undefined && value !== undefined) {
+    if (!expire || (result === undefined && value !== undefined)) {
       result = await this.set(databaseName, key, value, expire)
     }
     else {
-      console.log(['[CACHE] hitted', databaseName, key, (new Date().toISOString())].join('\t'))
+      console.log(['[CACHE] hitted', databaseName, key, expire, (new Date().toISOString())].join('\t'))
     }
     return result
   },
@@ -70,13 +70,13 @@ const NodeCacheSqlite = {
       }
       // console.log(key, result)
       if (result !== undefined) {
-        await database.set(key, result, { ttl: expire})
+        await database.set(key, result, { ttl: expire / 1000})
       }
         
     }
     else {
       // console.log(key, result)
-      await database.set(key, result, {ttl: expire})
+      await database.set(key, result, {ttl: expire / 1000})
     }
     return result
   },
