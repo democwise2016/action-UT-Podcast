@@ -565,6 +565,12 @@ let feedList = [
     homepageURL: 'https://www.youtube.com/channel/UCwtcobm6l5gv0LcKVwzQgPw',
     itemFilters: ItemFiltersPreset.between1minTo30Min,
   },
+  {
+    title: '蛋弟 動漫心理學',
+    feedID: 'user-sg9pi2kv7d',
+    homepageURL: 'https://www.youtube.com/channel/UCtlELst50iCTWw_D9jt1cEg',
+    itemFilters: ItemFiltersPreset.between6minTo60Min,
+  },
 ]
 
 // 測試用
