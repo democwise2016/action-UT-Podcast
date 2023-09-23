@@ -571,6 +571,12 @@ let feedList = [
     homepageURL: 'https://www.youtube.com/channel/UCtlELst50iCTWw_D9jt1cEg',
     itemFilters: ItemFiltersPreset.between6minTo60Min,
   },
+  { // <outline type="rss" text="游戲指南針++$0414-1925$" title="游戲指南針++$0414-1925$" xmlUrl="http://pulipuli.myqnapcloud.com/304/fc/$0414-1925$/https%3A%2F%2Fwww.youtube.com%2Fchannel%2FUCVjXB6QUf_aZ_FninmssCOg" htmlUrl="https://www.youtube.com/channel/UCVjXB6QUf_aZ_FninmssCOg"/>
+    title: '林亦LYi 聊 3C',
+    feedID: 'lyi',
+    homepageURL: 'https://www.youtube.com/channel/UC4dtpugIYK56S_7btf5a-iQ',
+    itemFilters: ItemFiltersPreset.between3minTo30Min,
+  },
 ]
 
 // 測試用
