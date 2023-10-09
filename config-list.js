@@ -580,7 +580,7 @@ let feedList = [
   { 
     title: '萊丘 Laichu 聊 3C',
     feedID: 'LaichuTV',
-    homepageURL: 'UCHSFWd7MUGTY7xRdiGeMALw',
+    homepageURL: 'https://www.youtube.com/channel/UCHSFWd7MUGTY7xRdiGeMALw',
     itemFilters: ItemFiltersPreset.between3minTo30Min,
   },
 ]
