@@ -292,6 +292,18 @@ let feedList = [
   //   }
   // },
   {
+    title: '迷走大學 迷大Jo報',
+    feedID: 'meisouniv-weekly-news',
+    homepageURL: 'https://www.youtube.com/channel/UCiCOKR_WkqZuYN9fpjWqnzg',
+    itemFilters: [
+      ItemFiltersPreset.between6minTo60Min,
+      (item) => { return (item.title.indexOf('【迷大Jo報】') > -1) }
+    ],
+    options: {
+      maxItems: 3
+    }
+  },
+  {
     title: '我的學習筆記',
     feedID: 'mynotebooks',
     homepageURL: 'https://www.youtube.com/channel/UCAS8QqEyGGH71xYgFzNSbuw',
