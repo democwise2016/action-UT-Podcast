@@ -91,7 +91,7 @@ module.exports = async function (items, feedItem = {}) {
         if (isNewerThenLatestFile(item, feedFilename) === false) {
           let {localPath} = await ItemDownloadPathBuilder(feedFilename, item.id, item.yyyymmddDate)
           if (await NodeCacheSqlite.isExists('CleanOldItems', localPath)) {
-            console.log([`[UBDownloader] File has been removed: $localPath`, (new Date().toISOString())].join('\t'))
+            console.log([`[UBDownloader] File has been removed: ${localPath}`, (new Date().toISOString())].join('\t'))
             continue
           }
         }

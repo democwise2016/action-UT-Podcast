@@ -356,10 +356,17 @@ class UBInfo {
       }
     }
     
-    //console.log(info.date)
+    if (info.date[19] === '-') {
+      info.date = info.date.slice(0, 19) + '.000Z'
+    }
+
+    if (info.date.length > 24) {
+      console.log({'error-date': info.date})
+    }
     
     info.pubDate = info.date
     info.isoDate = info.date
+    
     info.mmddDate =  moment(info.date).format('MMDD')
     info.yyyymmddDate =  moment(info.date).format('YYYYMMDD')
     

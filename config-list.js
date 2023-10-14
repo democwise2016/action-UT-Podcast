@@ -597,18 +597,17 @@ let feedList = [
   },
 ]
 
+// ---------------------------------------
+
 // 測試用
 // feedList = [
 //   {
-//     title: '黃國昌直播',
-//     feedID: 'KC-Huang-streams',
-//     homepageURL: 'https://www.youtube.com/channel/UCNWAsexY9eiS1N6JDns-0kw',
-//     itemFilters: [
-//       ItemFiltersPreset.between30minTo180Min,
-//       (item) => { return ((item.title.startsWith('【國昌直播】'))) }
-//     ],
+//     title: '公子沈 評中國',
+//     feedID: 'gongzishen',
+//     homepageURL: 'https://www.youtube.com/channel/UCrGSFNEBmCN0rqhATZels2Q',
+//     itemFilters: ItemFiltersPreset.between3minTo30Min,
 //     options: {
-//       maxItems: 3
+//       maxItems: 5
 //     }
 //   },
 // ]

@@ -31,7 +31,7 @@ module.exports = function () {
       sameTimeCounter++
 
       if (sameTimeCounter >= maxSameTime) {
-        console.log(`Process has been terminated because update is stop. ${(new Date().toISOString())}`);
+        console.log(`Process has been terminated because update is stopped. ${(new Date().toISOString())}`);
         process.exit(0); // You can provide an exit code (non-zero) if needed.
       }
     }
