@@ -296,7 +296,7 @@ let feedList = [
     feedID: 'meisouniv-weekly-news',
     homepageURL: 'https://www.youtube.com/channel/UCiCOKR_WkqZuYN9fpjWqnzg',
     itemFilters: [
-      ItemFiltersPreset.between6minTo60Min,
+      ItemFiltersPreset.between30minTo180Min,
       (item) => { return (item.title.indexOf('【迷大Jo報】') > -1) }
     ],
     options: {
