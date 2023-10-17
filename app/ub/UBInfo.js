@@ -20,7 +20,7 @@ const TorController = require('../lib/TorController.js')
 
 class UBInfo {
   
-  load (url) {
+  async load (url) {
     if (url.indexOf('www.y' + 'out' + 'ube.com/channel/') > -1 || url.indexOf('www.y' + 'out' + 'ube.com/@') > -1) {
       return this.loadChannel(url)
     }
@@ -31,7 +31,20 @@ class UBInfo {
       return this.loadPlaylist(url)
     }
     else {
-      return this.loadVideo(url)
+      let info = await this.loadVideo(url)
+
+      if (info.date[19] === '-') {
+        await NodeCacheSqlite.clear('loadVideo', url)
+        info.date = info.date.slice(0, 19) + '.000Z'
+
+        info.pubDate = info.date
+        info.isoDate = info.date
+
+        info.mmddDate =  moment(info.date).format('MMDD')
+        info.yyyymmddDate =  moment(info.date).format('YYYYMMDD')
+      }
+
+      return info
     }
   }
   

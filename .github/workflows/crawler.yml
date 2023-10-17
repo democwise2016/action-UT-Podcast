@@ -94,6 +94,9 @@ jobs:
           ls -lh ./output/*/Invalid* || true
           rm -f ./output/*/Invalid*.mp3
           rm -f './output/*/*.mp3"'
+
+      - name: List output "Invalid date-"
+        run: |
           ls -lh ./output/*/Invalid*.mp3 || true
 
       # - name: Clean Cache
