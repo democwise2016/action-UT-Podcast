@@ -92,7 +92,7 @@ jobs:
       - name: Clean output "Invalid date-"
         run: |
           ls -lh ./output/*/Invalid* || true
-          rm -f ./output/*/Invalid*.mp3
+          rm -f ./output/*/Invalid*
           find ./output/*/ -type f -name '*"' -exec rm {} \;
 
       - name: List output "Invalid date-"
