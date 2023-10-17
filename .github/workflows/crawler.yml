@@ -97,7 +97,7 @@ jobs:
 
       - name: List output "Invalid date-"
         run: |
-          ls -lh ./output/*/Invalid*.mp3 || true
+          ls -lh ./output/*/Invalid* || true
 
       # - name: Clean Cache
       #   run: |
@@ -165,6 +165,11 @@ jobs:
       #       cache
       #       output
       #     key: ${{ runner.os }}-build-${{ env.cache-name }}
+
+
+      - name: After List output "Invalid date-"
+        run: |
+          ls -lh ./output/*/Invalid* || true
 
       # ----------------------------------------------------------------
 
