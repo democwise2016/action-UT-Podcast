@@ -24,7 +24,21 @@ module.exports = function (cmdArray, stderrHandler, errorHandler) {
 
   return new Promise(function (resolve, reject) {
     
-    let job = spawn(cmdArray[0], cmdArray.slice(1), { shell: true })
+    let parameters = cmdArray.slice(1)
+
+    parameters = parameters.map(p => {
+      if (p.indexOf(' ') > -1 && ((!p.startsWith('"') && !p.endsWith('"')) && (!p.startsWith("'") && !p.endsWith("'")))) {
+        if (p.indexOf('"') > -1) {
+          p = `'${p}'`
+        }
+        else {
+          p = `"${p}"`
+        }
+      }
+      return p
+    })
+
+    let job = spawn(cmdArray[0], parameters, { shell: true })
 
 
     job.stdout.on("data", data => {

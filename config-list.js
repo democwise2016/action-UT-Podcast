@@ -602,12 +602,16 @@ let feedList = [
 // 測試用
 // feedList = [
 //   {
-//     title: '公子沈 評中國',
-//     feedID: 'gongzishen',
-//     homepageURL: 'https://www.youtube.com/channel/UCrGSFNEBmCN0rqhATZels2Q',
-//     itemFilters: ItemFiltersPreset.between3minTo30Min,
+//     title: '萊斯 新Game報',
+//     feedID: 'LiceMoo-GameNews',
+//     homepageURL: 'https://www.youtube.com/channel/UC9WiXJEyHMGRqL-__3FIBEw',
+//     thumbnailBorderColor: true,
+//     itemFilters: [
+//       ItemFiltersPreset.between3minTo30Min,
+//       (item) => { return (item.title.indexOf('《新Game報') > -1) }
+//     ],
 //     options: {
-//       maxItems: 5
+//       maxItems: 3
 //     }
 //   },
 // ]
