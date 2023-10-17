@@ -91,6 +91,7 @@ jobs:
 
       - name: Clean output "Invalid date-"
         run: |
+          ls -lh ./output/*/Invalid* || true
           rm -f ./output/*/Invalid*.mp3
           rm -f './output/*/*.mp3"'
           ls -lh ./output/*/Invalid*.mp3 || true
