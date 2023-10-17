@@ -33,7 +33,7 @@ class UBInfo {
     else {
       let info = await this.loadVideo(url)
 
-      if (info.date[19] === '-') {
+      if (info && info.date && info.date[19] === '-') {
         await NodeCacheSqlite.clear('loadVideo', url)
         info.date = info.date.slice(0, 19) + '.000Z'
 
