@@ -4,6 +4,9 @@ import os
  
 def download_mp3(url, output_path):
     try:
+        if output_path.endswith('"'):
+            output_path = output_path.rstrip('"')
+
         # Create a YouTube object
         youtube = YouTube(url)
         
