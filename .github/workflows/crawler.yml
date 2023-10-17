@@ -89,9 +89,9 @@ jobs:
       #   run: |
       #     rm -f ./output/.gitignore
 
-      - name: Clean output "Invalid date-"
-        run: |
-          rm -f "./output/*/Invalid date-*.mp3"
+      # - name: Clean output "Invalid date-"
+      #   run: |
+      #     rm -f "./output/*/Invalid date-*.mp3"
 
       # - name: Clean Cache
       #   run: |
