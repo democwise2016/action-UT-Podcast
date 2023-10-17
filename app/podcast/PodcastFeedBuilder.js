@@ -173,12 +173,12 @@ ${channelDescription}`
       
       let title = item.title
 
-      if (info.date[19] === '-') {
-        info.date = info.date.slice(0, 19) + '.000Z'
+      if (item.date[19] === '-') {
+        item.date = item.date.slice(0, 19) + '.000Z'
       }
   
-      if (info.date.length > 24) {
-        console.log({'error-date': info.date})
+      if (item.date.length > 24) {
+        console.log({'error-date': item.date})
       }
 
       let d = moment(item.date).format('M.D')

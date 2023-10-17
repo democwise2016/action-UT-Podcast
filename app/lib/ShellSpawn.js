@@ -26,17 +26,17 @@ module.exports = function (cmdArray, stderrHandler, errorHandler) {
     
     let parameters = cmdArray.slice(1)
 
-    parameters = parameters.map(p => {
-      if (p.indexOf(' ') > -1 && ((!p.startsWith('"') && !p.endsWith('"')) && (!p.startsWith("'") && !p.endsWith("'")))) {
-        if (p.indexOf('"') > -1) {
-          p = `'${p}'`
-        }
-        else {
-          p = `"${p}"`
-        }
-      }
-      return p
-    })
+    // parameters = parameters.map(p => {
+    //   if (p.indexOf(' ') > -1 && ((!p.startsWith('"') && !p.endsWith('"')) && (!p.startsWith("'") && !p.endsWith("'")))) {
+    //     if (p.indexOf('"') > -1) {
+    //       p = `'${p}'`
+    //     }
+    //     else {
+    //       p = `"${p}"`
+    //     }
+    //   }
+    //   return p
+    // })
 
     let job = spawn(cmdArray[0], parameters, { shell: true })
 
