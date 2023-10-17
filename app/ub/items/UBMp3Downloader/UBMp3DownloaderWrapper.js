@@ -58,7 +58,6 @@ module.exports = async function (videoID, output, options = {}) {
   return new Promise(async function (resolve, reject) {
     let pos = output.lastIndexOf('/') + 1
     let dir = output.slice(0, pos)
-    output = `"${output}"`
     let filename = output.slice(pos)
 
     options.outputPath = dir
@@ -86,6 +85,7 @@ module.exports = async function (videoID, output, options = {}) {
       // console.error(error)
 
       try {
+        output = `"${output}"`
         await ShellSpawn(["python3", "/app/python/ub.py", url, output])
         showDownloadEndMessage()
       }
