@@ -172,6 +172,15 @@ ${channelDescription}`
       }
       
       let title = item.title
+
+      if (info.date[19] === '-') {
+        info.date = info.date.slice(0, 19) + '.000Z'
+      }
+  
+      if (info.date.length > 24) {
+        console.log({'error-date': info.date})
+      }
+
       let d = moment(item.date).format('M.D')
       title = '' + d + ']' + title
       
