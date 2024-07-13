@@ -608,7 +608,7 @@ let feedList = [
 //     thumbnailBorderColor: true,
 //     itemFilters: [
 //       ItemFiltersPreset.between3minTo30Min,
-//       (item) => { return (item.title.indexOf('《新Game報') > -1) }
+//       // (item) => { return (item.title.indexOf('《新Game報') > -1) }
 //     ],
 //     options: {
 //       maxItems: 3

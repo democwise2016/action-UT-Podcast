@@ -88,11 +88,6 @@ RUN apt-get install -y chromium
 RUN npm link cache-manager@4.0.1
 RUN npm link cache-manager-sqlite@0.2.0
 
-# 這個會很常壞，所以要放到最後安裝
-RUN npm link ytdl-core@4.11.4
-
-# ----------------
-
 # RUN npm -g puppeteer@20.4.0
 
 # RUN npm -g iconv-lite@0.6.3
@@ -112,7 +107,7 @@ RUN npm link ytdl-core@4.11.4
 
 # RUN npm -g htmlentities@1.0.0
 
-RUN pip install pytube
+
 
 # ========================
 
@@ -121,3 +116,11 @@ RUN apt-get install -y tor
 
 # RUN apt-get install -y lsof
 # RUN echo "ControlPort 127.0.0.1:9051" > /etc/tor/torrc
+
+# ----------------------------------------------------------------
+
+# 這個會很常壞，所以要放到最後安裝
+# RUN npm link ytdl-core@4.11.5
+RUN pip install pytubefix==6.1.2
+
+# ----------------

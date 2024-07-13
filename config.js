@@ -1,4 +1,4 @@
-const ItemFiltersPreset = require('./app/config/ItemFiltersPreset.js')
+// const ItemFiltersPreset = require('./app/config/ItemFiltersPreset.js')
 const ConfigCheck = require('./app/config/ConfigCheck.js')
 const feedList = require('./config-list.js')
 

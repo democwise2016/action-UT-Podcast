@@ -1,5 +1,5 @@
 import argparse
-from pytube import YouTube
+from pytubefix import YouTube
 import os
  
 def download_mp3(url, output_path):
@@ -20,6 +20,7 @@ def download_mp3(url, output_path):
         # print("Download completed successfully!")
         
     except Exception as e:
+        print("Error url: " + url)
         raise Exception("Error: ", str(e))
 
 if __name__ == "__main__":

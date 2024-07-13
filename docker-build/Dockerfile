@@ -6,7 +6,7 @@
 # RUN wget http://ftp.us.debian.org/debian/pool/main/y/youtube-dl/youtube-dl_2021.12.17-2_all.deb
 # RUN apt-get install -y ./youtube-dl_2021.12.17-2_all.deb
 
-FROM node:14.21.3-bullseye
+FROM node:20.15.1-bullseye
 
 # RUN cat /etc/apt/sources.list
 
@@ -29,7 +29,7 @@ RUN pip3 install youtube-dl
 # ==============================================
 
 # CMD ["node", "/app/index.js"]
-CMD ["bash", "/startup.sh"]
+CMD ["bash", "/app/startup.sh"]
 
 # RUN mkdir -p /node
 # WORKDIR /node

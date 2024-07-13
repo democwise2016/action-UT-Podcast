@@ -413,7 +413,7 @@ class UBInfo {
         info.title = $('meta[property="og:title"]').eq(0).attr('content')
       }
 
-      info.channelAvatar = this.sliceBetween(body, `"}},"avatar":{"thumbnails":[{"url":"`, `"`)
+      info.channelAvatar = this.sliceBetween(body, `</script><link itemprop="thumbnailUrl" href="`, `"`)
       //console.log('channelAvatar', body)
       if (!info.channelAvatar) {
         // NodeCacheSqlite.clear('GetHTML', url)
