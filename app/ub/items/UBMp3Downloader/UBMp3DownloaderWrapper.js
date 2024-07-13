@@ -100,8 +100,9 @@ module.exports = async function (videoID, output, options = {}) {
     try {
       let outputPython = `"${output}"`
       let commands = ["python3", "/app/python/ub.py", url, outputPython]
-      console.log(commands)
+      // console.log(commands)
       await ShellSpawn(commands)
+      await ShellSpawn(['ls', '-l', output.slice(0, output.lastIndexOf('/'))])
       showDownloadEndMessage()
     }
     catch (e) {
