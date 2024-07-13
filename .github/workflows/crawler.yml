@@ -155,6 +155,14 @@ jobs:
           ./app/stat/folder_stats.sh ./output || true
           ls -lh ./output/*.rss
 
+      - name: Remove .gitignore
+        run: |
+          rm -rf ./output/.gitignore || true
+      
+      - name: Change Permissions
+        run: |
+          suod chmod -R +rw ./output || true
+
       # - name: Cache Save
       #   id: cache-save
       #   uses: actions/cache/save@v3
