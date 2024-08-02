@@ -93,7 +93,7 @@ jobs:
         run: |
           ls -lh ./output/*/Invalid* || true
           rm -f ./output/*/Invalid*
-          find ./output/*/ -type f -name '*"' -exec rm {} \;
+          find ./output/*/ -type f -name '*"' -exec rm {} \ || true
 
       - name: List output "Invalid date-"
         run: |
