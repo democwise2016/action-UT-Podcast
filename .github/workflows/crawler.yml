@@ -120,7 +120,7 @@ jobs:
       - name: Output Calculate Before
         run: |
           ./app/stat/folder_stats.sh ./output || true
-          ls -lh ./output/*.rss
+          ls -lh ./output/*.rss || true
       
       # ----------------------------------------------------------------
 
@@ -153,7 +153,7 @@ jobs:
       - name: Output Calculate After
         run: |
           ./app/stat/folder_stats.sh ./output || true
-          ls -lh ./output/*.rss
+          ls -lh ./output/*.rss || true
 
       - name: Remove .gitignore
         run: |
