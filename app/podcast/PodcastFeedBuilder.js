@@ -31,6 +31,18 @@ module.exports = async function (options) {
     }
     options.thumbnail = options.thumbnail.split('c0x00ffffff-no-rj').join(`c0x00${options.thumbnailBorderColor}-no-rj`)
   }
+
+  // console.log(options.thumbnail, options.thumbnailBorderColor, CONFIG.thumbnailBorderColor)
+  if (options.thumbnail && options.thumbnail.startsWith('https://') && (options.thumbnail.indexOf('=s900-c-k-') > -1) && options.thumbnailBorderColor) {
+    // console.log(options.thumbnailBorderColor, CONFIG.thumbnailBorderColor)
+    if (options.thumbnailBorderColor === CONFIG.thumbnailBorderColor) {
+      options.thumbnail = options.thumbnail.split('=s900-c-k-').join('=s900-b50-c-k-')
+    }
+    else {
+      options.thumbnail = options.thumbnail.split('=s900-c-k-').join('=s900-b100-c-k-')
+    }
+    options.thumbnail = options.thumbnail.split('c0x00ffffff-no-rj').join(`c0x00${options.thumbnailBorderColor}-no-rj`)
+  }
   
   if (!options.link && options.feedLink) {
     options.link = options.feedLink
