@@ -78,12 +78,12 @@ let feedList = [
     homepageURL: 'https://www.youtube.com/channel/UCgHUl1pwUVfrX8QotB-t2gQ',
     itemFilters: ItemFiltersPreset.between3minTo30Min,
   },
-  {
-    title: '四處觀察',
-    feedID: 'sichuguancha',
-    homepageURL: 'https://www.youtube.com/channel/UC6OeJCR9gHsJPVyNhXfK4tA',
-    itemFilters: ItemFiltersPreset.between3minTo30Min,
-  },
+  // {
+  //   title: '四處觀察',
+  //   feedID: 'sichuguancha',
+  //   homepageURL: 'https://www.youtube.com/channel/UC6OeJCR9gHsJPVyNhXfK4tA',
+  //   itemFilters: ItemFiltersPreset.between3minTo30Min,
+  // },
   {
     title: '蒟蒻講幹話',
     feedID: 'jarrow3988',
