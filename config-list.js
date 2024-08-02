@@ -205,12 +205,12 @@ let feedList = [
     homepageURL: 'https://www.youtube.com/channel/UCLyxEJ727Sca3pSViFvJpTg',
     itemFilters: ItemFiltersPreset.between3minTo30Min,
   },
-  {
-    title: 'ARIA軍武動漫雜談',
-    feedID: 'Aria-Armory',
-    homepageURL: 'https://www.youtube.com/channel/UCOlwkBhjMe1PNm9055AQ88Q',
-    itemFilters: ItemFiltersPreset.between3minTo30Min,
-  },
+  // {
+  //   title: 'ARIA軍武動漫雜談',
+  //   feedID: 'Aria-Armory',
+  //   homepageURL: 'https://www.youtube.com/channel/UCOlwkBhjMe1PNm9055AQ88Q',
+  //   itemFilters: ItemFiltersPreset.between3minTo30Min,
+  // },
   {
     title: '卡欸蝶 聊動畫',
     feedID: 'animekaede_',
