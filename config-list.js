@@ -147,19 +147,19 @@ let feedList = [
       (item) => { return ((item.title.indexOf('動畫鑑賞集錦') === -1) || (item.title.indexOf('作畫回顧') === -1)) }
     ]
   },
-  {
-    title: '玩家機密 每週新聞',
-    feedID: 'GamerSecret-News',
-    homepageURL: 'https://www.youtube.com/channel/UCmtmIF-u0ojej0y9i9STuIw',
-    thumbnailBorderColor: true,
-    itemFilters: [
-      ItemFiltersPreset.between3minTo30Min,
-      (item) => { return ((item.title.indexOf('【每週新聞】') >-1)) }
-    ],
-    options: {
-      maxItems: 3
-    }
-  },
+  // {
+  //   title: '玩家機密 每週新聞',
+  //   feedID: 'GamerSecret-News',
+  //   homepageURL: 'https://www.youtube.com/channel/UCmtmIF-u0ojej0y9i9STuIw',
+  //   thumbnailBorderColor: true,
+  //   itemFilters: [
+  //     ItemFiltersPreset.between3minTo30Min,
+  //     (item) => { return ((item.title.indexOf('【每週新聞】') >-1)) }
+  //   ],
+  //   options: {
+  //     maxItems: 3
+  //   }
+  // },
   {
     title: '啾啾鞋',
     feedID: 'chuchushoeTW',
@@ -245,12 +245,12 @@ let feedList = [
       (item) => { return ((item.title.indexOf('AI大小事') >-1)) }
     ],
   },
-  {
-    title: '閱部客',
-    feedID: 'yuubuke',
-    homepageURL: 'https://www.youtube.com/channel/UCBvQ4hOEoDdYeIBu0tE-7Sg',
-    itemFilters: ItemFiltersPreset.between3minTo30Min,
-  },
+  // {
+  //   title: '閱部客',
+  //   feedID: 'yuubuke',
+  //   homepageURL: 'https://www.youtube.com/channel/UCBvQ4hOEoDdYeIBu0tE-7Sg',
+  //   itemFilters: ItemFiltersPreset.between3minTo30Min,
+  // },
   {
     title: 'Kay_漫天大坑',
     feedID: 'Kay2',
@@ -269,12 +269,12 @@ let feedList = [
     homepageURL: 'https://www.youtube.com/channel/UC4dtpugIYK56S_7btf5a-iQ',
     itemFilters: ItemFiltersPreset.between3minTo30Min,
   },
-  { 
-    title: '萊丘 Laichu 聊 3C',
-    feedID: 'LaichuTV',
-    homepageURL: 'https://www.youtube.com/channel/UCHSFWd7MUGTY7xRdiGeMALw',
-    itemFilters: ItemFiltersPreset.between3minTo30Min,
-  },
+  // { 
+  //   title: '萊丘 Laichu 聊 3C',
+  //   feedID: 'LaichuTV',
+  //   homepageURL: 'https://www.youtube.com/channel/UCHSFWd7MUGTY7xRdiGeMALw',
+  //   itemFilters: ItemFiltersPreset.between3minTo30Min,
+  // },
 ]
 
 // ---------------------------------------
