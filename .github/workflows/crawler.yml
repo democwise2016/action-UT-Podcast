@@ -92,7 +92,7 @@ jobs:
       - name: Clean output "Invalid date-"
         run: |
           ls -lh ./output/*/Invalid* || true
-          rm -f ./output/*/Invalid*
+          rm -f ./output/*/Invalid* || true
           find ./output/*/ -type f -name '*"' -exec rm {} \ || true
 
       - name: List output "Invalid date-"
@@ -142,6 +142,7 @@ jobs:
 
       - name: Main
         run: |
+          bash install_docker_compose.sh
           docker-compose up
 
       # ----------------------------------------------------------------
