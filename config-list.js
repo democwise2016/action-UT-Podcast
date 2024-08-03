@@ -138,15 +138,16 @@ let feedList = [
       (item) => { return ((item.title.indexOf('【就知道玩遊戲') > -1)) }
     ]
   },
-  {
-    title: '漫天大坑-Kay',
-    feedID: 'kayshi_0521',
-    homepageURL: 'https://www.youtube.com/channel/UC29L37o2cslmXRhOLn04bCA',
-    itemFilters: [
-      ItemFiltersPreset.between3minTo30Min,
-      (item) => { return ((item.title.indexOf('動畫鑑賞集錦') === -1) || (item.title.indexOf('作畫回顧') === -1)) }
-    ]
-  },
+  // 被刪除了
+  // {
+  //   title: '漫天大坑-Kay',
+  //   feedID: 'kayshi_0521',
+  //   homepageURL: 'https://www.youtube.com/channel/UC29L37o2cslmXRhOLn04bCA',
+  //   itemFilters: [
+  //     ItemFiltersPreset.between3minTo30Min,
+  //     (item) => { return ((item.title.indexOf('動畫鑑賞集錦') === -1) || (item.title.indexOf('作畫回顧') === -1)) }
+  //   ]
+  // },
   // {
   //   title: '玩家機密 每週新聞',
   //   feedID: 'GamerSecret-News',
