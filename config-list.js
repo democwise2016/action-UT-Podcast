@@ -12,12 +12,12 @@ let feedList = [
       (item) => { return (item.title.indexOf('《行動代號2027》') > -1) }
     ],
   },
-  {
-    title: '動畫小坑谷',
-    feedID: 'valleylife351',
-    homepageURL: 'https://www.youtube.com/channel/UCbCb-ZUoKwQ8vcRbrH2nE0Q',
-    itemFilters: ItemFiltersPreset.between1minTo10Min,
-  },
+  // {
+  //   title: '動畫小坑谷',
+  //   feedID: 'valleylife351',
+  //   homepageURL: 'https://www.youtube.com/channel/UCbCb-ZUoKwQ8vcRbrH2nE0Q',
+  //   itemFilters: ItemFiltersPreset.between1minTo10Min,
+  // },
   {
     title: '鐵道事務所',
     feedID: 'Railway-Office',
@@ -205,12 +205,12 @@ let feedList = [
     homepageURL: 'https://www.youtube.com/channel/UCLyxEJ727Sca3pSViFvJpTg',
     itemFilters: ItemFiltersPreset.between3minTo30Min,
   },
-  {
-    title: 'ARIA軍武動漫雜談',
-    feedID: 'Aria-Armory',
-    homepageURL: 'https://www.youtube.com/channel/UCOlwkBhjMe1PNm9055AQ88Q',
-    itemFilters: ItemFiltersPreset.between3minTo30Min,
-  },
+  // {
+  //   title: 'ARIA軍武動漫雜談',
+  //   feedID: 'Aria-Armory',
+  //   homepageURL: 'https://www.youtube.com/channel/UCOlwkBhjMe1PNm9055AQ88Q',
+  //   itemFilters: ItemFiltersPreset.between3minTo30Min,
+  // },
   {
     title: '卡欸蝶 聊動畫',
     feedID: 'animekaede_',
@@ -251,12 +251,12 @@ let feedList = [
   //   homepageURL: 'https://www.youtube.com/channel/UCBvQ4hOEoDdYeIBu0tE-7Sg',
   //   itemFilters: ItemFiltersPreset.between3minTo30Min,
   // },
-  {
-    title: 'Kay_漫天大坑',
-    feedID: 'Kay2',
-    homepageURL: 'https://www.youtube.com/channel/UCwtcobm6l5gv0LcKVwzQgPw',
-    itemFilters: ItemFiltersPreset.between1minTo30Min,
-  },
+  // {
+  //   title: 'Kay_漫天大坑',
+  //   feedID: 'Kay2',
+  //   homepageURL: 'https://www.youtube.com/channel/UCwtcobm6l5gv0LcKVwzQgPw',
+  //   itemFilters: ItemFiltersPreset.between1minTo30Min,
+  // },
   {
     title: '蛋弟 動漫心理學',
     feedID: 'user-sg9pi2kv7d',
