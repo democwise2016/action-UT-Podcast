@@ -71,9 +71,9 @@ jobs:
 
       # - name: Clean Cache
       #   run: |
-      #     rm -rf /output/*
-      #     rm -rf /cache/*
-      #     docker rmi -f $(docker images -aq)
+      #     rm -rf /output/* || true
+      #     rm -rf /cache/* || true
+      #     docker rmi -f $(docker images -aq) || true
       #     docker network prune -f
       #     docker volume prune -f
 
@@ -89,15 +89,15 @@ jobs:
       #   run: |
       #     rm -f ./output/.gitignore
 
-      - name: Clean output "Invalid date-"
-        run: |
-          ls -lh ./output/*/Invalid* || true
-          rm -f ./output/*/Invalid* || true
-          find ./output/*/ -type f -name '*"' -exec rm {} \ || true
+      # - name: Clean output "Invalid date-"
+      #   run: |
+      #     ls -lh ./output/*/Invalid* || true
+      #     rm -f ./output/*/Invalid*
+      #     find ./output/*/ -type f -name '*"' -exec rm {} \;
 
-      - name: List output "Invalid date-"
-        run: |
-          ls -lh ./output/*/Invalid* || true
+      # - name: List output "Invalid date-"
+      #   run: |
+      #     ls -lh ./output/*/Invalid* || true
 
       # - name: Clean Cache
       #   run: |
@@ -142,7 +142,7 @@ jobs:
 
       - name: Main
         run: |
-          bash install_docker_compose.sh
+          bash ./action/install_docker_compose.sh
           docker-compose up --abort-on-container-exit
 
       # ----------------------------------------------------------------
@@ -155,14 +155,6 @@ jobs:
         run: |
           ./app/stat/folder_stats.sh ./output || true
           ls -lh ./output/*.rss || true
-
-      - name: Remove .gitignore
-        run: |
-          rm -rf ./output/.gitignore || true
-      
-      - name: Change Permissions
-        run: |
-          suod chmod -R +rw ./output || true
 
       # - name: Cache Save
       #   id: cache-save
@@ -180,6 +172,10 @@ jobs:
         run: |
           ls -lh ./output/*/Invalid* || true
 
+      - name: Remove .gitignore
+        run: |
+            rm -rf ./output/.gitignore || true
+        
       # ----------------------------------------------------------------
 
       - name: Deploy 🚀
