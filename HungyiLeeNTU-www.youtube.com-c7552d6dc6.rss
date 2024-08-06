@@ -1,11 +1,11 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:googleplay="http://www.google.com/schemas/play-podcasts/1.0" xmlns:media="http://www.rssboard.org/media-rss" version="2.0">
   <channel>
     <title><![CDATA[Hung-yi Lee 上課囉 [UT]]]></title>
-    <link>http://www.youtube.com/feeds/videos.xml?channel_id=UC2ggjtuuWvxrHHHiaDH1dlQ</link>
+    <link>https://www.youtube.com/channel/UC2ggjtuuWvxrHHHiaDH1dlQ</link>
     <image>
-      <url>https://yt3.googleusercontent.com/ytc/AOPolaTiNuVP79WZm7_pwR-5n-58EF9F1t5M-jt-Vi_NAA=s1024-b50-c-k-c0x002980b9-no-rj</url>
+      <url>https://yt3.googleusercontent.com/ytc/AIdro_mlTtuvk8IoEtfAKvw7WDc0XuxqGBCjMn-klO63nQbfVjE=s900-b100-c-k-c0x002980B9-no-rj</url>
       <title>Hung-yi Lee 上課囉 [UT]</title>
-      <link>http://www.youtube.com/feeds/videos.xml?channel_id=UC2ggjtuuWvxrHHHiaDH1dlQ</link>
+      <link>https://www.youtube.com/channel/UC2ggjtuuWvxrHHHiaDH1dlQ</link>
     </image>
     <language>en-us</language>
     <atom:link href="https://www.youtube.com/feeds/videos.xml?channel_id=UC2ggjtuuWvxrHHHiaDH1dlQ" rel="self" type="application/rss+xml"/>
@@ -13,14 +13,14 @@
     <itunes:author><![CDATA[Hung-yi Lee 上課囉 [UT]]]></itunes:author>
     <itunes:summary>
       <![CDATA[
-      <a href="https://www.youtube.com/channel/UC2ggjtuuWvxrHHHiaDH1dlQ" target="_blank">https://www.youtube.com/channel/UC2ggjtuuWvxrHHHiaDH1dlQ</a><br />
+      <a href="https://www.youtube.com/channel/UC2ggjtuuWvxrHHHiaDH1dlQ" target="_blank">https://www.youtube.com/channel/UC2ggjtuuWvxrHHHiaDH1dlQ</a>LINK<br />
 <br />
 <a href="https://www.youtube.com/feeds/videos.xml?channel_id=UC2ggjtuuWvxrHHHiaDH1dlQ" target="_blank">https://www.youtube.com/feeds/videos.xml?channel_id=UC2ggjtuuWvxrHHHiaDH1dlQ</a>
       ]]>
     </itunes:summary>
     <description>
       <![CDATA[
-      <a href="https://www.youtube.com/channel/UC2ggjtuuWvxrHHHiaDH1dlQ" target="_blank">https://www.youtube.com/channel/UC2ggjtuuWvxrHHHiaDH1dlQ</a><br />
+      <a href="https://www.youtube.com/channel/UC2ggjtuuWvxrHHHiaDH1dlQ" target="_blank">https://www.youtube.com/channel/UC2ggjtuuWvxrHHHiaDH1dlQ</a>LINK<br />
 <br />
 <a href="https://www.youtube.com/feeds/videos.xml?channel_id=UC2ggjtuuWvxrHHHiaDH1dlQ" target="_blank">https://www.youtube.com/feeds/videos.xml?channel_id=UC2ggjtuuWvxrHHHiaDH1dlQ</a>
       ]]>
@@ -28,204 +28,6 @@
     <itunes:owner>
       <itunes:name><![CDATA[Hung-yi Lee 上課囉 [UT]]]></itunes:name>
     </itunes:owner>
-    <itunes:image href="https://yt3.googleusercontent.com/ytc/AOPolaTiNuVP79WZm7_pwR-5n-58EF9F1t5M-jt-Vi_NAA=s1024-b50-c-k-c0x002980b9-no-rj"/>
-<item>
-      <title><![CDATA[5.18]【生成式AI導論 2024】第16講：可以加速所有語言模型生成速度的神奇外掛 — Speculative Decoding]]></title>
-      <itunes:title><![CDATA[5.18]【生成式AI導論 2024】第16講：可以加速所有語言模型生成速度的神奇外掛 — Speculative Decoding]]></itunes:title>
-      <itunes:author><![CDATA[Hung-yi Lee]]></itunes:author>
-      <itunes:summary>
-        <![CDATA[https://www.youtube.com/watch?v=MAbGgsWKrg8
-投影片：https://drive.google.com/file/d/1Ac3oFUtq6ThokrMvB7VUfBCUFsoMPba-/view?usp=sharing
-
-5:00 如何判斷預言家的輸出是否錯誤呢？當預言家剛產生預測時，我們無法立即知道這些預測是否正確。只有在語言模型實際生成輸出後，我們才能判斷預言家的預測是否正確。如果語言模型的輸出是基於錯誤的預測，那部分的輸出就會被丟棄。
-
-延伸閱讀
-SpecInfer: Accelerating Generative Large Language Model Serving with Tree-based Speculative Inference and Verification
-https://arxiv.org/abs/2305.09781
-<a href="https://www.youtube.com/watch?v=MAbGgsWKrg8"><img src="https://img.youtube.com/vi/MAbGgsWKrg8/maxresdefault.jpg" />
-<img src="https://img.youtube.com/vi/MAbGgsWKrg8/0.jpg" />
-<img src="https://img.youtube.com/vi/MAbGgsWKrg8/1.jpg" />
-<img src="https://img.youtube.com/vi/MAbGgsWKrg8/2.jpg" />
-<img src="https://img.youtube.com/vi/MAbGgsWKrg8/3.jpg" /></a>]]>
-      </itunes:summary>
-      <description>
-        <![CDATA[https://www.youtube.com/watch?v=MAbGgsWKrg8
-投影片：https://drive.google.com/file/d/1Ac3oFUtq6ThokrMvB7VUfBCUFsoMPba-/view?usp=sharing
-
-5:00 如何判斷預言家的輸出是否錯誤呢？當預言家剛產生預測時，我們無法立即知道這些預測是否正確。只有在語言模型實際生成輸出後，我們才能判斷預言家的預測是否正確。如果語言模型的輸出是基於錯誤的預測，那部分的輸出就會被丟棄。
-
-延伸閱讀
-SpecInfer: Accelerating Generative Large Language Model Serving with Tree-based Speculative Inference and Verification
-https://arxiv.org/abs/2305.09781
-<a href="https://www.youtube.com/watch?v=MAbGgsWKrg8"><img src="https://img.youtube.com/vi/MAbGgsWKrg8/maxresdefault.jpg" />
-<img src="https://img.youtube.com/vi/MAbGgsWKrg8/0.jpg" />
-<img src="https://img.youtube.com/vi/MAbGgsWKrg8/1.jpg" />
-<img src="https://img.youtube.com/vi/MAbGgsWKrg8/2.jpg" />
-<img src="https://img.youtube.com/vi/MAbGgsWKrg8/3.jpg" /></a>]]>
-      </description>
-      <content:encoded><![CDATA[<pre>https://www.youtube.com/watch?v=MAbGgsWKrg8
-投影片：https://drive.google.com/file/d/1Ac3oFUtq6ThokrMvB7VUfBCUFsoMPba-/view?usp=sharing
-
-5:00 如何判斷預言家的輸出是否錯誤呢？當預言家剛產生預測時，我們無法立即知道這些預測是否正確。只有在語言模型實際生成輸出後，我們才能判斷預言家的預測是否正確。如果語言模型的輸出是基於錯誤的預測，那部分的輸出就會被丟棄。
-
-延伸閱讀
-SpecInfer: Accelerating Generative Large Language Model Serving with Tree-based Speculative Inference and Verification
-https://arxiv.org/abs/2305.09781<br />
-<a href="https://www.youtube.com/watch?v=MAbGgsWKrg8"><img src="https://img.youtube.com/vi/MAbGgsWKrg8/maxresdefault.jpg" />
-<img src="https://img.youtube.com/vi/MAbGgsWKrg8/0.jpg" />
-<img src="https://img.youtube.com/vi/MAbGgsWKrg8/1.jpg" />
-<img src="https://img.youtube.com/vi/MAbGgsWKrg8/2.jpg" />
-<img src="https://img.youtube.com/vi/MAbGgsWKrg8/3.jpg" /></a></pre>]]></content:encoded>
-      <itunes:image href="https://img.youtube.com/vi/MAbGgsWKrg8/maxresdefault.jpg"/>
-      <enclosure url="https://democwise2016.github.io/action-UT-Podcast/HungyiLeeNTU-www.youtube.com-c7552d6dc6/20240518-MAbGgsWKrg8.mp3" type="audio/mpeg" length="762" />
-      <itunes:duration>762</itunes:duration>
-      <guid isPermaLink="false">https://democwise2016.github.io/action-UT-Podcast/HungyiLeeNTU-www.youtube.com-c7552d6dc6/20240518-MAbGgsWKrg8.mp3</guid>
-      <pubDate>2024-05-18T00:03:09.000Z</pubDate>
-    </item><item>
-      <title><![CDATA[5.17]【生成式AI導論 2024】第14講：淺談大型語言模型相關的安全性議題 (下) — 欺騙大型語言模型]]></title>
-      <itunes:title><![CDATA[5.17]【生成式AI導論 2024】第14講：淺談大型語言模型相關的安全性議題 (下) — 欺騙大型語言模型]]></itunes:title>
-      <itunes:author><![CDATA[Hung-yi Lee]]></itunes:author>
-      <itunes:summary>
-        <![CDATA[https://www.youtube.com/watch?v=CNTondxaguo
-投影片：https://drive.google.com/file/d/11khspom6AEK6CmjktInjd2xKHLlGnrjd/view?usp=sharing
-
-本課程主要的目標是讓大家知道語言模型被詐騙的問題，並不鼓勵大家進行類似的行為
-
-11:20 勘誤：攻擊成功率大約接近 3%
-
-延伸閱讀：
-Ignore This Title and HackAPrompt: Exposing Systemic Vulnerabilities of LLMs through a Global Scale Prompt Hacking Competition
-https://arxiv.org/pdf/2311.16119
-<a href="https://www.youtube.com/watch?v=CNTondxaguo"><img src="https://img.youtube.com/vi/CNTondxaguo/maxresdefault.jpg" />
-<img src="https://img.youtube.com/vi/CNTondxaguo/0.jpg" />
-<img src="https://img.youtube.com/vi/CNTondxaguo/1.jpg" />
-<img src="https://img.youtube.com/vi/CNTondxaguo/2.jpg" />
-<img src="https://img.youtube.com/vi/CNTondxaguo/3.jpg" /></a>]]>
-      </itunes:summary>
-      <description>
-        <![CDATA[https://www.youtube.com/watch?v=CNTondxaguo
-投影片：https://drive.google.com/file/d/11khspom6AEK6CmjktInjd2xKHLlGnrjd/view?usp=sharing
-
-本課程主要的目標是讓大家知道語言模型被詐騙的問題，並不鼓勵大家進行類似的行為
-
-11:20 勘誤：攻擊成功率大約接近 3%
-
-延伸閱讀：
-Ignore This Title and HackAPrompt: Exposing Systemic Vulnerabilities of LLMs through a Global Scale Prompt Hacking Competition
-https://arxiv.org/pdf/2311.16119
-<a href="https://www.youtube.com/watch?v=CNTondxaguo"><img src="https://img.youtube.com/vi/CNTondxaguo/maxresdefault.jpg" />
-<img src="https://img.youtube.com/vi/CNTondxaguo/0.jpg" />
-<img src="https://img.youtube.com/vi/CNTondxaguo/1.jpg" />
-<img src="https://img.youtube.com/vi/CNTondxaguo/2.jpg" />
-<img src="https://img.youtube.com/vi/CNTondxaguo/3.jpg" /></a>]]>
-      </description>
-      <content:encoded><![CDATA[<pre>https://www.youtube.com/watch?v=CNTondxaguo
-投影片：https://drive.google.com/file/d/11khspom6AEK6CmjktInjd2xKHLlGnrjd/view?usp=sharing
-
-本課程主要的目標是讓大家知道語言模型被詐騙的問題，並不鼓勵大家進行類似的行為
-
-11:20 勘誤：攻擊成功率大約接近 3%
-
-延伸閱讀：
-Ignore This Title and HackAPrompt: Exposing Systemic Vulnerabilities of LLMs through a Global Scale Prompt Hacking Competition
-https://arxiv.org/pdf/2311.16119<br />
-<a href="https://www.youtube.com/watch?v=CNTondxaguo"><img src="https://img.youtube.com/vi/CNTondxaguo/maxresdefault.jpg" />
-<img src="https://img.youtube.com/vi/CNTondxaguo/0.jpg" />
-<img src="https://img.youtube.com/vi/CNTondxaguo/1.jpg" />
-<img src="https://img.youtube.com/vi/CNTondxaguo/2.jpg" />
-<img src="https://img.youtube.com/vi/CNTondxaguo/3.jpg" /></a></pre>]]></content:encoded>
-      <itunes:image href="https://img.youtube.com/vi/CNTondxaguo/maxresdefault.jpg"/>
-      <enclosure url="https://democwise2016.github.io/action-UT-Podcast/HungyiLeeNTU-www.youtube.com-c7552d6dc6/20240517-CNTondxaguo.mp3" type="audio/mpeg" length="932" />
-      <itunes:duration>932</itunes:duration>
-      <guid isPermaLink="false">https://democwise2016.github.io/action-UT-Podcast/HungyiLeeNTU-www.youtube.com-c7552d6dc6/20240517-CNTondxaguo.mp3</guid>
-      <pubDate>2024-05-17T23:47:38.000Z</pubDate>
-    </item><item>
-      <title><![CDATA[4.19]【生成式AI導論 2024】第9講：以大型語言模型打造的AI Agent (14:50 教你怎麼打造芙莉蓮一級魔法使考試中出現的泥人哥列姆)]]></title>
-      <itunes:title><![CDATA[4.19]【生成式AI導論 2024】第9講：以大型語言模型打造的AI Agent (14:50 教你怎麼打造芙莉蓮一級魔法使考試中出現的泥人哥列姆)]]></itunes:title>
-      <itunes:author><![CDATA[Hung-yi Lee]]></itunes:author>
-      <itunes:summary>
-        <![CDATA[https://www.youtube.com/watch?v=bJZTJ7MjYqg
-投影片連結：https://drive.google.com/file/d/1aW1cRdsxDzHuLdJCDwVHQ5KVlX2Tf7mN/view?usp=sharing
-
-3:20 根據之前上課的內容
-https://youtu.be/A3Yx35KrSN0?si=7csPXx1D_2qoljdd
-https://youtu.be/lwe3_x50_uw?si=SpF9PayuNtCN-TQG
-https://youtu.be/inebiWdQW-4?si=qm4E1vx6ZkjwRt4h
-想想看語言模型能不能做到投影片上原來由人來進行的行動呢 
-
-3:30 前為上課後重錄的內容
-
-14:30 我的ChatGPT現在有 Memory 了 (2024/04/26)
-
-17:40 此處用的是 GPT-4
-
-下週 (4/26) 中央大學蔡宗翰老師來課堂上講 TAIDE 開發過程，所以下週沒有更新
-
-延伸閱讀：
-The Rise and Potential of Large Language Model Based Agents: A Survey
-https://arxiv.org/abs/2309.07864
-<a href="https://www.youtube.com/watch?v=bJZTJ7MjYqg"><img src="https://img.youtube.com/vi/bJZTJ7MjYqg/maxresdefault.jpg" />
-<img src="https://img.youtube.com/vi/bJZTJ7MjYqg/0.jpg" />
-<img src="https://img.youtube.com/vi/bJZTJ7MjYqg/1.jpg" />
-<img src="https://img.youtube.com/vi/bJZTJ7MjYqg/2.jpg" />
-<img src="https://img.youtube.com/vi/bJZTJ7MjYqg/3.jpg" /></a>]]>
-      </itunes:summary>
-      <description>
-        <![CDATA[https://www.youtube.com/watch?v=bJZTJ7MjYqg
-投影片連結：https://drive.google.com/file/d/1aW1cRdsxDzHuLdJCDwVHQ5KVlX2Tf7mN/view?usp=sharing
-
-3:20 根據之前上課的內容
-https://youtu.be/A3Yx35KrSN0?si=7csPXx1D_2qoljdd
-https://youtu.be/lwe3_x50_uw?si=SpF9PayuNtCN-TQG
-https://youtu.be/inebiWdQW-4?si=qm4E1vx6ZkjwRt4h
-想想看語言模型能不能做到投影片上原來由人來進行的行動呢 
-
-3:30 前為上課後重錄的內容
-
-14:30 我的ChatGPT現在有 Memory 了 (2024/04/26)
-
-17:40 此處用的是 GPT-4
-
-下週 (4/26) 中央大學蔡宗翰老師來課堂上講 TAIDE 開發過程，所以下週沒有更新
-
-延伸閱讀：
-The Rise and Potential of Large Language Model Based Agents: A Survey
-https://arxiv.org/abs/2309.07864
-<a href="https://www.youtube.com/watch?v=bJZTJ7MjYqg"><img src="https://img.youtube.com/vi/bJZTJ7MjYqg/maxresdefault.jpg" />
-<img src="https://img.youtube.com/vi/bJZTJ7MjYqg/0.jpg" />
-<img src="https://img.youtube.com/vi/bJZTJ7MjYqg/1.jpg" />
-<img src="https://img.youtube.com/vi/bJZTJ7MjYqg/2.jpg" />
-<img src="https://img.youtube.com/vi/bJZTJ7MjYqg/3.jpg" /></a>]]>
-      </description>
-      <content:encoded><![CDATA[<pre>https://www.youtube.com/watch?v=bJZTJ7MjYqg
-投影片連結：https://drive.google.com/file/d/1aW1cRdsxDzHuLdJCDwVHQ5KVlX2Tf7mN/view?usp=sharing
-
-3:20 根據之前上課的內容
-https://youtu.be/A3Yx35KrSN0?si=7csPXx1D_2qoljdd
-https://youtu.be/lwe3_x50_uw?si=SpF9PayuNtCN-TQG
-https://youtu.be/inebiWdQW-4?si=qm4E1vx6ZkjwRt4h
-想想看語言模型能不能做到投影片上原來由人來進行的行動呢 
-
-3:30 前為上課後重錄的內容
-
-14:30 我的ChatGPT現在有 Memory 了 (2024/04/26)
-
-17:40 此處用的是 GPT-4
-
-下週 (4/26) 中央大學蔡宗翰老師來課堂上講 TAIDE 開發過程，所以下週沒有更新
-
-延伸閱讀：
-The Rise and Potential of Large Language Model Based Agents: A Survey
-https://arxiv.org/abs/2309.07864<br />
-<a href="https://www.youtube.com/watch?v=bJZTJ7MjYqg"><img src="https://img.youtube.com/vi/bJZTJ7MjYqg/maxresdefault.jpg" />
-<img src="https://img.youtube.com/vi/bJZTJ7MjYqg/0.jpg" />
-<img src="https://img.youtube.com/vi/bJZTJ7MjYqg/1.jpg" />
-<img src="https://img.youtube.com/vi/bJZTJ7MjYqg/2.jpg" />
-<img src="https://img.youtube.com/vi/bJZTJ7MjYqg/3.jpg" /></a></pre>]]></content:encoded>
-      <itunes:image href="https://img.youtube.com/vi/bJZTJ7MjYqg/maxresdefault.jpg"/>
-      <enclosure url="https://democwise2016.github.io/action-UT-Podcast/HungyiLeeNTU-www.youtube.com-c7552d6dc6/20240419-bJZTJ7MjYqg.mp3" type="audio/mpeg" length="1486" />
-      <itunes:duration>1486</itunes:duration>
-      <guid isPermaLink="false">https://democwise2016.github.io/action-UT-Podcast/HungyiLeeNTU-www.youtube.com-c7552d6dc6/20240419-bJZTJ7MjYqg.mp3</guid>
-      <pubDate>2024-04-19T09:00:11.000Z</pubDate>
-    </item></channel>
+    <itunes:image href="https://yt3.googleusercontent.com/ytc/AIdro_mlTtuvk8IoEtfAKvw7WDc0XuxqGBCjMn-klO63nQbfVjE=s900-b100-c-k-c0x002980B9-no-rj"/>
+</channel>
 </rss>
