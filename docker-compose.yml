@@ -9,6 +9,5 @@ services:
     volumes: 
       - ./output:/output/
       - ./cache:/cache/
-      - ./config.js:/config.js
       - ./config-list.js:/config-list.js
       - ./config-json.js:/config-json.js
