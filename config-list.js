@@ -241,7 +241,7 @@ let feedList = [
     homepageURL: 'https://www.youtube.com/channel/UCine3_lVU-rFDRRI8xeImHA',
     // thumbnailBorderColor: true,
     itemFilters: [
-      ItemFiltersPreset.between1minTo30Min,
+      ItemFiltersPreset.between3minTo30Min,
       // (item) => { return ((item.title.indexOf('AI大小事') >-1)) }
     ],
   },
