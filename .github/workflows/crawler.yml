@@ -142,8 +142,7 @@ jobs:
 
       - name: Main
         run: |
-          bash ./action/install_docker_compose.sh
-          docker-compose up --abort-on-container-exit
+          docker compose up --abort-on-container-exit
 
       # ----------------------------------------------------------------
 
