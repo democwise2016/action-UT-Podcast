@@ -23,10 +23,10 @@ jobs:
 
       - name: free disk space
         run: | 
-          sudo swapoff -a
-          sudo rm -f /swapfile
-          sudo apt clean
-          docker rmi $(docker image ls -aq)
+          sudo swapoff -a 1> /dev/null
+          sudo rm -f /swapfile 1> /dev/null
+          sudo apt clean 1> /dev/null
+          docker rmi $(docker image ls -aq) 1> /dev/null
           df -h
 
       # ----------------------------------------------------------------
@@ -142,7 +142,8 @@ jobs:
 
       - name: Main
         run: |
-          docker compose up --abort-on-container-exit
+          docker compose up --abort-on-container-exit --quiet-pull
+          exit
 
       # ----------------------------------------------------------------
 
