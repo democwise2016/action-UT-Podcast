@@ -30,6 +30,136 @@
     </itunes:owner>
     <itunes:image href="https://yt3.googleusercontent.com/atPscvalHk8trDbKYufO1wYk990XLUFP64htFrawdXCvcca65453vcpOLHJ82VgXOVmRLVH8=s900-b50-c-k-c0x002980b9-no-rj"/>
 <item>
+      <title><![CDATA[8.19]2024年最好的開源模型Flux磅礡登場!!付6GVRAM使用說明書]]></title>
+      <itunes:title><![CDATA[8.19]2024年最好的開源模型Flux磅礡登場!!付6GVRAM使用說明書]]></itunes:title>
+      <itunes:author><![CDATA[杰克艾米立]]></itunes:author>
+      <itunes:summary>
+        <![CDATA[https://www.youtube.com/watch?v=Nrkh_E6iuwA
+本篇為Flux的使用教學，由於flux是一個非常巨大的模型導致許多設備無法使用，在貓神lllyasviel發起的NF4格式中成功的將模型進行了大幅度的壓縮，並且在6GVRAM的設備上也能運行，快來從forge上運行Flux模型體驗新世代模型的表現能力吧。
+加入Discord: https://discord.gg/TM5d89YNwA FB
+粉專: https://www.facebook.com/profile.php?id=100090228987264 
+成為這個頻道的會員並獲得福利： https://www.youtube.com/channel/UCine3_lVU-rFDRRI8xeImHA/join 
+抖內JackEllie(本功能沒有任何福利，但謝謝你的錢): https://www.buymeacoffee.com/otakuya202y =====================================================================
+
+0:00片頭
+0:17 簡介
+1:18 抽書活動
+1:57 安裝forge
+2:59 Flux模型下載
+3:56 Flux使用介紹
+6:42 結尾
+7:20 片尾
+
+=====================================================================
+Forge懶人包安裝文件:
+https://drive.google.com/file/d/1-2oxHAc8oJmkOhHw6O3XgtgeyMGZIKZC/view?usp=sharing
+
+Flux模型載點
+NF4格式:
+https://huggingface.co/lllyasviel/flux1-dev-bnb-nf4/resolve/main/flux1-dev-bnb-nf4-v2.safetensors
+
+FP8格式:
+https://huggingface.co/lllyasviel/flux1_dev/resolve/main/flux1-dev-fp8.safetensors?download=true
+
+GGUF格式請上Discord看教學文章
+https://discord.com/channels/1077423770106597386/1273894421922058324
+
+原文使用教學
+https://github.com/lllyasviel/stable-diffusion-webui-forge/discussions/981
+
+#stablediffusion #aidrawing #ai繪圖 #aiart #aigc #SD3 #flux #nf4 #fp8 #gguf
+<a href="https://www.youtube.com/watch?v=Nrkh_E6iuwA"><img src="https://img.youtube.com/vi/Nrkh_E6iuwA/maxresdefault.jpg" />
+<img src="https://img.youtube.com/vi/Nrkh_E6iuwA/0.jpg" />
+<img src="https://img.youtube.com/vi/Nrkh_E6iuwA/1.jpg" />
+<img src="https://img.youtube.com/vi/Nrkh_E6iuwA/2.jpg" />
+<img src="https://img.youtube.com/vi/Nrkh_E6iuwA/3.jpg" /></a>]]>
+      </itunes:summary>
+      <description>
+        <![CDATA[https://www.youtube.com/watch?v=Nrkh_E6iuwA
+本篇為Flux的使用教學，由於flux是一個非常巨大的模型導致許多設備無法使用，在貓神lllyasviel發起的NF4格式中成功的將模型進行了大幅度的壓縮，並且在6GVRAM的設備上也能運行，快來從forge上運行Flux模型體驗新世代模型的表現能力吧。
+加入Discord: https://discord.gg/TM5d89YNwA FB
+粉專: https://www.facebook.com/profile.php?id=100090228987264 
+成為這個頻道的會員並獲得福利： https://www.youtube.com/channel/UCine3_lVU-rFDRRI8xeImHA/join 
+抖內JackEllie(本功能沒有任何福利，但謝謝你的錢): https://www.buymeacoffee.com/otakuya202y =====================================================================
+
+0:00片頭
+0:17 簡介
+1:18 抽書活動
+1:57 安裝forge
+2:59 Flux模型下載
+3:56 Flux使用介紹
+6:42 結尾
+7:20 片尾
+
+=====================================================================
+Forge懶人包安裝文件:
+https://drive.google.com/file/d/1-2oxHAc8oJmkOhHw6O3XgtgeyMGZIKZC/view?usp=sharing
+
+Flux模型載點
+NF4格式:
+https://huggingface.co/lllyasviel/flux1-dev-bnb-nf4/resolve/main/flux1-dev-bnb-nf4-v2.safetensors
+
+FP8格式:
+https://huggingface.co/lllyasviel/flux1_dev/resolve/main/flux1-dev-fp8.safetensors?download=true
+
+GGUF格式請上Discord看教學文章
+https://discord.com/channels/1077423770106597386/1273894421922058324
+
+原文使用教學
+https://github.com/lllyasviel/stable-diffusion-webui-forge/discussions/981
+
+#stablediffusion #aidrawing #ai繪圖 #aiart #aigc #SD3 #flux #nf4 #fp8 #gguf
+<a href="https://www.youtube.com/watch?v=Nrkh_E6iuwA"><img src="https://img.youtube.com/vi/Nrkh_E6iuwA/maxresdefault.jpg" />
+<img src="https://img.youtube.com/vi/Nrkh_E6iuwA/0.jpg" />
+<img src="https://img.youtube.com/vi/Nrkh_E6iuwA/1.jpg" />
+<img src="https://img.youtube.com/vi/Nrkh_E6iuwA/2.jpg" />
+<img src="https://img.youtube.com/vi/Nrkh_E6iuwA/3.jpg" /></a>]]>
+      </description>
+      <content:encoded><![CDATA[<pre>https://www.youtube.com/watch?v=Nrkh_E6iuwA
+本篇為Flux的使用教學，由於flux是一個非常巨大的模型導致許多設備無法使用，在貓神lllyasviel發起的NF4格式中成功的將模型進行了大幅度的壓縮，並且在6GVRAM的設備上也能運行，快來從forge上運行Flux模型體驗新世代模型的表現能力吧。
+加入Discord: https://discord.gg/TM5d89YNwA FB
+粉專: https://www.facebook.com/profile.php?id=100090228987264 
+成為這個頻道的會員並獲得福利： https://www.youtube.com/channel/UCine3_lVU-rFDRRI8xeImHA/join 
+抖內JackEllie(本功能沒有任何福利，但謝謝你的錢): https://www.buymeacoffee.com/otakuya202y =====================================================================
+
+0:00片頭
+0:17 簡介
+1:18 抽書活動
+1:57 安裝forge
+2:59 Flux模型下載
+3:56 Flux使用介紹
+6:42 結尾
+7:20 片尾
+
+=====================================================================
+Forge懶人包安裝文件:
+https://drive.google.com/file/d/1-2oxHAc8oJmkOhHw6O3XgtgeyMGZIKZC/view?usp=sharing
+
+Flux模型載點
+NF4格式:
+https://huggingface.co/lllyasviel/flux1-dev-bnb-nf4/resolve/main/flux1-dev-bnb-nf4-v2.safetensors
+
+FP8格式:
+https://huggingface.co/lllyasviel/flux1_dev/resolve/main/flux1-dev-fp8.safetensors?download=true
+
+GGUF格式請上Discord看教學文章
+https://discord.com/channels/1077423770106597386/1273894421922058324
+
+原文使用教學
+https://github.com/lllyasviel/stable-diffusion-webui-forge/discussions/981
+
+#stablediffusion #aidrawing #ai繪圖 #aiart #aigc #SD3 #flux #nf4 #fp8 #gguf<br />
+<a href="https://www.youtube.com/watch?v=Nrkh_E6iuwA"><img src="https://img.youtube.com/vi/Nrkh_E6iuwA/maxresdefault.jpg" />
+<img src="https://img.youtube.com/vi/Nrkh_E6iuwA/0.jpg" />
+<img src="https://img.youtube.com/vi/Nrkh_E6iuwA/1.jpg" />
+<img src="https://img.youtube.com/vi/Nrkh_E6iuwA/2.jpg" />
+<img src="https://img.youtube.com/vi/Nrkh_E6iuwA/3.jpg" /></a></pre>]]></content:encoded>
+      <itunes:image href="https://img.youtube.com/vi/Nrkh_E6iuwA/maxresdefault.jpg"/>
+      <enclosure url="https://democwise2016.github.io/action-UT-Podcast/JackEllie-AInews-www.youtube.com-f5a4f928a7/20240819-Nrkh_E6iuwA.mp3" type="audio/mpeg" length="458" />
+      <itunes:duration>458</itunes:duration>
+      <guid isPermaLink="false">https://democwise2016.github.io/action-UT-Podcast/JackEllie-AInews-www.youtube.com-f5a4f928a7/20240819-Nrkh_E6iuwA.mp3</guid>
+      <pubDate>2024-08-19T00:00:00.000Z</pubDate>
+    </item><item>
       <title><![CDATA[8.2]SDXL ControlNet++一個模型14種控制ControlNet總整理篇]]></title>
       <itunes:title><![CDATA[8.2]SDXL ControlNet++一個模型14種控制ControlNet總整理篇]]></itunes:title>
       <itunes:author><![CDATA[杰克艾米立]]></itunes:author>
