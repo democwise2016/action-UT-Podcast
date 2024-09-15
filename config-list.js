@@ -282,14 +282,10 @@ let feedList = [
 // 測試用
 // feedList = [
 //   {
-//     title: '萊斯 新Game報',
-//     feedID: 'LiceMoo-GameNews',
-//     homepageURL: 'https://www.youtube.com/channel/UC9WiXJEyHMGRqL-__3FIBEw',
-//     thumbnailBorderColor: true,
-//     itemFilters: [
-//       ItemFiltersPreset.between3minTo30Min,
-//       // (item) => { return (item.title.indexOf('《新Game報') > -1) }
-//     ],
+//     title: '文字與資本主義 冏冏',
+//     feedID: 'Kyontw828',
+//     homepageURL: 'https://www.youtube.com/channel/UC_xVdv15MR17rQf-nUl92MA',
+//     itemFilters: ItemFiltersPreset.between6minTo60Min,
 //     options: {
 //       maxItems: 3
 //     }
