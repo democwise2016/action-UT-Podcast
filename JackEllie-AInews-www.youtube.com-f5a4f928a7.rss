@@ -29,5 +29,1818 @@
       <itunes:name><![CDATA[杰克艾米立 AI大小事 [UT]]]></itunes:name>
     </itunes:owner>
     <itunes:image href="https://yt3.googleusercontent.com/atPscvalHk8trDbKYufO1wYk990XLUFP64htFrawdXCvcca65453vcpOLHJ82VgXOVmRLVH8=s900-b50-c-k-c0x002980b9-no-rj"/>
-</channel>
+<item>
+      <title><![CDATA[8.19]2024年最好的開源模型Flux磅礡登場!!付6GVRAM使用說明書]]></title>
+      <itunes:title><![CDATA[8.19]2024年最好的開源模型Flux磅礡登場!!付6GVRAM使用說明書]]></itunes:title>
+      <itunes:author><![CDATA[杰克艾米立]]></itunes:author>
+      <itunes:summary>
+        <![CDATA[https://www.youtube.com/watch?v=Nrkh_E6iuwA
+本篇為Flux的使用教學，由於flux是一個非常巨大的模型導致許多設備無法使用，在貓神lllyasviel發起的NF4格式中成功的將模型進行了大幅度的壓縮，並且在6GVRAM的設備上也能運行，快來從forge上運行Flux模型體驗新世代模型的表現能力吧。
+加入Discord: https://discord.gg/TM5d89YNwA
+FB粉專: https://www.facebook.com/profile.php?id=100090228987264 
+成為這個頻道的會員並獲得福利： https://www.youtube.com/channel/UCine3_lVU-rFDRRI8xeImHA/join 
+抖內JackEllie(本功能沒有任何福利，但謝謝你的錢): https://www.buymeacoffee.com/otakuya202y =====================================================================
+
+0:00片頭
+0:17 簡介
+1:18 抽書活動
+1:57 安裝forge
+2:59 Flux模型下載
+3:56 Flux使用介紹
+6:42 結尾
+7:20 片尾
+
+=====================================================================
+Forge懶人包安裝文件:
+https://drive.google.com/file/d/1-2oxHAc8oJmkOhHw6O3XgtgeyMGZIKZC/view?usp=sharing
+
+Flux模型載點
+NF4格式:
+https://huggingface.co/lllyasviel/flux1-dev-bnb-nf4/resolve/main/flux1-dev-bnb-nf4-v2.safetensors
+
+FP8格式:
+https://huggingface.co/lllyasviel/flux1_dev/resolve/main/flux1-dev-fp8.safetensors?download=true
+
+GGUF格式請上Discord看教學文章
+https://discord.com/channels/1077423770106597386/1273894421922058324
+
+原文使用教學
+https://github.com/lllyasviel/stable-diffusion-webui-forge/discussions/981
+
+#stablediffusion #aidrawing #ai繪圖 #aiart #aigc #SD3 #flux #nf4 #fp8 #gguf
+<a href="https://www.youtube.com/watch?v=Nrkh_E6iuwA"><img src="https://img.youtube.com/vi/Nrkh_E6iuwA/maxresdefault.jpg" />
+<img src="https://img.youtube.com/vi/Nrkh_E6iuwA/0.jpg" />
+<img src="https://img.youtube.com/vi/Nrkh_E6iuwA/1.jpg" />
+<img src="https://img.youtube.com/vi/Nrkh_E6iuwA/2.jpg" />
+<img src="https://img.youtube.com/vi/Nrkh_E6iuwA/3.jpg" /></a>]]>
+      </itunes:summary>
+      <description>
+        <![CDATA[https://www.youtube.com/watch?v=Nrkh_E6iuwA
+本篇為Flux的使用教學，由於flux是一個非常巨大的模型導致許多設備無法使用，在貓神lllyasviel發起的NF4格式中成功的將模型進行了大幅度的壓縮，並且在6GVRAM的設備上也能運行，快來從forge上運行Flux模型體驗新世代模型的表現能力吧。
+加入Discord: https://discord.gg/TM5d89YNwA
+FB粉專: https://www.facebook.com/profile.php?id=100090228987264 
+成為這個頻道的會員並獲得福利： https://www.youtube.com/channel/UCine3_lVU-rFDRRI8xeImHA/join 
+抖內JackEllie(本功能沒有任何福利，但謝謝你的錢): https://www.buymeacoffee.com/otakuya202y =====================================================================
+
+0:00片頭
+0:17 簡介
+1:18 抽書活動
+1:57 安裝forge
+2:59 Flux模型下載
+3:56 Flux使用介紹
+6:42 結尾
+7:20 片尾
+
+=====================================================================
+Forge懶人包安裝文件:
+https://drive.google.com/file/d/1-2oxHAc8oJmkOhHw6O3XgtgeyMGZIKZC/view?usp=sharing
+
+Flux模型載點
+NF4格式:
+https://huggingface.co/lllyasviel/flux1-dev-bnb-nf4/resolve/main/flux1-dev-bnb-nf4-v2.safetensors
+
+FP8格式:
+https://huggingface.co/lllyasviel/flux1_dev/resolve/main/flux1-dev-fp8.safetensors?download=true
+
+GGUF格式請上Discord看教學文章
+https://discord.com/channels/1077423770106597386/1273894421922058324
+
+原文使用教學
+https://github.com/lllyasviel/stable-diffusion-webui-forge/discussions/981
+
+#stablediffusion #aidrawing #ai繪圖 #aiart #aigc #SD3 #flux #nf4 #fp8 #gguf
+<a href="https://www.youtube.com/watch?v=Nrkh_E6iuwA"><img src="https://img.youtube.com/vi/Nrkh_E6iuwA/maxresdefault.jpg" />
+<img src="https://img.youtube.com/vi/Nrkh_E6iuwA/0.jpg" />
+<img src="https://img.youtube.com/vi/Nrkh_E6iuwA/1.jpg" />
+<img src="https://img.youtube.com/vi/Nrkh_E6iuwA/2.jpg" />
+<img src="https://img.youtube.com/vi/Nrkh_E6iuwA/3.jpg" /></a>]]>
+      </description>
+      <content:encoded><![CDATA[<pre>https://www.youtube.com/watch?v=Nrkh_E6iuwA
+本篇為Flux的使用教學，由於flux是一個非常巨大的模型導致許多設備無法使用，在貓神lllyasviel發起的NF4格式中成功的將模型進行了大幅度的壓縮，並且在6GVRAM的設備上也能運行，快來從forge上運行Flux模型體驗新世代模型的表現能力吧。
+加入Discord: https://discord.gg/TM5d89YNwA
+FB粉專: https://www.facebook.com/profile.php?id=100090228987264 
+成為這個頻道的會員並獲得福利： https://www.youtube.com/channel/UCine3_lVU-rFDRRI8xeImHA/join 
+抖內JackEllie(本功能沒有任何福利，但謝謝你的錢): https://www.buymeacoffee.com/otakuya202y =====================================================================
+
+0:00片頭
+0:17 簡介
+1:18 抽書活動
+1:57 安裝forge
+2:59 Flux模型下載
+3:56 Flux使用介紹
+6:42 結尾
+7:20 片尾
+
+=====================================================================
+Forge懶人包安裝文件:
+https://drive.google.com/file/d/1-2oxHAc8oJmkOhHw6O3XgtgeyMGZIKZC/view?usp=sharing
+
+Flux模型載點
+NF4格式:
+https://huggingface.co/lllyasviel/flux1-dev-bnb-nf4/resolve/main/flux1-dev-bnb-nf4-v2.safetensors
+
+FP8格式:
+https://huggingface.co/lllyasviel/flux1_dev/resolve/main/flux1-dev-fp8.safetensors?download=true
+
+GGUF格式請上Discord看教學文章
+https://discord.com/channels/1077423770106597386/1273894421922058324
+
+原文使用教學
+https://github.com/lllyasviel/stable-diffusion-webui-forge/discussions/981
+
+#stablediffusion #aidrawing #ai繪圖 #aiart #aigc #SD3 #flux #nf4 #fp8 #gguf<br />
+<a href="https://www.youtube.com/watch?v=Nrkh_E6iuwA"><img src="https://img.youtube.com/vi/Nrkh_E6iuwA/maxresdefault.jpg" />
+<img src="https://img.youtube.com/vi/Nrkh_E6iuwA/0.jpg" />
+<img src="https://img.youtube.com/vi/Nrkh_E6iuwA/1.jpg" />
+<img src="https://img.youtube.com/vi/Nrkh_E6iuwA/2.jpg" />
+<img src="https://img.youtube.com/vi/Nrkh_E6iuwA/3.jpg" /></a></pre>]]></content:encoded>
+      <itunes:image href="https://img.youtube.com/vi/Nrkh_E6iuwA/maxresdefault.jpg"/>
+      <enclosure url="https://democwise2016.github.io/action-UT-Podcast/JackEllie-AInews-www.youtube.com-f5a4f928a7/20240819-Nrkh_E6iuwA.mp3" type="audio/mpeg" length="458" />
+      <itunes:duration>458</itunes:duration>
+      <guid isPermaLink="false">https://democwise2016.github.io/action-UT-Podcast/JackEllie-AInews-www.youtube.com-f5a4f928a7/20240819-Nrkh_E6iuwA.mp3</guid>
+      <pubDate>2024-08-19T00:00:00.000Z</pubDate>
+    </item><item>
+      <title><![CDATA[8.2]SDXL ControlNet++一個模型14種控制ControlNet總整理篇]]></title>
+      <itunes:title><![CDATA[8.2]SDXL ControlNet++一個模型14種控制ControlNet總整理篇]]></itunes:title>
+      <itunes:author><![CDATA[杰克艾米立]]></itunes:author>
+      <itunes:summary>
+        <![CDATA[https://www.youtube.com/watch?v=Zq5YjLX0KU0
+由於SDXL的ControlNet功能相當不全，剛好透過本次ControlNet Union的推出，解決了大部分使用者的需求，本篇會詳細介紹ControlNet Union的使用以及其他在SDXL上表現優秀的ControlNet模型。
+
+加入Discord: https://discord.gg/TM5d89YNwA
+
+FB粉專: https://www.facebook.com/profile.php?id=100090228987264 
+
+成為這個頻道的會員並獲得福利：
+https://www.youtube.com/channel/UCine3_lVU-rFDRRI8xeImHA/join
+
+抖內JackEllie(本功能沒有任何福利，但謝謝你的錢): 
+https://www.buymeacoffee.com/otakuya202y 
+
+=====================================================================
+
+0:00 開場
+1:24 各種尺寸的ControlNet
+2:28 ControlNet++
+3:20 WebUI ControlNet++使用方法
+3:30檔案重新命名
+4:00 在WebUI上需注意的地方
+5:00 Segmentation預處理遇到錯誤的解決方法
+5:10 ComfyUI ControlNet++使用方法
+5:43其他SDXL ControlNet模型介紹(IN/OUT Paint、Scribble)
+
+ControlNet Union載點: 
+下載後請更名為:controlnet++_union_promax_sdxl.safetensors
+https://huggingface.co/xinsir/controlnet-union-sdxl-1.0/resolve/main/diffusion_pytorch_model_promax.safetensors?download=true
+
+ControlNet Union ComfyUI工作流
+1. Inpant
+https://github.com/JackEllie/ComfyWorkflow/blob/main/controlnet%2B%2B/inpant.png
+
+2. OpenPose
+https://github.com/JackEllie/ComfyWorkflow/blob/main/controlnet%2B%2B/T2i_pose.png
+
+kataragi訓練的Inpant模型
+https://huggingface.co/kataragi/controlnetXL_inpaint/resolve/main/Kataragi_inpaintXL-fp16.safetensors?download=true
+Anytest模型
+V3版
+https://huggingface.co/2vXpSwA7/iroiro-lora/resolve/main/test_controlnet2/CN-anytest_v3-50000_fp16.safetensors?download=true
+V4版
+https://huggingface.co/2vXpSwA7/iroiro-lora/resolve/main/test_controlnet2/CN-anytest_v4-marged.safetensors?download=true
+
+Anytest說明https://note.com/kokekokkosann/n/n46b3967fe895
+
+
+#stablediffusion #aidrawing #ai繪圖 #aiart #controlnet #sdxl
+<a href="https://www.youtube.com/watch?v=Zq5YjLX0KU0"><img src="https://img.youtube.com/vi/Zq5YjLX0KU0/maxresdefault.jpg" />
+<img src="https://img.youtube.com/vi/Zq5YjLX0KU0/0.jpg" />
+<img src="https://img.youtube.com/vi/Zq5YjLX0KU0/1.jpg" />
+<img src="https://img.youtube.com/vi/Zq5YjLX0KU0/2.jpg" />
+<img src="https://img.youtube.com/vi/Zq5YjLX0KU0/3.jpg" /></a>]]>
+      </itunes:summary>
+      <description>
+        <![CDATA[https://www.youtube.com/watch?v=Zq5YjLX0KU0
+由於SDXL的ControlNet功能相當不全，剛好透過本次ControlNet Union的推出，解決了大部分使用者的需求，本篇會詳細介紹ControlNet Union的使用以及其他在SDXL上表現優秀的ControlNet模型。
+
+加入Discord: https://discord.gg/TM5d89YNwA
+
+FB粉專: https://www.facebook.com/profile.php?id=100090228987264 
+
+成為這個頻道的會員並獲得福利：
+https://www.youtube.com/channel/UCine3_lVU-rFDRRI8xeImHA/join
+
+抖內JackEllie(本功能沒有任何福利，但謝謝你的錢): 
+https://www.buymeacoffee.com/otakuya202y 
+
+=====================================================================
+
+0:00 開場
+1:24 各種尺寸的ControlNet
+2:28 ControlNet++
+3:20 WebUI ControlNet++使用方法
+3:30檔案重新命名
+4:00 在WebUI上需注意的地方
+5:00 Segmentation預處理遇到錯誤的解決方法
+5:10 ComfyUI ControlNet++使用方法
+5:43其他SDXL ControlNet模型介紹(IN/OUT Paint、Scribble)
+
+ControlNet Union載點: 
+下載後請更名為:controlnet++_union_promax_sdxl.safetensors
+https://huggingface.co/xinsir/controlnet-union-sdxl-1.0/resolve/main/diffusion_pytorch_model_promax.safetensors?download=true
+
+ControlNet Union ComfyUI工作流
+1. Inpant
+https://github.com/JackEllie/ComfyWorkflow/blob/main/controlnet%2B%2B/inpant.png
+
+2. OpenPose
+https://github.com/JackEllie/ComfyWorkflow/blob/main/controlnet%2B%2B/T2i_pose.png
+
+kataragi訓練的Inpant模型
+https://huggingface.co/kataragi/controlnetXL_inpaint/resolve/main/Kataragi_inpaintXL-fp16.safetensors?download=true
+Anytest模型
+V3版
+https://huggingface.co/2vXpSwA7/iroiro-lora/resolve/main/test_controlnet2/CN-anytest_v3-50000_fp16.safetensors?download=true
+V4版
+https://huggingface.co/2vXpSwA7/iroiro-lora/resolve/main/test_controlnet2/CN-anytest_v4-marged.safetensors?download=true
+
+Anytest說明https://note.com/kokekokkosann/n/n46b3967fe895
+
+
+#stablediffusion #aidrawing #ai繪圖 #aiart #controlnet #sdxl
+<a href="https://www.youtube.com/watch?v=Zq5YjLX0KU0"><img src="https://img.youtube.com/vi/Zq5YjLX0KU0/maxresdefault.jpg" />
+<img src="https://img.youtube.com/vi/Zq5YjLX0KU0/0.jpg" />
+<img src="https://img.youtube.com/vi/Zq5YjLX0KU0/1.jpg" />
+<img src="https://img.youtube.com/vi/Zq5YjLX0KU0/2.jpg" />
+<img src="https://img.youtube.com/vi/Zq5YjLX0KU0/3.jpg" /></a>]]>
+      </description>
+      <content:encoded><![CDATA[<pre>https://www.youtube.com/watch?v=Zq5YjLX0KU0
+由於SDXL的ControlNet功能相當不全，剛好透過本次ControlNet Union的推出，解決了大部分使用者的需求，本篇會詳細介紹ControlNet Union的使用以及其他在SDXL上表現優秀的ControlNet模型。
+
+加入Discord: https://discord.gg/TM5d89YNwA
+
+FB粉專: https://www.facebook.com/profile.php?id=100090228987264 
+
+成為這個頻道的會員並獲得福利：
+https://www.youtube.com/channel/UCine3_lVU-rFDRRI8xeImHA/join
+
+抖內JackEllie(本功能沒有任何福利，但謝謝你的錢): 
+https://www.buymeacoffee.com/otakuya202y 
+
+=====================================================================
+
+0:00 開場
+1:24 各種尺寸的ControlNet
+2:28 ControlNet++
+3:20 WebUI ControlNet++使用方法
+3:30檔案重新命名
+4:00 在WebUI上需注意的地方
+5:00 Segmentation預處理遇到錯誤的解決方法
+5:10 ComfyUI ControlNet++使用方法
+5:43其他SDXL ControlNet模型介紹(IN/OUT Paint、Scribble)
+
+ControlNet Union載點: 
+下載後請更名為:controlnet++_union_promax_sdxl.safetensors
+https://huggingface.co/xinsir/controlnet-union-sdxl-1.0/resolve/main/diffusion_pytorch_model_promax.safetensors?download=true
+
+ControlNet Union ComfyUI工作流
+1. Inpant
+https://github.com/JackEllie/ComfyWorkflow/blob/main/controlnet%2B%2B/inpant.png
+
+2. OpenPose
+https://github.com/JackEllie/ComfyWorkflow/blob/main/controlnet%2B%2B/T2i_pose.png
+
+kataragi訓練的Inpant模型
+https://huggingface.co/kataragi/controlnetXL_inpaint/resolve/main/Kataragi_inpaintXL-fp16.safetensors?download=true
+Anytest模型
+V3版
+https://huggingface.co/2vXpSwA7/iroiro-lora/resolve/main/test_controlnet2/CN-anytest_v3-50000_fp16.safetensors?download=true
+V4版
+https://huggingface.co/2vXpSwA7/iroiro-lora/resolve/main/test_controlnet2/CN-anytest_v4-marged.safetensors?download=true
+
+Anytest說明https://note.com/kokekokkosann/n/n46b3967fe895
+
+
+#stablediffusion #aidrawing #ai繪圖 #aiart #controlnet #sdxl<br />
+<a href="https://www.youtube.com/watch?v=Zq5YjLX0KU0"><img src="https://img.youtube.com/vi/Zq5YjLX0KU0/maxresdefault.jpg" />
+<img src="https://img.youtube.com/vi/Zq5YjLX0KU0/0.jpg" />
+<img src="https://img.youtube.com/vi/Zq5YjLX0KU0/1.jpg" />
+<img src="https://img.youtube.com/vi/Zq5YjLX0KU0/2.jpg" />
+<img src="https://img.youtube.com/vi/Zq5YjLX0KU0/3.jpg" /></a></pre>]]></content:encoded>
+      <itunes:image href="https://img.youtube.com/vi/Zq5YjLX0KU0/maxresdefault.jpg"/>
+      <enclosure url="https://democwise2016.github.io/action-UT-Podcast/JackEllie-AInews-www.youtube.com-f5a4f928a7/20240802-Zq5YjLX0KU0.mp3" type="audio/mpeg" length="480" />
+      <itunes:duration>480</itunes:duration>
+      <guid isPermaLink="false">https://democwise2016.github.io/action-UT-Podcast/JackEllie-AInews-www.youtube.com-f5a4f928a7/20240802-Zq5YjLX0KU0.mp3</guid>
+      <pubDate>2024-08-02T00:00:00.000Z</pubDate>
+    </item><item>
+      <title><![CDATA[7.12]AI Assistant AI繪圖小幫手 電繪入門者看這篇讓你馬上飛高高!!]]></title>
+      <itunes:title><![CDATA[7.12]AI Assistant AI繪圖小幫手 電繪入門者看這篇讓你馬上飛高高!!]]></itunes:title>
+      <itunes:author><![CDATA[杰克艾米立]]></itunes:author>
+      <itunes:summary>
+        <![CDATA[https://www.youtube.com/watch?v=huMyWDv_oXA
+AI Assistant絕對是繪師們的好助手，就算是不會畫圖的你我也能做出好作品喔!!
+內附的ComfyUI工作流 (包含我們經過測試後強化和修改的部分)
+
+加入Discord: https://discord.gg/TM5d89YNwA
+
+FB粉專: https://www.facebook.com/profile.php?id=100090228987264 
+
+成為這個頻道的會員並獲得福利：
+https://www.youtube.com/channel/UCine3_lVU-rFDRRI8xeImHA/join
+
+抖內JackEllie(本功能沒有任何福利，但謝謝你的錢): 
+https://www.buymeacoffee.com/otakuya202y 
+
+=====================================================================
+
+SD發展真的很快速，各種專業的人士們都將其推向不同的方向，快跟上捷克艾米立的腳步與我們一同進步吧!!
+
+0:00 片頭
+0:15 介紹
+1:10 安裝
+1:45 圖生圖
+3:05 線稿
+3:42 法線貼圖
+4:25 燈光
+4:57 動畫陰影
+5:19 上色
+6:34 調整大小
+6:49 重繪
+7:14 ComfyUI 工作流
+8:54 下集預告
+
+
+AI Assistent 載點
+https://drive.google.com/file/d/1YmS8qlmvThjn-ZMXEm2QTwOC0pPcX7Gq/view
+
+git hub ComfyUI 新增節點載點 (尚未推入管理器中)
+https://github.com/JackEllie/ComfyUI_AI_Assistant.git
+
+工作流圖檔
+https://github.com/JackEllie/ComfyUI_AI_Assistant/tree/main/examples
+
+
+Ps : 不會畫的物件也可以丟白紙讓模型自由發揮喔!片尾杰克艾米立全家福的樹就是白紙做的，背景也僅只有一條線呢 (笑)    by 艾粒
+
+#stablediffusion #aidrawing #ai繪圖 #aiart #aigc #SD3 #stabilityai
+<a href="https://www.youtube.com/watch?v=huMyWDv_oXA"><img src="https://img.youtube.com/vi/huMyWDv_oXA/maxresdefault.jpg" />
+<img src="https://img.youtube.com/vi/huMyWDv_oXA/0.jpg" />
+<img src="https://img.youtube.com/vi/huMyWDv_oXA/1.jpg" />
+<img src="https://img.youtube.com/vi/huMyWDv_oXA/2.jpg" />
+<img src="https://img.youtube.com/vi/huMyWDv_oXA/3.jpg" /></a>]]>
+      </itunes:summary>
+      <description>
+        <![CDATA[https://www.youtube.com/watch?v=huMyWDv_oXA
+AI Assistant絕對是繪師們的好助手，就算是不會畫圖的你我也能做出好作品喔!!
+內附的ComfyUI工作流 (包含我們經過測試後強化和修改的部分)
+
+加入Discord: https://discord.gg/TM5d89YNwA
+
+FB粉專: https://www.facebook.com/profile.php?id=100090228987264 
+
+成為這個頻道的會員並獲得福利：
+https://www.youtube.com/channel/UCine3_lVU-rFDRRI8xeImHA/join
+
+抖內JackEllie(本功能沒有任何福利，但謝謝你的錢): 
+https://www.buymeacoffee.com/otakuya202y 
+
+=====================================================================
+
+SD發展真的很快速，各種專業的人士們都將其推向不同的方向，快跟上捷克艾米立的腳步與我們一同進步吧!!
+
+0:00 片頭
+0:15 介紹
+1:10 安裝
+1:45 圖生圖
+3:05 線稿
+3:42 法線貼圖
+4:25 燈光
+4:57 動畫陰影
+5:19 上色
+6:34 調整大小
+6:49 重繪
+7:14 ComfyUI 工作流
+8:54 下集預告
+
+
+AI Assistent 載點
+https://drive.google.com/file/d/1YmS8qlmvThjn-ZMXEm2QTwOC0pPcX7Gq/view
+
+git hub ComfyUI 新增節點載點 (尚未推入管理器中)
+https://github.com/JackEllie/ComfyUI_AI_Assistant.git
+
+工作流圖檔
+https://github.com/JackEllie/ComfyUI_AI_Assistant/tree/main/examples
+
+
+Ps : 不會畫的物件也可以丟白紙讓模型自由發揮喔!片尾杰克艾米立全家福的樹就是白紙做的，背景也僅只有一條線呢 (笑)    by 艾粒
+
+#stablediffusion #aidrawing #ai繪圖 #aiart #aigc #SD3 #stabilityai
+<a href="https://www.youtube.com/watch?v=huMyWDv_oXA"><img src="https://img.youtube.com/vi/huMyWDv_oXA/maxresdefault.jpg" />
+<img src="https://img.youtube.com/vi/huMyWDv_oXA/0.jpg" />
+<img src="https://img.youtube.com/vi/huMyWDv_oXA/1.jpg" />
+<img src="https://img.youtube.com/vi/huMyWDv_oXA/2.jpg" />
+<img src="https://img.youtube.com/vi/huMyWDv_oXA/3.jpg" /></a>]]>
+      </description>
+      <content:encoded><![CDATA[<pre>https://www.youtube.com/watch?v=huMyWDv_oXA
+AI Assistant絕對是繪師們的好助手，就算是不會畫圖的你我也能做出好作品喔!!
+內附的ComfyUI工作流 (包含我們經過測試後強化和修改的部分)
+
+加入Discord: https://discord.gg/TM5d89YNwA
+
+FB粉專: https://www.facebook.com/profile.php?id=100090228987264 
+
+成為這個頻道的會員並獲得福利：
+https://www.youtube.com/channel/UCine3_lVU-rFDRRI8xeImHA/join
+
+抖內JackEllie(本功能沒有任何福利，但謝謝你的錢): 
+https://www.buymeacoffee.com/otakuya202y 
+
+=====================================================================
+
+SD發展真的很快速，各種專業的人士們都將其推向不同的方向，快跟上捷克艾米立的腳步與我們一同進步吧!!
+
+0:00 片頭
+0:15 介紹
+1:10 安裝
+1:45 圖生圖
+3:05 線稿
+3:42 法線貼圖
+4:25 燈光
+4:57 動畫陰影
+5:19 上色
+6:34 調整大小
+6:49 重繪
+7:14 ComfyUI 工作流
+8:54 下集預告
+
+
+AI Assistent 載點
+https://drive.google.com/file/d/1YmS8qlmvThjn-ZMXEm2QTwOC0pPcX7Gq/view
+
+git hub ComfyUI 新增節點載點 (尚未推入管理器中)
+https://github.com/JackEllie/ComfyUI_AI_Assistant.git
+
+工作流圖檔
+https://github.com/JackEllie/ComfyUI_AI_Assistant/tree/main/examples
+
+
+Ps : 不會畫的物件也可以丟白紙讓模型自由發揮喔!片尾杰克艾米立全家福的樹就是白紙做的，背景也僅只有一條線呢 (笑)    by 艾粒
+
+#stablediffusion #aidrawing #ai繪圖 #aiart #aigc #SD3 #stabilityai<br />
+<a href="https://www.youtube.com/watch?v=huMyWDv_oXA"><img src="https://img.youtube.com/vi/huMyWDv_oXA/maxresdefault.jpg" />
+<img src="https://img.youtube.com/vi/huMyWDv_oXA/0.jpg" />
+<img src="https://img.youtube.com/vi/huMyWDv_oXA/1.jpg" />
+<img src="https://img.youtube.com/vi/huMyWDv_oXA/2.jpg" />
+<img src="https://img.youtube.com/vi/huMyWDv_oXA/3.jpg" /></a></pre>]]></content:encoded>
+      <itunes:image href="https://img.youtube.com/vi/huMyWDv_oXA/maxresdefault.jpg"/>
+      <enclosure url="https://democwise2016.github.io/action-UT-Podcast/JackEllie-AInews-www.youtube.com-f5a4f928a7/20240712-huMyWDv_oXA.mp3" type="audio/mpeg" length="602" />
+      <itunes:duration>602</itunes:duration>
+      <guid isPermaLink="false">https://democwise2016.github.io/action-UT-Podcast/JackEllie-AInews-www.youtube.com-f5a4f928a7/20240712-huMyWDv_oXA.mp3</guid>
+      <pubDate>2024-07-12T00:00:00.000Z</pubDate>
+    </item><item>
+      <title><![CDATA[6.22]SD3開源是希望還是絕望?內附ComfyUI使用方法]]></title>
+      <itunes:title><![CDATA[6.22]SD3開源是希望還是絕望?內附ComfyUI使用方法]]></itunes:title>
+      <itunes:author><![CDATA[杰克艾米立]]></itunes:author>
+      <itunes:summary>
+        <![CDATA[https://www.youtube.com/watch?v=_m7TFwV0Ypw
+SD3開源是希望還是絕望?內附ComfyUI使用方法
+加入Discord: https://discord.gg/TM5d89YNwA
+FB粉專: https://www.facebook.com/profile.php?id=100090228987264 
+
+成為這個頻道的會員並獲得福利：
+https://www.youtube.com/channel/UCine3_lVU-rFDRRI8xeImHA/join
+
+抖內JackEllie(本功能沒有任何福利，但謝謝你的錢): 
+https://www.buymeacoffee.com/otakuya202y 
+
+我們的twitch(不定時開台): https://www.twitch.tv/otakuya2022
+=====================================================================
+
+SD3在2024/6/12號的時候開源了，但與大家期待的模型似乎有所不同，由一段簡短的題詞卻引發的災難，再加上許可證爭議，接下來StabilityAI的下一步是什麼呢?
+
+0:00 片頭
+0:15 介紹
+1:28 更新ComfyUI
+2:15 載入工作流
+2:28 SD3改動
+4:03社群炎上
+5:46許可證爭議
+6:30下一步?
+7:38結尾
+
+SD3的ComfyUI工作流
+https://comfyanonymous.github.io/ComfyUI_examples/sd3/
+將圖像拖入ComfyUI即可
+
+SD3 2B模型載點
+https://huggingface.co/stabilityai/stable-diffusion-3-medium/tree/main
+下方兩種載法則一即可
+1. 建議方法:下載sd3_medium_incl_clips_t5xxlfp8.safetensors即可，但須將工作流中的CLIP改由模型載入點的CLIP輸出。
+2. 進階方法:下載sd3_medium.safetensors，並另外下載text_encoders中的三個text_encoders，並放入ComfyUI\\models\\clip中。
+
+#stablediffusion #aidrawing #ai繪圖 #aiart #aigc #SD3 #stabilityai
+<a href="https://www.youtube.com/watch?v=_m7TFwV0Ypw"><img src="https://img.youtube.com/vi/_m7TFwV0Ypw/maxresdefault.jpg" />
+<img src="https://img.youtube.com/vi/_m7TFwV0Ypw/0.jpg" />
+<img src="https://img.youtube.com/vi/_m7TFwV0Ypw/1.jpg" />
+<img src="https://img.youtube.com/vi/_m7TFwV0Ypw/2.jpg" />
+<img src="https://img.youtube.com/vi/_m7TFwV0Ypw/3.jpg" /></a>]]>
+      </itunes:summary>
+      <description>
+        <![CDATA[https://www.youtube.com/watch?v=_m7TFwV0Ypw
+SD3開源是希望還是絕望?內附ComfyUI使用方法
+加入Discord: https://discord.gg/TM5d89YNwA
+FB粉專: https://www.facebook.com/profile.php?id=100090228987264 
+
+成為這個頻道的會員並獲得福利：
+https://www.youtube.com/channel/UCine3_lVU-rFDRRI8xeImHA/join
+
+抖內JackEllie(本功能沒有任何福利，但謝謝你的錢): 
+https://www.buymeacoffee.com/otakuya202y 
+
+我們的twitch(不定時開台): https://www.twitch.tv/otakuya2022
+=====================================================================
+
+SD3在2024/6/12號的時候開源了，但與大家期待的模型似乎有所不同，由一段簡短的題詞卻引發的災難，再加上許可證爭議，接下來StabilityAI的下一步是什麼呢?
+
+0:00 片頭
+0:15 介紹
+1:28 更新ComfyUI
+2:15 載入工作流
+2:28 SD3改動
+4:03社群炎上
+5:46許可證爭議
+6:30下一步?
+7:38結尾
+
+SD3的ComfyUI工作流
+https://comfyanonymous.github.io/ComfyUI_examples/sd3/
+將圖像拖入ComfyUI即可
+
+SD3 2B模型載點
+https://huggingface.co/stabilityai/stable-diffusion-3-medium/tree/main
+下方兩種載法則一即可
+1. 建議方法:下載sd3_medium_incl_clips_t5xxlfp8.safetensors即可，但須將工作流中的CLIP改由模型載入點的CLIP輸出。
+2. 進階方法:下載sd3_medium.safetensors，並另外下載text_encoders中的三個text_encoders，並放入ComfyUI\\models\\clip中。
+
+#stablediffusion #aidrawing #ai繪圖 #aiart #aigc #SD3 #stabilityai
+<a href="https://www.youtube.com/watch?v=_m7TFwV0Ypw"><img src="https://img.youtube.com/vi/_m7TFwV0Ypw/maxresdefault.jpg" />
+<img src="https://img.youtube.com/vi/_m7TFwV0Ypw/0.jpg" />
+<img src="https://img.youtube.com/vi/_m7TFwV0Ypw/1.jpg" />
+<img src="https://img.youtube.com/vi/_m7TFwV0Ypw/2.jpg" />
+<img src="https://img.youtube.com/vi/_m7TFwV0Ypw/3.jpg" /></a>]]>
+      </description>
+      <content:encoded><![CDATA[<pre>https://www.youtube.com/watch?v=_m7TFwV0Ypw
+SD3開源是希望還是絕望?內附ComfyUI使用方法
+加入Discord: https://discord.gg/TM5d89YNwA
+FB粉專: https://www.facebook.com/profile.php?id=100090228987264 
+
+成為這個頻道的會員並獲得福利：
+https://www.youtube.com/channel/UCine3_lVU-rFDRRI8xeImHA/join
+
+抖內JackEllie(本功能沒有任何福利，但謝謝你的錢): 
+https://www.buymeacoffee.com/otakuya202y 
+
+我們的twitch(不定時開台): https://www.twitch.tv/otakuya2022
+=====================================================================
+
+SD3在2024/6/12號的時候開源了，但與大家期待的模型似乎有所不同，由一段簡短的題詞卻引發的災難，再加上許可證爭議，接下來StabilityAI的下一步是什麼呢?
+
+0:00 片頭
+0:15 介紹
+1:28 更新ComfyUI
+2:15 載入工作流
+2:28 SD3改動
+4:03社群炎上
+5:46許可證爭議
+6:30下一步?
+7:38結尾
+
+SD3的ComfyUI工作流
+https://comfyanonymous.github.io/ComfyUI_examples/sd3/
+將圖像拖入ComfyUI即可
+
+SD3 2B模型載點
+https://huggingface.co/stabilityai/stable-diffusion-3-medium/tree/main
+下方兩種載法則一即可
+1. 建議方法:下載sd3_medium_incl_clips_t5xxlfp8.safetensors即可，但須將工作流中的CLIP改由模型載入點的CLIP輸出。
+2. 進階方法:下載sd3_medium.safetensors，並另外下載text_encoders中的三個text_encoders，並放入ComfyUI\\models\\clip中。
+
+#stablediffusion #aidrawing #ai繪圖 #aiart #aigc #SD3 #stabilityai<br />
+<a href="https://www.youtube.com/watch?v=_m7TFwV0Ypw"><img src="https://img.youtube.com/vi/_m7TFwV0Ypw/maxresdefault.jpg" />
+<img src="https://img.youtube.com/vi/_m7TFwV0Ypw/0.jpg" />
+<img src="https://img.youtube.com/vi/_m7TFwV0Ypw/1.jpg" />
+<img src="https://img.youtube.com/vi/_m7TFwV0Ypw/2.jpg" />
+<img src="https://img.youtube.com/vi/_m7TFwV0Ypw/3.jpg" /></a></pre>]]></content:encoded>
+      <itunes:image href="https://img.youtube.com/vi/_m7TFwV0Ypw/maxresdefault.jpg"/>
+      <enclosure url="https://democwise2016.github.io/action-UT-Podcast/JackEllie-AInews-www.youtube.com-f5a4f928a7/20240622-_m7TFwV0Ypw.mp3" type="audio/mpeg" length="499" />
+      <itunes:duration>499</itunes:duration>
+      <guid isPermaLink="false">https://democwise2016.github.io/action-UT-Podcast/JackEllie-AInews-www.youtube.com-f5a4f928a7/20240622-_m7TFwV0Ypw.mp3</guid>
+      <pubDate>2024-06-22T00:00:00.000Z</pubDate>
+    </item><item>
+      <title><![CDATA[6.7]2024最新版 Kohya GUI訓練介面懶人包+簡易介面介紹]]></title>
+      <itunes:title><![CDATA[6.7]2024最新版 Kohya GUI訓練介面懶人包+簡易介面介紹]]></itunes:title>
+      <itunes:author><![CDATA[杰克艾米立]]></itunes:author>
+      <itunes:summary>
+        <![CDATA[https://www.youtube.com/watch?v=HFBPpfXGrZU
+加入Discord: https://discord.gg/TM5d89YNwA
+FB粉專: https://www.facebook.com/profile.php?id=100090228987264 
+
+成為這個頻道的會員並獲得福利：
+https://www.youtube.com/channel/UCine3_lVU-rFDRRI8xeImHA/join
+
+抖內JackEllie(本功能沒有任何福利，但謝謝你的錢): 
+https://www.buymeacoffee.com/otakuya202y 
+
+我們的twitch(不定時開台): https://www.twitch.tv/otakuya2022
+=====================================================================
+
+本篇為Kohya GUI的訓練懶人包，由於Kohya GUI現今出現了Python版本要求並且與SD-WebUI不相容，因此我們包裝成了懶人包供各位使用。
+
+0:00 片頭
+0:10 介紹
+1:09 安裝
+2:07 更新
+2:24 介面介紹
+8:10片尾
+
+Kohya GUI懶人包載點:
+https://drive.google.com/file/d/14L7SHCBtCGMGt3WpHHaurYH03M_I37jA/view?usp=sharing
+
+兩個訓練參數參考:
+1. 杰克的SDXL DoKr:
+https://drive.google.com/file/d/14W9yn5NKlsTkQZ3e04KH6y7PXrp0exSF/view?usp=sharing
+
+2. Hina的SDXL Locon:
+https://drive.google.com/file/d/14SmsDAqKV124ZR9ald9ztxqNadZCdEXl/view?usp=sharing
+
+Hina的部落格(Kohya GUI中的一些詳細功能介紹)
+https://blog.hinablue.me/lora-kohya_ss-gui-full-introduction/
+
+#stablediffusion #aidrawing #ai繪圖 #aiart #aigc #安裝教學 #kohya #lora #模型訓練
+<a href="https://www.youtube.com/watch?v=HFBPpfXGrZU"><img src="https://img.youtube.com/vi/HFBPpfXGrZU/maxresdefault.jpg" />
+<img src="https://img.youtube.com/vi/HFBPpfXGrZU/0.jpg" />
+<img src="https://img.youtube.com/vi/HFBPpfXGrZU/1.jpg" />
+<img src="https://img.youtube.com/vi/HFBPpfXGrZU/2.jpg" />
+<img src="https://img.youtube.com/vi/HFBPpfXGrZU/3.jpg" /></a>]]>
+      </itunes:summary>
+      <description>
+        <![CDATA[https://www.youtube.com/watch?v=HFBPpfXGrZU
+加入Discord: https://discord.gg/TM5d89YNwA
+FB粉專: https://www.facebook.com/profile.php?id=100090228987264 
+
+成為這個頻道的會員並獲得福利：
+https://www.youtube.com/channel/UCine3_lVU-rFDRRI8xeImHA/join
+
+抖內JackEllie(本功能沒有任何福利，但謝謝你的錢): 
+https://www.buymeacoffee.com/otakuya202y 
+
+我們的twitch(不定時開台): https://www.twitch.tv/otakuya2022
+=====================================================================
+
+本篇為Kohya GUI的訓練懶人包，由於Kohya GUI現今出現了Python版本要求並且與SD-WebUI不相容，因此我們包裝成了懶人包供各位使用。
+
+0:00 片頭
+0:10 介紹
+1:09 安裝
+2:07 更新
+2:24 介面介紹
+8:10片尾
+
+Kohya GUI懶人包載點:
+https://drive.google.com/file/d/14L7SHCBtCGMGt3WpHHaurYH03M_I37jA/view?usp=sharing
+
+兩個訓練參數參考:
+1. 杰克的SDXL DoKr:
+https://drive.google.com/file/d/14W9yn5NKlsTkQZ3e04KH6y7PXrp0exSF/view?usp=sharing
+
+2. Hina的SDXL Locon:
+https://drive.google.com/file/d/14SmsDAqKV124ZR9ald9ztxqNadZCdEXl/view?usp=sharing
+
+Hina的部落格(Kohya GUI中的一些詳細功能介紹)
+https://blog.hinablue.me/lora-kohya_ss-gui-full-introduction/
+
+#stablediffusion #aidrawing #ai繪圖 #aiart #aigc #安裝教學 #kohya #lora #模型訓練
+<a href="https://www.youtube.com/watch?v=HFBPpfXGrZU"><img src="https://img.youtube.com/vi/HFBPpfXGrZU/maxresdefault.jpg" />
+<img src="https://img.youtube.com/vi/HFBPpfXGrZU/0.jpg" />
+<img src="https://img.youtube.com/vi/HFBPpfXGrZU/1.jpg" />
+<img src="https://img.youtube.com/vi/HFBPpfXGrZU/2.jpg" />
+<img src="https://img.youtube.com/vi/HFBPpfXGrZU/3.jpg" /></a>]]>
+      </description>
+      <content:encoded><![CDATA[<pre>https://www.youtube.com/watch?v=HFBPpfXGrZU
+加入Discord: https://discord.gg/TM5d89YNwA
+FB粉專: https://www.facebook.com/profile.php?id=100090228987264 
+
+成為這個頻道的會員並獲得福利：
+https://www.youtube.com/channel/UCine3_lVU-rFDRRI8xeImHA/join
+
+抖內JackEllie(本功能沒有任何福利，但謝謝你的錢): 
+https://www.buymeacoffee.com/otakuya202y 
+
+我們的twitch(不定時開台): https://www.twitch.tv/otakuya2022
+=====================================================================
+
+本篇為Kohya GUI的訓練懶人包，由於Kohya GUI現今出現了Python版本要求並且與SD-WebUI不相容，因此我們包裝成了懶人包供各位使用。
+
+0:00 片頭
+0:10 介紹
+1:09 安裝
+2:07 更新
+2:24 介面介紹
+8:10片尾
+
+Kohya GUI懶人包載點:
+https://drive.google.com/file/d/14L7SHCBtCGMGt3WpHHaurYH03M_I37jA/view?usp=sharing
+
+兩個訓練參數參考:
+1. 杰克的SDXL DoKr:
+https://drive.google.com/file/d/14W9yn5NKlsTkQZ3e04KH6y7PXrp0exSF/view?usp=sharing
+
+2. Hina的SDXL Locon:
+https://drive.google.com/file/d/14SmsDAqKV124ZR9ald9ztxqNadZCdEXl/view?usp=sharing
+
+Hina的部落格(Kohya GUI中的一些詳細功能介紹)
+https://blog.hinablue.me/lora-kohya_ss-gui-full-introduction/
+
+#stablediffusion #aidrawing #ai繪圖 #aiart #aigc #安裝教學 #kohya #lora #模型訓練<br />
+<a href="https://www.youtube.com/watch?v=HFBPpfXGrZU"><img src="https://img.youtube.com/vi/HFBPpfXGrZU/maxresdefault.jpg" />
+<img src="https://img.youtube.com/vi/HFBPpfXGrZU/0.jpg" />
+<img src="https://img.youtube.com/vi/HFBPpfXGrZU/1.jpg" />
+<img src="https://img.youtube.com/vi/HFBPpfXGrZU/2.jpg" />
+<img src="https://img.youtube.com/vi/HFBPpfXGrZU/3.jpg" /></a></pre>]]></content:encoded>
+      <itunes:image href="https://img.youtube.com/vi/HFBPpfXGrZU/maxresdefault.jpg"/>
+      <enclosure url="https://democwise2016.github.io/action-UT-Podcast/JackEllie-AInews-www.youtube.com-f5a4f928a7/20240607-HFBPpfXGrZU.mp3" type="audio/mpeg" length="506" />
+      <itunes:duration>506</itunes:duration>
+      <guid isPermaLink="false">https://democwise2016.github.io/action-UT-Podcast/JackEllie-AInews-www.youtube.com-f5a4f928a7/20240607-HFBPpfXGrZU.mp3</guid>
+      <pubDate>2024-06-07T00:00:00.000Z</pubDate>
+    </item><item>
+      <title><![CDATA[4.12]音樂鬼才4ni??SUNO V3操作創作全攻略]]></title>
+      <itunes:title><![CDATA[4.12]音樂鬼才4ni??SUNO V3操作創作全攻略]]></itunes:title>
+      <itunes:author><![CDATA[杰克艾米立]]></itunes:author>
+      <itunes:summary>
+        <![CDATA[https://www.youtube.com/watch?v=_84GzOc422E
+加入Discord: https://discord.gg/TM5d89YNwA
+FB粉專: https://www.facebook.com/profile.php?id=100090228987264 
+
+成為這個頻道的會員並獲得福利：
+https://www.youtube.com/channel/UCine3_lVU-rFDRRI8xeImHA/join
+
+抖內JackEllie(本功能沒有任何福利，但謝謝你的錢): 
+https://www.buymeacoffee.com/otakuya202y 
+
+我們的twitch(不定時開台): https://www.twitch.tv/otakuya2022
+=====================================================================
+本篇為SUNO AI的唱歌模型SUNO V3的操作使用教學，透過SUNO V3我們可以輕鬆的生成多種風格的音樂，效果非常優秀且多樣，同時提供了SUNO編曲格式語法教學，快來用用看吧!!
+
+0:00 片頭
+0:57 介紹
+1:38 基本操作
+2:56 進階功能
+3:34 SUNO 編曲格式
+5:44 已知問題
+6:18 小技巧\u0026GPT提詞範本
+7:22 歌曲銜接!!銜接按鈕改為Extend!!
+8:06 想聽你的聲音
+9:29 統一主唱?
+10:03 結尾
+10:39 片尾
+=====================================================================
+SUNO AI
+https://suno.com/
+
+SUNO WiKi
+https://www.suno.wiki/faq/metatags/song-structure/
+
+GPT 歌詞輔助prompt(請自行複製貼上到GPT/ claude)
+https://drive.google.com/file/d/13w4FhWHmhWP8G8cBXTk1VyV_Jsl51Gu9/view?usp=sharing
+
+HelloVoice
+ios
+https://apps.apple.com/tw/app/hellovoice-voice-ai/id6463351943
+Google play
+https://play.google.com/store/apps/details?id=com.fwyn.voice\u0026hl=en_US\u0026pli=1
+
+#suno #music #ai歌曲 #aiart #aigc #使用教學
+<a href="https://www.youtube.com/watch?v=_84GzOc422E"><img src="https://img.youtube.com/vi/_84GzOc422E/maxresdefault.jpg" />
+<img src="https://img.youtube.com/vi/_84GzOc422E/0.jpg" />
+<img src="https://img.youtube.com/vi/_84GzOc422E/1.jpg" />
+<img src="https://img.youtube.com/vi/_84GzOc422E/2.jpg" />
+<img src="https://img.youtube.com/vi/_84GzOc422E/3.jpg" /></a>]]>
+      </itunes:summary>
+      <description>
+        <![CDATA[https://www.youtube.com/watch?v=_84GzOc422E
+加入Discord: https://discord.gg/TM5d89YNwA
+FB粉專: https://www.facebook.com/profile.php?id=100090228987264 
+
+成為這個頻道的會員並獲得福利：
+https://www.youtube.com/channel/UCine3_lVU-rFDRRI8xeImHA/join
+
+抖內JackEllie(本功能沒有任何福利，但謝謝你的錢): 
+https://www.buymeacoffee.com/otakuya202y 
+
+我們的twitch(不定時開台): https://www.twitch.tv/otakuya2022
+=====================================================================
+本篇為SUNO AI的唱歌模型SUNO V3的操作使用教學，透過SUNO V3我們可以輕鬆的生成多種風格的音樂，效果非常優秀且多樣，同時提供了SUNO編曲格式語法教學，快來用用看吧!!
+
+0:00 片頭
+0:57 介紹
+1:38 基本操作
+2:56 進階功能
+3:34 SUNO 編曲格式
+5:44 已知問題
+6:18 小技巧\u0026GPT提詞範本
+7:22 歌曲銜接!!銜接按鈕改為Extend!!
+8:06 想聽你的聲音
+9:29 統一主唱?
+10:03 結尾
+10:39 片尾
+=====================================================================
+SUNO AI
+https://suno.com/
+
+SUNO WiKi
+https://www.suno.wiki/faq/metatags/song-structure/
+
+GPT 歌詞輔助prompt(請自行複製貼上到GPT/ claude)
+https://drive.google.com/file/d/13w4FhWHmhWP8G8cBXTk1VyV_Jsl51Gu9/view?usp=sharing
+
+HelloVoice
+ios
+https://apps.apple.com/tw/app/hellovoice-voice-ai/id6463351943
+Google play
+https://play.google.com/store/apps/details?id=com.fwyn.voice\u0026hl=en_US\u0026pli=1
+
+#suno #music #ai歌曲 #aiart #aigc #使用教學
+<a href="https://www.youtube.com/watch?v=_84GzOc422E"><img src="https://img.youtube.com/vi/_84GzOc422E/maxresdefault.jpg" />
+<img src="https://img.youtube.com/vi/_84GzOc422E/0.jpg" />
+<img src="https://img.youtube.com/vi/_84GzOc422E/1.jpg" />
+<img src="https://img.youtube.com/vi/_84GzOc422E/2.jpg" />
+<img src="https://img.youtube.com/vi/_84GzOc422E/3.jpg" /></a>]]>
+      </description>
+      <content:encoded><![CDATA[<pre>https://www.youtube.com/watch?v=_84GzOc422E
+加入Discord: https://discord.gg/TM5d89YNwA
+FB粉專: https://www.facebook.com/profile.php?id=100090228987264 
+
+成為這個頻道的會員並獲得福利：
+https://www.youtube.com/channel/UCine3_lVU-rFDRRI8xeImHA/join
+
+抖內JackEllie(本功能沒有任何福利，但謝謝你的錢): 
+https://www.buymeacoffee.com/otakuya202y 
+
+我們的twitch(不定時開台): https://www.twitch.tv/otakuya2022
+=====================================================================
+本篇為SUNO AI的唱歌模型SUNO V3的操作使用教學，透過SUNO V3我們可以輕鬆的生成多種風格的音樂，效果非常優秀且多樣，同時提供了SUNO編曲格式語法教學，快來用用看吧!!
+
+0:00 片頭
+0:57 介紹
+1:38 基本操作
+2:56 進階功能
+3:34 SUNO 編曲格式
+5:44 已知問題
+6:18 小技巧\u0026GPT提詞範本
+7:22 歌曲銜接!!銜接按鈕改為Extend!!
+8:06 想聽你的聲音
+9:29 統一主唱?
+10:03 結尾
+10:39 片尾
+=====================================================================
+SUNO AI
+https://suno.com/
+
+SUNO WiKi
+https://www.suno.wiki/faq/metatags/song-structure/
+
+GPT 歌詞輔助prompt(請自行複製貼上到GPT/ claude)
+https://drive.google.com/file/d/13w4FhWHmhWP8G8cBXTk1VyV_Jsl51Gu9/view?usp=sharing
+
+HelloVoice
+ios
+https://apps.apple.com/tw/app/hellovoice-voice-ai/id6463351943
+Google play
+https://play.google.com/store/apps/details?id=com.fwyn.voice\u0026hl=en_US\u0026pli=1
+
+#suno #music #ai歌曲 #aiart #aigc #使用教學<br />
+<a href="https://www.youtube.com/watch?v=_84GzOc422E"><img src="https://img.youtube.com/vi/_84GzOc422E/maxresdefault.jpg" />
+<img src="https://img.youtube.com/vi/_84GzOc422E/0.jpg" />
+<img src="https://img.youtube.com/vi/_84GzOc422E/1.jpg" />
+<img src="https://img.youtube.com/vi/_84GzOc422E/2.jpg" />
+<img src="https://img.youtube.com/vi/_84GzOc422E/3.jpg" /></a></pre>]]></content:encoded>
+      <itunes:image href="https://img.youtube.com/vi/_84GzOc422E/maxresdefault.jpg"/>
+      <enclosure url="https://democwise2016.github.io/action-UT-Podcast/JackEllie-AInews-www.youtube.com-f5a4f928a7/20240412-_84GzOc422E.mp3" type="audio/mpeg" length="717" />
+      <itunes:duration>717</itunes:duration>
+      <guid isPermaLink="false">https://democwise2016.github.io/action-UT-Podcast/JackEllie-AInews-www.youtube.com-f5a4f928a7/20240412-_84GzOc422E.mp3</guid>
+      <pubDate>2024-04-12T00:00:00.000Z</pubDate>
+    </item><item>
+      <title><![CDATA[3.9]直出透明通道素材生成SD大突破!!和去背說掰掰!!]]></title>
+      <itunes:title><![CDATA[3.9]直出透明通道素材生成SD大突破!!和去背說掰掰!!]]></itunes:title>
+      <itunes:author><![CDATA[杰克艾米立]]></itunes:author>
+      <itunes:summary>
+        <![CDATA[https://www.youtube.com/watch?v=RnaN9dnfIhE
+加入Discord: https://discord.gg/TM5d89YNwA 
+FB粉專: https://www.facebook.com/profile.php?id=100090228987264 
+
+成為這個頻道的會員並獲得福利：
+https://www.youtube.com/channel/UCine3_lVU-rFDRRI8xeImHA/join
+
+抖內JackEllie(本功能沒有任何福利，但謝謝你的錢): 
+https://www.buymeacoffee.com/otakuya202y 
+
+我們的twitch(不定時晚上9點開台): https://www.twitch.tv/otakuya2022
+
+=====================================================================
+本篇為LayerDiffuse介紹篇，LayerDiffuse堪稱2024年SD的最大事件，如今透過SD可以直接生成透明背景素材，在製作動畫、遊戲上非常方便且實用，快來試試看吧!!
+
+MSI PromptMagician活動連結: https://msi.gm/S1047AB1
+
+!!!!!!!!!!!注意!!!!!!!!!!!!!
+本擴充為Webui-forge擴充需再forge上安裝foreg請參考這篇:
+https://youtu.be/BBvjHMbkqxw
+
+擴充安裝網址: (複製到擴充頁面的從網址安裝即可)
+https://github.com/lllyasviel/sd-forge-layerdiffuse
+
+MSI顯卡LoRA載點: (SDXL LoRA)
+https://huggingface.co/Jackellie/MSI_graphics_card_OFT_LoRA
+
+SVD1.1官方模型載點:
+https://huggingface.co/stabilityai/stable-video-diffusion-img2vid-xt-1-1/resolve/main/svd_xt_1_1.safetensors?download=true
+SVD使用方法簡述:
+下載後放入下方路徑:forge資料夾\\models\\svd
+在WebUI頁面中點選SVD，放入圖片即可生成，相關參數請上Discord討論
+
+#stablediffusion #aidrawing #ai繪圖 #aiart #aigc #安裝教學 #forge #msi #gpu #nvidia #promptmagician
+<a href="https://www.youtube.com/watch?v=RnaN9dnfIhE"><img src="https://img.youtube.com/vi/RnaN9dnfIhE/maxresdefault.jpg" />
+<img src="https://img.youtube.com/vi/RnaN9dnfIhE/0.jpg" />
+<img src="https://img.youtube.com/vi/RnaN9dnfIhE/1.jpg" />
+<img src="https://img.youtube.com/vi/RnaN9dnfIhE/2.jpg" />
+<img src="https://img.youtube.com/vi/RnaN9dnfIhE/3.jpg" /></a>]]>
+      </itunes:summary>
+      <description>
+        <![CDATA[https://www.youtube.com/watch?v=RnaN9dnfIhE
+加入Discord: https://discord.gg/TM5d89YNwA 
+FB粉專: https://www.facebook.com/profile.php?id=100090228987264 
+
+成為這個頻道的會員並獲得福利：
+https://www.youtube.com/channel/UCine3_lVU-rFDRRI8xeImHA/join
+
+抖內JackEllie(本功能沒有任何福利，但謝謝你的錢): 
+https://www.buymeacoffee.com/otakuya202y 
+
+我們的twitch(不定時晚上9點開台): https://www.twitch.tv/otakuya2022
+
+=====================================================================
+本篇為LayerDiffuse介紹篇，LayerDiffuse堪稱2024年SD的最大事件，如今透過SD可以直接生成透明背景素材，在製作動畫、遊戲上非常方便且實用，快來試試看吧!!
+
+MSI PromptMagician活動連結: https://msi.gm/S1047AB1
+
+!!!!!!!!!!!注意!!!!!!!!!!!!!
+本擴充為Webui-forge擴充需再forge上安裝foreg請參考這篇:
+https://youtu.be/BBvjHMbkqxw
+
+擴充安裝網址: (複製到擴充頁面的從網址安裝即可)
+https://github.com/lllyasviel/sd-forge-layerdiffuse
+
+MSI顯卡LoRA載點: (SDXL LoRA)
+https://huggingface.co/Jackellie/MSI_graphics_card_OFT_LoRA
+
+SVD1.1官方模型載點:
+https://huggingface.co/stabilityai/stable-video-diffusion-img2vid-xt-1-1/resolve/main/svd_xt_1_1.safetensors?download=true
+SVD使用方法簡述:
+下載後放入下方路徑:forge資料夾\\models\\svd
+在WebUI頁面中點選SVD，放入圖片即可生成，相關參數請上Discord討論
+
+#stablediffusion #aidrawing #ai繪圖 #aiart #aigc #安裝教學 #forge #msi #gpu #nvidia #promptmagician
+<a href="https://www.youtube.com/watch?v=RnaN9dnfIhE"><img src="https://img.youtube.com/vi/RnaN9dnfIhE/maxresdefault.jpg" />
+<img src="https://img.youtube.com/vi/RnaN9dnfIhE/0.jpg" />
+<img src="https://img.youtube.com/vi/RnaN9dnfIhE/1.jpg" />
+<img src="https://img.youtube.com/vi/RnaN9dnfIhE/2.jpg" />
+<img src="https://img.youtube.com/vi/RnaN9dnfIhE/3.jpg" /></a>]]>
+      </description>
+      <content:encoded><![CDATA[<pre>https://www.youtube.com/watch?v=RnaN9dnfIhE
+加入Discord: https://discord.gg/TM5d89YNwA 
+FB粉專: https://www.facebook.com/profile.php?id=100090228987264 
+
+成為這個頻道的會員並獲得福利：
+https://www.youtube.com/channel/UCine3_lVU-rFDRRI8xeImHA/join
+
+抖內JackEllie(本功能沒有任何福利，但謝謝你的錢): 
+https://www.buymeacoffee.com/otakuya202y 
+
+我們的twitch(不定時晚上9點開台): https://www.twitch.tv/otakuya2022
+
+=====================================================================
+本篇為LayerDiffuse介紹篇，LayerDiffuse堪稱2024年SD的最大事件，如今透過SD可以直接生成透明背景素材，在製作動畫、遊戲上非常方便且實用，快來試試看吧!!
+
+MSI PromptMagician活動連結: https://msi.gm/S1047AB1
+
+!!!!!!!!!!!注意!!!!!!!!!!!!!
+本擴充為Webui-forge擴充需再forge上安裝foreg請參考這篇:
+https://youtu.be/BBvjHMbkqxw
+
+擴充安裝網址: (複製到擴充頁面的從網址安裝即可)
+https://github.com/lllyasviel/sd-forge-layerdiffuse
+
+MSI顯卡LoRA載點: (SDXL LoRA)
+https://huggingface.co/Jackellie/MSI_graphics_card_OFT_LoRA
+
+SVD1.1官方模型載點:
+https://huggingface.co/stabilityai/stable-video-diffusion-img2vid-xt-1-1/resolve/main/svd_xt_1_1.safetensors?download=true
+SVD使用方法簡述:
+下載後放入下方路徑:forge資料夾\\models\\svd
+在WebUI頁面中點選SVD，放入圖片即可生成，相關參數請上Discord討論
+
+#stablediffusion #aidrawing #ai繪圖 #aiart #aigc #安裝教學 #forge #msi #gpu #nvidia #promptmagician<br />
+<a href="https://www.youtube.com/watch?v=RnaN9dnfIhE"><img src="https://img.youtube.com/vi/RnaN9dnfIhE/maxresdefault.jpg" />
+<img src="https://img.youtube.com/vi/RnaN9dnfIhE/0.jpg" />
+<img src="https://img.youtube.com/vi/RnaN9dnfIhE/1.jpg" />
+<img src="https://img.youtube.com/vi/RnaN9dnfIhE/2.jpg" />
+<img src="https://img.youtube.com/vi/RnaN9dnfIhE/3.jpg" /></a></pre>]]></content:encoded>
+      <itunes:image href="https://img.youtube.com/vi/RnaN9dnfIhE/maxresdefault.jpg"/>
+      <enclosure url="https://democwise2016.github.io/action-UT-Podcast/JackEllie-AInews-www.youtube.com-f5a4f928a7/20240309-RnaN9dnfIhE.mp3" type="audio/mpeg" length="386" />
+      <itunes:duration>386</itunes:duration>
+      <guid isPermaLink="false">https://democwise2016.github.io/action-UT-Podcast/JackEllie-AInews-www.youtube.com-f5a4f928a7/20240309-RnaN9dnfIhE.mp3</guid>
+      <pubDate>2024-03-09T00:00:00.000Z</pubDate>
+    </item><item>
+      <title><![CDATA[2.28]硬體需求更低，算圖速度更快，更強大的ControlNet功能，WebUI-ReForge超簡單安裝篇]]></title>
+      <itunes:title><![CDATA[2.28]硬體需求更低，算圖速度更快，更強大的ControlNet功能，WebUI-ReForge超簡單安裝篇]]></itunes:title>
+      <itunes:author><![CDATA[杰克艾米立]]></itunes:author>
+      <itunes:summary>
+        <![CDATA[https://www.youtube.com/watch?v=BBvjHMbkqxw
+加入Discord: https://discord.gg/TM5d89YNwA 
+FB粉專: https://www.facebook.com/profile.php?id=100090228987264 
+
+成為這個頻道的會員並獲得福利：
+https://www.youtube.com/channel/UCine3_lVU-rFDRRI8xeImHA/join
+
+抖內JackEllie(本功能沒有任何福利，但謝謝你的錢): 
+https://www.buymeacoffee.com/otakuya202y 
+
+我們的twitch(不定時晚上9點開台): https://www.twitch.tv/otakuya2022
+
+=====================================================================
+本篇為WebUI-ReForge安裝篇，ReForge是一個介面與我們通常使用的WebUI完全相同的平台，但是做了更多優化大大降低了使用SD的硬體需求，同時增強了ControlNet功能使用ReForge可以更有效率的得到可控的圖像。
+
+0:00 簡介
+0:57 注意力遮罩使用
+2:30 基本需求
+3:05 安裝
+3:50 共用模型
+4:25 推薦擴充
+6:44 Forge內建那些額外功能是什麼?
+==========================安裝相關資料下載===========================
+懶人包安裝相關命令文件:
+https://drive.google.com/file/d/12zcF-5OxtxbEd9fnOzyln0GKCxhuxOnA/view?usp=sharing
+
+=============================必看基本知識===========================
+模型基礎篇:
+https://youtu.be/3pdtwip-wNQ
+
+提詞基礎篇:
+https://youtu.be/nHfdvgxsPUU
+
+=============================延伸操作===============================
+基本提詞繪圖操作:
+https://www.youtube.com/playlist?list=PLLIHbgyx6mZJa_MYiXNagT_uqmmG9WbPf
+
+ControlNet操作
+https://www.youtube.com/playlist?list=PLLIHbgyx6mZJUeaiSUSsnOOWX5whqgfY7
+
+LoRa/LoHa模型訓練:
+https://www.youtube.com/playlist?list=PLLIHbgyx6mZL97k07nrJjAWiRRtJDHQ4U
+
+#stablediffusion #aidrawing #ai繪圖 #aiart #aigc #安裝教學 #forge
+<a href="https://www.youtube.com/watch?v=BBvjHMbkqxw"><img src="https://img.youtube.com/vi/BBvjHMbkqxw/maxresdefault.jpg" />
+<img src="https://img.youtube.com/vi/BBvjHMbkqxw/0.jpg" />
+<img src="https://img.youtube.com/vi/BBvjHMbkqxw/1.jpg" />
+<img src="https://img.youtube.com/vi/BBvjHMbkqxw/2.jpg" />
+<img src="https://img.youtube.com/vi/BBvjHMbkqxw/3.jpg" /></a>]]>
+      </itunes:summary>
+      <description>
+        <![CDATA[https://www.youtube.com/watch?v=BBvjHMbkqxw
+加入Discord: https://discord.gg/TM5d89YNwA 
+FB粉專: https://www.facebook.com/profile.php?id=100090228987264 
+
+成為這個頻道的會員並獲得福利：
+https://www.youtube.com/channel/UCine3_lVU-rFDRRI8xeImHA/join
+
+抖內JackEllie(本功能沒有任何福利，但謝謝你的錢): 
+https://www.buymeacoffee.com/otakuya202y 
+
+我們的twitch(不定時晚上9點開台): https://www.twitch.tv/otakuya2022
+
+=====================================================================
+本篇為WebUI-ReForge安裝篇，ReForge是一個介面與我們通常使用的WebUI完全相同的平台，但是做了更多優化大大降低了使用SD的硬體需求，同時增強了ControlNet功能使用ReForge可以更有效率的得到可控的圖像。
+
+0:00 簡介
+0:57 注意力遮罩使用
+2:30 基本需求
+3:05 安裝
+3:50 共用模型
+4:25 推薦擴充
+6:44 Forge內建那些額外功能是什麼?
+==========================安裝相關資料下載===========================
+懶人包安裝相關命令文件:
+https://drive.google.com/file/d/12zcF-5OxtxbEd9fnOzyln0GKCxhuxOnA/view?usp=sharing
+
+=============================必看基本知識===========================
+模型基礎篇:
+https://youtu.be/3pdtwip-wNQ
+
+提詞基礎篇:
+https://youtu.be/nHfdvgxsPUU
+
+=============================延伸操作===============================
+基本提詞繪圖操作:
+https://www.youtube.com/playlist?list=PLLIHbgyx6mZJa_MYiXNagT_uqmmG9WbPf
+
+ControlNet操作
+https://www.youtube.com/playlist?list=PLLIHbgyx6mZJUeaiSUSsnOOWX5whqgfY7
+
+LoRa/LoHa模型訓練:
+https://www.youtube.com/playlist?list=PLLIHbgyx6mZL97k07nrJjAWiRRtJDHQ4U
+
+#stablediffusion #aidrawing #ai繪圖 #aiart #aigc #安裝教學 #forge
+<a href="https://www.youtube.com/watch?v=BBvjHMbkqxw"><img src="https://img.youtube.com/vi/BBvjHMbkqxw/maxresdefault.jpg" />
+<img src="https://img.youtube.com/vi/BBvjHMbkqxw/0.jpg" />
+<img src="https://img.youtube.com/vi/BBvjHMbkqxw/1.jpg" />
+<img src="https://img.youtube.com/vi/BBvjHMbkqxw/2.jpg" />
+<img src="https://img.youtube.com/vi/BBvjHMbkqxw/3.jpg" /></a>]]>
+      </description>
+      <content:encoded><![CDATA[<pre>https://www.youtube.com/watch?v=BBvjHMbkqxw
+加入Discord: https://discord.gg/TM5d89YNwA 
+FB粉專: https://www.facebook.com/profile.php?id=100090228987264 
+
+成為這個頻道的會員並獲得福利：
+https://www.youtube.com/channel/UCine3_lVU-rFDRRI8xeImHA/join
+
+抖內JackEllie(本功能沒有任何福利，但謝謝你的錢): 
+https://www.buymeacoffee.com/otakuya202y 
+
+我們的twitch(不定時晚上9點開台): https://www.twitch.tv/otakuya2022
+
+=====================================================================
+本篇為WebUI-ReForge安裝篇，ReForge是一個介面與我們通常使用的WebUI完全相同的平台，但是做了更多優化大大降低了使用SD的硬體需求，同時增強了ControlNet功能使用ReForge可以更有效率的得到可控的圖像。
+
+0:00 簡介
+0:57 注意力遮罩使用
+2:30 基本需求
+3:05 安裝
+3:50 共用模型
+4:25 推薦擴充
+6:44 Forge內建那些額外功能是什麼?
+==========================安裝相關資料下載===========================
+懶人包安裝相關命令文件:
+https://drive.google.com/file/d/12zcF-5OxtxbEd9fnOzyln0GKCxhuxOnA/view?usp=sharing
+
+=============================必看基本知識===========================
+模型基礎篇:
+https://youtu.be/3pdtwip-wNQ
+
+提詞基礎篇:
+https://youtu.be/nHfdvgxsPUU
+
+=============================延伸操作===============================
+基本提詞繪圖操作:
+https://www.youtube.com/playlist?list=PLLIHbgyx6mZJa_MYiXNagT_uqmmG9WbPf
+
+ControlNet操作
+https://www.youtube.com/playlist?list=PLLIHbgyx6mZJUeaiSUSsnOOWX5whqgfY7
+
+LoRa/LoHa模型訓練:
+https://www.youtube.com/playlist?list=PLLIHbgyx6mZL97k07nrJjAWiRRtJDHQ4U
+
+#stablediffusion #aidrawing #ai繪圖 #aiart #aigc #安裝教學 #forge<br />
+<a href="https://www.youtube.com/watch?v=BBvjHMbkqxw"><img src="https://img.youtube.com/vi/BBvjHMbkqxw/maxresdefault.jpg" />
+<img src="https://img.youtube.com/vi/BBvjHMbkqxw/0.jpg" />
+<img src="https://img.youtube.com/vi/BBvjHMbkqxw/1.jpg" />
+<img src="https://img.youtube.com/vi/BBvjHMbkqxw/2.jpg" />
+<img src="https://img.youtube.com/vi/BBvjHMbkqxw/3.jpg" /></a></pre>]]></content:encoded>
+      <itunes:image href="https://img.youtube.com/vi/BBvjHMbkqxw/maxresdefault.jpg"/>
+      <enclosure url="https://democwise2016.github.io/action-UT-Podcast/JackEllie-AInews-www.youtube.com-f5a4f928a7/20240228-BBvjHMbkqxw.mp3" type="audio/mpeg" length="533" />
+      <itunes:duration>533</itunes:duration>
+      <guid isPermaLink="false">https://democwise2016.github.io/action-UT-Podcast/JackEllie-AInews-www.youtube.com-f5a4f928a7/20240228-BBvjHMbkqxw.mp3</guid>
+      <pubDate>2024-02-28T00:00:00.000Z</pubDate>
+    </item><item>
+      <title><![CDATA[2.9]#1 ComfyUI入門三部曲-安裝篇]]></title>
+      <itunes:title><![CDATA[2.9]#1 ComfyUI入門三部曲-安裝篇]]></itunes:title>
+      <itunes:author><![CDATA[杰克艾米立]]></itunes:author>
+      <itunes:summary>
+        <![CDATA[https://www.youtube.com/watch?v=7WZCvVrw7To
+加入Discord: https://discord.gg/TM5d89YNwA 
+FB粉專: https://www.facebook.com/profile.php?id=100090228987264 
+
+成為這個頻道的會員並獲得福利：
+https://www.youtube.com/channel/UCine3_lVU-rFDRRI8xeImHA/join
+
+抖內JackEllie(本功能沒有任何福利，但謝謝你的錢): 
+https://www.buymeacoffee.com/otakuya202y 
+
+我們的twitch(不定時晚上9點開台): https://www.twitch.tv/otakuya2022
+
+=====================================================================
+本篇為ComfyUI入門三部曲的第一部懶人包安裝篇，雖然ComfyUI有提供懶人包選項，但是由於我們需要許多第三方節點，所以還是需要做一些基礎的安裝以及模型共用等設置，所以最基礎的設定你都可以在本篇找到答案!
+
+0:00 簡介
+0:50 限時抽書活動
+2:09 ComfyUI好壞話
+5:00 開始安裝
+5:56 Git安裝
+6:15 PowerShell安全鎖解除
+6:44 ComfyUI懶人包安裝
+7:03 安裝最重要的節點-ComfyUI-Manager
+7:33 共用模型設定
+9:25 讀取官方工作流
+
+==========================安裝相關資料下載===========================
+ComfyUI安裝相關連結:
+https://drive.google.com/file/d/12S67SX2g9zhik6FQfY1mECpl2VkOK1aO/view?usp=sharing
+
+ComfyUI官方工作流網址:
+https://comfyanonymous.github.io/ComfyUI_examples/
+
+#stablediffusion #aidrawing #ai繪圖 #aiart #aigc #安裝教學 #comfyui
+<a href="https://www.youtube.com/watch?v=7WZCvVrw7To"><img src="https://img.youtube.com/vi/7WZCvVrw7To/maxresdefault.jpg" />
+<img src="https://img.youtube.com/vi/7WZCvVrw7To/0.jpg" />
+<img src="https://img.youtube.com/vi/7WZCvVrw7To/1.jpg" />
+<img src="https://img.youtube.com/vi/7WZCvVrw7To/2.jpg" />
+<img src="https://img.youtube.com/vi/7WZCvVrw7To/3.jpg" /></a>]]>
+      </itunes:summary>
+      <description>
+        <![CDATA[https://www.youtube.com/watch?v=7WZCvVrw7To
+加入Discord: https://discord.gg/TM5d89YNwA 
+FB粉專: https://www.facebook.com/profile.php?id=100090228987264 
+
+成為這個頻道的會員並獲得福利：
+https://www.youtube.com/channel/UCine3_lVU-rFDRRI8xeImHA/join
+
+抖內JackEllie(本功能沒有任何福利，但謝謝你的錢): 
+https://www.buymeacoffee.com/otakuya202y 
+
+我們的twitch(不定時晚上9點開台): https://www.twitch.tv/otakuya2022
+
+=====================================================================
+本篇為ComfyUI入門三部曲的第一部懶人包安裝篇，雖然ComfyUI有提供懶人包選項，但是由於我們需要許多第三方節點，所以還是需要做一些基礎的安裝以及模型共用等設置，所以最基礎的設定你都可以在本篇找到答案!
+
+0:00 簡介
+0:50 限時抽書活動
+2:09 ComfyUI好壞話
+5:00 開始安裝
+5:56 Git安裝
+6:15 PowerShell安全鎖解除
+6:44 ComfyUI懶人包安裝
+7:03 安裝最重要的節點-ComfyUI-Manager
+7:33 共用模型設定
+9:25 讀取官方工作流
+
+==========================安裝相關資料下載===========================
+ComfyUI安裝相關連結:
+https://drive.google.com/file/d/12S67SX2g9zhik6FQfY1mECpl2VkOK1aO/view?usp=sharing
+
+ComfyUI官方工作流網址:
+https://comfyanonymous.github.io/ComfyUI_examples/
+
+#stablediffusion #aidrawing #ai繪圖 #aiart #aigc #安裝教學 #comfyui
+<a href="https://www.youtube.com/watch?v=7WZCvVrw7To"><img src="https://img.youtube.com/vi/7WZCvVrw7To/maxresdefault.jpg" />
+<img src="https://img.youtube.com/vi/7WZCvVrw7To/0.jpg" />
+<img src="https://img.youtube.com/vi/7WZCvVrw7To/1.jpg" />
+<img src="https://img.youtube.com/vi/7WZCvVrw7To/2.jpg" />
+<img src="https://img.youtube.com/vi/7WZCvVrw7To/3.jpg" /></a>]]>
+      </description>
+      <content:encoded><![CDATA[<pre>https://www.youtube.com/watch?v=7WZCvVrw7To
+加入Discord: https://discord.gg/TM5d89YNwA 
+FB粉專: https://www.facebook.com/profile.php?id=100090228987264 
+
+成為這個頻道的會員並獲得福利：
+https://www.youtube.com/channel/UCine3_lVU-rFDRRI8xeImHA/join
+
+抖內JackEllie(本功能沒有任何福利，但謝謝你的錢): 
+https://www.buymeacoffee.com/otakuya202y 
+
+我們的twitch(不定時晚上9點開台): https://www.twitch.tv/otakuya2022
+
+=====================================================================
+本篇為ComfyUI入門三部曲的第一部懶人包安裝篇，雖然ComfyUI有提供懶人包選項，但是由於我們需要許多第三方節點，所以還是需要做一些基礎的安裝以及模型共用等設置，所以最基礎的設定你都可以在本篇找到答案!
+
+0:00 簡介
+0:50 限時抽書活動
+2:09 ComfyUI好壞話
+5:00 開始安裝
+5:56 Git安裝
+6:15 PowerShell安全鎖解除
+6:44 ComfyUI懶人包安裝
+7:03 安裝最重要的節點-ComfyUI-Manager
+7:33 共用模型設定
+9:25 讀取官方工作流
+
+==========================安裝相關資料下載===========================
+ComfyUI安裝相關連結:
+https://drive.google.com/file/d/12S67SX2g9zhik6FQfY1mECpl2VkOK1aO/view?usp=sharing
+
+ComfyUI官方工作流網址:
+https://comfyanonymous.github.io/ComfyUI_examples/
+
+#stablediffusion #aidrawing #ai繪圖 #aiart #aigc #安裝教學 #comfyui<br />
+<a href="https://www.youtube.com/watch?v=7WZCvVrw7To"><img src="https://img.youtube.com/vi/7WZCvVrw7To/maxresdefault.jpg" />
+<img src="https://img.youtube.com/vi/7WZCvVrw7To/0.jpg" />
+<img src="https://img.youtube.com/vi/7WZCvVrw7To/1.jpg" />
+<img src="https://img.youtube.com/vi/7WZCvVrw7To/2.jpg" />
+<img src="https://img.youtube.com/vi/7WZCvVrw7To/3.jpg" /></a></pre>]]></content:encoded>
+      <itunes:image href="https://img.youtube.com/vi/7WZCvVrw7To/maxresdefault.jpg"/>
+      <enclosure url="https://democwise2016.github.io/action-UT-Podcast/JackEllie-AInews-www.youtube.com-f5a4f928a7/20240209-7WZCvVrw7To.mp3" type="audio/mpeg" length="617" />
+      <itunes:duration>617</itunes:duration>
+      <guid isPermaLink="false">https://democwise2016.github.io/action-UT-Podcast/JackEllie-AInews-www.youtube.com-f5a4f928a7/20240209-7WZCvVrw7To.mp3</guid>
+      <pubDate>2024-02-09T00:00:00.000Z</pubDate>
+    </item><item>
+      <title><![CDATA[1.27]超簡單!!免訓練!!一次參考百張圖像輕鬆製作你的帕魯!!]]></title>
+      <itunes:title><![CDATA[1.27]超簡單!!免訓練!!一次參考百張圖像輕鬆製作你的帕魯!!]]></itunes:title>
+      <itunes:author><![CDATA[杰克艾米立]]></itunes:author>
+      <itunes:summary>
+        <![CDATA[https://www.youtube.com/watch?v=J0I7_L7vN3M
+加入Discord: https://discord.gg/TM5d89YNwA 
+FB粉專: https://www.facebook.com/profile.php?id=100090228987264 
+
+成為這個頻道的會員並獲得福利：
+https://www.youtube.com/channel/UCine3_lVU-rFDRRI8xeImHA/join
+
+抖內JackEllie(本功能沒有任何福利，但謝謝你的錢): 
+https://www.buymeacoffee.com/otakuya202y 
+
+我們的twitch(不定時晚上9點開台): https://www.twitch.tv/otakuya2022
+
+=====================================================================
+
+本篇為IP-Adapter Multi-Inputs功能之使用教學， Multi-Inputs功能非常強大甚至可以替代風格訓練，而切操作也非常容易快來一起使用看看吧!!
+
+==========================安裝相關資料下載===========================
+
+IP-Adapter模型官方載點:依照需求下載(SD1.5或SDXL)只需下載.safetensors格式即可
+https://huggingface.co/h94/IP-Adapter/tree/main
+
+#stablediffusion #aidrawing #ai繪圖 #aiart #aigc #ipadapter
+<a href="https://www.youtube.com/watch?v=J0I7_L7vN3M"><img src="https://img.youtube.com/vi/J0I7_L7vN3M/maxresdefault.jpg" />
+<img src="https://img.youtube.com/vi/J0I7_L7vN3M/0.jpg" />
+<img src="https://img.youtube.com/vi/J0I7_L7vN3M/1.jpg" />
+<img src="https://img.youtube.com/vi/J0I7_L7vN3M/2.jpg" />
+<img src="https://img.youtube.com/vi/J0I7_L7vN3M/3.jpg" /></a>]]>
+      </itunes:summary>
+      <description>
+        <![CDATA[https://www.youtube.com/watch?v=J0I7_L7vN3M
+加入Discord: https://discord.gg/TM5d89YNwA 
+FB粉專: https://www.facebook.com/profile.php?id=100090228987264 
+
+成為這個頻道的會員並獲得福利：
+https://www.youtube.com/channel/UCine3_lVU-rFDRRI8xeImHA/join
+
+抖內JackEllie(本功能沒有任何福利，但謝謝你的錢): 
+https://www.buymeacoffee.com/otakuya202y 
+
+我們的twitch(不定時晚上9點開台): https://www.twitch.tv/otakuya2022
+
+=====================================================================
+
+本篇為IP-Adapter Multi-Inputs功能之使用教學， Multi-Inputs功能非常強大甚至可以替代風格訓練，而切操作也非常容易快來一起使用看看吧!!
+
+==========================安裝相關資料下載===========================
+
+IP-Adapter模型官方載點:依照需求下載(SD1.5或SDXL)只需下載.safetensors格式即可
+https://huggingface.co/h94/IP-Adapter/tree/main
+
+#stablediffusion #aidrawing #ai繪圖 #aiart #aigc #ipadapter
+<a href="https://www.youtube.com/watch?v=J0I7_L7vN3M"><img src="https://img.youtube.com/vi/J0I7_L7vN3M/maxresdefault.jpg" />
+<img src="https://img.youtube.com/vi/J0I7_L7vN3M/0.jpg" />
+<img src="https://img.youtube.com/vi/J0I7_L7vN3M/1.jpg" />
+<img src="https://img.youtube.com/vi/J0I7_L7vN3M/2.jpg" />
+<img src="https://img.youtube.com/vi/J0I7_L7vN3M/3.jpg" /></a>]]>
+      </description>
+      <content:encoded><![CDATA[<pre>https://www.youtube.com/watch?v=J0I7_L7vN3M
+加入Discord: https://discord.gg/TM5d89YNwA 
+FB粉專: https://www.facebook.com/profile.php?id=100090228987264 
+
+成為這個頻道的會員並獲得福利：
+https://www.youtube.com/channel/UCine3_lVU-rFDRRI8xeImHA/join
+
+抖內JackEllie(本功能沒有任何福利，但謝謝你的錢): 
+https://www.buymeacoffee.com/otakuya202y 
+
+我們的twitch(不定時晚上9點開台): https://www.twitch.tv/otakuya2022
+
+=====================================================================
+
+本篇為IP-Adapter Multi-Inputs功能之使用教學， Multi-Inputs功能非常強大甚至可以替代風格訓練，而切操作也非常容易快來一起使用看看吧!!
+
+==========================安裝相關資料下載===========================
+
+IP-Adapter模型官方載點:依照需求下載(SD1.5或SDXL)只需下載.safetensors格式即可
+https://huggingface.co/h94/IP-Adapter/tree/main
+
+#stablediffusion #aidrawing #ai繪圖 #aiart #aigc #ipadapter<br />
+<a href="https://www.youtube.com/watch?v=J0I7_L7vN3M"><img src="https://img.youtube.com/vi/J0I7_L7vN3M/maxresdefault.jpg" />
+<img src="https://img.youtube.com/vi/J0I7_L7vN3M/0.jpg" />
+<img src="https://img.youtube.com/vi/J0I7_L7vN3M/1.jpg" />
+<img src="https://img.youtube.com/vi/J0I7_L7vN3M/2.jpg" />
+<img src="https://img.youtube.com/vi/J0I7_L7vN3M/3.jpg" /></a></pre>]]></content:encoded>
+      <itunes:image href="https://img.youtube.com/vi/J0I7_L7vN3M/maxresdefault.jpg"/>
+      <enclosure url="https://democwise2016.github.io/action-UT-Podcast/JackEllie-AInews-www.youtube.com-f5a4f928a7/20240127-J0I7_L7vN3M.mp3" type="audio/mpeg" length="252" />
+      <itunes:duration>252</itunes:duration>
+      <guid isPermaLink="false">https://democwise2016.github.io/action-UT-Podcast/JackEllie-AInews-www.youtube.com-f5a4f928a7/20240127-J0I7_L7vN3M.mp3</guid>
+      <pubDate>2024-01-27T00:00:00.000Z</pubDate>
+    </item><item>
+      <title><![CDATA[12.29]超簡單AI繪圖工具Stable Diffusion安裝篇2024最新版]]></title>
+      <itunes:title><![CDATA[12.29]超簡單AI繪圖工具Stable Diffusion安裝篇2024最新版]]></itunes:title>
+      <itunes:author><![CDATA[杰克艾米立]]></itunes:author>
+      <itunes:summary>
+        <![CDATA[https://www.youtube.com/watch?v=4HCPrO1vrIQ
+加入Discord: https://discord.gg/TM5d89YNwA 
+FB粉專: https://www.facebook.com/profile.php?id=100090228987264 
+
+成為這個頻道的會員並獲得福利：
+https://www.youtube.com/channel/UCine3_lVU-rFDRRI8xeImHA/join
+
+抖內JackEllie(本功能沒有任何福利，但謝謝你的錢): 
+https://www.buymeacoffee.com/otakuya202y 
+
+我們的twitch(不定時晚上9點開台): https://www.twitch.tv/otakuya2022
+
+=====================================================================
+本篇為SD的基礎安裝教學，由於安裝方法與過去發生了不少差異，於是讓我們重新來過吧，不管你是想要重新安裝，或者現在正要開始學習看這篇就對了!依照需求選擇你的安裝方法吧!
+
+0:00 簡介
+0:52 硬體需求
+1:18 懶人包安裝法
+2:33 標準安裝
+2:56 Python安裝
+3:33 Git安裝
+3:49 PowerShell安全鎖解除
+4:21 安裝主程式
+5:35 必裝擴充
+8:30 介面調整
+==========================安裝相關資料下載===========================
+懶人包相關命令文件: (推薦)
+https://drive.google.com/file/d/1ge62HmiDYBtBf4Vt3tDwrvl-nlh_xuSp/view?usp=sharing
+
+標準相關命令文件: (不推薦)
+https://drive.google.com/file/d/1gb2-Z9vSqNyDS74uETbkFI0qsvZ4mLOb/view?usp=sharing
+
+=============================必看基本知識===========================
+模型基礎篇:
+https://youtu.be/3pdtwip-wNQ
+
+提詞基礎篇:
+https://youtu.be/nHfdvgxsPUU
+
+=============================延伸操作===============================
+基本提詞繪圖操作:
+https://www.youtube.com/playlist?list=PLLIHbgyx6mZJa_MYiXNagT_uqmmG9WbPf
+
+ControlNet操作
+https://www.youtube.com/playlist?list=PLLIHbgyx6mZJUeaiSUSsnOOWX5whqgfY7
+
+LoRa/LoHa模型訓練:
+https://www.youtube.com/playlist?list=PLLIHbgyx6mZL97k07nrJjAWiRRtJDHQ4U
+
+#stablediffusion #aidrawing #ai繪圖 #aiart #aigc #安裝教學
+<a href="https://www.youtube.com/watch?v=4HCPrO1vrIQ"><img src="https://img.youtube.com/vi/4HCPrO1vrIQ/maxresdefault.jpg" />
+<img src="https://img.youtube.com/vi/4HCPrO1vrIQ/0.jpg" />
+<img src="https://img.youtube.com/vi/4HCPrO1vrIQ/1.jpg" />
+<img src="https://img.youtube.com/vi/4HCPrO1vrIQ/2.jpg" />
+<img src="https://img.youtube.com/vi/4HCPrO1vrIQ/3.jpg" /></a>]]>
+      </itunes:summary>
+      <description>
+        <![CDATA[https://www.youtube.com/watch?v=4HCPrO1vrIQ
+加入Discord: https://discord.gg/TM5d89YNwA 
+FB粉專: https://www.facebook.com/profile.php?id=100090228987264 
+
+成為這個頻道的會員並獲得福利：
+https://www.youtube.com/channel/UCine3_lVU-rFDRRI8xeImHA/join
+
+抖內JackEllie(本功能沒有任何福利，但謝謝你的錢): 
+https://www.buymeacoffee.com/otakuya202y 
+
+我們的twitch(不定時晚上9點開台): https://www.twitch.tv/otakuya2022
+
+=====================================================================
+本篇為SD的基礎安裝教學，由於安裝方法與過去發生了不少差異，於是讓我們重新來過吧，不管你是想要重新安裝，或者現在正要開始學習看這篇就對了!依照需求選擇你的安裝方法吧!
+
+0:00 簡介
+0:52 硬體需求
+1:18 懶人包安裝法
+2:33 標準安裝
+2:56 Python安裝
+3:33 Git安裝
+3:49 PowerShell安全鎖解除
+4:21 安裝主程式
+5:35 必裝擴充
+8:30 介面調整
+==========================安裝相關資料下載===========================
+懶人包相關命令文件: (推薦)
+https://drive.google.com/file/d/1ge62HmiDYBtBf4Vt3tDwrvl-nlh_xuSp/view?usp=sharing
+
+標準相關命令文件: (不推薦)
+https://drive.google.com/file/d/1gb2-Z9vSqNyDS74uETbkFI0qsvZ4mLOb/view?usp=sharing
+
+=============================必看基本知識===========================
+模型基礎篇:
+https://youtu.be/3pdtwip-wNQ
+
+提詞基礎篇:
+https://youtu.be/nHfdvgxsPUU
+
+=============================延伸操作===============================
+基本提詞繪圖操作:
+https://www.youtube.com/playlist?list=PLLIHbgyx6mZJa_MYiXNagT_uqmmG9WbPf
+
+ControlNet操作
+https://www.youtube.com/playlist?list=PLLIHbgyx6mZJUeaiSUSsnOOWX5whqgfY7
+
+LoRa/LoHa模型訓練:
+https://www.youtube.com/playlist?list=PLLIHbgyx6mZL97k07nrJjAWiRRtJDHQ4U
+
+#stablediffusion #aidrawing #ai繪圖 #aiart #aigc #安裝教學
+<a href="https://www.youtube.com/watch?v=4HCPrO1vrIQ"><img src="https://img.youtube.com/vi/4HCPrO1vrIQ/maxresdefault.jpg" />
+<img src="https://img.youtube.com/vi/4HCPrO1vrIQ/0.jpg" />
+<img src="https://img.youtube.com/vi/4HCPrO1vrIQ/1.jpg" />
+<img src="https://img.youtube.com/vi/4HCPrO1vrIQ/2.jpg" />
+<img src="https://img.youtube.com/vi/4HCPrO1vrIQ/3.jpg" /></a>]]>
+      </description>
+      <content:encoded><![CDATA[<pre>https://www.youtube.com/watch?v=4HCPrO1vrIQ
+加入Discord: https://discord.gg/TM5d89YNwA 
+FB粉專: https://www.facebook.com/profile.php?id=100090228987264 
+
+成為這個頻道的會員並獲得福利：
+https://www.youtube.com/channel/UCine3_lVU-rFDRRI8xeImHA/join
+
+抖內JackEllie(本功能沒有任何福利，但謝謝你的錢): 
+https://www.buymeacoffee.com/otakuya202y 
+
+我們的twitch(不定時晚上9點開台): https://www.twitch.tv/otakuya2022
+
+=====================================================================
+本篇為SD的基礎安裝教學，由於安裝方法與過去發生了不少差異，於是讓我們重新來過吧，不管你是想要重新安裝，或者現在正要開始學習看這篇就對了!依照需求選擇你的安裝方法吧!
+
+0:00 簡介
+0:52 硬體需求
+1:18 懶人包安裝法
+2:33 標準安裝
+2:56 Python安裝
+3:33 Git安裝
+3:49 PowerShell安全鎖解除
+4:21 安裝主程式
+5:35 必裝擴充
+8:30 介面調整
+==========================安裝相關資料下載===========================
+懶人包相關命令文件: (推薦)
+https://drive.google.com/file/d/1ge62HmiDYBtBf4Vt3tDwrvl-nlh_xuSp/view?usp=sharing
+
+標準相關命令文件: (不推薦)
+https://drive.google.com/file/d/1gb2-Z9vSqNyDS74uETbkFI0qsvZ4mLOb/view?usp=sharing
+
+=============================必看基本知識===========================
+模型基礎篇:
+https://youtu.be/3pdtwip-wNQ
+
+提詞基礎篇:
+https://youtu.be/nHfdvgxsPUU
+
+=============================延伸操作===============================
+基本提詞繪圖操作:
+https://www.youtube.com/playlist?list=PLLIHbgyx6mZJa_MYiXNagT_uqmmG9WbPf
+
+ControlNet操作
+https://www.youtube.com/playlist?list=PLLIHbgyx6mZJUeaiSUSsnOOWX5whqgfY7
+
+LoRa/LoHa模型訓練:
+https://www.youtube.com/playlist?list=PLLIHbgyx6mZL97k07nrJjAWiRRtJDHQ4U
+
+#stablediffusion #aidrawing #ai繪圖 #aiart #aigc #安裝教學<br />
+<a href="https://www.youtube.com/watch?v=4HCPrO1vrIQ"><img src="https://img.youtube.com/vi/4HCPrO1vrIQ/maxresdefault.jpg" />
+<img src="https://img.youtube.com/vi/4HCPrO1vrIQ/0.jpg" />
+<img src="https://img.youtube.com/vi/4HCPrO1vrIQ/1.jpg" />
+<img src="https://img.youtube.com/vi/4HCPrO1vrIQ/2.jpg" />
+<img src="https://img.youtube.com/vi/4HCPrO1vrIQ/3.jpg" /></a></pre>]]></content:encoded>
+      <itunes:image href="https://img.youtube.com/vi/4HCPrO1vrIQ/maxresdefault.jpg"/>
+      <enclosure url="https://democwise2016.github.io/action-UT-Podcast/JackEllie-AInews-www.youtube.com-f5a4f928a7/20231229-4HCPrO1vrIQ.mp3" type="audio/mpeg" length="628" />
+      <itunes:duration>628</itunes:duration>
+      <guid isPermaLink="false">https://democwise2016.github.io/action-UT-Podcast/JackEllie-AInews-www.youtube.com-f5a4f928a7/20231229-4HCPrO1vrIQ.mp3</guid>
+      <pubDate>2023-12-29T00:00:00.000Z</pubDate>
+    </item><item>
+      <title><![CDATA[11.24]Fooocus全功能詳解，跟Midjourney一樣簡易還免費??]]></title>
+      <itunes:title><![CDATA[11.24]Fooocus全功能詳解，跟Midjourney一樣簡易還免費??]]></itunes:title>
+      <itunes:author><![CDATA[杰克艾米立]]></itunes:author>
+      <itunes:summary>
+        <![CDATA[https://www.youtube.com/watch?v=l28IGadk72Q
+Discord: https://discord.gg/TM5d89YNwA 
+FB粉專: https://www.facebook.com/profile.php?id=100090228987264 
+成為這個頻道的會員並獲得福利：
+https://www.youtube.com/channel/UCine3_lVU-rFDRRI8xeImHA/join
+抖內JackEllie(本功能沒有任何福利，但謝謝你的錢): 
+https://www.buymeacoffee.com/otakuya202y 
+我們的twitch(不定時晚上9點開台): https://www.twitch.tv/otakuya2022
+
+=====================================================================
+
+本篇為Fooocus使用教學，性能優秀畫面精美，硬體需求低，有這麼多好處你還打算使用Midjourney的付費服務嗎?
+
+================================下載內容=====================================
+
+Fooocus載點:請下載Fooocus_win64_2-1-791.7z，若設備老舊下載previous_old_xformers_env.7z
+https://github.com/lllyasviel/Fooocus/releases
+
+
+中文化載點:
+https://github.com/JackEllie/fooocus_Zh_TW/releases/download/v1.0.0/zh.json
+
+放置路徑Fooocus\\language
+額外添加啟動命令--language zh到啟動檔案，每個啟動檔都需要額外添加!!
+
+#stablediffusion #aidrawing #ai繪圖 #aiart #aigc #fooocus #Midjourney
+<a href="https://www.youtube.com/watch?v=l28IGadk72Q"><img src="https://img.youtube.com/vi/l28IGadk72Q/maxresdefault.jpg" />
+<img src="https://img.youtube.com/vi/l28IGadk72Q/0.jpg" />
+<img src="https://img.youtube.com/vi/l28IGadk72Q/1.jpg" />
+<img src="https://img.youtube.com/vi/l28IGadk72Q/2.jpg" />
+<img src="https://img.youtube.com/vi/l28IGadk72Q/3.jpg" /></a>]]>
+      </itunes:summary>
+      <description>
+        <![CDATA[https://www.youtube.com/watch?v=l28IGadk72Q
+Discord: https://discord.gg/TM5d89YNwA 
+FB粉專: https://www.facebook.com/profile.php?id=100090228987264 
+成為這個頻道的會員並獲得福利：
+https://www.youtube.com/channel/UCine3_lVU-rFDRRI8xeImHA/join
+抖內JackEllie(本功能沒有任何福利，但謝謝你的錢): 
+https://www.buymeacoffee.com/otakuya202y 
+我們的twitch(不定時晚上9點開台): https://www.twitch.tv/otakuya2022
+
+=====================================================================
+
+本篇為Fooocus使用教學，性能優秀畫面精美，硬體需求低，有這麼多好處你還打算使用Midjourney的付費服務嗎?
+
+================================下載內容=====================================
+
+Fooocus載點:請下載Fooocus_win64_2-1-791.7z，若設備老舊下載previous_old_xformers_env.7z
+https://github.com/lllyasviel/Fooocus/releases
+
+
+中文化載點:
+https://github.com/JackEllie/fooocus_Zh_TW/releases/download/v1.0.0/zh.json
+
+放置路徑Fooocus\\language
+額外添加啟動命令--language zh到啟動檔案，每個啟動檔都需要額外添加!!
+
+#stablediffusion #aidrawing #ai繪圖 #aiart #aigc #fooocus #Midjourney
+<a href="https://www.youtube.com/watch?v=l28IGadk72Q"><img src="https://img.youtube.com/vi/l28IGadk72Q/maxresdefault.jpg" />
+<img src="https://img.youtube.com/vi/l28IGadk72Q/0.jpg" />
+<img src="https://img.youtube.com/vi/l28IGadk72Q/1.jpg" />
+<img src="https://img.youtube.com/vi/l28IGadk72Q/2.jpg" />
+<img src="https://img.youtube.com/vi/l28IGadk72Q/3.jpg" /></a>]]>
+      </description>
+      <content:encoded><![CDATA[<pre>https://www.youtube.com/watch?v=l28IGadk72Q
+Discord: https://discord.gg/TM5d89YNwA 
+FB粉專: https://www.facebook.com/profile.php?id=100090228987264 
+成為這個頻道的會員並獲得福利：
+https://www.youtube.com/channel/UCine3_lVU-rFDRRI8xeImHA/join
+抖內JackEllie(本功能沒有任何福利，但謝謝你的錢): 
+https://www.buymeacoffee.com/otakuya202y 
+我們的twitch(不定時晚上9點開台): https://www.twitch.tv/otakuya2022
+
+=====================================================================
+
+本篇為Fooocus使用教學，性能優秀畫面精美，硬體需求低，有這麼多好處你還打算使用Midjourney的付費服務嗎?
+
+================================下載內容=====================================
+
+Fooocus載點:請下載Fooocus_win64_2-1-791.7z，若設備老舊下載previous_old_xformers_env.7z
+https://github.com/lllyasviel/Fooocus/releases
+
+
+中文化載點:
+https://github.com/JackEllie/fooocus_Zh_TW/releases/download/v1.0.0/zh.json
+
+放置路徑Fooocus\\language
+額外添加啟動命令--language zh到啟動檔案，每個啟動檔都需要額外添加!!
+
+#stablediffusion #aidrawing #ai繪圖 #aiart #aigc #fooocus #Midjourney<br />
+<a href="https://www.youtube.com/watch?v=l28IGadk72Q"><img src="https://img.youtube.com/vi/l28IGadk72Q/maxresdefault.jpg" />
+<img src="https://img.youtube.com/vi/l28IGadk72Q/0.jpg" />
+<img src="https://img.youtube.com/vi/l28IGadk72Q/1.jpg" />
+<img src="https://img.youtube.com/vi/l28IGadk72Q/2.jpg" />
+<img src="https://img.youtube.com/vi/l28IGadk72Q/3.jpg" /></a></pre>]]></content:encoded>
+      <itunes:image href="https://img.youtube.com/vi/l28IGadk72Q/maxresdefault.jpg"/>
+      <enclosure url="https://democwise2016.github.io/action-UT-Podcast/JackEllie-AInews-www.youtube.com-f5a4f928a7/20231124-l28IGadk72Q.mp3" type="audio/mpeg" length="566" />
+      <itunes:duration>566</itunes:duration>
+      <guid isPermaLink="false">https://democwise2016.github.io/action-UT-Podcast/JackEllie-AInews-www.youtube.com-f5a4f928a7/20231124-l28IGadk72Q.mp3</guid>
+      <pubDate>2023-11-24T00:00:00.000Z</pubDate>
+    </item><item>
+      <title><![CDATA[11.4]Nvidia擴充TensorRT使用教學，算圖速度提升最多兩倍!!]]></title>
+      <itunes:title><![CDATA[11.4]Nvidia擴充TensorRT使用教學，算圖速度提升最多兩倍!!]]></itunes:title>
+      <itunes:author><![CDATA[杰克艾米立]]></itunes:author>
+      <itunes:summary>
+        <![CDATA[https://www.youtube.com/watch?v=9EHCjO6GDKU
+Discord: https://discord.gg/TM5d89YNwA 
+FB粉專: https://www.facebook.com/profile.php?id=100090228987264 
+成為這個頻道的會員並獲得福利：
+https://www.youtube.com/channel/UCine3_lVU-rFDRRI8xeImHA/join
+抖內JackEllie(本功能沒有任何福利，但謝謝你的錢): 
+https://www.buymeacoffee.com/otakuya202y 
+我們的twitch(不定時晚上9點開台): https://www.twitch.tv/otakuya2022
+
+=====================================================================
+
+本篇為TensorRT使用教學，由Nvidia開發的SD擴充TensorRT，可以在不同的顯卡上獲得性能提升快來試用看看吧!!
+
+================================重要提示=====================================
+
+在轉換TRT模型的時候有可能遭遇CUDA的錯誤，這好像是BUG只需要在預設的腳本中選擇靜態模型 (Static)似乎就不會發生錯誤
+
+=====================================================================
+TensorRT擴充網址:
+https://github.com/NVIDIA/Stable-Diffusion-WebUI-TensorRT.git
+
+環境安裝批次檔:
+標準安裝載點 使用方法:放到SD資料夾中與webui-user.bat放在同一個目錄底下執行TensorRT-normal.bat即可。
+https://github.com/JackEllie/TensorRTvenvfix.bat/releases/download/fix/TensorRT-normal.bat
+
+懶人包載點 使用方法:放到懶人包資料夾中與run.bat放放在同一個目錄底下執行TensorRT-novenv.bat即可。
+https://github.com/JackEllie/TensorRTvenvfix.bat/releases/download/fix/TensorRT-novenv.bat
+
+#stablediffusion #aidrawing #ai繪圖 #aiart #aigc #tensorrt
+<a href="https://www.youtube.com/watch?v=9EHCjO6GDKU"><img src="https://img.youtube.com/vi/9EHCjO6GDKU/maxresdefault.jpg" />
+<img src="https://img.youtube.com/vi/9EHCjO6GDKU/0.jpg" />
+<img src="https://img.youtube.com/vi/9EHCjO6GDKU/1.jpg" />
+<img src="https://img.youtube.com/vi/9EHCjO6GDKU/2.jpg" />
+<img src="https://img.youtube.com/vi/9EHCjO6GDKU/3.jpg" /></a>]]>
+      </itunes:summary>
+      <description>
+        <![CDATA[https://www.youtube.com/watch?v=9EHCjO6GDKU
+Discord: https://discord.gg/TM5d89YNwA 
+FB粉專: https://www.facebook.com/profile.php?id=100090228987264 
+成為這個頻道的會員並獲得福利：
+https://www.youtube.com/channel/UCine3_lVU-rFDRRI8xeImHA/join
+抖內JackEllie(本功能沒有任何福利，但謝謝你的錢): 
+https://www.buymeacoffee.com/otakuya202y 
+我們的twitch(不定時晚上9點開台): https://www.twitch.tv/otakuya2022
+
+=====================================================================
+
+本篇為TensorRT使用教學，由Nvidia開發的SD擴充TensorRT，可以在不同的顯卡上獲得性能提升快來試用看看吧!!
+
+================================重要提示=====================================
+
+在轉換TRT模型的時候有可能遭遇CUDA的錯誤，這好像是BUG只需要在預設的腳本中選擇靜態模型 (Static)似乎就不會發生錯誤
+
+=====================================================================
+TensorRT擴充網址:
+https://github.com/NVIDIA/Stable-Diffusion-WebUI-TensorRT.git
+
+環境安裝批次檔:
+標準安裝載點 使用方法:放到SD資料夾中與webui-user.bat放在同一個目錄底下執行TensorRT-normal.bat即可。
+https://github.com/JackEllie/TensorRTvenvfix.bat/releases/download/fix/TensorRT-normal.bat
+
+懶人包載點 使用方法:放到懶人包資料夾中與run.bat放放在同一個目錄底下執行TensorRT-novenv.bat即可。
+https://github.com/JackEllie/TensorRTvenvfix.bat/releases/download/fix/TensorRT-novenv.bat
+
+#stablediffusion #aidrawing #ai繪圖 #aiart #aigc #tensorrt
+<a href="https://www.youtube.com/watch?v=9EHCjO6GDKU"><img src="https://img.youtube.com/vi/9EHCjO6GDKU/maxresdefault.jpg" />
+<img src="https://img.youtube.com/vi/9EHCjO6GDKU/0.jpg" />
+<img src="https://img.youtube.com/vi/9EHCjO6GDKU/1.jpg" />
+<img src="https://img.youtube.com/vi/9EHCjO6GDKU/2.jpg" />
+<img src="https://img.youtube.com/vi/9EHCjO6GDKU/3.jpg" /></a>]]>
+      </description>
+      <content:encoded><![CDATA[<pre>https://www.youtube.com/watch?v=9EHCjO6GDKU
+Discord: https://discord.gg/TM5d89YNwA 
+FB粉專: https://www.facebook.com/profile.php?id=100090228987264 
+成為這個頻道的會員並獲得福利：
+https://www.youtube.com/channel/UCine3_lVU-rFDRRI8xeImHA/join
+抖內JackEllie(本功能沒有任何福利，但謝謝你的錢): 
+https://www.buymeacoffee.com/otakuya202y 
+我們的twitch(不定時晚上9點開台): https://www.twitch.tv/otakuya2022
+
+=====================================================================
+
+本篇為TensorRT使用教學，由Nvidia開發的SD擴充TensorRT，可以在不同的顯卡上獲得性能提升快來試用看看吧!!
+
+================================重要提示=====================================
+
+在轉換TRT模型的時候有可能遭遇CUDA的錯誤，這好像是BUG只需要在預設的腳本中選擇靜態模型 (Static)似乎就不會發生錯誤
+
+=====================================================================
+TensorRT擴充網址:
+https://github.com/NVIDIA/Stable-Diffusion-WebUI-TensorRT.git
+
+環境安裝批次檔:
+標準安裝載點 使用方法:放到SD資料夾中與webui-user.bat放在同一個目錄底下執行TensorRT-normal.bat即可。
+https://github.com/JackEllie/TensorRTvenvfix.bat/releases/download/fix/TensorRT-normal.bat
+
+懶人包載點 使用方法:放到懶人包資料夾中與run.bat放放在同一個目錄底下執行TensorRT-novenv.bat即可。
+https://github.com/JackEllie/TensorRTvenvfix.bat/releases/download/fix/TensorRT-novenv.bat
+
+#stablediffusion #aidrawing #ai繪圖 #aiart #aigc #tensorrt<br />
+<a href="https://www.youtube.com/watch?v=9EHCjO6GDKU"><img src="https://img.youtube.com/vi/9EHCjO6GDKU/maxresdefault.jpg" />
+<img src="https://img.youtube.com/vi/9EHCjO6GDKU/0.jpg" />
+<img src="https://img.youtube.com/vi/9EHCjO6GDKU/1.jpg" />
+<img src="https://img.youtube.com/vi/9EHCjO6GDKU/2.jpg" />
+<img src="https://img.youtube.com/vi/9EHCjO6GDKU/3.jpg" /></a></pre>]]></content:encoded>
+      <itunes:image href="https://img.youtube.com/vi/9EHCjO6GDKU/maxresdefault.jpg"/>
+      <enclosure url="https://democwise2016.github.io/action-UT-Podcast/JackEllie-AInews-www.youtube.com-f5a4f928a7/20231104-9EHCjO6GDKU.mp3" type="audio/mpeg" length="433" />
+      <itunes:duration>433</itunes:duration>
+      <guid isPermaLink="false">https://democwise2016.github.io/action-UT-Podcast/JackEllie-AInews-www.youtube.com-f5a4f928a7/20231104-9EHCjO6GDKU.mp3</guid>
+      <pubDate>2023-11-04T00:00:00.000Z</pubDate>
+    </item></channel>
 </rss>
