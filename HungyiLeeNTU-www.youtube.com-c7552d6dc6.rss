@@ -1,0 +1,85 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:googleplay="http://www.google.com/schemas/play-podcasts/1.0" xmlns:media="http://www.rssboard.org/media-rss" version="2.0">
+  <channel>
+    <title><![CDATA[Hung-yi Lee 上課囉 [UT]]]></title>
+    <link>https://www.youtube.com/channel/UC2ggjtuuWvxrHHHiaDH1dlQ</link>
+    <image>
+      <url>https://yt3.googleusercontent.com/ytc/AIdro_mlTtuvk8IoEtfAKvw7WDc0XuxqGBCjMn-klO63nQbfVjE=s900-b50-c-k-c0x002980b9-no-rj</url>
+      <title>Hung-yi Lee 上課囉 [UT]</title>
+      <link>https://www.youtube.com/channel/UC2ggjtuuWvxrHHHiaDH1dlQ</link>
+    </image>
+    <language>en-us</language>
+    <atom:link href="https://www.youtube.com/feeds/videos.xml?channel_id=UC2ggjtuuWvxrHHHiaDH1dlQ" rel="self" type="application/rss+xml"/>
+    <copyright><![CDATA[Hung-yi Lee 上課囉 [UT]]]></copyright>
+    <itunes:author><![CDATA[Hung-yi Lee 上課囉 [UT]]]></itunes:author>
+    <itunes:summary>
+      <![CDATA[
+      <a href="https://www.youtube.com/channel/UC2ggjtuuWvxrHHHiaDH1dlQ" target="_blank">https://www.youtube.com/channel/UC2ggjtuuWvxrHHHiaDH1dlQ</a>LINK<br />
+<br />
+<a href="https://www.youtube.com/feeds/videos.xml?channel_id=UC2ggjtuuWvxrHHHiaDH1dlQ" target="_blank">https://www.youtube.com/feeds/videos.xml?channel_id=UC2ggjtuuWvxrHHHiaDH1dlQ</a>
+      ]]>
+    </itunes:summary>
+    <description>
+      <![CDATA[
+      <a href="https://www.youtube.com/channel/UC2ggjtuuWvxrHHHiaDH1dlQ" target="_blank">https://www.youtube.com/channel/UC2ggjtuuWvxrHHHiaDH1dlQ</a>LINK<br />
+<br />
+<a href="https://www.youtube.com/feeds/videos.xml?channel_id=UC2ggjtuuWvxrHHHiaDH1dlQ" target="_blank">https://www.youtube.com/feeds/videos.xml?channel_id=UC2ggjtuuWvxrHHHiaDH1dlQ</a>
+      ]]>
+    </description>
+    <itunes:owner>
+      <itunes:name><![CDATA[Hung-yi Lee 上課囉 [UT]]]></itunes:name>
+    </itunes:owner>
+    <itunes:image href="https://yt3.googleusercontent.com/ytc/AIdro_mlTtuvk8IoEtfAKvw7WDc0XuxqGBCjMn-klO63nQbfVjE=s900-b50-c-k-c0x002980b9-no-rj"/>
+<item>
+      <title><![CDATA[5.18]【生成式AI導論 2024】第16講：可以加速所有語言模型生成速度的神奇外掛 — Speculative Decoding]]></title>
+      <itunes:title><![CDATA[5.18]【生成式AI導論 2024】第16講：可以加速所有語言模型生成速度的神奇外掛 — Speculative Decoding]]></itunes:title>
+      <itunes:author><![CDATA[Hung-yi Lee]]></itunes:author>
+      <itunes:summary>
+        <![CDATA[https://www.youtube.com/watch?v=MAbGgsWKrg8
+投影片：https://drive.google.com/file/d/1Ac3oFUtq6ThokrMvB7VUfBCUFsoMPba-/view?usp=sharing
+
+5:00 如何判斷預言家的輸出是否錯誤呢？當預言家剛產生預測時，我們無法立即知道這些預測是否正確。只有在語言模型實際生成輸出後，我們才能判斷預言家的預測是否正確。如果語言模型的輸出是基於錯誤的預測，那部分的輸出就會被丟棄。
+
+延伸閱讀
+SpecInfer: Accelerating Generative Large Language Model Serving with Tree-based Speculative Inference and Verification
+https://arxiv.org/abs/2305.09781
+<a href="https://www.youtube.com/watch?v=MAbGgsWKrg8"><img src="https://img.youtube.com/vi/MAbGgsWKrg8/maxresdefault.jpg" />
+<img src="https://img.youtube.com/vi/MAbGgsWKrg8/0.jpg" />
+<img src="https://img.youtube.com/vi/MAbGgsWKrg8/1.jpg" />
+<img src="https://img.youtube.com/vi/MAbGgsWKrg8/2.jpg" />
+<img src="https://img.youtube.com/vi/MAbGgsWKrg8/3.jpg" /></a>]]>
+      </itunes:summary>
+      <description>
+        <![CDATA[https://www.youtube.com/watch?v=MAbGgsWKrg8
+投影片：https://drive.google.com/file/d/1Ac3oFUtq6ThokrMvB7VUfBCUFsoMPba-/view?usp=sharing
+
+5:00 如何判斷預言家的輸出是否錯誤呢？當預言家剛產生預測時，我們無法立即知道這些預測是否正確。只有在語言模型實際生成輸出後，我們才能判斷預言家的預測是否正確。如果語言模型的輸出是基於錯誤的預測，那部分的輸出就會被丟棄。
+
+延伸閱讀
+SpecInfer: Accelerating Generative Large Language Model Serving with Tree-based Speculative Inference and Verification
+https://arxiv.org/abs/2305.09781
+<a href="https://www.youtube.com/watch?v=MAbGgsWKrg8"><img src="https://img.youtube.com/vi/MAbGgsWKrg8/maxresdefault.jpg" />
+<img src="https://img.youtube.com/vi/MAbGgsWKrg8/0.jpg" />
+<img src="https://img.youtube.com/vi/MAbGgsWKrg8/1.jpg" />
+<img src="https://img.youtube.com/vi/MAbGgsWKrg8/2.jpg" />
+<img src="https://img.youtube.com/vi/MAbGgsWKrg8/3.jpg" /></a>]]>
+      </description>
+      <content:encoded><![CDATA[<pre>https://www.youtube.com/watch?v=MAbGgsWKrg8
+投影片：https://drive.google.com/file/d/1Ac3oFUtq6ThokrMvB7VUfBCUFsoMPba-/view?usp=sharing
+
+5:00 如何判斷預言家的輸出是否錯誤呢？當預言家剛產生預測時，我們無法立即知道這些預測是否正確。只有在語言模型實際生成輸出後，我們才能判斷預言家的預測是否正確。如果語言模型的輸出是基於錯誤的預測，那部分的輸出就會被丟棄。
+
+延伸閱讀
+SpecInfer: Accelerating Generative Large Language Model Serving with Tree-based Speculative Inference and Verification
+https://arxiv.org/abs/2305.09781<br />
+<a href="https://www.youtube.com/watch?v=MAbGgsWKrg8"><img src="https://img.youtube.com/vi/MAbGgsWKrg8/maxresdefault.jpg" />
+<img src="https://img.youtube.com/vi/MAbGgsWKrg8/0.jpg" />
+<img src="https://img.youtube.com/vi/MAbGgsWKrg8/1.jpg" />
+<img src="https://img.youtube.com/vi/MAbGgsWKrg8/2.jpg" />
+<img src="https://img.youtube.com/vi/MAbGgsWKrg8/3.jpg" /></a></pre>]]></content:encoded>
+      <itunes:image href="https://img.youtube.com/vi/MAbGgsWKrg8/maxresdefault.jpg"/>
+      <enclosure url="https://democwise2016.github.io/action-UT-Podcast/HungyiLeeNTU-www.youtube.com-c7552d6dc6/20240518-MAbGgsWKrg8.mp3" type="audio/mpeg" length="762" />
+      <itunes:duration>762</itunes:duration>
+      <guid isPermaLink="false">https://democwise2016.github.io/action-UT-Podcast/HungyiLeeNTU-www.youtube.com-c7552d6dc6/20240518-MAbGgsWKrg8.mp3</guid>
+      <pubDate>2024-05-18T00:00:00.000Z</pubDate>
+    </item></channel>
+</rss>
