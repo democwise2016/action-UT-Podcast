@@ -1,0 +1,33 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:googleplay="http://www.google.com/schemas/play-podcasts/1.0" xmlns:media="http://www.rssboard.org/media-rss" version="2.0">
+  <channel>
+    <title><![CDATA[老高與小茉 [UT]]]></title>
+    <link>https://www.youtube.com/channel/UCMUnInmOkrWN4gof9KlhNmQ</link>
+    <image>
+      <url>https://yt3.googleusercontent.com/WkqPeeZSOxzUz3eNJ-ztvIkHXqNvIqDy6_cGiIZIQm2PGDNnGW6DfIIUfQ8_CsqKoiAT2oz6FQ=s900-b50-c-k-c0x002980b9-no-rj</url>
+      <title>老高與小茉 [UT]</title>
+      <link>https://www.youtube.com/channel/UCMUnInmOkrWN4gof9KlhNmQ</link>
+    </image>
+    <language>en-us</language>
+    <atom:link href="https://www.youtube.com/feeds/videos.xml?channel_id=UCMUnInmOkrWN4gof9KlhNmQ" rel="self" type="application/rss+xml"/>
+    <copyright><![CDATA[老高與小茉 [UT]]]></copyright>
+    <itunes:author><![CDATA[老高與小茉 [UT]]]></itunes:author>
+    <itunes:summary>
+      <![CDATA[
+      <a href="https://www.youtube.com/channel/UCMUnInmOkrWN4gof9KlhNmQ" target="_blank">https://www.youtube.com/channel/UCMUnInmOkrWN4gof9KlhNmQ</a>LINK<br />
+<br />
+<a href="https://www.youtube.com/feeds/videos.xml?channel_id=UCMUnInmOkrWN4gof9KlhNmQ" target="_blank">https://www.youtube.com/feeds/videos.xml?channel_id=UCMUnInmOkrWN4gof9KlhNmQ</a>
+      ]]>
+    </itunes:summary>
+    <description>
+      <![CDATA[
+      <a href="https://www.youtube.com/channel/UCMUnInmOkrWN4gof9KlhNmQ" target="_blank">https://www.youtube.com/channel/UCMUnInmOkrWN4gof9KlhNmQ</a>LINK<br />
+<br />
+<a href="https://www.youtube.com/feeds/videos.xml?channel_id=UCMUnInmOkrWN4gof9KlhNmQ" target="_blank">https://www.youtube.com/feeds/videos.xml?channel_id=UCMUnInmOkrWN4gof9KlhNmQ</a>
+      ]]>
+    </description>
+    <itunes:owner>
+      <itunes:name><![CDATA[老高與小茉 [UT]]]></itunes:name>
+    </itunes:owner>
+    <itunes:image href="https://yt3.googleusercontent.com/WkqPeeZSOxzUz3eNJ-ztvIkHXqNvIqDy6_cGiIZIQm2PGDNnGW6DfIIUfQ8_CsqKoiAT2oz6FQ=s900-b50-c-k-c0x002980b9-no-rj"/>
+</channel>
+</rss>
