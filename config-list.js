@@ -11,6 +11,9 @@ let feedList = [
       ItemFiltersPreset.between10minTo60Min,
       (item) => { return (item.title.indexOf('《行動代號2027》') > -1) }
     ],
+    options: {
+      maxItems: 3
+    }
   },
   // {
   //   title: '動畫小坑谷',
@@ -37,6 +40,9 @@ let feedList = [
     feedID: 'hawkaoaoful',
     homepageURL: 'https://www.youtube.com/channel/UCCkMW93Am1pLfk2nZFKAmbQ',
     itemFilters: ItemFiltersPreset.between3minTo30Min,
+    options: {
+      maxItems: 3
+    }
   },
   {
     title: 'IC实验室聊商業',
@@ -45,6 +51,9 @@ let feedList = [
     itemFilters: [
       ItemFiltersPreset.between3minTo30Min
     ],
+    options: {
+      maxItems: 3
+    }
   },
   {
     title: '紅酒聊遊戲 科技雜談',
@@ -53,7 +62,10 @@ let feedList = [
     itemFilters: [
       ItemFiltersPreset.between3minTo30Min,
       (item) => { return (item.title.indexOf('【科技杂谈') > -1) }
-    ]
+    ],
+    options: {
+      maxItems: 3
+    }
   },
   // {
   //   title: '老高與小茉',
@@ -71,6 +83,9 @@ let feedList = [
       ItemFiltersPreset.between3minTo30Min,
       (item) => { return (item.title.indexOf('【邏輯燒腦') === -1) }
     ],
+    options: {
+      maxItems: 3
+    }
   },
   {
     title: '人妻聊日本企業',
@@ -79,6 +94,9 @@ let feedList = [
     itemFilters: [
       ItemFiltersPreset.between3minTo30Min
     ],
+    options: {
+      maxItems: 3
+    }
   },
   // {
   //   title: 'Buchi聊時事',
@@ -99,6 +117,9 @@ let feedList = [
     itemFilters: [
       ItemFiltersPreset.between3minTo30Min
     ],
+    options: {
+      maxItems: 3
+    }
   },
   {
     title: '老查呆呆 調查局',
@@ -107,7 +128,10 @@ let feedList = [
     itemFilters: [
       ItemFiltersPreset.between3minTo30Min,
       (item) => { return (item.title.indexOf('調查局') > -1) }
-    ]
+    ],
+    options: {
+      maxItems: 3
+    }
   },
   {
     title: '遊戲不止',
@@ -116,7 +140,10 @@ let feedList = [
     itemFilters: [
       ItemFiltersPreset.between6minTo60Min,
       (item) => { return (item.title.indexOf('〖遊戲不止〗') > -1) }
-    ]
+    ],
+    options: {
+      maxItems: 3
+    }
   },
   // {
   //   title: '迷走大學 時事評論',
@@ -137,7 +164,10 @@ let feedList = [
     itemFilters: [
       ItemFiltersPreset.between6minTo60Min,
       (item) => { return ((item.title.indexOf('【漫遊快譯通】') > -1)) }
-    ]
+    ],
+    options: {
+      maxItems: 3
+    }
   },
   {
     title: 'Gamker攻壳官方频道',
@@ -146,7 +176,10 @@ let feedList = [
     itemFilters: [
       ItemFiltersPreset.between6minTo60Min,
       (item) => { return ((item.title.indexOf('【就知道玩遊戲') > -1)) }
-    ]
+    ],
+    options: {
+      maxItems: 3
+    }
   },
   // {
   //   title: '漫天大坑-Kay',
@@ -177,6 +210,9 @@ let feedList = [
     itemFilters: [
       ItemFiltersPreset.between3minTo30Min
     ],
+    options: {
+      maxItems: 3
+    }
   },
   {
     title: 'Leonard',
@@ -185,6 +221,9 @@ let feedList = [
     itemFilters: [
       ItemFiltersPreset.between3minTo30Min
     ],
+    options: {
+      maxItems: 3
+    }
   },
   // {
   //   title: '黃國昌直播',
@@ -222,6 +261,9 @@ let feedList = [
     itemFilters: [
       ItemFiltersPreset.between3minTo30Min
     ],
+    options: {
+      maxItems: 3
+    }
   },
   // {
   //   title: 'ARIA軍武動漫雜談',
@@ -236,6 +278,9 @@ let feedList = [
     itemFilters: [
       ItemFiltersPreset.between3minTo30Min
     ],
+    options: {
+      maxItems: 3
+    }
   },
   {
     title: 'Hung-yi Lee 上課囉',
@@ -244,6 +289,9 @@ let feedList = [
     itemFilters: [
       ItemFiltersPreset.between3minTo30Min
     ],
+    options: {
+      maxItems: 3
+    }
   },
   {
     title: '黃逸豪的喜劇本位主義',
@@ -252,6 +300,9 @@ let feedList = [
     itemFilters: [
       ItemFiltersPreset.between3minTo30Min
     ],
+    options: {
+      maxItems: 3
+    }
   },
   {
     title: 'KAZBOM 聊音樂',
@@ -260,6 +311,9 @@ let feedList = [
     itemFilters: [
       ItemFiltersPreset.between3minTo30Min
     ],
+    options: {
+      maxItems: 3
+    }
   },
   // {
   //   title: '杰克艾米立 AI大小事',
@@ -290,6 +344,9 @@ let feedList = [
     itemFilters: [
       ItemFiltersPreset.between6minTo60Min
     ],
+    options: {
+      maxItems: 3
+    }
   },
   { // <outline type="rss" text="游戲指南針++$0414-1925$" title="游戲指南針++$0414-1925$" xmlUrl="http://pulipuli.myqnapcloud.com/304/fc/$0414-1925$/https%3A%2F%2Fwww.youtube.com%2Fchannel%2FUCVjXB6QUf_aZ_FninmssCOg" htmlUrl="https://www.youtube.com/channel/UCVjXB6QUf_aZ_FninmssCOg"/>
     title: '林亦LYi 聊 3C',
@@ -298,6 +355,9 @@ let feedList = [
     itemFilters: [
       ItemFiltersPreset.between3minTo30Min
     ],
+    options: {
+      maxItems: 3
+    }
   },
   // { 
   //   title: '萊丘 Laichu 聊 3C',
