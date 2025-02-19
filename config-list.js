@@ -24,12 +24,14 @@ let feedList = [
   //   homepageURL: 'https://www.youtube.com/channel/UCdinDPM5zd2nk2LdtOcEDPQ',
   //   itemFilters: ItemFiltersPreset.between3minTo30Min,
   // },
-  {
-    title: '黑皮談市政',
-    feedID: 'jin_an0528',
-    homepageURL: 'https://www.youtube.com/channel/UC3JgKXxcCd02y3xIpgJKnWA',
-    itemFilters: ItemFiltersPreset.between3minTo30Min,
-  },
+  // {
+  //   title: '黑皮談市政',
+  //   feedID: 'jin_an0528',
+  //   homepageURL: 'https://www.youtube.com/channel/UC3JgKXxcCd02y3xIpgJKnWA',
+  //   itemFilters: [
+  //     ItemFiltersPreset.between3minTo30Min
+  //   ],
+  // },
   {
     title: '敖厂长',
     feedID: 'hawkaoaoful',
@@ -40,7 +42,9 @@ let feedList = [
     title: 'IC实验室聊商業',
     feedID: 'ICLAB',
     homepageURL: 'https://www.youtube.com/channel/UCJ1zX4FZA15dwE2olLAO3-w',
-    itemFilters: ItemFiltersPreset.between3minTo30Min,
+    itemFilters: [
+      ItemFiltersPreset.between3minTo30Min
+    ],
   },
   {
     title: '紅酒聊遊戲 科技雜談',
@@ -51,12 +55,14 @@ let feedList = [
       (item) => { return (item.title.indexOf('【科技杂谈') > -1) }
     ]
   },
-  {
-    title: '老高與小茉',
-    feedID: 'laogao',
-    homepageURL: 'https://www.youtube.com/channel/UCMUnInmOkrWN4gof9KlhNmQ',
-    itemFilters: ItemFiltersPreset.between10minTo60Min,
-  },
+  // {
+  //   title: '老高與小茉',
+  //   feedID: 'laogao',
+  //   homepageURL: 'https://www.youtube.com/channel/UCMUnInmOkrWN4gof9KlhNmQ',
+  //   itemFilters: [
+  //     ItemFiltersPreset.between10minTo60Min
+  //   ],
+  // },
   {
     title: '維思維聊心理學',
     feedID: 'WeisWay',
@@ -70,7 +76,9 @@ let feedList = [
     title: '人妻聊日本企業',
     feedID: 'tacchan',
     homepageURL: 'https://www.youtube.com/channel/UCge049AFxJnXWPxYzGKoWyQ',
-    itemFilters: ItemFiltersPreset.between3minTo30Min,
+    itemFilters: [
+      ItemFiltersPreset.between3minTo30Min
+    ],
   },
   // {
   //   title: 'Buchi聊時事',
@@ -88,7 +96,9 @@ let feedList = [
     title: '蒟蒻講幹話',
     feedID: 'jarrow3988',
     homepageURL: 'https://www.youtube.com/channel/UCjGBF7OQXzgJFDwrbzxtDrQ',
-    itemFilters: ItemFiltersPreset.between3minTo30Min,
+    itemFilters: [
+      ItemFiltersPreset.between3minTo30Min
+    ],
   },
   {
     title: '老查呆呆 調查局',
@@ -164,13 +174,17 @@ let feedList = [
     title: '啾啾鞋',
     feedID: 'chuchushoeTW',
     homepageURL: 'https://www.youtube.com/channel/UCIF_gt4BfsWyM_2GOcKXyEQ',
-    itemFilters: ItemFiltersPreset.between3minTo30Min,
+    itemFilters: [
+      ItemFiltersPreset.between3minTo30Min
+    ],
   },
   {
     title: 'Leonard',
     feedID: 'leonard2834',
     homepageURL: 'https://www.youtube.com/channel/UC1mx_wcSHtfpLk5N_zY0TRg',
-    itemFilters: ItemFiltersPreset.between3minTo30Min,
+    itemFilters: [
+      ItemFiltersPreset.between3minTo30Min
+    ],
   },
   // {
   //   title: '黃國昌直播',
@@ -184,26 +198,30 @@ let feedList = [
   //     maxItems: 3
   //   }
   // },
-  {
-    title: '社長Kuma',
-    feedID: 'Super_Kuma',
-    homepageURL: 'https://www.youtube.com/channel/UC4_ofgezp9nrPXHSmZMT97g',
-    // thumbnailBorderColor: true,
-    itemFilters: [
-      ItemFiltersPreset.between3minTo30Min
-    ],
-  },
-  {
-    title: '文字與資本主義 冏冏',
-    feedID: 'Kyontw828',
-    homepageURL: 'https://www.youtube.com/channel/UC_xVdv15MR17rQf-nUl92MA',
-    itemFilters: ItemFiltersPreset.between6minTo60Min,
-  },
+  // {
+  //   title: '社長Kuma',
+  //   feedID: 'Super_Kuma',
+  //   homepageURL: 'https://www.youtube.com/channel/UC4_ofgezp9nrPXHSmZMT97g',
+  //   // thumbnailBorderColor: true,
+  //   itemFilters: [
+  //     ItemFiltersPreset.between3minTo30Min
+  //   ],
+  // },
+  // {
+  //   title: '文字與資本主義 冏冏',
+  //   feedID: 'Kyontw828',
+  //   homepageURL: 'https://www.youtube.com/channel/UC_xVdv15MR17rQf-nUl92MA',
+  //   itemFilters: [
+  //     ItemFiltersPreset.between6minTo60Min
+  //   ],
+  // },
   {
     title: '台灣聲優研究所',
     feedID: 'Taiwanesevoiceactor',
     homepageURL: 'https://www.youtube.com/channel/UCLyxEJ727Sca3pSViFvJpTg',
-    itemFilters: ItemFiltersPreset.between3minTo30Min,
+    itemFilters: [
+      ItemFiltersPreset.between3minTo30Min
+    ],
   },
   // {
   //   title: 'ARIA軍武動漫雜談',
@@ -215,36 +233,44 @@ let feedList = [
     title: '卡欸蝶 聊動畫',
     feedID: 'animekaede_',
     homepageURL: 'https://www.youtube.com/channel/UCTY5Ac6bOFjWJj_0EKzJoyA',
-    itemFilters: ItemFiltersPreset.between3minTo30Min,
+    itemFilters: [
+      ItemFiltersPreset.between3minTo30Min
+    ],
   },
   {
     title: 'Hung-yi Lee 上課囉',
     feedID: 'HungyiLeeNTU',
     homepageURL: 'https://www.youtube.com/channel/UC2ggjtuuWvxrHHHiaDH1dlQ',
-    itemFilters: ItemFiltersPreset.between3minTo30Min,
+    itemFilters: [
+      ItemFiltersPreset.between3minTo30Min
+    ],
   },
   {
     title: '黃逸豪的喜劇本位主義',
     feedID: 'comedyihao',
     homepageURL: 'https://www.youtube.com/channel/UCCc2xNwMwwGs5T5UPaKh0Tw',
-    itemFilters: ItemFiltersPreset.between3minTo30Min,
+    itemFilters: [
+      ItemFiltersPreset.between3minTo30Min
+    ],
   },
   {
     title: 'KAZBOM 聊音樂',
     feedID: 'kazbom',
     homepageURL: 'https://www.youtube.com/channel/UCOBVyJhiDg39fjjXPWbyOqg',
-    itemFilters: ItemFiltersPreset.between3minTo30Min,
-  },
-  {
-    title: '杰克艾米立 AI大小事',
-    feedID: 'JackEllie-AInews',
-    homepageURL: 'https://www.youtube.com/channel/UCine3_lVU-rFDRRI8xeImHA',
-    // thumbnailBorderColor: true,
     itemFilters: [
-      ItemFiltersPreset.between3minTo30Min,
-      // (item) => { return ((item.title.indexOf('AI大小事') >-1)) }
+      ItemFiltersPreset.between3minTo30Min
     ],
   },
+  // {
+  //   title: '杰克艾米立 AI大小事',
+  //   feedID: 'JackEllie-AInews',
+  //   homepageURL: 'https://www.youtube.com/channel/UCine3_lVU-rFDRRI8xeImHA',
+  //   // thumbnailBorderColor: true,
+  //   itemFilters: [
+  //     ItemFiltersPreset.between3minTo30Min,
+  //     // (item) => { return ((item.title.indexOf('AI大小事') >-1)) }
+  //   ],
+  // },
   // {
   //   title: '閱部客',
   //   feedID: 'yuubuke',
@@ -261,13 +287,17 @@ let feedList = [
     title: '蛋弟 動漫心理學',
     feedID: 'user-sg9pi2kv7d',
     homepageURL: 'https://www.youtube.com/channel/UCtlELst50iCTWw_D9jt1cEg',
-    itemFilters: ItemFiltersPreset.between6minTo60Min,
+    itemFilters: [
+      ItemFiltersPreset.between6minTo60Min
+    ],
   },
   { // <outline type="rss" text="游戲指南針++$0414-1925$" title="游戲指南針++$0414-1925$" xmlUrl="http://pulipuli.myqnapcloud.com/304/fc/$0414-1925$/https%3A%2F%2Fwww.youtube.com%2Fchannel%2FUCVjXB6QUf_aZ_FninmssCOg" htmlUrl="https://www.youtube.com/channel/UCVjXB6QUf_aZ_FninmssCOg"/>
     title: '林亦LYi 聊 3C',
     feedID: 'lyi',
     homepageURL: 'https://www.youtube.com/channel/UC4dtpugIYK56S_7btf5a-iQ',
-    itemFilters: ItemFiltersPreset.between3minTo30Min,
+    itemFilters: [
+      ItemFiltersPreset.between3minTo30Min
+    ],
   },
   // { 
   //   title: '萊丘 Laichu 聊 3C',
