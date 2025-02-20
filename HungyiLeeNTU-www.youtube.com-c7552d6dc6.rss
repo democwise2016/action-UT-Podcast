@@ -29,5 +29,115 @@
       <itunes:name><![CDATA[Hung-yi Lee 上課囉 [UT]]]></itunes:name>
     </itunes:owner>
     <itunes:image href="https://yt3.googleusercontent.com/ytc/AIdro_mlTtuvk8IoEtfAKvw7WDc0XuxqGBCjMn-klO63nQbfVjE=s900-b50-c-k-c0x002980b9-no-rj"/>
-</channel>
+<item>
+      <title><![CDATA[5.18]【生成式AI導論 2024】第16講：可以加速所有語言模型生成速度的神奇外掛 — Speculative Decoding]]></title>
+      <itunes:title><![CDATA[5.18]【生成式AI導論 2024】第16講：可以加速所有語言模型生成速度的神奇外掛 — Speculative Decoding]]></itunes:title>
+      <itunes:author><![CDATA[Hung-yi Lee]]></itunes:author>
+      <itunes:summary>
+        <![CDATA[https://www.youtube.com/watch?v=MAbGgsWKrg8
+投影片：https://drive.google.com/file/d/1Ac3oFUtq6ThokrMvB7VUfBCUFsoMPba-/view?usp=sharing
+
+5:00 如何判斷預言家的輸出是否錯誤呢？當預言家剛產生預測時，我們無法立即知道這些預測是否正確。只有在語言模型實際生成輸出後，我們才能判斷預言家的預測是否正確。如果語言模型的輸出是基於錯誤的預測，那部分的輸出就會被丟棄。
+
+延伸閱讀
+SpecInfer: Accelerating Generative Large Language Model Serving with Tree-based Speculative Inference and Verification
+https://arxiv.org/abs/2305.09781
+<a href="https://www.youtube.com/watch?v=MAbGgsWKrg8"><img src="https://img.youtube.com/vi/MAbGgsWKrg8/maxresdefault.jpg" />
+<img src="https://img.youtube.com/vi/MAbGgsWKrg8/0.jpg" />
+<img src="https://img.youtube.com/vi/MAbGgsWKrg8/1.jpg" />
+<img src="https://img.youtube.com/vi/MAbGgsWKrg8/2.jpg" />
+<img src="https://img.youtube.com/vi/MAbGgsWKrg8/3.jpg" /></a>]]>
+      </itunes:summary>
+      <description>
+        <![CDATA[https://www.youtube.com/watch?v=MAbGgsWKrg8
+投影片：https://drive.google.com/file/d/1Ac3oFUtq6ThokrMvB7VUfBCUFsoMPba-/view?usp=sharing
+
+5:00 如何判斷預言家的輸出是否錯誤呢？當預言家剛產生預測時，我們無法立即知道這些預測是否正確。只有在語言模型實際生成輸出後，我們才能判斷預言家的預測是否正確。如果語言模型的輸出是基於錯誤的預測，那部分的輸出就會被丟棄。
+
+延伸閱讀
+SpecInfer: Accelerating Generative Large Language Model Serving with Tree-based Speculative Inference and Verification
+https://arxiv.org/abs/2305.09781
+<a href="https://www.youtube.com/watch?v=MAbGgsWKrg8"><img src="https://img.youtube.com/vi/MAbGgsWKrg8/maxresdefault.jpg" />
+<img src="https://img.youtube.com/vi/MAbGgsWKrg8/0.jpg" />
+<img src="https://img.youtube.com/vi/MAbGgsWKrg8/1.jpg" />
+<img src="https://img.youtube.com/vi/MAbGgsWKrg8/2.jpg" />
+<img src="https://img.youtube.com/vi/MAbGgsWKrg8/3.jpg" /></a>]]>
+      </description>
+      <content:encoded><![CDATA[<pre>https://www.youtube.com/watch?v=MAbGgsWKrg8
+投影片：https://drive.google.com/file/d/1Ac3oFUtq6ThokrMvB7VUfBCUFsoMPba-/view?usp=sharing
+
+5:00 如何判斷預言家的輸出是否錯誤呢？當預言家剛產生預測時，我們無法立即知道這些預測是否正確。只有在語言模型實際生成輸出後，我們才能判斷預言家的預測是否正確。如果語言模型的輸出是基於錯誤的預測，那部分的輸出就會被丟棄。
+
+延伸閱讀
+SpecInfer: Accelerating Generative Large Language Model Serving with Tree-based Speculative Inference and Verification
+https://arxiv.org/abs/2305.09781<br />
+<a href="https://www.youtube.com/watch?v=MAbGgsWKrg8"><img src="https://img.youtube.com/vi/MAbGgsWKrg8/maxresdefault.jpg" />
+<img src="https://img.youtube.com/vi/MAbGgsWKrg8/0.jpg" />
+<img src="https://img.youtube.com/vi/MAbGgsWKrg8/1.jpg" />
+<img src="https://img.youtube.com/vi/MAbGgsWKrg8/2.jpg" />
+<img src="https://img.youtube.com/vi/MAbGgsWKrg8/3.jpg" /></a></pre>]]></content:encoded>
+      <itunes:image href="https://img.youtube.com/vi/MAbGgsWKrg8/maxresdefault.jpg"/>
+      <enclosure url="https://democwise2016.github.io/action-UT-Podcast/HungyiLeeNTU-www.youtube.com-c7552d6dc6/20240518-MAbGgsWKrg8.mp3" type="audio/mpeg" length="762" />
+      <itunes:duration>762</itunes:duration>
+      <guid isPermaLink="false">https://democwise2016.github.io/action-UT-Podcast/HungyiLeeNTU-www.youtube.com-c7552d6dc6/20240518-MAbGgsWKrg8.mp3</guid>
+      <pubDate>2024-05-18T00:00:00.000Z</pubDate>
+    </item><item>
+      <title><![CDATA[5.17]【生成式AI導論 2024】第14講：淺談大型語言模型相關的安全性議題 (下) — 欺騙大型語言模型]]></title>
+      <itunes:title><![CDATA[5.17]【生成式AI導論 2024】第14講：淺談大型語言模型相關的安全性議題 (下) — 欺騙大型語言模型]]></itunes:title>
+      <itunes:author><![CDATA[Hung-yi Lee]]></itunes:author>
+      <itunes:summary>
+        <![CDATA[https://www.youtube.com/watch?v=CNTondxaguo
+投影片：https://drive.google.com/file/d/11khspom6AEK6CmjktInjd2xKHLlGnrjd/view?usp=sharing
+
+本課程主要的目標是讓大家知道語言模型被詐騙的問題，並不鼓勵大家進行類似的行為
+
+11:20 勘誤：攻擊成功率大約接近 3%
+
+延伸閱讀：
+Ignore This Title and HackAPrompt: Exposing Systemic Vulnerabilities of LLMs through a Global Scale Prompt Hacking Competition
+https://arxiv.org/pdf/2311.16119
+<a href="https://www.youtube.com/watch?v=CNTondxaguo"><img src="https://img.youtube.com/vi/CNTondxaguo/maxresdefault.jpg" />
+<img src="https://img.youtube.com/vi/CNTondxaguo/0.jpg" />
+<img src="https://img.youtube.com/vi/CNTondxaguo/1.jpg" />
+<img src="https://img.youtube.com/vi/CNTondxaguo/2.jpg" />
+<img src="https://img.youtube.com/vi/CNTondxaguo/3.jpg" /></a>]]>
+      </itunes:summary>
+      <description>
+        <![CDATA[https://www.youtube.com/watch?v=CNTondxaguo
+投影片：https://drive.google.com/file/d/11khspom6AEK6CmjktInjd2xKHLlGnrjd/view?usp=sharing
+
+本課程主要的目標是讓大家知道語言模型被詐騙的問題，並不鼓勵大家進行類似的行為
+
+11:20 勘誤：攻擊成功率大約接近 3%
+
+延伸閱讀：
+Ignore This Title and HackAPrompt: Exposing Systemic Vulnerabilities of LLMs through a Global Scale Prompt Hacking Competition
+https://arxiv.org/pdf/2311.16119
+<a href="https://www.youtube.com/watch?v=CNTondxaguo"><img src="https://img.youtube.com/vi/CNTondxaguo/maxresdefault.jpg" />
+<img src="https://img.youtube.com/vi/CNTondxaguo/0.jpg" />
+<img src="https://img.youtube.com/vi/CNTondxaguo/1.jpg" />
+<img src="https://img.youtube.com/vi/CNTondxaguo/2.jpg" />
+<img src="https://img.youtube.com/vi/CNTondxaguo/3.jpg" /></a>]]>
+      </description>
+      <content:encoded><![CDATA[<pre>https://www.youtube.com/watch?v=CNTondxaguo
+投影片：https://drive.google.com/file/d/11khspom6AEK6CmjktInjd2xKHLlGnrjd/view?usp=sharing
+
+本課程主要的目標是讓大家知道語言模型被詐騙的問題，並不鼓勵大家進行類似的行為
+
+11:20 勘誤：攻擊成功率大約接近 3%
+
+延伸閱讀：
+Ignore This Title and HackAPrompt: Exposing Systemic Vulnerabilities of LLMs through a Global Scale Prompt Hacking Competition
+https://arxiv.org/pdf/2311.16119<br />
+<a href="https://www.youtube.com/watch?v=CNTondxaguo"><img src="https://img.youtube.com/vi/CNTondxaguo/maxresdefault.jpg" />
+<img src="https://img.youtube.com/vi/CNTondxaguo/0.jpg" />
+<img src="https://img.youtube.com/vi/CNTondxaguo/1.jpg" />
+<img src="https://img.youtube.com/vi/CNTondxaguo/2.jpg" />
+<img src="https://img.youtube.com/vi/CNTondxaguo/3.jpg" /></a></pre>]]></content:encoded>
+      <itunes:image href="https://img.youtube.com/vi/CNTondxaguo/maxresdefault.jpg"/>
+      <enclosure url="https://democwise2016.github.io/action-UT-Podcast/HungyiLeeNTU-www.youtube.com-c7552d6dc6/20240517-CNTondxaguo.mp3" type="audio/mpeg" length="932" />
+      <itunes:duration>932</itunes:duration>
+      <guid isPermaLink="false">https://democwise2016.github.io/action-UT-Podcast/HungyiLeeNTU-www.youtube.com-c7552d6dc6/20240517-CNTondxaguo.mp3</guid>
+      <pubDate>2024-05-17T00:00:00.000Z</pubDate>
+    </item></channel>
 </rss>
