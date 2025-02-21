@@ -30,6 +30,40 @@
     </itunes:owner>
     <itunes:image href="https://yt3.googleusercontent.com/ytc/AIdro_mlTtuvk8IoEtfAKvw7WDc0XuxqGBCjMn-klO63nQbfVjE=s900-b50-c-k-c0x002980b9-no-rj"/>
 <item>
+      <title><![CDATA[12.14]Challenges in Developing Universal Audio Foundation Model - Dongchao Yang (CUHK)]]></title>
+      <itunes:title><![CDATA[12.14]Challenges in Developing Universal Audio Foundation Model - Dongchao Yang (CUHK)]]></itunes:title>
+      <itunes:author><![CDATA[Hung-yi Lee]]></itunes:author>
+      <itunes:summary>
+        <![CDATA[https://www.youtube.com/watch?v=ExDfqz8NfnE
+slides: https://drive.google.com/file/d/1oXArl4DayOraVzVH0INUsnB8toIfEJiM/view
+<a href="https://www.youtube.com/watch?v=ExDfqz8NfnE"><img src="https://img.youtube.com/vi/ExDfqz8NfnE/maxresdefault.jpg" />
+<img src="https://img.youtube.com/vi/ExDfqz8NfnE/0.jpg" />
+<img src="https://img.youtube.com/vi/ExDfqz8NfnE/1.jpg" />
+<img src="https://img.youtube.com/vi/ExDfqz8NfnE/2.jpg" />
+<img src="https://img.youtube.com/vi/ExDfqz8NfnE/3.jpg" /></a>]]>
+      </itunes:summary>
+      <description>
+        <![CDATA[https://www.youtube.com/watch?v=ExDfqz8NfnE
+slides: https://drive.google.com/file/d/1oXArl4DayOraVzVH0INUsnB8toIfEJiM/view
+<a href="https://www.youtube.com/watch?v=ExDfqz8NfnE"><img src="https://img.youtube.com/vi/ExDfqz8NfnE/maxresdefault.jpg" />
+<img src="https://img.youtube.com/vi/ExDfqz8NfnE/0.jpg" />
+<img src="https://img.youtube.com/vi/ExDfqz8NfnE/1.jpg" />
+<img src="https://img.youtube.com/vi/ExDfqz8NfnE/2.jpg" />
+<img src="https://img.youtube.com/vi/ExDfqz8NfnE/3.jpg" /></a>]]>
+      </description>
+      <content:encoded><![CDATA[<pre>https://www.youtube.com/watch?v=ExDfqz8NfnE
+slides: https://drive.google.com/file/d/1oXArl4DayOraVzVH0INUsnB8toIfEJiM/view<br />
+<a href="https://www.youtube.com/watch?v=ExDfqz8NfnE"><img src="https://img.youtube.com/vi/ExDfqz8NfnE/maxresdefault.jpg" />
+<img src="https://img.youtube.com/vi/ExDfqz8NfnE/0.jpg" />
+<img src="https://img.youtube.com/vi/ExDfqz8NfnE/1.jpg" />
+<img src="https://img.youtube.com/vi/ExDfqz8NfnE/2.jpg" />
+<img src="https://img.youtube.com/vi/ExDfqz8NfnE/3.jpg" /></a></pre>]]></content:encoded>
+      <itunes:image href="https://img.youtube.com/vi/ExDfqz8NfnE/maxresdefault.jpg"/>
+      <enclosure url="https://democwise2016.github.io/action-UT-Podcast/HungyiLeeNTU-www.youtube.com-c7552d6dc6/20241214-ExDfqz8NfnE.mp3" type="audio/mpeg" length="1379" />
+      <itunes:duration>1379</itunes:duration>
+      <guid isPermaLink="false">https://democwise2016.github.io/action-UT-Podcast/HungyiLeeNTU-www.youtube.com-c7552d6dc6/20241214-ExDfqz8NfnE.mp3</guid>
+      <pubDate>2024-12-14T00:00:00.000Z</pubDate>
+    </item><item>
       <title><![CDATA[5.18]【生成式AI導論 2024】第16講：可以加速所有語言模型生成速度的神奇外掛 — Speculative Decoding]]></title>
       <itunes:title><![CDATA[5.18]【生成式AI導論 2024】第16講：可以加速所有語言模型生成速度的神奇外掛 — Speculative Decoding]]></itunes:title>
       <itunes:author><![CDATA[Hung-yi Lee]]></itunes:author>
