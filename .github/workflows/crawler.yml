@@ -182,6 +182,6 @@ jobs:
       #   run: git config --global http.postBuffer 524288000
 
       - name: Deploy 🚀
-        uses: JamesIves/github-pages-deploy-action@v4.7.2
+        uses: JamesIves/github-pages-deploy-action@v4.7.3
         with:
           folder: output # The folder the action should deploy.
