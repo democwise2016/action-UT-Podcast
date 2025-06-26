@@ -30,6 +30,28 @@
     </itunes:owner>
     <itunes:image href="https://yt3.googleusercontent.com/2A8k4i7ppGHDnBwzGHIJZ5an_fvHKJ7NpjwCLXrWk003gBVu_Aknt_Fzf-52nXcUA1cInkg9Mg=s120-c-k-c0x00ffffff-no-rj"/>
 <item>
+      <title><![CDATA[6.25]鸿蒙开发，同学们怎么说？]]></title>
+      <itunes:title><![CDATA[6.25]鸿蒙开发，同学们怎么说？]]></itunes:title>
+      <itunes:author><![CDATA[林亦LYi]]></itunes:author>
+      <itunes:summary>
+        <![CDATA[https://www.youtube.com/watch?v=BZbmGC5K14s
+一起看看学生开发者们有多厉害！
+#harmonyos #鸿蒙 #hdc #deveco #codelabs #极客马拉松 #元服务 #华为 #开发者]]>
+      </itunes:summary>
+      <description>
+        <![CDATA[https://www.youtube.com/watch?v=BZbmGC5K14s
+一起看看学生开发者们有多厉害！
+#harmonyos #鸿蒙 #hdc #deveco #codelabs #极客马拉松 #元服务 #华为 #开发者]]>
+      </description>
+      <content:encoded><![CDATA[<pre>https://www.youtube.com/watch?v=BZbmGC5K14s
+一起看看学生开发者们有多厉害！
+#harmonyos #鸿蒙 #hdc #deveco #codelabs #极客马拉松 #元服务 #华为 #开发者</pre>]]></content:encoded>
+      <itunes:image href="https://i.ytimg.com/vi/BZbmGC5K14s/hqdefault.jpg"/>
+      <enclosure url="https://democwise2016.github.io/action-UT-Podcast/lyi-www.youtube.com-03ec64e135/20250625-BZbmGC5K14s.mp3" type="audio/mpeg" length="645" />
+      <itunes:duration>645</itunes:duration>
+      <guid isPermaLink="false">https://democwise2016.github.io/action-UT-Podcast/lyi-www.youtube.com-03ec64e135/20250625-BZbmGC5K14s.mp3</guid>
+      <pubDate>2025-06-25T13:30:24.000Z</pubDate>
+    </item><item>
       <title><![CDATA[6.20]iPad+AI=PC？我们又锐评了一波苹果！]]></title>
       <itunes:title><![CDATA[6.20]iPad+AI=PC？我们又锐评了一波苹果！]]></itunes:title>
       <itunes:author><![CDATA[林亦LYi]]></itunes:author>
@@ -70,30 +92,5 @@ WWDC25 的正式播客之后，我们私下里又放开聊了一波：iPad 与 P
       <itunes:duration>1529</itunes:duration>
       <guid isPermaLink="false">https://democwise2016.github.io/action-UT-Podcast/lyi-www.youtube.com-03ec64e135/20250608-LepBG1Ih-AI.mp3</guid>
       <pubDate>2025-06-08T09:06:42.000Z</pubDate>
-    </item><item>
-      <title><![CDATA[5.23]苹果AI怎么就鸽了？]]></title>
-      <itunes:title><![CDATA[5.23]苹果AI怎么就鸽了？]]></itunes:title>
-      <itunes:author><![CDATA[林亦LYi]]></itunes:author>
-      <itunes:summary>
-        <![CDATA[https://www.youtube.com/watch?v=bwu_P5EUCc4
-谁也没有想到，被我们给予厚望的 Apple Intelligence，竟然偷偷摸摸的鸽了，一个 2024 年画的饼，可能要一口气延期到 2026 年？
-十一年前被乔布斯寄予厚望，”遥遥领先“的Siri，怎么就突然变的“遥遥落后”了呢？
-今天咱们来看看 Siri 背后的内斗、摆烂、以及迷茫。]]>
-      </itunes:summary>
-      <description>
-        <![CDATA[https://www.youtube.com/watch?v=bwu_P5EUCc4
-谁也没有想到，被我们给予厚望的 Apple Intelligence，竟然偷偷摸摸的鸽了，一个 2024 年画的饼，可能要一口气延期到 2026 年？
-十一年前被乔布斯寄予厚望，”遥遥领先“的Siri，怎么就突然变的“遥遥落后”了呢？
-今天咱们来看看 Siri 背后的内斗、摆烂、以及迷茫。]]>
-      </description>
-      <content:encoded><![CDATA[<pre>https://www.youtube.com/watch?v=bwu_P5EUCc4
-谁也没有想到，被我们给予厚望的 Apple Intelligence，竟然偷偷摸摸的鸽了，一个 2024 年画的饼，可能要一口气延期到 2026 年？
-十一年前被乔布斯寄予厚望，”遥遥领先“的Siri，怎么就突然变的“遥遥落后”了呢？
-今天咱们来看看 Siri 背后的内斗、摆烂、以及迷茫。</pre>]]></content:encoded>
-      <itunes:image href="https://i.ytimg.com/vi/bwu_P5EUCc4/hqdefault.jpg"/>
-      <enclosure url="https://democwise2016.github.io/action-UT-Podcast/lyi-www.youtube.com-03ec64e135/20250523-bwu_P5EUCc4.mp3" type="audio/mpeg" length="925" />
-      <itunes:duration>925</itunes:duration>
-      <guid isPermaLink="false">https://democwise2016.github.io/action-UT-Podcast/lyi-www.youtube.com-03ec64e135/20250523-bwu_P5EUCc4.mp3</guid>
-      <pubDate>2025-05-23T12:15:13.000Z</pubDate>
     </item></channel>
 </rss>
