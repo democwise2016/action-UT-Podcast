@@ -4,7 +4,7 @@ version: "3"
 services:
   app:
     # build: .
-    image: pudding/docker-image-base:action-UT-Podcast-Docker-Image-20250518.213224
+    image: pudding/docker-image-base:action-UT-Podcast-Docker-Image-20251004.112211
     tty: true
     volumes: 
       - ./output:/output/
