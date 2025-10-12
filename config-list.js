@@ -28,13 +28,16 @@ let feedList = [
   //   itemFilters: ItemFiltersPreset.between3minTo30Min,
   // },
   // {
-  //   title: '黑皮談市政',
-  //   feedID: 'jin_an0528',
-  //   homepageURL: 'https://www.youtube.com/channel/UC3JgKXxcCd02y3xIpgJKnWA',
-  //   itemFilters: [
-  //     ItemFiltersPreset.between3minTo30Min
-  //   ],
-  // },
+    title: '黑皮談市政',
+    feedID: 'jin_an0528',
+    homepageURL: 'https://www.youtube.com/channel/UC3JgKXxcCd02y3xIpgJKnWA',
+    itemFilters: [
+      ItemFiltersPreset.between3minTo30Min
+    ],
+    options: {
+      maxItems: 10
+    }
+  },
   {
     title: '敖厂长',
     feedID: 'hawkaoaoful',
