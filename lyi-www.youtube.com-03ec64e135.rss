@@ -30,6 +30,25 @@
     </itunes:owner>
     <itunes:image href="https://yt3.googleusercontent.com/2A8k4i7ppGHDnBwzGHIJZ5an_fvHKJ7NpjwCLXrWk003gBVu_Aknt_Fzf-52nXcUA1cInkg9Mg=s1024-b50-c-k-c0x002980b9-no-rj"/>
 <item>
+      <title><![CDATA[11.14]谁偷走了我们的手机空间？]]></title>
+      <itunes:title><![CDATA[11.14]谁偷走了我们的手机空间？]]></itunes:title>
+      <itunes:author><![CDATA[林亦LYi]]></itunes:author>
+      <itunes:summary>
+        <![CDATA[https://www.youtube.com/watch?v=cGgvbANqsbs
+为什么手机存储越来越不够用了？]]>
+      </itunes:summary>
+      <description>
+        <![CDATA[https://www.youtube.com/watch?v=cGgvbANqsbs
+为什么手机存储越来越不够用了？]]>
+      </description>
+      <content:encoded><![CDATA[<pre>https://www.youtube.com/watch?v=cGgvbANqsbs
+为什么手机存储越来越不够用了？</pre>]]></content:encoded>
+      <itunes:image href="https://i.ytimg.com/vi/cGgvbANqsbs/hqdefault.jpg"/>
+      <enclosure url="https://democwise2016.github.io/action-UT-Podcast/lyi-www.youtube.com-03ec64e135/20251114-cGgvbANqsbs.mp3" type="audio/mpeg" length="1063" />
+      <itunes:duration>1063</itunes:duration>
+      <guid isPermaLink="false">https://democwise2016.github.io/action-UT-Podcast/lyi-www.youtube.com-03ec64e135/20251114-cGgvbANqsbs.mp3</guid>
+      <pubDate>2025-11-14T12:01:29.000Z</pubDate>
+    </item><item>
       <title><![CDATA[11.7]苹果“变味”了吗？]]></title>
       <itunes:title><![CDATA[11.7]苹果“变味”了吗？]]></itunes:title>
       <itunes:author><![CDATA[林亦LYi]]></itunes:author>
@@ -67,24 +86,5 @@
       <itunes:duration>649</itunes:duration>
       <guid isPermaLink="false">https://democwise2016.github.io/action-UT-Podcast/lyi-www.youtube.com-03ec64e135/20251031-kyh15iuvBB0.mp3</guid>
       <pubDate>2025-10-31T12:01:39.000Z</pubDate>
-    </item><item>
-      <title><![CDATA[10.17]为什么eSIM这么难落地？]]></title>
-      <itunes:title><![CDATA[10.17]为什么eSIM这么难落地？]]></itunes:title>
-      <itunes:author><![CDATA[林亦LYi]]></itunes:author>
-      <itunes:summary>
-        <![CDATA[https://www.youtube.com/watch?v=zj8YnRqyltE
-iPhone Air 国行终于开售了！但为什么过程如此坎坷呢？今天咱们就从苹果主导的 SIM 卡革命讲起，结合国内运营商的几十年的商业大战的历史轨迹，看看这背后是否藏着 eSIM 落地难的原因？]]>
-      </itunes:summary>
-      <description>
-        <![CDATA[https://www.youtube.com/watch?v=zj8YnRqyltE
-iPhone Air 国行终于开售了！但为什么过程如此坎坷呢？今天咱们就从苹果主导的 SIM 卡革命讲起，结合国内运营商的几十年的商业大战的历史轨迹，看看这背后是否藏着 eSIM 落地难的原因？]]>
-      </description>
-      <content:encoded><![CDATA[<pre>https://www.youtube.com/watch?v=zj8YnRqyltE
-iPhone Air 国行终于开售了！但为什么过程如此坎坷呢？今天咱们就从苹果主导的 SIM 卡革命讲起，结合国内运营商的几十年的商业大战的历史轨迹，看看这背后是否藏着 eSIM 落地难的原因？</pre>]]></content:encoded>
-      <itunes:image href="https://i.ytimg.com/vi/zj8YnRqyltE/hqdefault.jpg"/>
-      <enclosure url="https://democwise2016.github.io/action-UT-Podcast/lyi-www.youtube.com-03ec64e135/20251017-zj8YnRqyltE.mp3" type="audio/mpeg" length="1032" />
-      <itunes:duration>1032</itunes:duration>
-      <guid isPermaLink="false">https://democwise2016.github.io/action-UT-Podcast/lyi-www.youtube.com-03ec64e135/20251017-zj8YnRqyltE.mp3</guid>
-      <pubDate>2025-10-17T12:02:06.000Z</pubDate>
     </item></channel>
 </rss>
