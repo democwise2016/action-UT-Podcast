@@ -1,0 +1,135 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:googleplay="http://www.google.com/schemas/play-podcasts/1.0" xmlns:media="http://www.rssboard.org/media-rss" version="2.0">
+  <channel>
+    <title><![CDATA[Hung-yi Lee 上課囉 [UT]]]></title>
+    <link>https://www.youtube.com/channel/UC2ggjtuuWvxrHHHiaDH1dlQ</link>
+    <image>
+      <url>https://yt3.googleusercontent.com/ytc/AIdro_mlTtuvk8IoEtfAKvw7WDc0XuxqGBCjMn-klO63nQbfVjE=s1024-b50-c-k-c0x002980b9-no-rj</url>
+      <title>Hung-yi Lee 上課囉 [UT]</title>
+      <link>https://www.youtube.com/channel/UC2ggjtuuWvxrHHHiaDH1dlQ</link>
+    </image>
+    <language>en-us</language>
+    <atom:link href="https://www.youtube.com/feeds/videos.xml?channel_id=UC2ggjtuuWvxrHHHiaDH1dlQ" rel="self" type="application/rss+xml"/>
+    <copyright><![CDATA[Hung-yi Lee 上課囉 [UT]]]></copyright>
+    <itunes:author><![CDATA[Hung-yi Lee 上課囉 [UT]]]></itunes:author>
+    <itunes:summary>
+      <![CDATA[
+      <a href="https://www.youtube.com/channel/UC2ggjtuuWvxrHHHiaDH1dlQ" target="_blank">https://www.youtube.com/channel/UC2ggjtuuWvxrHHHiaDH1dlQ</a>LINK<br />
+<br />
+<a href="https://www.youtube.com/feeds/videos.xml?channel_id=UC2ggjtuuWvxrHHHiaDH1dlQ" target="_blank">https://www.youtube.com/feeds/videos.xml?channel_id=UC2ggjtuuWvxrHHHiaDH1dlQ</a>
+      ]]>
+    </itunes:summary>
+    <description>
+      <![CDATA[
+      <a href="https://www.youtube.com/channel/UC2ggjtuuWvxrHHHiaDH1dlQ" target="_blank">https://www.youtube.com/channel/UC2ggjtuuWvxrHHHiaDH1dlQ</a>LINK<br />
+<br />
+<a href="https://www.youtube.com/feeds/videos.xml?channel_id=UC2ggjtuuWvxrHHHiaDH1dlQ" target="_blank">https://www.youtube.com/feeds/videos.xml?channel_id=UC2ggjtuuWvxrHHHiaDH1dlQ</a>
+      ]]>
+    </description>
+    <itunes:owner>
+      <itunes:name><![CDATA[Hung-yi Lee 上課囉 [UT]]]></itunes:name>
+    </itunes:owner>
+    <itunes:image href="https://yt3.googleusercontent.com/ytc/AIdro_mlTtuvk8IoEtfAKvw7WDc0XuxqGBCjMn-klO63nQbfVjE=s1024-b50-c-k-c0x002980b9-no-rj"/>
+<item>
+      <title><![CDATA[9.15]【生成式人工智慧與機器學習導論2025】第０講：開場與課程簡介]]></title>
+      <itunes:title><![CDATA[9.15]【生成式人工智慧與機器學習導論2025】第０講：開場與課程簡介]]></itunes:title>
+      <itunes:author><![CDATA[Hung-yi Lee]]></itunes:author>
+      <itunes:summary>
+        <![CDATA[https://www.youtube.com/watch?v=VuQUF1VVX40
+投影片請見課程網頁：https://speech.ee.ntu.edu.tw/~hylee/GenAI-ML/2025-fall.php
+
+影片剪輯：李一駿助教]]>
+      </itunes:summary>
+      <description>
+        <![CDATA[https://www.youtube.com/watch?v=VuQUF1VVX40
+投影片請見課程網頁：https://speech.ee.ntu.edu.tw/~hylee/GenAI-ML/2025-fall.php
+
+影片剪輯：李一駿助教]]>
+      </description>
+      <content:encoded><![CDATA[<pre>https://www.youtube.com/watch?v=VuQUF1VVX40
+投影片請見課程網頁：https://speech.ee.ntu.edu.tw/~hylee/GenAI-ML/2025-fall.php
+
+影片剪輯：李一駿助教</pre>]]></content:encoded>
+      <itunes:image href="https://i.ytimg.com/vi/VuQUF1VVX40/hqdefault.jpg"/>
+      <enclosure url="https://democwise2016.github.io/action-UT-Podcast/HungyiLeeNTU-www.youtube.com-c7552d6dc6/20250915-VuQUF1VVX40.mp3" type="audio/mpeg" length="1113" />
+      <itunes:duration>1113</itunes:duration>
+      <guid isPermaLink="false">https://democwise2016.github.io/action-UT-Podcast/HungyiLeeNTU-www.youtube.com-c7552d6dc6/20250915-VuQUF1VVX40.mp3</guid>
+      <pubDate>2025-09-15T00:21:06.000Z</pubDate>
+    </item><item>
+      <title><![CDATA[5.3]【生成式AI時代下的機器學習(2025)】第九講：你這麽認這個評分系統幹什麽啊？談談有關大型語言模型評估的幾件事]]></title>
+      <itunes:title><![CDATA[5.3]【生成式AI時代下的機器學習(2025)】第九講：你這麽認這個評分系統幹什麽啊？談談有關大型語言模型評估的幾件事]]></itunes:title>
+      <itunes:author><![CDATA[Hung-yi Lee]]></itunes:author>
+      <itunes:summary>
+        <![CDATA[https://www.youtube.com/watch?v=s266BzGNKKc
+《生成式人工智慧導論 2024》也有介紹大型語言模型的評量，還沒看過的同學可以先去看那部影片
+https://youtu.be/Hk8Z0uhmWg4?si=SbjzejHrwODYKRYT
+
+字幕由網友 Xyfer 熱心提供
+
+投影片連結：https://docs.google.com/presentation/d/1FKDNO2BWYl80PjkgpmCnr-7cbmSJ3DH8/edit?usp=sharing&ouid=115046073158939078465&rtpof=true&sd=true
+
+18:30 上課時的解釋可能不夠精確，這裡再說明一下：「實力」在此指的是模型符合人類的需求，這裡假設人類的需求是模型能夠準確回答問題，並提供有幫助的資訊，所以希望去除回答時的書寫風格影響（例如不必要的幽默或過多的表情符號）；但相反地，若你追求的是一個表達活潑有趣的模型，這時候模型能夠使用豐富的 emoji，反而才是「實力」的體現。]]>
+      </itunes:summary>
+      <description>
+        <![CDATA[https://www.youtube.com/watch?v=s266BzGNKKc
+《生成式人工智慧導論 2024》也有介紹大型語言模型的評量，還沒看過的同學可以先去看那部影片
+https://youtu.be/Hk8Z0uhmWg4?si=SbjzejHrwODYKRYT
+
+字幕由網友 Xyfer 熱心提供
+
+投影片連結：https://docs.google.com/presentation/d/1FKDNO2BWYl80PjkgpmCnr-7cbmSJ3DH8/edit?usp=sharing&ouid=115046073158939078465&rtpof=true&sd=true
+
+18:30 上課時的解釋可能不夠精確，這裡再說明一下：「實力」在此指的是模型符合人類的需求，這裡假設人類的需求是模型能夠準確回答問題，並提供有幫助的資訊，所以希望去除回答時的書寫風格影響（例如不必要的幽默或過多的表情符號）；但相反地，若你追求的是一個表達活潑有趣的模型，這時候模型能夠使用豐富的 emoji，反而才是「實力」的體現。]]>
+      </description>
+      <content:encoded><![CDATA[<pre>https://www.youtube.com/watch?v=s266BzGNKKc
+《生成式人工智慧導論 2024》也有介紹大型語言模型的評量，還沒看過的同學可以先去看那部影片
+https://youtu.be/Hk8Z0uhmWg4?si=SbjzejHrwODYKRYT
+
+字幕由網友 Xyfer 熱心提供
+
+投影片連結：https://docs.google.com/presentation/d/1FKDNO2BWYl80PjkgpmCnr-7cbmSJ3DH8/edit?usp=sharing&ouid=115046073158939078465&rtpof=true&sd=true
+
+18:30 上課時的解釋可能不夠精確，這裡再說明一下：「實力」在此指的是模型符合人類的需求，這裡假設人類的需求是模型能夠準確回答問題，並提供有幫助的資訊，所以希望去除回答時的書寫風格影響（例如不必要的幽默或過多的表情符號）；但相反地，若你追求的是一個表達活潑有趣的模型，這時候模型能夠使用豐富的 emoji，反而才是「實力」的體現。</pre>]]></content:encoded>
+      <itunes:image href="https://i.ytimg.com/vi/s266BzGNKKc/hqdefault.jpg"/>
+      <enclosure url="https://democwise2016.github.io/action-UT-Podcast/HungyiLeeNTU-www.youtube.com-c7552d6dc6/20250503-s266BzGNKKc.mp3" type="audio/mpeg" length="1443" />
+      <itunes:duration>1443</itunes:duration>
+      <guid isPermaLink="false">https://democwise2016.github.io/action-UT-Podcast/HungyiLeeNTU-www.youtube.com-c7552d6dc6/20250503-s266BzGNKKc.mp3</guid>
+      <pubDate>2025-05-03T16:55:28.000Z</pubDate>
+    </item><item>
+      <title><![CDATA[5.2]【生成式AI時代下的機器學習(2025)】第八講：大型語言模型的推理過程不用太長、夠用就好]]></title>
+      <itunes:title><![CDATA[5.2]【生成式AI時代下的機器學習(2025)】第八講：大型語言模型的推理過程不用太長、夠用就好]]></itunes:title>
+      <itunes:author><![CDATA[Hung-yi Lee]]></itunes:author>
+      <itunes:summary>
+        <![CDATA[https://www.youtube.com/watch?v=ip3XnTpcxoA
+投影片連結：https://docs.google.com/presentation/d/1OovnEYdAocl8HUFx2hMvPX8dsLrqPdmd/edit?usp=sharing&ouid=115046073158939078465&rtpof=true&sd=true
+
+字幕由網友 Xyfer 熱心提供
+
+銜接上週課程
+第七講：DeepSeek-R1 這類大型語言模型是如何進行「深度思考」（Reasoning）的？
+https://youtu.be/bJFtcwLSNxI?si=_6QxjMfcJh4KNLvx]]>
+      </itunes:summary>
+      <description>
+        <![CDATA[https://www.youtube.com/watch?v=ip3XnTpcxoA
+投影片連結：https://docs.google.com/presentation/d/1OovnEYdAocl8HUFx2hMvPX8dsLrqPdmd/edit?usp=sharing&ouid=115046073158939078465&rtpof=true&sd=true
+
+字幕由網友 Xyfer 熱心提供
+
+銜接上週課程
+第七講：DeepSeek-R1 這類大型語言模型是如何進行「深度思考」（Reasoning）的？
+https://youtu.be/bJFtcwLSNxI?si=_6QxjMfcJh4KNLvx]]>
+      </description>
+      <content:encoded><![CDATA[<pre>https://www.youtube.com/watch?v=ip3XnTpcxoA
+投影片連結：https://docs.google.com/presentation/d/1OovnEYdAocl8HUFx2hMvPX8dsLrqPdmd/edit?usp=sharing&ouid=115046073158939078465&rtpof=true&sd=true
+
+字幕由網友 Xyfer 熱心提供
+
+銜接上週課程
+第七講：DeepSeek-R1 這類大型語言模型是如何進行「深度思考」（Reasoning）的？
+https://youtu.be/bJFtcwLSNxI?si=_6QxjMfcJh4KNLvx</pre>]]></content:encoded>
+      <itunes:image href="https://i.ytimg.com/vi/ip3XnTpcxoA/hqdefault.jpg"/>
+      <enclosure url="https://democwise2016.github.io/action-UT-Podcast/HungyiLeeNTU-www.youtube.com-c7552d6dc6/20250502-ip3XnTpcxoA.mp3" type="audio/mpeg" length="1462" />
+      <itunes:duration>1462</itunes:duration>
+      <guid isPermaLink="false">https://democwise2016.github.io/action-UT-Podcast/HungyiLeeNTU-www.youtube.com-c7552d6dc6/20250502-ip3XnTpcxoA.mp3</guid>
+      <pubDate>2025-05-02T16:47:00.000Z</pubDate>
+    </item></channel>
+</rss>
