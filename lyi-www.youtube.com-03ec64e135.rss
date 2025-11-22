@@ -30,6 +30,25 @@
     </itunes:owner>
     <itunes:image href="https://yt3.googleusercontent.com/2A8k4i7ppGHDnBwzGHIJZ5an_fvHKJ7NpjwCLXrWk003gBVu_Aknt_Fzf-52nXcUA1cInkg9Mg=s1024-b50-c-k-c0x002980b9-no-rj"/>
 <item>
+      <title><![CDATA[11.21]为什么“抽卡”让游戏越来越不好玩？]]></title>
+      <itunes:title><![CDATA[11.21]为什么“抽卡”让游戏越来越不好玩？]]></itunes:title>
+      <itunes:author><![CDATA[林亦LYi]]></itunes:author>
+      <itunes:summary>
+        <![CDATA[https://www.youtube.com/watch?v=2jGXTIl1Kt4
+CS2 饰品市场为何一夜蒸发 20 亿？游戏贴图是怎样变成赛博奢侈品的？V 社的皮肤经济从何发展而来？面对监管与乱象，V 社又为何要 “断尾求生” ？抽卡机制如何操控心理、让人不知不觉氪金？当游戏变成赌博场，玩游戏的初心又是什么？]]>
+      </itunes:summary>
+      <description>
+        <![CDATA[https://www.youtube.com/watch?v=2jGXTIl1Kt4
+CS2 饰品市场为何一夜蒸发 20 亿？游戏贴图是怎样变成赛博奢侈品的？V 社的皮肤经济从何发展而来？面对监管与乱象，V 社又为何要 “断尾求生” ？抽卡机制如何操控心理、让人不知不觉氪金？当游戏变成赌博场，玩游戏的初心又是什么？]]>
+      </description>
+      <content:encoded><![CDATA[<pre>https://www.youtube.com/watch?v=2jGXTIl1Kt4
+CS2 饰品市场为何一夜蒸发 20 亿？游戏贴图是怎样变成赛博奢侈品的？V 社的皮肤经济从何发展而来？面对监管与乱象，V 社又为何要 “断尾求生” ？抽卡机制如何操控心理、让人不知不觉氪金？当游戏变成赌博场，玩游戏的初心又是什么？</pre>]]></content:encoded>
+      <itunes:image href="https://i.ytimg.com/vi/2jGXTIl1Kt4/hqdefault.jpg"/>
+      <enclosure url="https://democwise2016.github.io/action-UT-Podcast/lyi-www.youtube.com-03ec64e135/20251121-2jGXTIl1Kt4.mp3" type="audio/mpeg" length="1217" />
+      <itunes:duration>1217</itunes:duration>
+      <guid isPermaLink="false">https://democwise2016.github.io/action-UT-Podcast/lyi-www.youtube.com-03ec64e135/20251121-2jGXTIl1Kt4.mp3</guid>
+      <pubDate>2025-11-21T12:00:11.000Z</pubDate>
+    </item><item>
       <title><![CDATA[11.14]谁偷走了我们的手机空间？]]></title>
       <itunes:title><![CDATA[11.14]谁偷走了我们的手机空间？]]></itunes:title>
       <itunes:author><![CDATA[林亦LYi]]></itunes:author>
@@ -67,24 +86,5 @@
       <itunes:duration>1120</itunes:duration>
       <guid isPermaLink="false">https://democwise2016.github.io/action-UT-Podcast/lyi-www.youtube.com-03ec64e135/20251107-YY0uaiuStho.mp3</guid>
       <pubDate>2025-11-07T12:04:02.000Z</pubDate>
-    </item><item>
-      <title><![CDATA[10.31]AI 打爆斗地主！赌怪3：智械危机]]></title>
-      <itunes:title><![CDATA[10.31]AI 打爆斗地主！赌怪3：智械危机]]></itunes:title>
-      <itunes:author><![CDATA[林亦LYi]]></itunes:author>
-      <itunes:summary>
-        <![CDATA[https://www.youtube.com/watch?v=kyh15iuvBB0
-六个模型上桌斗地主，直接高强度对线卢本伟，还拿着我们充的豆子玩超级加倍！一起看看它们到底是赌怪还是慈善家！]]>
-      </itunes:summary>
-      <description>
-        <![CDATA[https://www.youtube.com/watch?v=kyh15iuvBB0
-六个模型上桌斗地主，直接高强度对线卢本伟，还拿着我们充的豆子玩超级加倍！一起看看它们到底是赌怪还是慈善家！]]>
-      </description>
-      <content:encoded><![CDATA[<pre>https://www.youtube.com/watch?v=kyh15iuvBB0
-六个模型上桌斗地主，直接高强度对线卢本伟，还拿着我们充的豆子玩超级加倍！一起看看它们到底是赌怪还是慈善家！</pre>]]></content:encoded>
-      <itunes:image href="https://i.ytimg.com/vi/kyh15iuvBB0/hqdefault.jpg"/>
-      <enclosure url="https://democwise2016.github.io/action-UT-Podcast/lyi-www.youtube.com-03ec64e135/20251031-kyh15iuvBB0.mp3" type="audio/mpeg" length="649" />
-      <itunes:duration>649</itunes:duration>
-      <guid isPermaLink="false">https://democwise2016.github.io/action-UT-Podcast/lyi-www.youtube.com-03ec64e135/20251031-kyh15iuvBB0.mp3</guid>
-      <pubDate>2025-10-31T12:01:39.000Z</pubDate>
     </item></channel>
 </rss>
