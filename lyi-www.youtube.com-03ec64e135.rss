@@ -1,0 +1,90 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:googleplay="http://www.google.com/schemas/play-podcasts/1.0" xmlns:media="http://www.rssboard.org/media-rss" version="2.0">
+  <channel>
+    <title><![CDATA[林亦LYi 聊 3C [UT]]]></title>
+    <link>https://www.youtube.com/channel/UC4dtpugIYK56S_7btf5a-iQ</link>
+    <image>
+      <url>https://yt3.googleusercontent.com/2A8k4i7ppGHDnBwzGHIJZ5an_fvHKJ7NpjwCLXrWk003gBVu_Aknt_Fzf-52nXcUA1cInkg9Mg=s1024-b50-c-k-c0x002980b9-no-rj</url>
+      <title>林亦LYi 聊 3C [UT]</title>
+      <link>https://www.youtube.com/channel/UC4dtpugIYK56S_7btf5a-iQ</link>
+    </image>
+    <language>en-us</language>
+    <atom:link href="https://www.youtube.com/feeds/videos.xml?channel_id=UC4dtpugIYK56S_7btf5a-iQ" rel="self" type="application/rss+xml"/>
+    <copyright><![CDATA[林亦LYi 聊 3C [UT]]]></copyright>
+    <itunes:author><![CDATA[林亦LYi 聊 3C [UT]]]></itunes:author>
+    <itunes:summary>
+      <![CDATA[
+      <a href="https://www.youtube.com/channel/UC4dtpugIYK56S_7btf5a-iQ" target="_blank">https://www.youtube.com/channel/UC4dtpugIYK56S_7btf5a-iQ</a>LINK<br />
+<br />
+<a href="https://www.youtube.com/feeds/videos.xml?channel_id=UC4dtpugIYK56S_7btf5a-iQ" target="_blank">https://www.youtube.com/feeds/videos.xml?channel_id=UC4dtpugIYK56S_7btf5a-iQ</a>
+      ]]>
+    </itunes:summary>
+    <description>
+      <![CDATA[
+      <a href="https://www.youtube.com/channel/UC4dtpugIYK56S_7btf5a-iQ" target="_blank">https://www.youtube.com/channel/UC4dtpugIYK56S_7btf5a-iQ</a>LINK<br />
+<br />
+<a href="https://www.youtube.com/feeds/videos.xml?channel_id=UC4dtpugIYK56S_7btf5a-iQ" target="_blank">https://www.youtube.com/feeds/videos.xml?channel_id=UC4dtpugIYK56S_7btf5a-iQ</a>
+      ]]>
+    </description>
+    <itunes:owner>
+      <itunes:name><![CDATA[林亦LYi 聊 3C [UT]]]></itunes:name>
+    </itunes:owner>
+    <itunes:image href="https://yt3.googleusercontent.com/2A8k4i7ppGHDnBwzGHIJZ5an_fvHKJ7NpjwCLXrWk003gBVu_Aknt_Fzf-52nXcUA1cInkg9Mg=s1024-b50-c-k-c0x002980b9-no-rj"/>
+<item>
+      <title><![CDATA[8.28]我给浏览器装了个Mod]]></title>
+      <itunes:title><![CDATA[8.28]我给浏览器装了个Mod]]></itunes:title>
+      <itunes:author><![CDATA[林亦LYi]]></itunes:author>
+      <itunes:summary>
+        <![CDATA[https://www.youtube.com/watch?v=lpNhT6l1nKM
+我们用一个月时间，做了一套卡牌游戏版浏览器插件！里面还埋了很多小彩蛋，欢迎大家下载体验！]]>
+      </itunes:summary>
+      <description>
+        <![CDATA[https://www.youtube.com/watch?v=lpNhT6l1nKM
+我们用一个月时间，做了一套卡牌游戏版浏览器插件！里面还埋了很多小彩蛋，欢迎大家下载体验！]]>
+      </description>
+      <content:encoded><![CDATA[<pre>https://www.youtube.com/watch?v=lpNhT6l1nKM
+我们用一个月时间，做了一套卡牌游戏版浏览器插件！里面还埋了很多小彩蛋，欢迎大家下载体验！</pre>]]></content:encoded>
+      <itunes:image href="https://i.ytimg.com/vi/lpNhT6l1nKM/hqdefault.jpg"/>
+      <enclosure url="https://democwise2016.github.io/action-UT-Podcast/lyi-www.youtube.com-03ec64e135/20260828-lpNhT6l1nKM.mp3" type="audio/mpeg" length="347" />
+      <itunes:duration>347</itunes:duration>
+      <guid isPermaLink="false">https://democwise2016.github.io/action-UT-Podcast/lyi-www.youtube.com-03ec64e135/20260828-lpNhT6l1nKM.mp3</guid>
+      <pubDate>2026-08-28T10:00:19.000Z</pubDate>
+    </item><item>
+      <title><![CDATA[8.21]1元 vs 50万元 Vibe Coding：写代码可以多离谱？]]></title>
+      <itunes:title><![CDATA[8.21]1元 vs 50万元 Vibe Coding：写代码可以多离谱？]]></itunes:title>
+      <itunes:author><![CDATA[林亦LYi]]></itunes:author>
+      <itunes:summary>
+        <![CDATA[https://www.youtube.com/watch?v=rQ5t1TgOQRI
+我们实测了八个超离谱的 Vibe Coding 工具，到底哪个最好用？！记得点赞投币，视频里全部代码都会开源在 GitHub LYiHub/pub-ai-inputs 仓库！]]>
+      </itunes:summary>
+      <description>
+        <![CDATA[https://www.youtube.com/watch?v=rQ5t1TgOQRI
+我们实测了八个超离谱的 Vibe Coding 工具，到底哪个最好用？！记得点赞投币，视频里全部代码都会开源在 GitHub LYiHub/pub-ai-inputs 仓库！]]>
+      </description>
+      <content:encoded><![CDATA[<pre>https://www.youtube.com/watch?v=rQ5t1TgOQRI
+我们实测了八个超离谱的 Vibe Coding 工具，到底哪个最好用？！记得点赞投币，视频里全部代码都会开源在 GitHub LYiHub/pub-ai-inputs 仓库！</pre>]]></content:encoded>
+      <itunes:image href="https://i.ytimg.com/vi/rQ5t1TgOQRI/hqdefault.jpg"/>
+      <enclosure url="https://democwise2016.github.io/action-UT-Podcast/lyi-www.youtube.com-03ec64e135/20260821-rQ5t1TgOQRI.mp3" type="audio/mpeg" length="590" />
+      <itunes:duration>590</itunes:duration>
+      <guid isPermaLink="false">https://democwise2016.github.io/action-UT-Podcast/lyi-www.youtube.com-03ec64e135/20260821-rQ5t1TgOQRI.mp3</guid>
+      <pubDate>2026-08-21T13:03:35.000Z</pubDate>
+    </item><item>
+      <title><![CDATA[8.14]AI能干活后，我该干嘛？]]></title>
+      <itunes:title><![CDATA[8.14]AI能干活后，我该干嘛？]]></itunes:title>
+      <itunes:author><![CDATA[林亦LYi]]></itunes:author>
+      <itunes:summary>
+        <![CDATA[https://www.youtube.com/watch?v=95n5mAedbRw
+AI 办公到底能干些啥？它真的能颠覆我们的工作方式，以至于让大厂押上身家也要卷吗？]]>
+      </itunes:summary>
+      <description>
+        <![CDATA[https://www.youtube.com/watch?v=95n5mAedbRw
+AI 办公到底能干些啥？它真的能颠覆我们的工作方式，以至于让大厂押上身家也要卷吗？]]>
+      </description>
+      <content:encoded><![CDATA[<pre>https://www.youtube.com/watch?v=95n5mAedbRw
+AI 办公到底能干些啥？它真的能颠覆我们的工作方式，以至于让大厂押上身家也要卷吗？</pre>]]></content:encoded>
+      <itunes:image href="https://i.ytimg.com/vi/95n5mAedbRw/hqdefault.jpg"/>
+      <enclosure url="https://democwise2016.github.io/action-UT-Podcast/lyi-www.youtube.com-03ec64e135/20260814-95n5mAedbRw.mp3" type="audio/mpeg" length="660" />
+      <itunes:duration>660</itunes:duration>
+      <guid isPermaLink="false">https://democwise2016.github.io/action-UT-Podcast/lyi-www.youtube.com-03ec64e135/20260814-95n5mAedbRw.mp3</guid>
+      <pubDate>2026-08-14T12:00:04.000Z</pubDate>
+    </item></channel>
+</rss>
