@@ -30,6 +30,31 @@
     </itunes:owner>
     <itunes:image href="https://yt3.googleusercontent.com/2A8k4i7ppGHDnBwzGHIJZ5an_fvHKJ7NpjwCLXrWk003gBVu_Aknt_Fzf-52nXcUA1cInkg9Mg=s1024-b50-c-k-c0x002980b9-no-rj"/>
 <item>
+      <title><![CDATA[9.10]第一视角上手iPhone全系新品！]]></title>
+      <itunes:title><![CDATA[9.10]第一视角上手iPhone全系新品！]]></itunes:title>
+      <itunes:author><![CDATA[林亦LYi]]></itunes:author>
+      <itunes:summary>
+        <![CDATA[第一视角上手iPhone全系新品！
+
+https://www.youtube.com/channel/UC4dtpugIYK56S_7btf5a-iQ
+林亦LYi 聊 3C [UT]]]>
+      </itunes:summary>
+      <description>
+        <![CDATA[第一视角上手iPhone全系新品！
+
+https://www.youtube.com/channel/UC4dtpugIYK56S_7btf5a-iQ
+林亦LYi 聊 3C [UT]]]>
+      </description>
+      <content:encoded><![CDATA[<pre>第一视角上手iPhone全系新品！
+
+https://www.youtube.com/channel/UC4dtpugIYK56S_7btf5a-iQ
+林亦LYi 聊 3C [UT]</pre>]]></content:encoded>
+      <itunes:image href="https://i.ytimg.com/vi/H4-SUBN00Dk/hqdefault.jpg"/>
+      <enclosure url="https://democwise2016.github.io/action-UT-Podcast/lyi-www.youtube.com-03ec64e135/20260910-H4-SUBN00Dk.mp3" type="audio/mpeg" length="247" />
+      <itunes:duration>247</itunes:duration>
+      <guid isPermaLink="false">https://democwise2016.github.io/action-UT-Podcast/lyi-www.youtube.com-03ec64e135/20260910-H4-SUBN00Dk.mp3</guid>
+      <pubDate>2026-09-10T04:49:29.000Z</pubDate>
+    </item><item>
       <title><![CDATA[9.4]一个视频搞懂DeepSeek Harness！]]></title>
       <itunes:title><![CDATA[9.4]一个视频搞懂DeepSeek Harness！]]></itunes:title>
       <itunes:author><![CDATA[林亦LYi]]></itunes:author>
@@ -67,24 +92,5 @@
       <itunes:duration>347</itunes:duration>
       <guid isPermaLink="false">https://democwise2016.github.io/action-UT-Podcast/lyi-www.youtube.com-03ec64e135/20260828-lpNhT6l1nKM.mp3</guid>
       <pubDate>2026-08-28T10:00:19.000Z</pubDate>
-    </item><item>
-      <title><![CDATA[8.21]1元 vs 50万元 Vibe Coding：写代码可以多离谱？]]></title>
-      <itunes:title><![CDATA[8.21]1元 vs 50万元 Vibe Coding：写代码可以多离谱？]]></itunes:title>
-      <itunes:author><![CDATA[林亦LYi]]></itunes:author>
-      <itunes:summary>
-        <![CDATA[https://www.youtube.com/watch?v=rQ5t1TgOQRI
-我们实测了八个超离谱的 Vibe Coding 工具，到底哪个最好用？！记得点赞投币，视频里全部代码都会开源在 GitHub LYiHub/pub-ai-inputs 仓库！]]>
-      </itunes:summary>
-      <description>
-        <![CDATA[https://www.youtube.com/watch?v=rQ5t1TgOQRI
-我们实测了八个超离谱的 Vibe Coding 工具，到底哪个最好用？！记得点赞投币，视频里全部代码都会开源在 GitHub LYiHub/pub-ai-inputs 仓库！]]>
-      </description>
-      <content:encoded><![CDATA[<pre>https://www.youtube.com/watch?v=rQ5t1TgOQRI
-我们实测了八个超离谱的 Vibe Coding 工具，到底哪个最好用？！记得点赞投币，视频里全部代码都会开源在 GitHub LYiHub/pub-ai-inputs 仓库！</pre>]]></content:encoded>
-      <itunes:image href="https://i.ytimg.com/vi/rQ5t1TgOQRI/hqdefault.jpg"/>
-      <enclosure url="https://democwise2016.github.io/action-UT-Podcast/lyi-www.youtube.com-03ec64e135/20260821-rQ5t1TgOQRI.mp3" type="audio/mpeg" length="590" />
-      <itunes:duration>590</itunes:duration>
-      <guid isPermaLink="false">https://democwise2016.github.io/action-UT-Podcast/lyi-www.youtube.com-03ec64e135/20260821-rQ5t1TgOQRI.mp3</guid>
-      <pubDate>2026-08-21T13:03:35.000Z</pubDate>
     </item></channel>
 </rss>
