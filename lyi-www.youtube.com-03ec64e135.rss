@@ -30,6 +30,25 @@
     </itunes:owner>
     <itunes:image href="https://yt3.googleusercontent.com/2A8k4i7ppGHDnBwzGHIJZ5an_fvHKJ7NpjwCLXrWk003gBVu_Aknt_Fzf-52nXcUA1cInkg9Mg=s1024-b50-c-k-c0x002980b9-no-rj"/>
 <item>
+      <title><![CDATA[9.11]本地 AI 拉完了，除非...]]></title>
+      <itunes:title><![CDATA[9.11]本地 AI 拉完了，除非...]]></itunes:title>
+      <itunes:author><![CDATA[林亦LYi]]></itunes:author>
+      <itunes:summary>
+        <![CDATA[https://www.youtube.com/watch?v=JayupEukj8I
+这次我们通过本地部署两台 DGX Spark，探索了一下本地 AI 和分布式算力的一些新玩法，也做了一个让 AI 自动发现和连接本地算力的小实验。代码开源在 https://github.com/LYiHub/pub-dsh-privacy-router ，项目本身不复杂，主要是抛砖引玉，也期待 NVIDIA PAIR 这类更成熟的方案继续把这个方向做下去。]]>
+      </itunes:summary>
+      <description>
+        <![CDATA[https://www.youtube.com/watch?v=JayupEukj8I
+这次我们通过本地部署两台 DGX Spark，探索了一下本地 AI 和分布式算力的一些新玩法，也做了一个让 AI 自动发现和连接本地算力的小实验。代码开源在 https://github.com/LYiHub/pub-dsh-privacy-router ，项目本身不复杂，主要是抛砖引玉，也期待 NVIDIA PAIR 这类更成熟的方案继续把这个方向做下去。]]>
+      </description>
+      <content:encoded><![CDATA[<pre>https://www.youtube.com/watch?v=JayupEukj8I
+这次我们通过本地部署两台 DGX Spark，探索了一下本地 AI 和分布式算力的一些新玩法，也做了一个让 AI 自动发现和连接本地算力的小实验。代码开源在 https://github.com/LYiHub/pub-dsh-privacy-router ，项目本身不复杂，主要是抛砖引玉，也期待 NVIDIA PAIR 这类更成熟的方案继续把这个方向做下去。</pre>]]></content:encoded>
+      <itunes:image href="https://i.ytimg.com/vi/JayupEukj8I/hqdefault.jpg"/>
+      <enclosure url="https://democwise2016.github.io/action-UT-Podcast/lyi-www.youtube.com-03ec64e135/20260911-JayupEukj8I.mp3" type="audio/mpeg" length="658" />
+      <itunes:duration>658</itunes:duration>
+      <guid isPermaLink="false">https://democwise2016.github.io/action-UT-Podcast/lyi-www.youtube.com-03ec64e135/20260911-JayupEukj8I.mp3</guid>
+      <pubDate>2026-09-11T11:00:31.000Z</pubDate>
+    </item><item>
       <title><![CDATA[9.10]第一视角上手iPhone全系新品！]]></title>
       <itunes:title><![CDATA[9.10]第一视角上手iPhone全系新品！]]></itunes:title>
       <itunes:author><![CDATA[林亦LYi]]></itunes:author>
@@ -73,24 +92,5 @@ https://www.youtube.com/channel/UC4dtpugIYK56S_7btf5a-iQ
       <itunes:duration>577</itunes:duration>
       <guid isPermaLink="false">https://democwise2016.github.io/action-UT-Podcast/lyi-www.youtube.com-03ec64e135/20260904-buYQ-_V2Wv0.mp3</guid>
       <pubDate>2026-09-04T12:22:34.000Z</pubDate>
-    </item><item>
-      <title><![CDATA[8.28]我给浏览器装了个Mod]]></title>
-      <itunes:title><![CDATA[8.28]我给浏览器装了个Mod]]></itunes:title>
-      <itunes:author><![CDATA[林亦LYi]]></itunes:author>
-      <itunes:summary>
-        <![CDATA[https://www.youtube.com/watch?v=lpNhT6l1nKM
-我们用一个月时间，做了一套卡牌游戏版浏览器插件！里面还埋了很多小彩蛋，欢迎大家下载体验！]]>
-      </itunes:summary>
-      <description>
-        <![CDATA[https://www.youtube.com/watch?v=lpNhT6l1nKM
-我们用一个月时间，做了一套卡牌游戏版浏览器插件！里面还埋了很多小彩蛋，欢迎大家下载体验！]]>
-      </description>
-      <content:encoded><![CDATA[<pre>https://www.youtube.com/watch?v=lpNhT6l1nKM
-我们用一个月时间，做了一套卡牌游戏版浏览器插件！里面还埋了很多小彩蛋，欢迎大家下载体验！</pre>]]></content:encoded>
-      <itunes:image href="https://i.ytimg.com/vi/lpNhT6l1nKM/hqdefault.jpg"/>
-      <enclosure url="https://democwise2016.github.io/action-UT-Podcast/lyi-www.youtube.com-03ec64e135/20260828-lpNhT6l1nKM.mp3" type="audio/mpeg" length="347" />
-      <itunes:duration>347</itunes:duration>
-      <guid isPermaLink="false">https://democwise2016.github.io/action-UT-Podcast/lyi-www.youtube.com-03ec64e135/20260828-lpNhT6l1nKM.mp3</guid>
-      <pubDate>2026-08-28T10:00:19.000Z</pubDate>
     </item></channel>
 </rss>
