@@ -30,6 +30,25 @@
     </itunes:owner>
     <itunes:image href="https://yt3.googleusercontent.com/2A8k4i7ppGHDnBwzGHIJZ5an_fvHKJ7NpjwCLXrWk003gBVu_Aknt_Fzf-52nXcUA1cInkg9Mg=s1024-b50-c-k-c0x002980b9-no-rj"/>
 <item>
+      <title><![CDATA[9.21]这个小盒才是 AI 永久的家啊]]></title>
+      <itunes:title><![CDATA[9.21]这个小盒才是 AI 永久的家啊]]></itunes:title>
+      <itunes:author><![CDATA[林亦LYi]]></itunes:author>
+      <itunes:summary>
+        <![CDATA[https://www.youtube.com/watch?v=bdtcitRG17s
+M5 Ultra Mac Studio 实机体验！]]>
+      </itunes:summary>
+      <description>
+        <![CDATA[https://www.youtube.com/watch?v=bdtcitRG17s
+M5 Ultra Mac Studio 实机体验！]]>
+      </description>
+      <content:encoded><![CDATA[<pre>https://www.youtube.com/watch?v=bdtcitRG17s
+M5 Ultra Mac Studio 实机体验！</pre>]]></content:encoded>
+      <itunes:image href="https://i.ytimg.com/vi/bdtcitRG17s/hqdefault.jpg"/>
+      <enclosure url="https://democwise2016.github.io/action-UT-Podcast/lyi-www.youtube.com-03ec64e135/20260921-bdtcitRG17s.mp3" type="audio/mpeg" length="432" />
+      <itunes:duration>432</itunes:duration>
+      <guid isPermaLink="false">https://democwise2016.github.io/action-UT-Podcast/lyi-www.youtube.com-03ec64e135/20260921-bdtcitRG17s.mp3</guid>
+      <pubDate>2026-09-21T14:53:54.000Z</pubDate>
+    </item><item>
       <title><![CDATA[9.16]万字解析！聊聊最有争议的一场苹果发布会！]]></title>
       <itunes:title><![CDATA[9.16]万字解析！聊聊最有争议的一场苹果发布会！]]></itunes:title>
       <itunes:author><![CDATA[林亦LYi]]></itunes:author>
@@ -91,24 +110,5 @@
       <itunes:duration>607</itunes:duration>
       <guid isPermaLink="false">https://democwise2016.github.io/action-UT-Podcast/lyi-www.youtube.com-03ec64e135/20260916-Pbn9wQug1Gw.mp3</guid>
       <pubDate>2026-09-16T04:01:09.000Z</pubDate>
-    </item><item>
-      <title><![CDATA[9.14]豆包手机助手消费版来了，体验到底咋样？]]></title>
-      <itunes:title><![CDATA[9.14]豆包手机助手消费版来了，体验到底咋样？]]></itunes:title>
-      <itunes:author><![CDATA[林亦LYi]]></itunes:author>
-      <itunes:summary>
-        <![CDATA[https://www.youtube.com/watch?v=fp1mXaFs2do
-憋了大半年，豆包手机助手这次到底放了什么大招？]]>
-      </itunes:summary>
-      <description>
-        <![CDATA[https://www.youtube.com/watch?v=fp1mXaFs2do
-憋了大半年，豆包手机助手这次到底放了什么大招？]]>
-      </description>
-      <content:encoded><![CDATA[<pre>https://www.youtube.com/watch?v=fp1mXaFs2do
-憋了大半年，豆包手机助手这次到底放了什么大招？</pre>]]></content:encoded>
-      <itunes:image href="https://i.ytimg.com/vi/fp1mXaFs2do/hqdefault.jpg"/>
-      <enclosure url="https://democwise2016.github.io/action-UT-Podcast/lyi-www.youtube.com-03ec64e135/20260914-fp1mXaFs2do.mp3" type="audio/mpeg" length="446" />
-      <itunes:duration>446</itunes:duration>
-      <guid isPermaLink="false">https://democwise2016.github.io/action-UT-Podcast/lyi-www.youtube.com-03ec64e135/20260914-fp1mXaFs2do.mp3</guid>
-      <pubDate>2026-09-14T12:00:05.000Z</pubDate>
     </item></channel>
 </rss>
