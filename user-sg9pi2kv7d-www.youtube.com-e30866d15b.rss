@@ -30,6 +30,28 @@
     </itunes:owner>
     <itunes:image href="https://yt3.googleusercontent.com/crCq4eoUKGoAwnkAc1Y2wPohpqaQuBxbb5qjt-FbRFHccoRXFf2PUiI3sN-9Y9sfZg6jotIaQA=s1024-b50-c-k-c0x002980b9-no-rj"/>
 <item>
+      <title><![CDATA[11.26]幽游白書解析 - 飛影的善良]]></title>
+      <itunes:title><![CDATA[11.26]幽游白書解析 - 飛影的善良]]></itunes:title>
+      <itunes:author><![CDATA[蛋弟]]></itunes:author>
+      <itunes:summary>
+        <![CDATA[https://www.youtube.com/watch?v=qmdOyYYkbw0
+會員加入鏈接:
+https://www.youtube.com/channel/UCtlELst50iCTWw_D9jt1cEg/join]]>
+      </itunes:summary>
+      <description>
+        <![CDATA[https://www.youtube.com/watch?v=qmdOyYYkbw0
+會員加入鏈接:
+https://www.youtube.com/channel/UCtlELst50iCTWw_D9jt1cEg/join]]>
+      </description>
+      <content:encoded><![CDATA[<pre>https://www.youtube.com/watch?v=qmdOyYYkbw0
+會員加入鏈接:
+https://www.youtube.com/channel/UCtlELst50iCTWw_D9jt1cEg/join</pre>]]></content:encoded>
+      <itunes:image href="https://i.ytimg.com/vi/qmdOyYYkbw0/hqdefault.jpg"/>
+      <enclosure url="https://democwise2016.github.io/action-UT-Podcast/user-sg9pi2kv7d-www.youtube.com-e30866d15b/20261126-qmdOyYYkbw0.mp3" type="audio/mpeg" length="700" />
+      <itunes:duration>700</itunes:duration>
+      <guid isPermaLink="false">https://democwise2016.github.io/action-UT-Podcast/user-sg9pi2kv7d-www.youtube.com-e30866d15b/20261126-qmdOyYYkbw0.mp3</guid>
+      <pubDate>2026-11-26T12:30:19.000Z</pubDate>
+    </item><item>
       <title><![CDATA[11.12]獵人深度解析 - 絕兹絕拉的懊悔 x 人生真正重要的事]]></title>
       <itunes:title><![CDATA[11.12]獵人深度解析 - 絕兹絕拉的懊悔 x 人生真正重要的事]]></itunes:title>
       <itunes:author><![CDATA[蛋弟]]></itunes:author>
@@ -73,27 +95,5 @@ https://www.youtube.com/channel/UCtlELst50iCTWw_D9jt1cEg/join</pre>]]></content:
       <itunes:duration>642</itunes:duration>
       <guid isPermaLink="false">https://democwise2016.github.io/action-UT-Podcast/user-sg9pi2kv7d-www.youtube.com-e30866d15b/20261104-lCZw96DmXrA.mp3</guid>
       <pubDate>2026-11-04T10:00:32.000Z</pubDate>
-    </item><item>
-      <title><![CDATA[10.21]獵人深度解析  - 爲何做人最好還是要厚道 x 果列奴的智慧]]></title>
-      <itunes:title><![CDATA[10.21]獵人深度解析  - 爲何做人最好還是要厚道 x 果列奴的智慧]]></itunes:title>
-      <itunes:author><![CDATA[蛋弟]]></itunes:author>
-      <itunes:summary>
-        <![CDATA[https://www.youtube.com/watch?v=sgvbUGd4aU4
-會員加入鏈接:
-https://www.youtube.com/channel/UCtlELst50iCTWw_D9jt1cEg/join]]>
-      </itunes:summary>
-      <description>
-        <![CDATA[https://www.youtube.com/watch?v=sgvbUGd4aU4
-會員加入鏈接:
-https://www.youtube.com/channel/UCtlELst50iCTWw_D9jt1cEg/join]]>
-      </description>
-      <content:encoded><![CDATA[<pre>https://www.youtube.com/watch?v=sgvbUGd4aU4
-會員加入鏈接:
-https://www.youtube.com/channel/UCtlELst50iCTWw_D9jt1cEg/join</pre>]]></content:encoded>
-      <itunes:image href="https://i.ytimg.com/vi/sgvbUGd4aU4/hqdefault.jpg"/>
-      <enclosure url="https://democwise2016.github.io/action-UT-Podcast/user-sg9pi2kv7d-www.youtube.com-e30866d15b/20261021-sgvbUGd4aU4.mp3" type="audio/mpeg" length="797" />
-      <itunes:duration>797</itunes:duration>
-      <guid isPermaLink="false">https://democwise2016.github.io/action-UT-Podcast/user-sg9pi2kv7d-www.youtube.com-e30866d15b/20261021-sgvbUGd4aU4.mp3</guid>
-      <pubDate>2026-10-21T11:00:35.000Z</pubDate>
     </item></channel>
 </rss>
